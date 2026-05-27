@@ -32,7 +32,7 @@ For a thorough introduction to the ARIA API, VAIS configuration, client setup, a
 
 ### Treatment Plan Report (Matthew Schmidt / Gateway Scripts)
 
-A C# WPF application demonstrating practical use of the ARIA API to generate treatment plan reports.
+A C# WPF application demonstrating practical use of the ARIA API to upload documents to ARIA (before you would use Aria Web services or eDoc printer).
 
 > 🔗 **[Gateway-Scripts/TreatmentPlanReport_May2026](https://github.com/Gateway-Scripts/TreatmentPlanReport_May2026)**
 
