@@ -68,6 +68,14 @@ Tests token retrieval and runs read-only FHIR queries for a given patient — us
 
 ---
 
+## Resources
+
+### `ARIAapi_specificPossibilities.xlsx`
+
+An overview of ARIA API capabilities, including **read and write possibilities** for various FHIR resources. Use this as a reference when planning which scopes to request and what operations are supported for each resource type.
+
+---
+
 ## Further Reading
 
 - [Gateway Scripts Blog](https://www.gatewayscripts.com) – ARIA API series by Matthew Schmidt
