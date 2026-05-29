@@ -16,10 +16,12 @@ The **ARIA API** is a modern interoperability platform provided by Varian/Siemen
 
 - The ARIA API is a **licensed feature** – requires a Varian sales order (currently $0 license) and is configured via the **VAIS** (Varian Authentication and Integration Services) administration tool.
 - Authentication uses **OAuth 2.0 client credentials flow**: your application exchanges a `client_id` + `client_secret` for a short-lived bearer token.
-- **Scopes** define which resources and operations are permitted (e.g. `system/Appointment.rs` for read-only system-level access to appointments). Scopes are downloaded from [MyVarian.com](https://myvarian.com) and entered space-delimited (not comma-delimited).
+- **Scopes** define which resources and operations are permitted (e.g. `system/Appointment.rs` for read-only system-level access to appointments). The available scopes for your client are shown when clicking the **Conformance** button in the ARIA API Tester tool, and are also listed in [`ARIAapi_specificPossibilities.xlsx`](ARIAapi_specificPossibilities.xlsx). Scopes are entered space-delimited (not comma-delimited) in code and the tester.
 - The **Patient FHIR ID** follows the format `Patient-<Seriennummer>`, where the number is the ARIA *serial number* — **not** the patient ID (Patientennummer).
 - FHIR endpoint: typically `https://<server>:55370/fhir/r4`
 - Token endpoint: typically `https://<server>:44333/tokenservice/connect/token`
+
+For additional installation/configuration help or a general overview of scopes, download the reference guide from [MyVarian](https://www.myvarian.com/de/login).
 
 For a thorough introduction to the ARIA API, VAIS configuration, client setup, and API testing, read:
 
