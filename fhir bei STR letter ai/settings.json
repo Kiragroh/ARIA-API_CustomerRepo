@@ -1,0 +1,180 @@
+{
+  "app_name": "ARIA FHIR Tester",
+  "host": "127.0.0.1",
+  "port": 8012,
+  "token_url": "",
+  "fhir_base_url": "",
+  "client_id": "",
+  "client_id_env": "ARIA_FHIR_CLIENT_ID",
+  "client_secret_env": "ARIA_FHIR_CLIENT_SECRET",
+  "default_scope": "system/Appointment.cruds system/DocumentReference.cruds system/Patient.rs system/Organization.rs system/ValueSet.rs system/Practitioner.rs",
+  "resource_scope_presets": {
+    "starter": "system/Appointment.cruds system/DocumentReference.cruds system/Patient.rs system/Organization.rs system/ValueSet.rs system/Practitioner.rs",
+    "documentreference": "system/DocumentReference.cruds system/Patient.rs system/Organization.rs system/ValueSet.rs system/Practitioner.rs",
+    "appointment": "system/Appointment.cruds system/Patient.rs system/Practitioner.rs system/Organization.rs system/Location.rs",
+    "readonly": "system/Appointment.rs system/DocumentReference.rs system/Patient.rs system/Organization.rs system/ValueSet.rs system/Practitioner.rs system/Location.rs",
+    "clinical_read": "system/AllergyIntolerance.rs system/BodyStructure.rs system/CarePlan.rs system/CareTeam.rs system/Condition.rs system/Device.rs system/DocumentReference.rs system/Observation.rs system/Procedure.rs system/ServiceRequest.rs system/Task.rs system/Patient.rs system/Practitioner.rs system/Organization.rs system/Location.rs",
+    "admin_read": "system/Appointment.rs system/ChargeItem.rs system/Group.rs system/HealthcareService.rs system/Location.rs system/Organization.rs system/Patient.rs system/Practitioner.rs system/ValueSet.rs",
+    "all_seen_read": "system/ActivityDefinition.rs system/AllergyIntolerance.rs system/Appointment.rs system/AuditEvent.rs system/BodyStructure.rs system/CarePlan.rs system/CareTeam.rs system/ChargeItem.rs system/Condition.rs system/Device.rs system/DocumentReference.rs system/Group.rs system/HealthcareService.rs system/Location.rs system/Observation.rs system/OperationDefinition.rs system/Organization.rs system/Patient.rs system/Practitioner.rs system/Procedure.rs system/ServiceRequest.rs system/Task.rs system/ValueSet.rs"
+  },
+  "organization_names": [],
+  "document_type_valueset_url": "http://varian.com/fhir/ValueSet/documentreference-type",
+  "write_confirmation_phrase": "LIVE",
+  "verify_tls": false,
+  "request_timeout_seconds": 60,
+  "max_response_chars": 500000,
+  "resource_pages": [
+    {
+      "resource": "DocumentReference",
+      "title": "Dokumente",
+      "read_scope": "system/DocumentReference.rs system/Patient.rs system/Organization.rs system/ValueSet.rs system/Practitioner.rs",
+      "write_scope": "system/DocumentReference.cruds system/Patient.rs system/Organization.rs system/ValueSet.rs system/Practitioner.rs",
+      "default_sort": "-date",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "Appointment",
+      "title": "Termine",
+      "read_scope": "system/Appointment.rs system/Patient.rs system/Practitioner.rs system/Organization.rs system/Location.rs",
+      "write_scope": "system/Appointment.cruds system/Patient.rs system/Practitioner.rs system/Organization.rs system/Location.rs",
+      "default_sort": "-date",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "Patient",
+      "title": "Patienten",
+      "read_scope": "system/Patient.rs",
+      "write_scope": "system/Patient.cruds"
+    },
+    {
+      "resource": "Practitioner",
+      "title": "Behandler",
+      "read_scope": "system/Practitioner.rs",
+      "write_scope": "system/Practitioner.cruds"
+    },
+    {
+      "resource": "Organization",
+      "title": "Organisationen",
+      "read_scope": "system/Organization.rs",
+      "write_scope": "system/Organization.cruds"
+    },
+    {
+      "resource": "Location",
+      "title": "Orte",
+      "read_scope": "system/Location.rs",
+      "write_scope": "system/Location.cruds"
+    },
+    {
+      "resource": "ValueSet",
+      "title": "ValueSets",
+      "read_scope": "system/ValueSet.rs",
+      "write_scope": "system/ValueSet.cruds"
+    },
+    {
+      "resource": "Condition",
+      "title": "Diagnosen",
+      "read_scope": "system/Condition.rs system/Patient.rs",
+      "write_scope": "system/Condition.cruds system/Patient.rs",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "Observation",
+      "title": "Beobachtungen",
+      "read_scope": "system/Observation.rs system/Patient.rs",
+      "write_scope": "system/Observation.cruds system/Patient.rs",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "Procedure",
+      "title": "Prozeduren",
+      "read_scope": "system/Procedure.rs system/Patient.rs",
+      "write_scope": "system/Procedure.cruds system/Patient.rs",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "ServiceRequest",
+      "title": "Auftraege",
+      "read_scope": "system/ServiceRequest.rs system/Patient.rs",
+      "write_scope": "system/ServiceRequest.cruds system/Patient.rs",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "Task",
+      "title": "Tasks",
+      "read_scope": "system/Task.rs system/Patient.rs",
+      "write_scope": "system/Task.cruds system/Patient.rs",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "CarePlan",
+      "title": "CarePlans",
+      "read_scope": "system/CarePlan.rs system/Patient.rs",
+      "write_scope": "system/CarePlan.cruds system/Patient.rs",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "CareTeam",
+      "title": "CareTeams",
+      "read_scope": "system/CareTeam.rs system/Patient.rs",
+      "write_scope": "system/CareTeam.cruds system/Patient.rs",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "AllergyIntolerance",
+      "title": "Allergien",
+      "read_scope": "system/AllergyIntolerance.rs system/Patient.rs",
+      "write_scope": "system/AllergyIntolerance.cruds system/Patient.rs",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "BodyStructure",
+      "title": "BodyStructure",
+      "read_scope": "system/BodyStructure.rs system/Patient.rs",
+      "write_scope": "system/BodyStructure.cruds system/Patient.rs",
+      "patient_param": "patient"
+    },
+    {
+      "resource": "Device",
+      "title": "Devices",
+      "read_scope": "system/Device.rs",
+      "write_scope": "system/Device.cruds"
+    },
+    {
+      "resource": "HealthcareService",
+      "title": "HealthcareServices",
+      "read_scope": "system/HealthcareService.rs",
+      "write_scope": "system/HealthcareService.cruds"
+    },
+    {
+      "resource": "Group",
+      "title": "Gruppen",
+      "read_scope": "system/Group.rs",
+      "write_scope": "system/Group.cruds"
+    },
+    {
+      "resource": "ChargeItem",
+      "title": "ChargeItems",
+      "read_scope": "system/ChargeItem.rs system/Patient.rs",
+      "write_scope": "system/ChargeItem.cruds system/Patient.rs",
+      "patient_param": "subject"
+    },
+    {
+      "resource": "AuditEvent",
+      "title": "AuditEvents",
+      "read_scope": "system/AuditEvent.rs",
+      "write_scope": "system/AuditEvent.cruds"
+    },
+    {
+      "resource": "ActivityDefinition",
+      "title": "ActivityDefinitions",
+      "read_scope": "system/ActivityDefinition.rs",
+      "write_scope": "system/ActivityDefinition.cruds"
+    },
+    {
+      "resource": "OperationDefinition",
+      "title": "OperationDefinitions",
+      "read_scope": "system/OperationDefinition.rs",
+      "write_scope": "system/OperationDefinition.cruds"
+    }
+  ]
+}

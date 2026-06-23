@@ -1,0 +1,113 @@
+# >>> STR-Physik Hub GitUKL ignore >>>
+# Runtime, caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.vscode/
+node_modules/
+dist/
+build/
+bin/
+obj/
+
+# Logs and operational output
+*.log
+*.pid
+logs/
+log/
+Log/
+Logs/
+output/
+outputs/
+export/
+exports/
+Export/
+Exports/
+backup/
+backups/
+Backup/
+Backups/
+tmp/
+temp/
+old/
+Old/
+zOld/
+_old/
+archive/
+Archive/
+
+# Windows-reserved names that cannot be committed on Windows
+nul
+NUL
+con
+CON
+prn
+PRN
+aux
+AUX
+com[1-9]
+COM[1-9]
+lpt[1-9]
+LPT[1-9]
+
+# Local databases, patient-adjacent data and large generated artifacts
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+*.dcm
+*.DCM
+*.dicom
+*.nii
+*.nii.gz
+*.nrrd
+*.mha
+*.mhd
+*.raw
+*.zip
+*.7z
+*.rar
+
+# Secrets and machine-local settings
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+secrets.*
+settings.local.*
+*.local.json
+
+# Internal ARIA/VAIS documentation and generated reference exports.
+# Keep these locally, but do not publish them to GitHub.
+docs/ARIA-API-IG/
+docs/ARIA-Interfaces-ReferenceGuide/
+docs/WebService-Interface*/
+docs/reference-guides/
+docs/**/AccessKeys/
+docs/**/Key_*.txt
+fhir bei STR letter ai/settings.local.json
+# <<< STR-Physik Hub GitUKL ignore <<<
