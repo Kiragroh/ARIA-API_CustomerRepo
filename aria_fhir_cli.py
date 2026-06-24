@@ -9,7 +9,6 @@ from typing import Any
 
 import requests
 
-import journal_notes_fhir_fallback
 import patient_fhir_query
 
 
@@ -25,18 +24,17 @@ def add_output_args(parser: argparse.ArgumentParser) -> None:
 
 def create_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="ARIA FHIR CMD-App mit Modi fuer Patient, Journal Notes, Token und Metadata.",
+        description="ARIA FHIR CMD-App mit Modi fuer Patient, Token und Metadata.",
         epilog=(
             "Beispiele:\n"
             "  python aria_fhir_cli.py patient --identifier <patient-identifier> --redact\n"
-            "  python aria_fhir_cli.py journal --patient <patient-identifier> --timestamp \"01.01.2026 00:00\" --redact\n"
             "  python aria_fhir_cli.py token\n"
             "  python aria_fhir_cli.py metadata --resource Patient --search-params"
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     subparsers = parser.add_subparsers(dest="mode", required=True)
-    parser._aria_mode_choices = ["patient", "journal", "token", "metadata"]  # noqa: SLF001
+    parser._aria_mode_choices = ["patient", "token", "metadata"]  # noqa: SLF001
 
     patient = subparsers.add_parser("patient", help="Patient suchen oder per FHIR-ID lesen.")
     patient.add_argument("--identifier", default="", help="Sichtbare ARIA PatID, z.B. <patient-identifier>.")
@@ -54,13 +52,6 @@ def create_parser() -> argparse.ArgumentParser:
     patient.add_argument("--include-http", action="store_true", help="Redigierte HTTP-Kommunikation mit ausgeben.")
     add_auth_args(patient)
     add_output_args(patient)
-
-    journal = subparsers.add_parser("journal", help="Journal Notes via FHIR Task.note lesen.")
-    journal.add_argument("--patient", required=True, help="ARIA PatID oder Patient-... FHIR-ID.")
-    journal.add_argument("--timestamp", default="01.01.2026 00:00", help="dd.mm.yyyy HH:MM in Europe/Berlin.")
-    journal.add_argument("--redact", action="store_true", help="Notiztext nicht ausgeben.")
-    add_auth_args(journal)
-    add_output_args(journal)
 
     token = subparsers.add_parser("token", help="Token holen und redigierte Token-Metadaten anzeigen.")
     token.add_argument("--show-token", action="store_true", help="Gibt den echten Bearer Token lokal aus.")
@@ -110,17 +101,6 @@ def command_patient(args: argparse.Namespace) -> dict[str, Any]:
         client_id=args.client_id,
         client_secret=args.client_secret,
         scope=args.scope,
-    )
-
-
-def command_journal(args: argparse.Namespace) -> dict[str, Any]:
-    return journal_notes_fhir_fallback.fetch_journal_notes(
-        patient_identifier=args.patient,
-        timestamp=args.timestamp,
-        client_id=args.client_id,
-        client_secret=args.client_secret,
-        scope=args.scope,
-        redact=args.redact,
     )
 
 
@@ -204,8 +184,6 @@ def command_metadata(args: argparse.Namespace) -> dict[str, Any]:
 def run(args: argparse.Namespace) -> dict[str, Any]:
     if args.mode == "patient":
         return command_patient(args)
-    if args.mode == "journal":
-        return command_journal(args)
     if args.mode == "token":
         return command_token(args)
     if args.mode == "metadata":

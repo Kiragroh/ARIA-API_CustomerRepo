@@ -42,6 +42,7 @@ python .\examples\fhir-document-upload\fhir_document_upload_example.py `
 - `--document-type` wird ueber `ValueSet/$expand` gegen ARIA-Codes aufgeloest.
 - `--template-name` schreibt die Varian-Extension `documentreference-templateName`.
 - `--preview-text` schreibt optional `DocumentReference.description`; leer bedeutet kein Preview-Text.
-- PDF/Bilder werden als Kategorie `TIF` gesendet.
+- PDF wird als Kategorie `PDF` gesendet.
+- Bilder werden als Kategorie `TIF` gesendet.
 - Word/DOCX wird als Kategorie `Patient Document` gesendet.
 - `docStatus` ist `preliminary`, also nicht genehmigt/pending.

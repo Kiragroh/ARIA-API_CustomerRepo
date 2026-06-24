@@ -265,7 +265,12 @@ def parse_document_time(value: str) -> str:
 
 
 def document_category(content_type: str) -> dict[str, str]:
-    code = "Patient Document" if content_type in WORD_CONTENT_TYPES else "TIF"
+    if content_type == "application/pdf":
+        code = "PDF"
+    elif content_type in WORD_CONTENT_TYPES:
+        code = "Patient Document"
+    else:
+        code = "TIF"
     return {"system": DOCUMENT_CLASS_SYSTEM, "code": code, "display": code}
 
 
