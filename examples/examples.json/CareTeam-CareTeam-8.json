@@ -1,0 +1,83 @@
+{
+  "resourceType" : "CareTeam",
+  "id" : "CareTeam-8",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "CareTeam Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "CareTeam example for the *Varian ARIA API CareTeam Profile.*"
+    }],
+    "versionId" : "390045",
+    "lastUpdated" : "2023-10-10T14:18:52.883+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/CareTeam"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CareTeam</b><a name=\"CareTeam-8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CareTeam &quot;CareTeam-8&quot; Version &quot;390045&quot; Updated &quot;2023-10-10 14:18:52+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CareTeam.html\">CareTeam</a></p></div><p><b>status</b>: active</p><p><b>subject</b>: <a href=\"Patient/Patient-8\">Patient/Patient-8: Implementation, Guide</a></p><blockquote><p><b>participant</b></p><p><b>role</b>: Default Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (careteam-participant-role#default-hospital)</span></p><p><b>member</b>: <a href=\"Organization/Organization-Prov-1\">Organization/Organization-Prov-1: Las Vegas General</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: Primary Health Care Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ncit.nci.nih.gov#C93060; careteam-participant-role#default-service-organization &quot;Default Service Organization&quot;)</span></p><p><b>member</b>: <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>onBehalfOf</b>: <a href=\"Organization/Organization-Prov-1\">Organization/Organization-Prov-1: Las Vegas General</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ncit.nci.nih.gov#C16666; careteam-participant-role#service-organization &quot;Service Organization&quot;)</span></p><p><b>member</b>: <a href=\"Organization-Organization-Dept-10002.html\">Organization/Organization-Dept-10002: OCS1</a> &quot;OCS1&quot;</p><p><b>onBehalfOf</b>: <a href=\"Organization/Organization-Prov-1\">Organization/Organization-Prov-1: Las Vegas General</a></p></blockquote></div>"
+  },
+  "status" : "active",
+  "subject" : {
+    "reference" : "Patient/Patient-8",
+    "display" : "Implementation, Guide"
+  },
+  "participant" : [{
+    "role" : [{
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/careteam-participant-role",
+        "code" : "default-hospital",
+        "display" : "Default Hospital"
+      }]
+    }],
+    "member" : {
+      "reference" : "Organization/Organization-Prov-1",
+      "display" : "Las Vegas General"
+    }
+  },
+  {
+    "role" : [{
+      "coding" : [{
+        "system" : "https://ncit.nci.nih.gov",
+        "code" : "C93060",
+        "display" : "Primary Health Care Provider"
+      },
+      {
+        "system" : "http://varian.com/fhir/CodeSystem/careteam-participant-role",
+        "code" : "default-service-organization",
+        "display" : "Default Service Organization"
+      }]
+    }],
+    "member" : {
+      "reference" : "Organization/Organization-Dept-1",
+      "display" : "Radiation Therapy"
+    },
+    "onBehalfOf" : {
+      "reference" : "Organization/Organization-Prov-1",
+      "display" : "Las Vegas General"
+    }
+  },
+  {
+    "role" : [{
+      "coding" : [{
+        "system" : "https://ncit.nci.nih.gov",
+        "code" : "C16666",
+        "display" : "Healthcare Provider"
+      },
+      {
+        "system" : "http://varian.com/fhir/CodeSystem/careteam-participant-role",
+        "code" : "service-organization",
+        "display" : "Service Organization"
+      }]
+    }],
+    "member" : {
+      "reference" : "Organization/Organization-Dept-10002",
+      "display" : "OCS1"
+    },
+    "onBehalfOf" : {
+      "reference" : "Organization/Organization-Prov-1",
+      "display" : "Las Vegas General"
+    }
+  }]
+}

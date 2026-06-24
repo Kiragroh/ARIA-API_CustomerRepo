@@ -1,0 +1,121 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "DocumentReference-20000000000000000002-3-2",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "DocumentReference Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "DocumentReference example for the *Varian ARIA API DocumentReference Profile.*"
+    }],
+    "versionId" : "1",
+    "lastUpdated" : "2023-10-09T03:38:15.077+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/DocumentReference"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DocumentReference</b><a name=\"DocumentReference-20000000000000000002-3-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DocumentReference &quot;DocumentReference-20000000000000000002-3-2&quot; Version &quot;1&quot; Updated &quot;2023-10-09 03:38:15+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference.html\">A reference to a document</a></p></div><p><b>documentreference-supervisor</b>: <a href=\"Practitioner/Practitioner-1064\">Practitioner/Practitioner-1064: FhirTestDoc1</a></p><p><b>documentreference-templateName</b>: Test Template</p><blockquote><p><b>documentreference-signature</b></p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-documentreference-signature.html\">documentreference-signature</a></blockquote><p><b>value</b>: 2023-10-09 03:38:14+0530</p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-documentreference-signature.html\">documentreference-signature</a></blockquote><p><b>value</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-documentreference-signature.html\">documentreference-signature</a></blockquote><p><b>value</b>: true</p></blockquote><p><b>login-institution</b>: <a href=\"Organization/Organization-Dept-10008\">Organization/Organization-Dept-10008: Oncology Department</a></p><p><b>documentreference-documentLocation</b>: file-server</p><p><b>masterIdentifier</b>: id:\u00a0231009ITRKML</p><p><b>status</b>: current</p><p><b>docStatus</b>: preliminary</p><p><b>type</b>: Physician Note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (documentreference-type#572)</span></p><p><b>category</b>: Patient Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (documentreference-class#Patient Document)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-11\">Patient/Patient-11: TreatSummary, Pat1</a></p><p><b>date</b>: Oct 9, 2023, 3:38:14\u202fAM</p><p><b>author</b>: <a href=\"Practitioner/Practitioner-1065\">Practitioner/Practitioner-1065: FhirTestDoc2</a></p><p><b>custodian</b>: <a href=\"Organization/Organization-Prov-1\">Organization/Organization-Prov-1: ACHospital</a></p><p><b>description</b>: New Hi...This is a test document</p><blockquote><p><b>content</b></p><blockquote><p><b>attachment</b></p><blockquote><p><b>id</b></p>394.doc</blockquote><p><b>contentType</b>: application/msword</p><p><b>url</b>: <code>\\\\TESTCONSOLE1\\VA_DATA$\\FILEDATA\\DOCUMENTS\\2023Q4\\394.doc</code></p></blockquote></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-supervisor",
+    "valueReference" : {
+      "reference" : "Practitioner/Practitioner-1064",
+      "display" : "FhirTestDoc1"
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-templateName",
+    "valueString" : "Test Template"
+  },
+  {
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-signature#signed",
+      "valueDateTime" : "2023-10-09T03:38:14+05:30"
+    },
+    {
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-signature#signer",
+      "valueReference" : {
+        "reference" : "Practitioner/Practitioner-1002",
+        "display" : "JohnWilsonFhir"
+      }
+    },
+    {
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-signature#isSigned",
+      "valueBoolean" : true
+    }],
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-signature"
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/login-institution",
+    "valueReference" : {
+      "reference" : "Organization/Organization-Dept-10008",
+      "display" : "Oncology Department"
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-documentLocation",
+    "valueString" : "file-server"
+  }],
+  "masterIdentifier" : {
+    "system" : "http://varian.com/fhir/identifier/DocumentReference/Id",
+    "value" : "231009ITRKML"
+  },
+  "status" : "current",
+  "docStatus" : "preliminary",
+  "_docStatus" : {
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/DocumentReference/status",
+          "code" : "Pending",
+          "display" : "Pending"
+        }]
+      }
+    }]
+  },
+  "type" : {
+    "coding" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-reference",
+        "valueReference" : {
+          "reference" : "/fhir/ValueSet?url=http://varian.com/fhir/ValueSet/documentreference-type&publisher=Organization-Prov-1"
+        }
+      }],
+      "system" : "http://varian.com/fhir/CodeSystem/DocumentReference/documentreference-type",
+      "code" : "572",
+      "display" : "Physician Note"
+    }],
+    "text" : "Physician Note"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/DocumentReference/documentreference-class",
+      "code" : "Patient Document",
+      "display" : "Patient Document"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/Patient-11",
+    "display" : "TreatSummary, Pat1"
+  },
+  "date" : "2023-10-09T03:38:14.873+05:30",
+  "author" : [{
+    "reference" : "Practitioner/Practitioner-1065",
+    "display" : "FhirTestDoc2"
+  }],
+  "custodian" : {
+    "reference" : "Organization/Organization-Prov-1",
+    "display" : "ACHospital"
+  },
+  "description" : "New Hi...This is a test document",
+  "content" : [{
+    "attachment" : {
+      "id" : "394.doc",
+      "contentType" : "application/msword",
+      "url" : "\\\\TESTCONSOLE1\\VA_DATA$\\FILEDATA\\DOCUMENTS\\2023Q4\\394.doc"
+    }
+  }]
+}

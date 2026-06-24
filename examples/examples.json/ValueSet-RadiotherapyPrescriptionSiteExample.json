@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "RadiotherapyPrescriptionSiteExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-site-example",
+  "version" : "1.0.0",
+  "name" : "RadiotherapyPrescriptionSiteExample",
+  "title" : "Radiotherapy Prescription SiteExample",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-07-26T13:25:01+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "description" : "Radiotherapy Prescription Site",
+  "copyright" : "Varian Medical Systems, Inc.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example"
+    }]
+  }
+}

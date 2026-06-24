@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Observation/Observation-Condition-DX-Stage-Category-200002-200002-M> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Observation-Condition-DX-Stage-Category-200002-200002-M"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Stage Category(Condition-Diagnosis contained resource) Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Stage Category example for the *Varian ARIA API Stage Category Profile.*" ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/StageCategory"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/StageCategory>
+     ] [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/Observation"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/Observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-Condition-DX-Stage-Category-200002-200002-M\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-Condition-DX-Stage-Category-200002-200002-M&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-StageCategory.html\">Observation-StageCategory</a>, <code>http://varian.com/fhir/v1/StructureDefinition/Observation</code></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: G <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#G)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08 AM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Well differentiated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#G1)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "G" ] ;
+       fhir:display [ fhir:v "G" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://varian.com/fhir/v1/Patient/Patient-152> ;
+     fhir:reference [ fhir:v "Patient/Patient-152" ] ;
+     fhir:display [ fhir:v "Wilson, Johnathan" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Timing ;
+     fhir:event ( [ fhir:v "2023-10-11T03:47:05+05:30"^^xsd:dateTime ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Pre-chemotherapy" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:issued [ fhir:v "2023-10-11T03:47:08.720+05:30"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+     fhir:display [ fhir:v "JohnWilsonFhir" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "G1" ] ;
+       fhir:display [ fhir:v "Well differentiated" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "AJCC 5th Ed." ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

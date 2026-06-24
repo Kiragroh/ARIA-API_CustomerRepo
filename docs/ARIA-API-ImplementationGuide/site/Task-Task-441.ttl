@@ -1,0 +1,179 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Task/Task-441> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Task-441"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Task Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Task example for the *Varian ARIA API Task Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "397780" ] ;
+     fhir:lastUpdated [ fhir:v "2023-10-09T03:40:27.160+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/Task"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/Task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"Task-441\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;Task-441&quot; Version &quot;397780&quot; Updated &quot;2023-10-09 03:40:27+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Task.html\">Task</a></p></div><p><b>task-minutesDuration</b>: 12 Minutes<span style=\"background: LightGoldenRodYellow\"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code Minutes = 'Minutes')</span></p><p><b>remindTime</b>: 10 Minutes</p><p><b>readOnly</b>: false</p><p><b>identifier</b>: id: FHIR_de6c679c-3ef2-4f84-994c-81bedb91e52c</p><p><b>basedOn</b>: <a href=\"ServiceRequest/ActivityInstance-4959\">ServiceRequest/ActivityInstance-4959</a></p><p><b>status</b>: ready</p><p><b>intent</b>: order</p><p><b>priority</b>: routine</p><p><b>code</b>: Special Review Activities <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activityDefinition-category#Special Review Activities)</span></p><p><b>focus</b>: <a href=\"ActivityDefinition/ActivityDefinition-340\">ActivityDefinition/ActivityDefinition-340: Patient Requesting Information Task</a></p><p><b>for</b>: <a href=\"Patient/Patient-235\">Patient/Patient-235: pt_gender, pt</a></p><p><b>authoredOn</b>: 2023-10-09 00:00:00+0530</p><p><b>lastModified</b>: 2023-10-09 03:40:27+0530</p><p><b>requester</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>owner</b>: <a href=\"Practitioner/Practitioner-1096\">Practitioner/Practitioner-1096: DSPName_1554503007318 (Profile Not Attached)</a></p><p><b>note</b>: Task Created by FHIR with Patient 235</p><h3>Restrictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Period</b></td><td><b>Recipient</b></td></tr><tr><td style=\"display: none\">*</td><td>?? --&gt; 2023-10-09 04:35:27+0530</td><td><a href=\"Practitioner/Practitioner-1096\">Practitioner/Practitioner-1096: DSPName_1554503007318 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1123\">Practitioner/Practitioner-1123: DSPName_1597106811831 (Profile Not Attached)</a>, <a href=\"Group/Group-1\">Group/Group-1: Clerical (Administration)</a>, <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></td></tr></table><blockquote><p><b>input</b></p><blockquote><p><b>id</b></p>985</blockquote><p><b>type</b>: Participant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Participant)</span></p><p><b>value</b>: <a href=\"Location-Location-1009.html\">Location/Location-1009: Treatment Room 1</a> &quot;API_machine&quot;</p></blockquote><blockquote><p><b>input</b></p><blockquote><p><b>id</b></p>986</blockquote><p><b>type</b>: Participant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Participant)</span></p><p><b>value</b>: <a href=\"Device/Device-1026\">Device/Device-1026: ExternalBeamId1</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/task-minutesDuration"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "12"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Minutes" ] ;
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/quantity-units"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Minutes" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/reminderTime"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Minutes" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/readOnly"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/task/UID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "FHIR_de6c679c-3ef2-4f84-994c-81bedb91e52c" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4959> ;
+     fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4959" ]
+  ] ) ; # 
+  fhir:status [
+     fhir:v "ready" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Task/task-status"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Open" ] ;
+           fhir:display [ fhir:v "Open" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:priority [
+     fhir:v "routine" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Task/task-priority"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Low" ] ;
+           fhir:display [ fhir:v "Low" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activityDefinition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Special Review Activities" ] ;
+       fhir:display [ fhir:v "Special Review Activities" ]
+     ] )
+  ] ; # 
+  fhir:focus [
+     fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-340> ;
+     fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-340" ] ;
+     fhir:display [ fhir:v "Patient Requesting Information Task" ]
+  ] ; # 
+  fhir:for [
+     fhir:link <http://varian.com/fhir/v1/Patient/Patient-235> ;
+     fhir:reference [ fhir:v "Patient/Patient-235" ] ;
+     fhir:display [ fhir:v "pt_gender, pt" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2023-10-09T00:00:00+05:30"^^xsd:dateTime] ; # 
+  fhir:lastModified [ fhir:v "2023-10-09T03:40:27+05:30"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+     fhir:display [ fhir:v "JohnWilsonFhir" ]
+  ] ; # 
+  fhir:owner [
+     fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1096> ;
+     fhir:id [ fhir:v "987" ] ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner-1096" ] ;
+     fhir:display [ fhir:v "DSPName_1554503007318 (Profile Not Attached)" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Task Created by FHIR with Patient 235" ]
+  ] ) ; # 
+  fhir:restriction [
+     fhir:period [
+       fhir:end [ fhir:v "2023-10-09T04:35:27+05:30"^^xsd:dateTime ]
+     ] ;
+     fhir:recipient ( [
+       fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1096> ;
+       fhir:id [ fhir:v "987" ] ;
+       fhir:reference [ fhir:v "Practitioner/Practitioner-1096" ] ;
+       fhir:display [ fhir:v "DSPName_1554503007318 (Profile Not Attached)" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1123> ;
+       fhir:id [ fhir:v "988" ] ;
+       fhir:reference [ fhir:v "Practitioner/Practitioner-1123" ] ;
+       fhir:display [ fhir:v "DSPName_1597106811831 (Profile Not Attached)" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/Group/Group-1> ;
+       fhir:id [ fhir:v "989" ] ;
+       fhir:reference [ fhir:v "Group/Group-1" ] ;
+       fhir:display [ fhir:v "Clerical (Administration)" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-1> ;
+       fhir:id [ fhir:v "Organization-Dept-1" ] ;
+       fhir:reference [ fhir:v "Organization/Organization-Dept-1" ] ;
+       fhir:display [ fhir:v "Radiation Therapy" ]
+     ] )
+  ] ; # 
+  fhir:input ( [
+     fhir:id [ fhir:v "985" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "Participant" ] ;
+         fhir:display [ fhir:v "Participant" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://varian.com/fhir/v1/Location/Location-1009> ;
+       fhir:id [ fhir:v "985" ] ;
+       fhir:reference [ fhir:v "Location/Location-1009" ] ;
+       fhir:display [ fhir:v "Treatment Room 1" ]
+     ]
+  ] [
+     fhir:id [ fhir:v "986" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "Participant" ] ;
+         fhir:display [ fhir:v "Participant" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://varian.com/fhir/v1/Device/Device-1026> ;
+       fhir:id [ fhir:v "986" ] ;
+       fhir:reference [ fhir:v "Device/Device-1026" ] ;
+       fhir:display [ fhir:v "ExternalBeamId1" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

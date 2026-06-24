@@ -1,0 +1,345 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Procedure/RadiotherapyCourseSummary-352-634> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadiotherapyCourseSummary-352-634"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "RadiotherapyCourseSummary-352-634" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Example Radiotherapy Course Summary." ]
+     ] ) ;
+     fhir:versionId [ fhir:v "4046788" ] ;
+     fhir:lastUpdated [ fhir:v "2023-08-18T17:09:58.147+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCourseSummary"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCourseSummary>
+     ] [
+       fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-course-summary>
+     ] [
+       fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-course-summary"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-course-summary>
+     ] [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"RadiotherapyCourseSummary-352-634\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;RadiotherapyCourseSummary-352-634&quot; Version &quot;4046788&quot; Updated &quot;2023-08-18 17:09:58+0200&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-RadiotherapyCourseSummary.html\">Radiotherapy Course Summary</a>, <a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-course-summary.html\">Radiotherapy Course Summary Profile</a>, <a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-course-summary.html\">Radiotherapy Course Summary</a>, <a href=\"http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-procedure.html\">US Core Procedure Profile</a></p></div><p><b>Radiotherapy Number of Sessions Extension</b>: 7</p><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html\">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using photons (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1156506007)</span></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html\">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Three dimensional external beam radiation therapy (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1162782007)</span></p></blockquote><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html\">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using electrons (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#45643008)</span></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html\">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Three dimensional external beam radiation therapy (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1162782007)</span></p></blockquote><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html\">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using photons (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1156506007)</span></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html\">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Two dimensional external beam radiation therapy (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1156526006)</span></p></blockquote><blockquote><p><b>Radiotherapy Dose Delivered To Volume Extension</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href=\"BodyStructure/BodyStructure-PV-774\">BodyStructure/BodyStructure-PV-774: PTVp</a></p><blockquote><p><b>url</b></p><code>totalDoseDelivered</code></blockquote><p><b>value</b>: 200.0 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>fractionsDelivered</code></blockquote><p><b>value</b>: 1</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-uniform-fractionation.html\">Uniform Fractionation</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html\">Primary Plan Dose</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html\">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><blockquote><p><b>Radiotherapy Dose Delivered To Volume Extension</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href=\"BodyStructure-BodyStructure-PV-681.html\">BodyStructure/BodyStructure-PV-681: LeftBreast</a></p><blockquote><p><b>url</b></p><code>totalDoseDelivered</code></blockquote><p><b>value</b>: 900.0 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>fractionsDelivered</code></blockquote><p><b>value</b>: 3</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-uniform-fractionation.html\">Uniform Fractionation</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html\">Primary Plan Dose</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html\">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><blockquote><p><b>Radiotherapy Dose Delivered To Volume Extension</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href=\"BodyStructure/BodyStructure-PV-680\">BodyStructure/BodyStructure-PV-680: LeftBreastBoost</a></p><blockquote><p><b>url</b></p><code>totalDoseDelivered</code></blockquote><p><b>value</b>: 1500.0 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>fractionsDelivered</code></blockquote><p><b>value</b>: 6</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-uniform-fractionation.html\">Uniform Fractionation</a></blockquote><p><b>value</b>: false</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html\">Primary Plan Dose</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html\">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><blockquote><p><b>Radiotherapy Dose Delivered To Volume Extension</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href=\"BodyStructure/BodyStructure-PV-679\">BodyStructure/BodyStructure-PV-679: RightBreast</a></p><blockquote><p><b>url</b></p><code>totalDoseDelivered</code></blockquote><p><b>value</b>: 900.0 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>fractionsDelivered</code></blockquote><p><b>value</b>: 3</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-uniform-fractionation.html\">Uniform Fractionation</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html\">Primary Plan Dose</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html\">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><p><b>Procedure Intent Extension</b>: Radical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (radiotherapy-therapeutic-intent#Radical)</span></p><p><b>identifier</b>: id: C1_Both_Breast (use: USUAL), id: 634 (use: OFFICIAL)</p><p><b>basedOn</b>: </p><ul><li><a href=\"ServiceRequest-RadiotherapyPlannedCourse-352-634.html\">ServiceRequest/RadiotherapyPlannedCourse-352-634: C1_Both_Breast</a></li><li><a href=\"ServiceRequest-RadiotherapyCoursePrescription-352-634.html\">ServiceRequest/RadiotherapyCoursePrescription-352-634: C1_Both_Breast</a></li></ul><p><b>status</b>: in-progress</p><p><b>category</b>: Radiation oncology AND/OR radiotherapy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108290001)</span></p><p><b>code</b>: Radiotherapy course of treatment (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1217123003)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-352.html\">Patient/Patient-352: Sister-22B, Jane</a> &quot; SISTER-22B&quot;</p><p><b>performed</b>: 2023-01-29 11:14:00+0100 --&gt; 2023-08-21 18:04:54+0200</p><p><b>reasonCode</b>: Malignant neoplasm: breast, unspecified <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html\">ICD-10</a>#C50.9)</span></p><p><b>reasonReference</b>: <a href=\"Condition/Condition-DX-65100000000000000156-2\">Condition/Condition-DX-65100000000000000156-2: C50.9:Malignant neoplasm: breast, unspecified</a></p><p><b>bodySite</b>: Breast, Left <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (radiotherapy-prescription-site#Breast, Left; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76752008 &quot;Breast structure (body structure)&quot;)</span>, Breast, Right <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (radiotherapy-prescription-site#Breast, Right; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76752008 &quot;Breast structure (body structure)&quot;)</span>, Oesophagus <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (radiotherapy-prescription-site#Oesophagus)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-sessions"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7"^^xsd:nonNegativeInteger ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1156506007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1156506007" ] ;
+           fhir:display [ fhir:v "External beam radiation therapy using photons (procedure)" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1162782007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1162782007" ] ;
+           fhir:display [ fhir:v "Three dimensional external beam radiation therapy (procedure)" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:45643008 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "45643008" ] ;
+           fhir:display [ fhir:v "External beam radiation therapy using electrons (procedure)" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1162782007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1162782007" ] ;
+           fhir:display [ fhir:v "Three dimensional external beam radiation therapy (procedure)" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1156506007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1156506007" ] ;
+           fhir:display [ fhir:v "External beam radiation therapy using photons (procedure)" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1156526006 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1156526006" ] ;
+           fhir:display [ fhir:v "Two dimensional external beam radiation therapy (procedure)" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "volume"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/BodyStructure/BodyStructure-PV-774> ;
+         fhir:reference [ fhir:v "BodyStructure/BodyStructure-PV-774" ] ;
+         fhir:display [ fhir:v "PTVp" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "totalDoseDelivered"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "200.0"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cGy" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "fractionsDelivered"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-uniform-fractionation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "volume"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/BodyStructure/BodyStructure-PV-681> ;
+         fhir:reference [ fhir:v "BodyStructure/BodyStructure-PV-681" ] ;
+         fhir:display [ fhir:v "LeftBreast" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "totalDoseDelivered"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "900.0"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cGy" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "fractionsDelivered"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "3"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-uniform-fractionation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "volume"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/BodyStructure/BodyStructure-PV-680> ;
+         fhir:reference [ fhir:v "BodyStructure/BodyStructure-PV-680" ] ;
+         fhir:display [ fhir:v "LeftBreastBoost" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "totalDoseDelivered"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1500.0"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cGy" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "fractionsDelivered"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "6"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-uniform-fractionation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "volume"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/BodyStructure/BodyStructure-PV-679> ;
+         fhir:reference [ fhir:v "BodyStructure/BodyStructure-PV-679" ] ;
+         fhir:display [ fhir:v "RightBreast" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "totalDoseDelivered"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "900.0"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cGy" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "fractionsDelivered"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "3"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-uniform-fractionation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/radiotherapy-therapeutic-intent"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Radical" ] ;
+         fhir:display [ fhir:v "Radical" ]
+       ] ) ;
+       fhir:text [ fhir:v "Radical" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/radiotherapyCourseId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "C1_Both_Breast" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/RadiotherapyCourse/RadOnc-Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "634" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyPlannedCourse-352-634> ;
+     fhir:reference [ fhir:v "ServiceRequest/RadiotherapyPlannedCourse-352-634" ] ;
+     fhir:display [ fhir:v "C1_Both_Breast" ]
+  ] [
+     fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyCoursePrescription-352-634> ;
+     fhir:reference [ fhir:v "ServiceRequest/RadiotherapyCoursePrescription-352-634" ] ;
+     fhir:display [ fhir:v "C1_Both_Breast" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:108290001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "108290001" ] ;
+       fhir:display [ fhir:v "Radiation oncology AND/OR radiotherapy" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1217123003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1217123003" ] ;
+       fhir:display [ fhir:v "Radiotherapy course of treatment (regime/therapy)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://varian.com/fhir/v1/Patient/Patient-352> ;
+     fhir:reference [ fhir:v "Patient/Patient-352" ] ;
+     fhir:display [ fhir:v "Sister-22B, Jane" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2023-01-29T11:14:00+01:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-08-21T18:04:54+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C50.9" ] ;
+       fhir:display [ fhir:v "Malignant neoplasm: breast, unspecified" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://varian.com/fhir/v1/Condition/Condition-DX-65100000000000000156-2> ;
+     fhir:reference [ fhir:v "Condition/Condition-DX-65100000000000000156-2" ] ;
+     fhir:display [ fhir:v "C50.9:Malignant neoplasm: breast, unspecified" ]
+  ] ) ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Breast, Left" ] ;
+       fhir:display [ fhir:v "Breast, Left" ]
+     ] [
+       a sct:76752008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76752008" ] ;
+       fhir:display [ fhir:v "Breast structure (body structure)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Breast, Left" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Breast, Right" ] ;
+       fhir:display [ fhir:v "Breast, Right" ]
+     ] [
+       a sct:76752008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76752008" ] ;
+       fhir:display [ fhir:v "Breast structure (body structure)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Breast, Right" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Oesophagus" ] ;
+       fhir:display [ fhir:v "Oesophagus" ]
+     ] ) ;
+     fhir:text [ fhir:v "Oesophagus" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

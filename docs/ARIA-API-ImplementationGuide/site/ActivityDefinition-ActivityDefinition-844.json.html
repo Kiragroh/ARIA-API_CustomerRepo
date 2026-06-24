@@ -1,0 +1,421 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\ActivityDefinition Example - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"10.143"}
+    h3,h4,h5,h6{--heading-prefix:"10.143"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ActivityDefinition Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ActivityDefinition-ActivityDefinition-844.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ActivityDefinition-ActivityDefinition-844.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: ActivityDefinition Example - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-10-10
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ActivityDefinition-ActivityDefinition-844.json" no-download="true">Raw json</a> | <a href="ActivityDefinition-ActivityDefinition-844.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition">resourceType</a>" : "ActivityDefinition",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.id">id</a>" : "ActivityDefinition-844",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "ActivityDefinition Example"
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>" : "ActivityDefinition example for the *Varian ARIA API ActivityDefinition Profile.*"
+      }
+    ],
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "394588",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2023-10-10T15:27:49.330+05:30",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ActivityDefinition&lt;/b&gt;&lt;a name=\&quot;ActivityDefinition-844\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ActivityDefinition &amp;quot;ActivityDefinition-844&amp;quot; Version &amp;quot;394588&amp;quot; Updated &amp;quot;2023-10-10 15:27:49+0530&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ActivityDefinition.html\&quot;&gt;ActivityDefinition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;activityDefinition-category&lt;/b&gt;: C-Port Film &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (activityDefinition-category#C-Port Film)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 1.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: new Actiity&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2023-10-10 15:27:49+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: Varian Medical Systems, Inc.&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: Varian Medical Systems, Inc.: &lt;a href=\&quot;https://www.varian.com/\&quot;&gt;https://www.varian.com/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Desc&lt;/p&gt;&lt;h3&gt;UseContexts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;service-organization (Details: http://varian.com/fhir/CodeSystem/activityDefinition-usage-context-type code service-organization = 'service-organization', stated as 'service-organization')&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Organization/Organization-Dept-10015\&quot;&gt;Organization/Organization-Dept-10015: Ortho&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;copyright&lt;/b&gt;: Varian Medical Systems, Inc.&lt;/p&gt;&lt;p&gt;&lt;b&gt;kind&lt;/b&gt;: Appointment&lt;/p&gt;&lt;p&gt;&lt;b&gt;timing&lt;/b&gt;: 10 min&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code 10 = '10')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://varian.com/fhir/v1/StructureDefinition/activityDefinition-category",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/valueset-reference",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "/fhir/ValueSet?url=http://varian.com/fhir/ValueSet/activity-category&amp;publisher=Organization-Dept-10015"
+                }
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://varian.com/fhir/CodeSystem/activityDefinition-category",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "C-Port Film",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "C-Port Film"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.url">url</a>" : "http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.version">version</a>" : "1.0.0",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.name">name</a>" : "new Actiity",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.name">_name</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://varian.com/fhir/CodeSystem/activity-name",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "new Actiity",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "new Actiity"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.status">_status</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#code#code.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://varian.com/fhir/CodeSystem/ActivityDefinition/status",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Active",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Active"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.date">date</a>" : "2023-10-10T15:27:49+05:30",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.publisher">publisher</a>" : "Varian Medical Systems, Inc.",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Varian Medical Systems, Inc.",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://www.varian.com/"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.description">description</a>" : "Desc",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.useContext">useContext</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://varian.com/fhir/CodeSystem/activityDefinition-usage-context-type",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "service-organization",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "service-organization"
+      },
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.value[x]">valueReference</a>" : {
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/Organization-Dept-10015",
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Ortho"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.copyright">copyright</a>" : "Varian Medical Systems, Inc.",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.kind">kind</a>" : "Appointment",
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.kind">_kind</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#code#code.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://varian.com/fhir/CodeSystem/ActivityDefinition/activity-definition-kind",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Appointment",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Appointment"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/activitydefinition.html#ActivityDefinition.timing[x]">timingDuration</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Duration#Duration.value">value</a>" : 10,
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Duration#Duration.unit">unit</a>" : "min",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Duration#Duration.system">system</a>" : "http://unitsofmeasure.org",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Duration#Duration.code">code</a>" : "10"
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

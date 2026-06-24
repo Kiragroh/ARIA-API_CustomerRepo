@@ -1,0 +1,752 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "radiotherapy-prescription-site-example",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+  "version" : "1.0.0",
+  "name" : "RadiotherapyPrescriptionSiteExample",
+  "title" : "Radiotherapy Prescription Site Example",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-07-26T13:25:01+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "description" : "Radiotherapy Prescription Site",
+  "copyright" : "Varian Medical Systems, Inc.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 181,
+  "concept" : [{
+    "code" : "Abdomen",
+    "display" : "Abdomen"
+  },
+  {
+    "code" : "Adrenal Gland, Left",
+    "display" : "Adrenal Gland, Left"
+  },
+  {
+    "code" : "Adrenal Gland, Right",
+    "display" : "Adrenal Gland, Right"
+  },
+  {
+    "code" : "Anus",
+    "display" : "Anus"
+  },
+  {
+    "code" : "Arm, Left",
+    "display" : "Arm, Left"
+  },
+  {
+    "code" : "Arm, Right",
+    "display" : "Arm, Right"
+  },
+  {
+    "code" : "Axilla, Left",
+    "display" : "Axilla, Left"
+  },
+  {
+    "code" : "Axilla, Right",
+    "display" : "Axilla, Right"
+  },
+  {
+    "code" : "Back",
+    "display" : "Back"
+  },
+  {
+    "code" : "Bile Duct",
+    "display" : "Bile Duct"
+  },
+  {
+    "code" : "Bladder",
+    "display" : "Bladder"
+  },
+  {
+    "code" : "Bone Marrow (Diffuse)",
+    "display" : "Bone Marrow (Diffuse)"
+  },
+  {
+    "code" : "Brain",
+    "display" : "Brain"
+  },
+  {
+    "code" : "Breast, Left",
+    "display" : "Breast, Left"
+  },
+  {
+    "code" : "Breast, Right",
+    "display" : "Breast, Right"
+  },
+  {
+    "code" : "Bronchus, Left",
+    "display" : "Bronchus, Left"
+  },
+  {
+    "code" : "Bronchus, Right",
+    "display" : "Bronchus, Right"
+  },
+  {
+    "code" : "Buccal Mucosa",
+    "display" : "Buccal Mucosa"
+  },
+  {
+    "code" : "Caecum",
+    "display" : "Caecum"
+  },
+  {
+    "code" : "Canthus, Left Inner",
+    "display" : "Canthus, Left Inner"
+  },
+  {
+    "code" : "Canthus, Left Outer",
+    "display" : "Canthus, Left Outer"
+  },
+  {
+    "code" : "Canthus, Right Inner",
+    "display" : "Canthus, Right Inner"
+  },
+  {
+    "code" : "Canthus, Right Outer",
+    "display" : "Canthus, Right Outer"
+  },
+  {
+    "code" : "Cervical Spine",
+    "display" : "Cervical Spine"
+  },
+  {
+    "code" : "Cervix",
+    "display" : "Cervix"
+  },
+  {
+    "code" : "Cheek, Left",
+    "display" : "Cheek, Left"
+  },
+  {
+    "code" : "Cheek, Right",
+    "display" : "Cheek, Right"
+  },
+  {
+    "code" : "Chest Wall, Left",
+    "display" : "Chest Wall, Left"
+  },
+  {
+    "code" : "Chest Wall, Right",
+    "display" : "Chest Wall, Right"
+  },
+  {
+    "code" : "Coccyx",
+    "display" : "Coccyx"
+  },
+  {
+    "code" : "Cochlea",
+    "display" : "Cochlea"
+  },
+  {
+    "code" : "Colon",
+    "display" : "Colon"
+  },
+  {
+    "code" : "Cranium",
+    "display" : "Cranium"
+  },
+  {
+    "code" : "Deep Cervical Chain Nodes",
+    "display" : "Deep Cervical Chain Nodes"
+  },
+  {
+    "code" : "Deep Inguinal Nodes",
+    "display" : "Deep Inguinal Nodes"
+  },
+  {
+    "code" : "Duodenum",
+    "display" : "Duodenum"
+  },
+  {
+    "code" : "Ethmoid Sinus",
+    "display" : "Ethmoid Sinus"
+  },
+  {
+    "code" : "Eye, Left",
+    "display" : "Eye, Left"
+  },
+  {
+    "code" : "Eye, Right",
+    "display" : "Eye, Right"
+  },
+  {
+    "code" : "Face",
+    "display" : "Face"
+  },
+  {
+    "code" : "Fallopian Tube, Left",
+    "display" : "Fallopian Tube, Left"
+  },
+  {
+    "code" : "Fallopian Tube, Right",
+    "display" : "Fallopian Tube, Right"
+  },
+  {
+    "code" : "Femur Left",
+    "display" : "Femur Left"
+  },
+  {
+    "code" : "Femur Right",
+    "display" : "Femur Right"
+  },
+  {
+    "code" : "Fibula, Left",
+    "display" : "Fibula, Left"
+  },
+  {
+    "code" : "Fibula, Right",
+    "display" : "Fibula, Right"
+  },
+  {
+    "code" : "Foot, Left",
+    "display" : "Foot, Left"
+  },
+  {
+    "code" : "Foot, Right",
+    "display" : "Foot, Right"
+  },
+  {
+    "code" : "Forearm, Left",
+    "display" : "Forearm, Left"
+  },
+  {
+    "code" : "Forearm, Right",
+    "display" : "Forearm, Right"
+  },
+  {
+    "code" : "Frontal Lobe",
+    "display" : "Frontal Lobe"
+  },
+  {
+    "code" : "Gall Bladder",
+    "display" : "Gall Bladder"
+  },
+  {
+    "code" : "Groin, Left",
+    "display" : "Groin, Left"
+  },
+  {
+    "code" : "Groin, Right",
+    "display" : "Groin, Right"
+  },
+  {
+    "code" : "Hand, Left",
+    "display" : "Hand, Left"
+  },
+  {
+    "code" : "Hand, Right",
+    "display" : "Hand, Right"
+  },
+  {
+    "code" : "Hard Palate",
+    "display" : "Hard Palate"
+  },
+  {
+    "code" : "Head and Neck",
+    "display" : "Head and Neck"
+  },
+  {
+    "code" : "Heart",
+    "display" : "Heart"
+  },
+  {
+    "code" : "Hemi-Body, Lower",
+    "display" : "Hemi-Body, Lower"
+  },
+  {
+    "code" : "Hemi-Body, Upper",
+    "display" : "Hemi-Body, Upper"
+  },
+  {
+    "code" : "Hip, Left",
+    "display" : "Hip, Left"
+  },
+  {
+    "code" : "Hip, Right",
+    "display" : "Hip, Right"
+  },
+  {
+    "code" : "Humerus, Left",
+    "display" : "Humerus, Left"
+  },
+  {
+    "code" : "Humerus, Right",
+    "display" : "Humerus, Right"
+  },
+  {
+    "code" : "Ileum",
+    "display" : "Ileum"
+  },
+  {
+    "code" : "Ilium, Left",
+    "display" : "Ilium, Left"
+  },
+  {
+    "code" : "Ilium, Right",
+    "display" : "Ilium, Right"
+  },
+  {
+    "code" : "Infraclavicular Nodes",
+    "display" : "Infraclavicular Nodes"
+  },
+  {
+    "code" : "Internal Iliac Nodes",
+    "display" : "Internal Iliac Nodes"
+  },
+  {
+    "code" : "Ischium",
+    "display" : "Ischium"
+  },
+  {
+    "code" : "Jejunum",
+    "display" : "Jejunum"
+  },
+  {
+    "code" : "Kidney, Left",
+    "display" : "Kidney, Left"
+  },
+  {
+    "code" : "Kidney, Right",
+    "display" : "Kidney, Right"
+  },
+  {
+    "code" : "Knee, Left",
+    "display" : "Knee, Left"
+  },
+  {
+    "code" : "Knee, Right",
+    "display" : "Knee, Right"
+  },
+  {
+    "code" : "Laryngopharynx",
+    "display" : "Laryngopharynx"
+  },
+  {
+    "code" : "Larynx",
+    "display" : "Larynx"
+  },
+  {
+    "code" : "Leg, Left",
+    "display" : "Leg, Left"
+  },
+  {
+    "code" : "Leg, Right",
+    "display" : "Leg, Right"
+  },
+  {
+    "code" : "Lip, Lower",
+    "display" : "Lip, Lower"
+  },
+  {
+    "code" : "Lip, Upper",
+    "display" : "Lip, Upper"
+  },
+  {
+    "code" : "Liver",
+    "display" : "Liver"
+  },
+  {
+    "code" : "Lumbar Spine",
+    "display" : "Lumbar Spine"
+  },
+  {
+    "code" : "Lung, Left",
+    "display" : "Lung, Left"
+  },
+  {
+    "code" : "Lung, Right",
+    "display" : "Lung, Right"
+  },
+  {
+    "code" : "Mandible",
+    "display" : "Mandible"
+  },
+  {
+    "code" : "Maxilla",
+    "display" : "Maxilla"
+  },
+  {
+    "code" : "Maxillary Antrum",
+    "display" : "Maxillary Antrum"
+  },
+  {
+    "code" : "Meninges",
+    "display" : "Meninges"
+  },
+  {
+    "code" : "Middle Ear",
+    "display" : "Middle Ear"
+  },
+  {
+    "code" : "Nasopharynx",
+    "display" : "Nasopharynx"
+  },
+  {
+    "code" : "Neck",
+    "display" : "Neck"
+  },
+  {
+    "code" : "Neck Left",
+    "display" : "Neck Left"
+  },
+  {
+    "code" : "Neck Right",
+    "display" : "Neck Right"
+  },
+  {
+    "code" : "Nipple, Left",
+    "display" : "Nipple, Left"
+  },
+  {
+    "code" : "Nipple, Right",
+    "display" : "Nipple, Right"
+  },
+  {
+    "code" : "Nose",
+    "display" : "Nose"
+  },
+  {
+    "code" : "Occipital Lobe",
+    "display" : "Occipital Lobe"
+  },
+  {
+    "code" : "Oesophagus",
+    "display" : "Oesophagus"
+  },
+  {
+    "code" : "Orbit Left",
+    "display" : "Orbit Left"
+  },
+  {
+    "code" : "Orbit Right",
+    "display" : "Orbit Right"
+  },
+  {
+    "code" : "Oropharynx",
+    "display" : "Oropharynx"
+  },
+  {
+    "code" : "Ovary, Left",
+    "display" : "Ovary, Left"
+  },
+  {
+    "code" : "Ovary, Right",
+    "display" : "Ovary, Right"
+  },
+  {
+    "code" : "Pancreas",
+    "display" : "Pancreas"
+  },
+  {
+    "code" : "Paranasal Sinus",
+    "display" : "Paranasal Sinus"
+  },
+  {
+    "code" : "Para-Sternal Nodes",
+    "display" : "Para-Sternal Nodes"
+  },
+  {
+    "code" : "ParaThyroid",
+    "display" : "ParaThyroid"
+  },
+  {
+    "code" : "Parietal Lobe",
+    "display" : "Parietal Lobe"
+  },
+  {
+    "code" : "Parotid, Left",
+    "display" : "Parotid, Left"
+  },
+  {
+    "code" : "Parotid, Right",
+    "display" : "Parotid, Right"
+  },
+  {
+    "code" : "Pelvis",
+    "display" : "Pelvis"
+  },
+  {
+    "code" : "Penis",
+    "display" : "Penis"
+  },
+  {
+    "code" : "Penis, Glans",
+    "display" : "Penis, Glans"
+  },
+  {
+    "code" : "Perineum",
+    "display" : "Perineum"
+  },
+  {
+    "code" : "Pharynx",
+    "display" : "Pharynx"
+  },
+  {
+    "code" : "Pineal Gland",
+    "display" : "Pineal Gland"
+  },
+  {
+    "code" : "Pinna, Left",
+    "display" : "Pinna, Left"
+  },
+  {
+    "code" : "Pinna, Right",
+    "display" : "Pinna, Right"
+  },
+  {
+    "code" : "Pituitary",
+    "display" : "Pituitary"
+  },
+  {
+    "code" : "Post-Cricoid",
+    "display" : "Post-Cricoid"
+  },
+  {
+    "code" : "Pre-Sacral Nodes",
+    "display" : "Pre-Sacral Nodes"
+  },
+  {
+    "code" : "Prostate",
+    "display" : "Prostate"
+  },
+  {
+    "code" : "Prostate and Seminal Vesicles",
+    "display" : "Prostate and Seminal Vesicles"
+  },
+  {
+    "code" : "Pubis, Left",
+    "display" : "Pubis, Left"
+  },
+  {
+    "code" : "Pubis, Right",
+    "display" : "Pubis, Right"
+  },
+  {
+    "code" : "Radius, Left",
+    "display" : "Radius, Left"
+  },
+  {
+    "code" : "Radius, Right",
+    "display" : "Radius, Right"
+  },
+  {
+    "code" : "Rectum",
+    "display" : "Rectum"
+  },
+  {
+    "code" : "Retina, Left",
+    "display" : "Retina, Left"
+  },
+  {
+    "code" : "Retina, Right",
+    "display" : "Retina, Right"
+  },
+  {
+    "code" : "Ribs, Left",
+    "display" : "Ribs, Left"
+  },
+  {
+    "code" : "Ribs, Right",
+    "display" : "Ribs, Right"
+  },
+  {
+    "code" : "Sacro-Iliac Joints",
+    "display" : "Sacro-Iliac Joints"
+  },
+  {
+    "code" : "Sacro-Iliac, Left",
+    "display" : "Sacro-Iliac, Left"
+  },
+  {
+    "code" : "Sacro-Iliac, Right",
+    "display" : "Sacro-Iliac, Right"
+  },
+  {
+    "code" : "Sacrum",
+    "display" : "Sacrum"
+  },
+  {
+    "code" : "Scalp",
+    "display" : "Scalp"
+  },
+  {
+    "code" : "Scapula, Left",
+    "display" : "Scapula, Left"
+  },
+  {
+    "code" : "Scapula, Right",
+    "display" : "Scapula, Right"
+  },
+  {
+    "code" : "Scrotum",
+    "display" : "Scrotum"
+  },
+  {
+    "code" : "Seminal Vesicles",
+    "display" : "Seminal Vesicles"
+  },
+  {
+    "code" : "Soft Palate",
+    "display" : "Soft Palate"
+  },
+  {
+    "code" : "Spinal Cord",
+    "display" : "Spinal Cord"
+  },
+  {
+    "code" : "Spinal Cord, Cervical",
+    "display" : "Spinal Cord, Cervical"
+  },
+  {
+    "code" : "Spinal Cord, Lumbar",
+    "display" : "Spinal Cord, Lumbar"
+  },
+  {
+    "code" : "Spinal Cord, Thoracic",
+    "display" : "Spinal Cord, Thoracic"
+  },
+  {
+    "code" : "Spleen",
+    "display" : "Spleen"
+  },
+  {
+    "code" : "Stomach",
+    "display" : "Stomach"
+  },
+  {
+    "code" : "Sublingual Glands",
+    "display" : "Sublingual Glands"
+  },
+  {
+    "code" : "Submandibular Glands",
+    "display" : "Submandibular Glands"
+  },
+  {
+    "code" : "Submandibular Nodes",
+    "display" : "Submandibular Nodes"
+  },
+  {
+    "code" : "Superficial Inguinal Nodes",
+    "display" : "Superficial Inguinal Nodes"
+  },
+  {
+    "code" : "Temporal Lobe",
+    "display" : "Temporal Lobe"
+  },
+  {
+    "code" : "Testis",
+    "display" : "Testis"
+  },
+  {
+    "code" : "Thigh",
+    "display" : "Thigh"
+  },
+  {
+    "code" : "Thorax",
+    "display" : "Thorax"
+  },
+  {
+    "code" : "Thymus",
+    "display" : "Thymus"
+  },
+  {
+    "code" : "Thyroid",
+    "display" : "Thyroid"
+  },
+  {
+    "code" : "Tibia, Left",
+    "display" : "Tibia, Left"
+  },
+  {
+    "code" : "Tibia, Right",
+    "display" : "Tibia, Right"
+  },
+  {
+    "code" : "Tongue",
+    "display" : "Tongue"
+  },
+  {
+    "code" : "Tonsil, Left",
+    "display" : "Tonsil, Left"
+  },
+  {
+    "code" : "Tonsil, Right",
+    "display" : "Tonsil, Right"
+  },
+  {
+    "code" : "Total Body",
+    "display" : "Total Body"
+  },
+  {
+    "code" : "Total Skin",
+    "display" : "Total Skin"
+  },
+  {
+    "code" : "Trachea",
+    "display" : "Trachea"
+  },
+  {
+    "code" : "Ulna, Left",
+    "display" : "Ulna, Left"
+  },
+  {
+    "code" : "Ulna, Right",
+    "display" : "Ulna, Right"
+  },
+  {
+    "code" : "Ureter, Left",
+    "display" : "Ureter, Left"
+  },
+  {
+    "code" : "Ureter, Right",
+    "display" : "Ureter, Right"
+  },
+  {
+    "code" : "Urethra",
+    "display" : "Urethra"
+  },
+  {
+    "code" : "Uterus",
+    "display" : "Uterus"
+  },
+  {
+    "code" : "Vagina",
+    "display" : "Vagina"
+  },
+  {
+    "code" : "Vertebrae, Cervical",
+    "display" : "Vertebrae, Cervical"
+  },
+  {
+    "code" : "Vertebrae, Lumbar",
+    "display" : "Vertebrae, Lumbar"
+  },
+  {
+    "code" : "Vertebrae, Sacral",
+    "display" : "Vertebrae, Sacral"
+  },
+  {
+    "code" : "Vertebrae, Thoracic",
+    "display" : "Vertebrae, Thoracic"
+  },
+  {
+    "code" : "Vulva",
+    "display" : "Vulva"
+  },
+  {
+    "code" : "Tumor bed",
+    "display" : "Tumor bed"
+  }]
+}

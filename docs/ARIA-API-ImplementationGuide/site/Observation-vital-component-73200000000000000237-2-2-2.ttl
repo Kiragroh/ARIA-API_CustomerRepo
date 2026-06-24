@@ -1,0 +1,129 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Observation/vital-component-73200000000000000237-2-2-2> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vital-component-73200000000000000237-2-2-2"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "vital-component Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "vital-component example for the *Varian ARIA API vital-component Profile.*" ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/VitalSign"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/VitalSign>
+     ] [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/Observation"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/Observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"vital-component-73200000000000000237-2-2-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;vital-component-73200000000000000237-2-2-2&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <code>http://varian.com/fhir/v1/StructureDefinition/VitalSign</code>, <code>http://varian.com/fhir/v1/StructureDefinition/Observation</code></p></div><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 13, id: 3</p><p><b>basedOn</b>: <a href=\"ServiceRequest/LabOrder-73200000000000000237-2-2\">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Height <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (observation-vital-code#Height)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-244\">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 5.0000 cms<span style=\"background: LightGoldenRodYellow\"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code cms = 'cms')</span></p><p><b>interpretation</b>: Critical low <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#LL; observation-interpretation#LL &quot;Below Lower panic limits&quot;)</span>, Greater Than <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (observation-interpretationsymbol#&gt;)</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>55.0000 cms<span style=\"background: LightGoldenRodYellow\"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code cms = 'cms')</span></td><td>59.0000 cms<span style=\"background: LightGoldenRodYellow\"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code cms = 'cms')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/modifier-application-code"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "radiation-oncology" ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/assertedOn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-10-10T14:42:55+05:30"^^xsd:dateTime ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Observation/result-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "13" ]
+  ] [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/LabTestId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://varian.com/fhir/v1/ServiceRequest/LabOrder-73200000000000000237-2-2> ;
+     fhir:reference [ fhir:v "ServiceRequest/LabOrder-73200000000000000237-2-2" ]
+  ] ) ; # 
+  fhir:status [
+     fhir:v "final" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Observation/status"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Approved" ] ;
+           fhir:display [ fhir:v "Approved" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/observation-vital-code"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Height" ] ;
+       fhir:display [ fhir:v "Height" ]
+     ] ) ;
+     fhir:text [ fhir:v "Height" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://varian.com/fhir/v1/Patient/Patient-244> ;
+     fhir:reference [ fhir:v "Patient/Patient-244" ] ;
+     fhir:display [ fhir:v "Implementation, Guide" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-10-10T14:40:48+05:30"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+     fhir:display [ fhir:v "JohnWilsonFhir" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "5.0000"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "cms" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/quantity-units"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "cms" ]
+  ] ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LL" ] ;
+       fhir:display [ fhir:v "Critical low" ]
+     ] [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/observation-interpretation"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LL" ] ;
+       fhir:display [ fhir:v "Below Lower panic limits" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v ">" ] ;
+       fhir:display [ fhir:v "Greater Than" ]
+     ] )
+  ] ) ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "55.0000"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "cms" ] ;
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/quantity-units"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cms" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "59.0000"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "cms" ] ;
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/quantity-units"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cms" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

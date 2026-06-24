@@ -17,10 +17,19 @@ Das PDF beschreibt die Grundidee, lokale Konfiguration, Token-Service, FHIR-Basi
 | Pfad | Zweck |
 |---|---|
 | `docs/ARIA_API_VAIS_Short_Setup_Guide_V3.pdf` | kurzer Setup- und Orientierungsguide |
+| `docs/ARIA-API-ImplementationGuide/` | vollstaendiger statischer ARIA API Implementation Guide als weiterfuehrende Referenz |
+| `examples/examples.json/` | JSON-Beispiele und Profile aus dem Implementation Guide |
 | `examples/fhir-document-upload/` | nachvollziehbares DocumentReference-Upload-Beispiel mit Dry-Run |
 | `notebooks/aria_fhir_github_share.ipynb` | teilbares Notebook ohne lokale IDs, Hostnamen oder gespeicherte API-Antworten |
 | `aria_fhir_cli.py` | kleine CLI fuer Token-, Metadata- und Patient-Probes |
 | `patient_fhir_query.py` | fokussierte Patient-Suche ueber FHIR |
+
+## Weiterfuehrende Quellen
+
+- [ARIA API Implementation Guide](docs/ARIA-API-ImplementationGuide/index.html)
+- [FHIR-Artefakte und JSON-Beispiele](examples/examples.json/)
+
+Die JSON-Beispiele stammen aus dem Implementation Guide. Lokale API-Antworten, produktive Endpunkte und Patientendaten gehoeren nicht in dieses Repository.
 
 ## Lokale Konfiguration
 

@@ -1,0 +1,3101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/ImplementationGuide/varian.public.profile> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "varian.public.profile"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://varian.com/fhir/v1/ImplementationGuide/varian.public.profile"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "varianpublicprofile"] ; # 
+  fhir:title [ fhir:v "ARIA API Profile Implementation Guide"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-07-26T13:25:01+05:30"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Varian Medical Systems, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.varian.com/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Varian ARIA API Implementation Guide"] ; # 
+  fhir:copyright [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:packageId [ fhir:v "varian.public.profile"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "6.0.2" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
+     fhir:version [ fhir:v "4.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_mcode" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.mcode" ] ;
+     fhir:version [ fhir:v "2.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_codex_radiation_therapy" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/ImplementationGuide/hl7.fhir.us.codex-radiation-therapy"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/codex-radiation-therapy/ImplementationGuide/hl7.fhir.us.codex-radiation-therapy>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.codex-radiation-therapy" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2023+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "R4 Release" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "show-inherited-invariants" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "usage-stats-opt-out" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludexml" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludejsn" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludettl" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludemap" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "generate" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "xml" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "generate" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "json" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://varian.com/fhir/v1/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2023+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "R4 Release" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "show-inherited-invariants" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "usage-stats-opt-out" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludexml" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludejsn" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "false" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludettl" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludemap" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "generate" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "xml" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "generate" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "json" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://varian.com/fhir/v1/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/DocumentReference> ;
+         fhir:reference [ fhir:v "StructureDefinition/DocumentReference" ]
+       ] ;
+       fhir:name [ fhir:v "A reference to a document" ] ;
+       fhir:description [ fhir:v "This resource identifies the healthcare documentation created for a Patient in ARIA" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/careplan-activityAdditionalPerformer> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-activityAdditionalPerformer" ]
+       ] ;
+       fhir:name [ fhir:v "activityAdditionalPerformer" ] ;
+       fhir:description [ fhir:v "Performer of the Activity of Care Plan." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/careplan-activityBasedOn> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-activityBasedOn" ]
+       ] ;
+       fhir:name [ fhir:v "activityBasedOn" ] ;
+       fhir:description [ fhir:v "The predecessor activity this care plan activity is based on." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition> ;
+         fhir:reference [ fhir:v "StructureDefinition/ActivityDefinition" ]
+       ] ;
+       fhir:name [ fhir:v "ActivityDefinition" ] ;
+       fhir:description [ fhir:v "This resource allows for the definition of some activity to be performed, it may be used to specify actions to be taken as part of a workflow, appointment or tasks." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-844" ]
+       ] ;
+       fhir:name [ fhir:v "ActivityDefinition Example" ] ;
+       fhir:description [ fhir:v "ActivityDefinition example for the *Varian ARIA API ActivityDefinition Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/activityDefinition-category> ;
+         fhir:reference [ fhir:v "StructureDefinition/activityDefinition-category" ]
+       ] ;
+       fhir:name [ fhir:v "activityDefinition-category" ] ;
+       fhir:description [ fhir:v "Classification of Activity." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/address-telephone1> ;
+         fhir:reference [ fhir:v "StructureDefinition/address-telephone1" ]
+       ] ;
+       fhir:name [ fhir:v "address-telephone1" ] ;
+       fhir:description [ fhir:v "Address Telephone 1 Number." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/AllergyIntolerance> ;
+         fhir:reference [ fhir:v "StructureDefinition/AllergyIntolerance" ]
+       ] ;
+       fhir:name [ fhir:v "AllergyIntolerance" ] ;
+       fhir:description [ fhir:v "AllergyIntolerance represents Patient's Allergies in ARIA.\n\nAll recorded allergies or NO KNOWN ALLERGY status will be reflected using this." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-allergy-category> ;
+         fhir:reference [ fhir:v "ValueSet/aria-allergy-category" ]
+       ] ;
+       fhir:name [ fhir:v "AllergyIntolerance ARIA Category" ] ;
+       fhir:description [ fhir:v "This value set defines different allergy types configured in Aria. \nList of configured allergy categories are available under valueset 'aria-allergy-category'. \nAll values can be accessed using $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/allergy-intolerance-category." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "AllergyIntolerance" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/AllergyIntolerance/AllergyIntolerance-73200000000000000237-2> ;
+         fhir:reference [ fhir:v "AllergyIntolerance/AllergyIntolerance-73200000000000000237-2" ]
+       ] ;
+       fhir:name [ fhir:v "AllergyIntolerance Example" ] ;
+       fhir:description [ fhir:v "AllergyIntolerance example for the *Varian AllergyIntolerance API Group Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/AllergyIntolerance"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/AllergyIntolerance>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/allergyIntolerance-allergyCategoryInAria> ;
+         fhir:reference [ fhir:v "StructureDefinition/allergyIntolerance-allergyCategoryInAria" ]
+       ] ;
+       fhir:name [ fhir:v "allergyIntolerance-allergyCategoryInAria" ] ;
+       fhir:description [ fhir:v "ARIA Coded Allergy category." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/allergyIntolerance-reaction-lifeThreatening> ;
+         fhir:reference [ fhir:v "StructureDefinition/allergyIntolerance-reaction-lifeThreatening" ]
+       ] ;
+       fhir:name [ fhir:v "allergyIntolerance-reaction-lifeThreatening" ] ;
+       fhir:description [ fhir:v "ARIA allergy reaction." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Appointment> ;
+         fhir:reference [ fhir:v "StructureDefinition/Appointment" ]
+       ] ;
+       fhir:name [ fhir:v "Appointment" ] ;
+       fhir:description [ fhir:v "A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Appointment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Appointment/Appointment-162> ;
+         fhir:reference [ fhir:v "Appointment/Appointment-162" ]
+       ] ;
+       fhir:name [ fhir:v "Appointment Example" ] ;
+       fhir:description [ fhir:v "Appointment example for the *Varian ARIA API Appointment Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Appointment"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Appointment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/appointment-actualTime> ;
+         fhir:reference [ fhir:v "StructureDefinition/appointment-actualTime" ]
+       ] ;
+       fhir:name [ fhir:v "appointment-actualTime" ] ;
+       fhir:description [ fhir:v "Actual Start date & Actual End date for Appointment." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/appointment-ariaStatus> ;
+         fhir:reference [ fhir:v "StructureDefinition/appointment-ariaStatus" ]
+       ] ;
+       fhir:name [ fhir:v "appointment-ariaStatus" ] ;
+       fhir:description [ fhir:v "ARIA Specific Status." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/appointment-visitInstructions> ;
+         fhir:reference [ fhir:v "StructureDefinition/appointment-visitInstructions" ]
+       ] ;
+       fhir:name [ fhir:v "appointment-visitInstructions" ] ;
+       fhir:description [ fhir:v "Visit instructions of a MO appointment" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/appointment-newPatientIndicator> ;
+         fhir:reference [ fhir:v "StructureDefinition/appointment-newPatientIndicator" ]
+       ] ;
+       fhir:name [ fhir:v "appointment-visitInstructions" ] ;
+       fhir:description [ fhir:v "Visit instructions of a MO appointment" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/approvalDate> ;
+         fhir:reference [ fhir:v "StructureDefinition/approvalDate" ]
+       ] ;
+       fhir:name [ fhir:v "approvalDate" ] ;
+       fhir:description [ fhir:v "The date on which the Physical Exam record approved." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-procedurecode> ;
+         fhir:reference [ fhir:v "ValueSet/aria-procedurecode" ]
+       ] ;
+       fhir:name [ fhir:v "aria-procedurecode" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/assertedOn> ;
+         fhir:reference [ fhir:v "StructureDefinition/assertedOn" ]
+       ] ;
+       fhir:name [ fhir:v "assertedOn" ] ;
+       fhir:description [ fhir:v "Date on which observation result value has been approved." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/AuditEvent> ;
+         fhir:reference [ fhir:v "StructureDefinition/AuditEvent" ]
+       ] ;
+       fhir:name [ fhir:v "Audit Event" ] ;
+       fhir:description [ fhir:v "A record of an event made for purposes of maintaining a security log. Typical uses include detection of intrusion attempts and monitoring for inappropriate usage." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "AuditEvent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/AuditEvent/AuditEvent-1> ;
+         fhir:reference [ fhir:v "AuditEvent/AuditEvent-1" ]
+       ] ;
+       fhir:name [ fhir:v "AuditEvent Example" ] ;
+       fhir:description [ fhir:v "AuditEvent example for the *Varian ARIA API AuditEvent Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/AuditEvent"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/AuditEvent>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/BodyStructure> ;
+         fhir:reference [ fhir:v "StructureDefinition/BodyStructure" ]
+       ] ;
+       fhir:name [ fhir:v "BodyStructure" ] ;
+       fhir:description [ fhir:v "This resource record details about an anatomical structure. This resource may be used when a coded concept does not provide the necessary detail needed for the use case." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Condition/Condition-DX-94100000000000000149-12> ;
+         fhir:reference [ fhir:v "Condition/Condition-DX-94100000000000000149-12" ]
+       ] ;
+       fhir:name [ fhir:v "Cancer Condition Example" ] ;
+       fhir:description [ fhir:v "Cancer Condition example for the *Varian ARIA API Cancer Condition Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/CancerCondition"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/CancerCondition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/CarePlan> ;
+         fhir:reference [ fhir:v "StructureDefinition/CarePlan" ]
+       ] ;
+       fhir:name [ fhir:v "CarePlan" ] ;
+       fhir:description [ fhir:v "Care Plan profile is derived from FHIR Domain Resource.\nIt represents care plan in ARIA ." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/CarePlan/CarePlan-237> ;
+         fhir:reference [ fhir:v "CarePlan/CarePlan-237" ]
+       ] ;
+       fhir:name [ fhir:v "CarePlan Example" ] ;
+       fhir:description [ fhir:v "CarePlan example for the *Varian ARIA API CarePlan Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/CarePlan"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/CarePlan>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-careplan-template> ;
+         fhir:reference [ fhir:v "ValueSet/aria-careplan-template" ]
+       ] ;
+       fhir:name [ fhir:v "CarePlan Template" ] ;
+       fhir:description [ fhir:v "The configured careplan template in Aria. \nList of configured templates are accessible using valueset 'aria-careplan-template'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/careplan-template" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-activity-definition" ]
+       ] ;
+       fhir:name [ fhir:v "careplan-activity-definition" ] ;
+       fhir:description [ fhir:v "Base Activity Definition reference on which this Care Plan activity is planned." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/careplan-activityAutoAssignOncologist> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-activityAutoAssignOncologist" ]
+       ] ;
+       fhir:name [ fhir:v "careplan-activityAutoAssignOncologist" ] ;
+       fhir:description [ fhir:v "Careplan activities auto Assign oncologist flag." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/CareTeam> ;
+         fhir:reference [ fhir:v "StructureDefinition/CareTeam" ]
+       ] ;
+       fhir:name [ fhir:v "CareTeam" ] ;
+       fhir:description [ fhir:v "This Resource includes all the people and organizations who plan to participate in the coordination and delivery of care for a patient.\n\nCareteam represents department and practitioner (doctor/staff) assigned to the Patient in ARIA.\n\nARIA does not configure predefined teams, so single Careteam per Patient will represent associations with Department and practitioner." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CareTeam" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/CareTeam/CareTeam-8> ;
+         fhir:reference [ fhir:v "CareTeam/CareTeam-8" ]
+       ] ;
+       fhir:name [ fhir:v "CareTeam Example" ] ;
+       fhir:description [ fhir:v "CareTeam example for the *Varian ARIA API CareTeam Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/CareTeam"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/CareTeam>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/ChargeItem> ;
+         fhir:reference [ fhir:v "StructureDefinition/ChargeItem" ]
+       ] ;
+       fhir:name [ fhir:v "ChargeItem" ] ;
+       fhir:description [ fhir:v "This Resource represents charges captured for an activity." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ChargeItem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ChargeItem/ChargeItem-32-830> ;
+         fhir:reference [ fhir:v "ChargeItem/ChargeItem-32-830" ]
+       ] ;
+       fhir:name [ fhir:v "ChargeItem Example" ] ;
+       fhir:description [ fhir:v "ChargeItem example for the *Varian ARIA API ChargeItem Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/ChargeItem"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/ChargeItem>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/chargeItem-associateCharge> ;
+         fhir:reference [ fhir:v "StructureDefinition/chargeItem-associateCharge" ]
+       ] ;
+       fhir:name [ fhir:v "chargeItem-associateCharge" ] ;
+       fhir:description [ fhir:v "Medical charges with procedure." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/chargeitem-category> ;
+         fhir:reference [ fhir:v "StructureDefinition/chargeitem-category" ]
+       ] ;
+       fhir:name [ fhir:v "chargeitem-category" ] ;
+       fhir:description [ fhir:v "Type of Charge" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/chargeItem-codeModifier> ;
+         fhir:reference [ fhir:v "StructureDefinition/chargeItem-codeModifier" ]
+       ] ;
+       fhir:name [ fhir:v "chargeItem-codeModifier" ] ;
+       fhir:description [ fhir:v "Code Modifier Override on base Procedure code." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/chargeitem-completedOn> ;
+         fhir:reference [ fhir:v "StructureDefinition/chargeitem-completedOn" ]
+       ] ;
+       fhir:name [ fhir:v "chargeitem-completedOn" ] ;
+       fhir:description [ fhir:v "Resource completed On." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/subcomponentcode> ;
+         fhir:reference [ fhir:v "StructureDefinition/subcomponentcode" ]
+       ] ;
+       fhir:name [ fhir:v "code" ] ;
+       fhir:description [ fhir:v "Sub-component  attribute name." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/componentNote> ;
+         fhir:reference [ fhir:v "StructureDefinition/componentNote" ]
+       ] ;
+       fhir:name [ fhir:v "componentnote" ] ;
+       fhir:description [ fhir:v "Comment on component of Observation." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/componentOrder> ;
+         fhir:reference [ fhir:v "StructureDefinition/componentOrder" ]
+       ] ;
+       fhir:name [ fhir:v "componentOrder" ] ;
+       fhir:description [ fhir:v "Lab Result Component Order." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/condition-assertedDate> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-assertedDate" ]
+       ] ;
+       fhir:name [ fhir:v "condition-assertedDate" ] ;
+       fhir:description [ fhir:v "The date on which the existence of the Condition was first asserted or acknowledged." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/condition-cancerBehavior> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-cancerBehavior" ]
+       ] ;
+       fhir:name [ fhir:v "condition-cancerBehavior" ] ;
+       fhir:description [ fhir:v "ARIA Cancer Behaviour Code. It is used to uniquely identify an ICD-O behavior code." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/condition-clinicalStatusDate> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-clinicalStatusDate" ]
+       ] ;
+       fhir:name [ fhir:v "condition-clinicalStatusDate" ] ;
+       fhir:description [ fhir:v "The date on which symptoms of the diagnosis/problem were first known to exist." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/condition-clinicalStatusInARIA> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-clinicalStatusInARIA" ]
+       ] ;
+       fhir:name [ fhir:v "condition-clinicalStatusInARIA" ] ;
+       fhir:description [ fhir:v "ARIA Codes for Diagnosis Status." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/CancerCondition> ;
+         fhir:reference [ fhir:v "StructureDefinition/CancerCondition" ]
+       ] ;
+       fhir:name [ fhir:v "Condition-Diagnosis (CancerCondition)" ] ;
+       fhir:description [ fhir:v "This resource is used to record detailed information about a  diagnosis that has risen to a level of concern. The condition could be a point in time diagnosis in context of an encounter, it could be an item on the practitioner's Problem List, or it could be a concern that doesn't exist on the practitioner's Problem List." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/condition-isExternal> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-isExternal" ]
+       ] ;
+       fhir:name [ fhir:v "condition-isExternal" ] ;
+       fhir:description [ fhir:v "Indicates that the diagnosis was brought in via interface (i.e. it was done external to our application)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/condition-laterality> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-laterality" ]
+       ] ;
+       fhir:name [ fhir:v "condition-laterality" ] ;
+       fhir:description [ fhir:v "Designated codes for condition side of the body affected." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/condition-rank> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-rank" ]
+       ] ;
+       fhir:name [ fhir:v "condition-rank" ] ;
+       fhir:description [ fhir:v "Concepts that identify the significance or priority of the diagnosis code. Note that the codes are numeric, and the number of the code represents the ordinal priority of the associated diagnosis." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Condition-Stage-isWorkingStage> ;
+         fhir:reference [ fhir:v "StructureDefinition/Condition-Stage-isWorkingStage" ]
+       ] ;
+       fhir:name [ fhir:v "Condition-Stage-isWorkingStage" ] ;
+       fhir:description [ fhir:v "Signifies if the observation is in woking group." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-country> ;
+         fhir:reference [ fhir:v "ValueSet/aria-country" ]
+       ] ;
+       fhir:name [ fhir:v "Country" ] ;
+       fhir:description [ fhir:v "This value set defines a base set of codes for countries configured in Aria. \nThe list of country accepted under citizenShip are available under ValueSet 'aria-country'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/country" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/customAttributes> ;
+         fhir:reference [ fhir:v "StructureDefinition/customAttributes" ]
+       ] ;
+       fhir:name [ fhir:v "customAttributes" ] ;
+       fhir:description [ fhir:v "Configurable Attributes on Patient. ARIA has Configurable User defined Attributes to accommodate Patient's properties which are not present in ARIA out of box." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/daily-dose-limit> ;
+         fhir:reference [ fhir:v "StructureDefinition/daily-dose-limit" ]
+       ] ;
+       fhir:name [ fhir:v "daily-dose-limit" ] ;
+       fhir:description [ fhir:v "Daily dose limit" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/default> ;
+         fhir:reference [ fhir:v "StructureDefinition/default" ]
+       ] ;
+       fhir:name [ fhir:v "default" ] ;
+       fhir:description [ fhir:v "The resource is default choice among similar set" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/defaultServiceOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/defaultServiceOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "defaultServiceOrganization" ] ;
+       fhir:description [ fhir:v "Default Department of Resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Device> ;
+         fhir:reference [ fhir:v "StructureDefinition/Device" ]
+       ] ;
+       fhir:name [ fhir:v "Device" ] ;
+       fhir:description [ fhir:v "This resource identifies an instance or a type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.  Medical devices include durable (reusable) medical equipment, implantable devices, as well as disposable equipment used for diagnostic, treatment, and research for healthcare and public health.  Non-medical devices may include items such as a machine, cellphone, computer, application, etc." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Device" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Device/Device-1034> ;
+         fhir:reference [ fhir:v "Device/Device-1034" ]
+       ] ;
+       fhir:name [ fhir:v "Device Example" ] ;
+       fhir:description [ fhir:v "Device example for the *Varian ARIA API Device Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Device"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Device>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-device-type> ;
+         fhir:reference [ fhir:v "ValueSet/aria-device-type" ]
+       ] ;
+       fhir:name [ fhir:v "Device Types" ] ;
+       fhir:description [ fhir:v "List of configured device types are accessible using valueset 'aria-device-type'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/device-type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-diagnosiscode> ;
+         fhir:reference [ fhir:v "ValueSet/aria-diagnosiscode" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnosis Code" ] ;
+       fhir:description [ fhir:v "List of available codes are accessible using valueset 'aria-diagnosiscode'. All values can be accessed using ValueSet $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code. Codes can be filtered on schemas using context filter i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code&context=http://hl7.org/fhir/sid/icd-9-cm|icd-9-cm" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/directive-userConfirmationRequired> ;
+         fhir:reference [ fhir:v "StructureDefinition/directive-userConfirmationRequired" ]
+       ] ;
+       fhir:name [ fhir:v "directive-userConfirmationRequired" ] ;
+       fhir:description [ fhir:v "Whether User confirmation dialog flag. Applicable: DIRECTIVE ValueSet only." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/DocumentReference/DocumentReference-20000000000000000002-3-2> ;
+         fhir:reference [ fhir:v "DocumentReference/DocumentReference-20000000000000000002-3-2" ]
+       ] ;
+       fhir:name [ fhir:v "DocumentReference Example" ] ;
+       fhir:description [ fhir:v "DocumentReference example for the *Varian ARIA API DocumentReference Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/DocumentReference"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/DocumentReference>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-documenttype> ;
+         fhir:reference [ fhir:v "ValueSet/aria-documenttype" ]
+       ] ;
+       fhir:name [ fhir:v "DocumentReference Type" ] ;
+       fhir:description [ fhir:v "This valueset defines the code specifying the precise type of document. \nList of configured document type are accessible using valueset 'aria-documenttype'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/documentreference-type&publisher=Organization-Prov-1" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/documentreference-authenticated> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentreference-authenticated" ]
+       ] ;
+       fhir:name [ fhir:v "documentreference-authenticated" ] ;
+       fhir:description [ fhir:v "Date at which document approved." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/documentreference-completed> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentreference-completed" ]
+       ] ;
+       fhir:name [ fhir:v "documentreference-completed" ] ;
+       fhir:description [ fhir:v "Whether the document draft has be completed for review or approval." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/documentreference-documentLocation> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentreference-documentLocation" ]
+       ] ;
+       fhir:name [ fhir:v "documentreference-documentLocation" ] ;
+       fhir:description [ fhir:v "Location of document stored." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/documentreference-signature> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentreference-signature" ]
+       ] ;
+       fhir:name [ fhir:v "documentreference-signature" ] ;
+       fhir:description [ fhir:v "Document Signer details." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/documentreference-supervisor> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentreference-supervisor" ]
+       ] ;
+       fhir:name [ fhir:v "documentreference-supervisor" ] ;
+       fhir:description [ fhir:v "Originator of Document, In ARIA its Supervisor of document." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/documentreference-templateName> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentreference-templateName" ]
+       ] ;
+       fhir:name [ fhir:v "documentreference-templateName" ] ;
+       fhir:description [ fhir:v "Document Template Name in ARIA." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Condition/RadiotherapyConditionSHS-1> ;
+         fhir:reference [ fhir:v "Condition/RadiotherapyConditionSHS-1" ]
+       ] ;
+       fhir:name [ fhir:v "Example Breast Cancer Condition" ] ;
+       fhir:description [ fhir:v "Example breast cancer Condition." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/CancerCondition"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/CancerCondition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Patient/RadiotherapyPatientSHS-216> ;
+         fhir:reference [ fhir:v "Patient/RadiotherapyPatientSHS-216" ]
+       ] ;
+       fhir:name [ fhir:v "Example Female Patient 9" ] ;
+       fhir:description [ fhir:v "An example female radiotherapy Patient." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Patient"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/RadiotherapyPractitionerSHS-1005> ;
+         fhir:reference [ fhir:v "Practitioner/RadiotherapyPractitionerSHS-1005" ]
+       ] ;
+       fhir:name [ fhir:v "Example Radiotherapy Practitioner 1005" ] ;
+       fhir:description [ fhir:v "An example radioterapy Practitioner." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Practitioner"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Group> ;
+         fhir:reference [ fhir:v "StructureDefinition/Group" ]
+       ] ;
+       fhir:name [ fhir:v "Group" ] ;
+       fhir:description [ fhir:v "Group represents logical grouping of Resources like Advance Practitioners, Nurses,Oncologists, System administrators etc...      \nGroup comprises Doctor/Staff (Practitioner), Machine (Device) and Venue (Location) with in a department in ARIA." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Group" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Group/Group-10005> ;
+         fhir:reference [ fhir:v "Group/Group-10005" ]
+       ] ;
+       fhir:name [ fhir:v "Group Example" ] ;
+       fhir:description [ fhir:v "Group example for the *Varian ARIA API Group Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Group"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Group>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/HealthcareService> ;
+         fhir:reference [ fhir:v "StructureDefinition/HealthcareService" ]
+       ] ;
+       fhir:name [ fhir:v "HealthcareService" ] ;
+       fhir:description [ fhir:v "HealthcareService represents departments in ARIA as in ARIA department and services are not two separate concepts.\nAlthough Department are already being represented by Organization resource, since many other FHIR clinical resources works on HealthcareService concept, we are mapping department in Healthcare service as well." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "HealthcareService" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/HealthcareService/HealthcareService-1> ;
+         fhir:reference [ fhir:v "HealthcareService/HealthcareService-1" ]
+       ] ;
+       fhir:name [ fhir:v "HealthcareService Example" ] ;
+       fhir:description [ fhir:v "HealthcareService example for the *Varian ARIA API HealthcareService Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/HealthcareService"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/HealthcareService>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/isChargeCaptureApplicable> ;
+         fhir:reference [ fhir:v "StructureDefinition/isChargeCaptureApplicable" ]
+       ] ;
+       fhir:name [ fhir:v "isChargeCaptureApplicable" ] ;
+       fhir:description [ fhir:v "Flag in ARIA to define charge capture after completion of a service in Facility." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/isPrimary> ;
+         fhir:reference [ fhir:v "StructureDefinition/isPrimary" ]
+       ] ;
+       fhir:name [ fhir:v "isPrimary" ] ;
+       fhir:description [ fhir:v "Whether the ethnicity or race is primary? Applicable to Patient ethnicity and race." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/isPublishable> ;
+         fhir:reference [ fhir:v "StructureDefinition/isPublishable" ]
+       ] ;
+       fhir:name [ fhir:v "isPublishable" ] ;
+       fhir:description [ fhir:v "Lab Result Component publishable status." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/isWorkingStage> ;
+         fhir:reference [ fhir:v "StructureDefinition/isWorkingStage" ]
+       ] ;
+       fhir:name [ fhir:v "isWorkingStage" ] ;
+       fhir:description [ fhir:v "Is Current Stage is working stage." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/lastModificationTaskName> ;
+         fhir:reference [ fhir:v "StructureDefinition/lastModificationTaskName" ]
+       ] ;
+       fhir:name [ fhir:v "lastModificationTaskName" ] ;
+       fhir:description [ fhir:v "Last modified by task name." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/lastModificationUser> ;
+         fhir:reference [ fhir:v "StructureDefinition/lastModificationUser" ]
+       ] ;
+       fhir:name [ fhir:v "lastModificationUser" ] ;
+       fhir:description [ fhir:v "Last modified by user." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/careplan-lastUpdatedOn> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-lastUpdatedOn" ]
+       ] ;
+       fhir:name [ fhir:v "LastUpdatedOn" ] ;
+       fhir:description [ fhir:v "Last update time of Element." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Location> ;
+         fhir:reference [ fhir:v "StructureDefinition/Location" ]
+       ] ;
+       fhir:name [ fhir:v "Location" ] ;
+       fhir:description [ fhir:v "Location includes both incidental locations (a place which is used for healthcare ) and dedicated, formally appointed locations.\nIt can be of Auxiliary type or Venue type. \nAuxiliary locations include imaging machines and treatment machines.\nVenues are locations within a department like treatment room, waiting room, consultation room, etc.  Some locations can be schedulable." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Location/Location-1009> ;
+         fhir:reference [ fhir:v "Location/Location-1009" ]
+       ] ;
+       fhir:name [ fhir:v "Location Example" ] ;
+       fhir:description [ fhir:v "Location example for the *Varian ARIA API Location Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Location"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/login-institution> ;
+         fhir:reference [ fhir:v "StructureDefinition/login-institution" ]
+       ] ;
+       fhir:name [ fhir:v "login-institution" ] ;
+       fhir:description [ fhir:v "Associated department in ARIA (Supported only on ARIA V18 or onwards)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-mobilephoneprovider> ;
+         fhir:reference [ fhir:v "ValueSet/aria-mobilephoneprovider" ]
+       ] ;
+       fhir:name [ fhir:v "Mobile Phone Provider" ] ;
+       fhir:description [ fhir:v "This value set includes various mobile phone providers configured in aria. \nThe list of configured mobile phone providers are available under ValueSet 'aria-mobilephoneprovider'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-mobilephoneprovider" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/modifier-application-code> ;
+         fhir:reference [ fhir:v "StructureDefinition/modifier-application-code" ]
+       ] ;
+       fhir:name [ fhir:v "modifier-application-code" ] ;
+       fhir:description [ fhir:v "Modifier application code." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Observation/Observation-DX-Stg-11200000000000000211-3-2> ;
+         fhir:reference [ fhir:v "Observation/Observation-DX-Stg-11200000000000000211-3-2" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Condition Diagnosis Stage Example" ] ;
+       fhir:description [ fhir:v "Observation Condition Diagnosis Stage example with all attributes specified." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/StageGroup"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/StageGroup>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Observation/Observation-Stg-Category-3-2-T> ;
+         fhir:reference [ fhir:v "Observation/Observation-Stg-Category-3-2-T" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Stage Category Example" ] ;
+       fhir:description [ fhir:v "Observation Stage Category example with all attributes specified." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/StageCategory"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/StageCategory>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/StageCategory> ;
+         fhir:reference [ fhir:v "StructureDefinition/StageCategory" ]
+       ] ;
+       fhir:name [ fhir:v "Observation-StageCategory" ] ;
+       fhir:description [ fhir:v "Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic   characteristics. Most observations are simple name/value pair assertions with some metadata, but some observations group other observations together logically, or even are multi-component observations. \n\nThis profile is used to represent the Stage Category in Condition Diagnosis resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/observation-stageClassification> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-stageClassification" ]
+       ] ;
+       fhir:name [ fhir:v "observation-stageClassification" ] ;
+       fhir:description [ fhir:v "Stage Classification, clinical, pathological, posttherapy, recurrence, autopsy is called the Classification." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/StageGroup> ;
+         fhir:reference [ fhir:v "StructureDefinition/StageGroup" ]
+       ] ;
+       fhir:name [ fhir:v "Observation-StageGroup" ] ;
+       fhir:description [ fhir:v "Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic   characteristics. Most observations are simple name/value pair assertions with some metadata, but some observations group other observations together logically, or even are multi-component observations. \n\nThis profile is used to represent the Stage Group in Condition Diagnosis resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Observation/Observation-vital-73200000000000000237-2-2> ;
+         fhir:reference [ fhir:v "Observation/Observation-vital-73200000000000000237-2-2" ]
+       ] ;
+       fhir:name [ fhir:v "Observation-vital Example" ] ;
+       fhir:description [ fhir:v "Observation-vital example for the *Varian ARIA API Observation-vital Profile.*" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/VitalSigns> ;
+         fhir:reference [ fhir:v "StructureDefinition/VitalSigns" ]
+       ] ;
+       fhir:name [ fhir:v "Observation-Vital-Signs" ] ;
+       fhir:description [ fhir:v "Vital Signs profile is derived from FHIR Observation.\n\nIt represents Patient's Vital Signs  Observations recorded in ARIA ." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/VitalSignsComponent> ;
+         fhir:reference [ fhir:v "StructureDefinition/VitalSignsComponent" ]
+       ] ;
+       fhir:name [ fhir:v "Observation-Vital-Signs-Component" ] ;
+       fhir:description [ fhir:v "Vital Signs component profile is derived from FHIR Observation.\n\nIt represents Patient's individual Vital Signs result Observations recorded in ARIA ." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/careplan-lagfrompredecessor> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-lagfrompredecessor" ]
+       ] ;
+       fhir:name [ fhir:v "offset" ] ;
+       fhir:description [ fhir:v "Lag offset from previous activity." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/Organization" ]
+       ] ;
+       fhir:name [ fhir:v "Organization" ] ;
+       fhir:description [ fhir:v "A formally or informally recognized grouping of organizations formed for the purpose of achieving some form of collective action. Includes institutions, departments etc\n\nOrganization represents Hospital and Departments configured in ARIA. A Hospital can have multiple departments.\n\nHospital is represented with category 'prov (Provider)' and Department is represented with category 'dept (Department)'. \n\nHospital and Department relationship is represented on Department." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-10002> ;
+         fhir:reference [ fhir:v "Organization/Organization-Dept-10002" ]
+       ] ;
+       fhir:name [ fhir:v "Organization Department Example" ] ;
+       fhir:description [ fhir:v "Organization Department example for the *Varian ARIA API Organization Department Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Organization"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Organization/Organization-Prov-3> ;
+         fhir:reference [ fhir:v "Organization/Organization-Prov-3" ]
+       ] ;
+       fhir:name [ fhir:v "Organization Hospital Example" ] ;
+       fhir:description [ fhir:v "Organization Hospital example for the *Varian ARIA API Organization Hospital Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Organization"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/Patient" ]
+       ] ;
+       fhir:name [ fhir:v "Patient" ] ;
+       fhir:description [ fhir:v "This profile represents Patient Demographics, Contacts and other administrative information.\nProfile Contains: Demographics, Contacts, Region specific details like Race, Ethnicity and Language (if applicable), User Defined Labels" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Bundle/Bundle-260> ;
+         fhir:reference [ fhir:v "Bundle/Bundle-260" ]
+       ] ;
+       fhir:name [ fhir:v "Patient CareTeam Bundle Example" ] ;
+       fhir:description [ fhir:v "Patient CareTeam Bundle create example with all attributes specified." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/patient-citizenship-vs> ;
+         fhir:reference [ fhir:v "ValueSet/patient-citizenship-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Citizenship Value Set" ] ;
+       fhir:description [ fhir:v "Patient Citizenship Value Set" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-deathreason> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-deathreason" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Death Reason" ] ;
+       fhir:description [ fhir:v "List of configured death reasons values are available under valueset 'aria-patient-deathreason'. \nAll database configured values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-deathreason" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-ethinicity> ;
+         fhir:reference [ fhir:v "ValueSet/aria-ethinicity" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Ethinicity" ] ;
+       fhir:description [ fhir:v "This value set includes patient ethnicity configured in aria. \nThe list of configured ethnicity are available under ValueSet 'aria-patient-ethnicity'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/ethnicity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Patient/Patient-256> ;
+         fhir:reference [ fhir:v "Patient/Patient-256" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Example" ] ;
+       fhir:description [ fhir:v "Patient example for the *Varian ARIA API Patient Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-gender> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-gender" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Gender" ] ;
+       fhir:description [ fhir:v "The gender of a person used for administrative purposes. \nAll database configured values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/person-gender" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-genderidentity> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-genderidentity" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Gender Identity" ] ;
+       fhir:description [ fhir:v "This value set includes supported gender identity configured in aria. \nThe list of configured gender identity are available under ValueSet 'aria-patient-genderidentity'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-genderIdentity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-ids> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-ids" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Ids" ] ;
+       fhir:description [ fhir:v "This value set includes configured patient ids. \nThe list of country accepted under citizenShip are available under ValueSet 'aria-country'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/country" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-language> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-language" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Language" ] ;
+       fhir:description [ fhir:v "This value set defines the set of codes that can be used to indicate patient's communication language. \nThe list of configured communication languages are available under ValueSet 'aria-patient-language'. \nAll values can be accessed using $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/languages" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-maritalstatus> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-maritalstatus" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Marital Status" ] ;
+       fhir:description [ fhir:v "This value set includes Marital Status values configured in aria. \nThe list of configured marital status are available under ValueSet 'aria-patient-maritalstatus'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/marital-status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-race> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-race" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Race" ] ;
+       fhir:description [ fhir:v "This value set includes race configured in aria. \nThe list of configured races are available under ValueSet 'aria-patient-race'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/race" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-religion> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-religion" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Religion" ] ;
+       fhir:description [ fhir:v "This value set includes religion configured in aria. \nThe list of configured religion values are available under ValueSet 'aria-patient-religion'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/religion" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-sexorientation> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-sexorientation" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Sexual Orientation" ] ;
+       fhir:description [ fhir:v "This value set includes supported sexual orientation configured in aria. \nThe list of configured sexual orientation are available under ValueSet 'aria-patient-sexorientation'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-sexorientation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-userdefinedlabel> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-userdefinedlabel" ]
+       ] ;
+       fhir:name [ fhir:v "Patient UserDefined Label" ] ;
+       fhir:description [ fhir:v "This value set includes user defined labels defined for Patient resource. \nThe list of configured labels are available under ValueSet 'aria-patient-userdefinedlabel'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-userdefinedlabel" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-patient-status> ;
+         fhir:reference [ fhir:v "ValueSet/aria-patient-status" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Status" ] ;
+       fhir:description [ fhir:v "This value set includes Patient Status values configured in aria. \nThe list of configured patient status are available under ValueSet 'aria-patient-status'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-class> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-class" ]
+       ] ;
+       fhir:name [ fhir:v "patient-class" ] ;
+       fhir:description [ fhir:v "Patient's class - In Patient | Out Patient." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-contact-isPrimary> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-contact-isPrimary" ]
+       ] ;
+       fhir:name [ fhir:v "patient-contact-isPrimary" ] ;
+       fhir:description [ fhir:v "Whether the contact is primary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-contact-subrelation> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-contact-subrelation" ]
+       ] ;
+       fhir:name [ fhir:v "patient-contact-subrelation" ] ;
+       fhir:description [ fhir:v "Patient's relationship with the contact person." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-deathReason> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-deathReason" ]
+       ] ;
+       fhir:name [ fhir:v "patient-deathReason" ] ;
+       fhir:description [ fhir:v "Reason for Patient's Death." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-isTestPatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-isTestPatient" ]
+       ] ;
+       fhir:name [ fhir:v "patient-isTestPatient" ] ;
+       fhir:description [ fhir:v "Whether Patient is test patient. (Supported only on ARIA V18 or onwards) FHIR will return test patient which are created by ARIA. Test Patient Create/update is not supported from FHIR." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-locationDetails> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-locationDetails" ]
+       ] ;
+       fhir:name [ fhir:v "patient-locationDetails" ] ;
+       fhir:description [ fhir:v "In Patient Admission details - Admission Period, Room Number." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-mobilePhoneProvider> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-mobilePhoneProvider" ]
+       ] ;
+       fhir:name [ fhir:v "patient-mobilePhoneProvider" ] ;
+       fhir:description [ fhir:v "Patient's mobile phone provider details." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-modeOfArrival> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-modeOfArrival" ]
+       ] ;
+       fhir:name [ fhir:v "patient-modeOfArrival" ] ;
+       fhir:description [ fhir:v "Patient Transportation Contact Comment." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-occupation> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-occupation" ]
+       ] ;
+       fhir:name [ fhir:v "patient-occupation" ] ;
+       fhir:description [ fhir:v "Patient's occupation details." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-photo-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-photo-type" ]
+       ] ;
+       fhir:name [ fhir:v "patient-photo-type" ] ;
+       fhir:description [ fhir:v "Patient's photo type." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-retirementDetails> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-retirementDetails" ]
+       ] ;
+       fhir:name [ fhir:v "patient-retirementDetails" ] ;
+       fhir:description [ fhir:v "Patient's retirement details contains information about patient's retirement date, retirement reason and retirement note." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/patient-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-status" ]
+       ] ;
+       fhir:name [ fhir:v "patient-status" ] ;
+       fhir:description [ fhir:v "Patient's status with provider - New Patient | Previous Patient." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/performedAge> ;
+         fhir:reference [ fhir:v "StructureDefinition/performedAge" ]
+       ] ;
+       fhir:name [ fhir:v "performedAge" ] ;
+       fhir:description [ fhir:v "Age when procedure is performed." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/person-gender> ;
+         fhir:reference [ fhir:v "StructureDefinition/person-gender" ]
+       ] ;
+       fhir:name [ fhir:v "person-gender" ] ;
+       fhir:description [ fhir:v "Person's Gender, if is not re-presentable with Administrative Gender Value set." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/Practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner" ] ;
+       fhir:description [ fhir:v "Practitioner covers all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities and this Resource is used for attribution of activities and responsibilities to these individuals. Practitioners include (but are not limited to):\n\nphysicians, dentists, pharmacists, \nphysician assistants, nurses, scribes, \nmidwives, dietitians, therapists, optometrists, paramedics, \nmedical technicians, laboratory scientists, prosthetic technicians, radiographers, \nsocial workers, professional homecare providers, official volunteers, \nreceptionists handling patient registration\n\nPractitioner represents Doctor and Staff configured in ARIA. \n\nDoctor/Staff demographics, role and  association with department is being represented." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1258> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1258" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner Example" ] ;
+       fhir:description [ fhir:v "Practitioner example for the *Varian ARIA API Practitioner Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Practitioner"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-practitioner-ids> ;
+         fhir:reference [ fhir:v "ValueSet/aria-practitioner-ids" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner Ids" ] ;
+       fhir:description [ fhir:v "List of practitioner ids configured are available under valueset 'aria-practitioner-ids'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/practitioner-ids" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/aria-practitioner-role> ;
+         fhir:reference [ fhir:v "ValueSet/aria-practitioner-role" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner Role" ] ;
+       fhir:description [ fhir:v "The different practitioner roles configured are available under valueset 'aria-practitioner-role'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/practitioner-role" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/practitioner-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/practitioner-role" ]
+       ] ;
+       fhir:name [ fhir:v "practitioner-role" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/shs-radiotherapy-bolus-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/shs-radiotherapy-bolus-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Bolus" ] ;
+       fhir:description [ fhir:v "Bolus used (or to be used) for radiotherapy." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCoursePrescription> ;
+         fhir:reference [ fhir:v "StructureDefinition/RadiotherapyCoursePrescription" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Course Prescription" ] ;
+       fhir:description [ fhir:v "The elements of a treatment course that can be defined during prescription. This represents the treatment course in ARIA, not an actual prescription and is the parent for all presciptions in the course.\r\nIt contains the data elements of a course that are not specific to planning or delivery, for example, treatment intent, relation to the diagnosis, or course status.\r\nThose elements are exposed as CodeX RT Radiotherapy Course Prescription although ARIA does not have an actual prescription for the complete course. See the Phase Prescription profile for actual prescriptions in ARIA.\r\nWith the Radiotherapy Course Prescription, elements of the course can be found as soon as a course is defined in ARIA, even if no treatment plans or delivered treatments are available yet." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCourseSummary> ;
+         fhir:reference [ fhir:v "StructureDefinition/RadiotherapyCourseSummary" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Course Summary" ] ;
+       fhir:description [ fhir:v "A summary of the treatment progress in a radiotherapy course of treatment.\r\nWhen additional treatments are delivered in the same course, this resource is updated. No new resource is created." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Patient/Patient-352> ;
+         fhir:reference [ fhir:v "Patient/Patient-352" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Patient Example" ] ;
+       fhir:description [ fhir:v "Example radiotherapy patient." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPhasePrescription> ;
+         fhir:reference [ fhir:v "StructureDefinition/RadiotherapyPhasePrescription" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Phase Prescription" ] ;
+       fhir:description [ fhir:v "A prescription for a radiotherapy treatment phase.\r\nIn ARIA, a prescription can cover a single plan or complete phase implemented with one or multiple plans. During prescription it may not even be defined whether\r\nmultiple plans will be used. Therefore, all ARIA prescriptions are exposed as Phase Prescriptions." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPlannedCourse> ;
+         fhir:reference [ fhir:v "StructureDefinition/RadiotherapyPlannedCourse" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Planned Course" ] ;
+       fhir:description [ fhir:v "A summary of all plans in a radiotherapy course of treatment. Only approved plans with status other than Unapproved, Rejected, Reviewed are considered." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPlannedPhase> ;
+         fhir:reference [ fhir:v "StructureDefinition/RadiotherapyPlannedPhase" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Planned Phase" ] ;
+       fhir:description [ fhir:v "A summary of all plans in a radiotherapy treatment phase.\r\nIn ARIA, all plans linked to the same prescription are considered as part of the same phase.\r\nOne Radiotherapy Planned Phase is exposed for each ARIA prescription that has at least one linked plan in an approved status (other than Unapproved, Rejected, Reviewed)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/radiotherapy-prescription-energy-example> ;
+         fhir:reference [ fhir:v "ValueSet/radiotherapy-prescription-energy-example" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Prescription Energy Example" ] ;
+       fhir:description [ fhir:v "Radiotherapy Prescription Energy" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/CodeSystem/radiotherapy-prescription-energy-example> ;
+         fhir:reference [ fhir:v "CodeSystem/radiotherapy-prescription-energy-example" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Prescription Energy Example" ] ;
+       fhir:description [ fhir:v "Radiotherapy Prescription Energy" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/radiotherapy-prescription-modality-example> ;
+         fhir:reference [ fhir:v "ValueSet/radiotherapy-prescription-modality-example" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Prescription Modality Example" ] ;
+       fhir:description [ fhir:v "Radiotherapy Prescription Modality" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/CodeSystem/radiotherapy-prescription-modality-example> ;
+         fhir:reference [ fhir:v "CodeSystem/radiotherapy-prescription-modality-example" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Prescription Modality Example" ] ;
+       fhir:description [ fhir:v "Radiotherapy Prescription Modality" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/CodeSystem/radiotherapy-prescription-site-example> ;
+         fhir:reference [ fhir:v "CodeSystem/radiotherapy-prescription-site-example" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Prescription Site Example" ] ;
+       fhir:description [ fhir:v "Radiotherapy Prescription Site" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/RadiotherapyPrescriptionSiteExample> ;
+         fhir:reference [ fhir:v "ValueSet/RadiotherapyPrescriptionSiteExample" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Prescription SiteExample" ] ;
+       fhir:description [ fhir:v "Radiotherapy Prescription Site" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ValueSet/radiotherapy-prescription-technique-example> ;
+         fhir:reference [ fhir:v "ValueSet/radiotherapy-prescription-technique-example" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Prescription Technique Example" ] ;
+       fhir:description [ fhir:v "Radiotherapy Prescription Technique." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/CodeSystem/radiotherapy-prescription-technique-example> ;
+         fhir:reference [ fhir:v "CodeSystem/radiotherapy-prescription-technique-example" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Prescription Technique Example" ] ;
+       fhir:description [ fhir:v "Radiotherapy Prescription Technique." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPhase> ;
+         fhir:reference [ fhir:v "StructureDefinition/RadiotherapyTreatedPhase" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Treated Phase" ] ;
+       fhir:description [ fhir:v "A summary of the treatment progress in a radiotherapy treatment phase. In ARIA, all plans linked to the same prescription are considered as part of the same phase." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPlan> ;
+         fhir:reference [ fhir:v "StructureDefinition/RadiotherapyTreatedPlan" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Treated Plan" ] ;
+       fhir:description [ fhir:v "A summary of the treatment progress in one radiotherapy treatment plan." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatmentPlan> ;
+         fhir:reference [ fhir:v "StructureDefinition/RadiotherapyTreatmentPlan" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Treatment Plan" ] ;
+       fhir:description [ fhir:v "A radiotherapy treatment plan." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyVolume> ;
+         fhir:reference [ fhir:v "StructureDefinition/RadiotherapyVolume" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Volume" ] ;
+       fhir:description [ fhir:v "A volume of the body used in radiotherapy planning or treatment delivery.\r\nIn ARIA, dose is specified and tracked against Reference Points. These Reference Points can represent actual points or three-dimensional volumes.\r\nARIA calls all of those 'Reference Point', even if not a point. Each Reference Point in ARIA is exposed as a Radiotherapy Volume." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BodyStructure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/BodyStructure/BodyStructure-PV-681> ;
+         fhir:reference [ fhir:v "BodyStructure/BodyStructure-PV-681" ]
+       ] ;
+       fhir:name [ fhir:v "Radiotherapy Volume Example" ] ;
+       fhir:description [ fhir:v "Example BodyStructure compliant to the RadiotherapyVolume profile." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-volume"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-volume>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyCoursePrescriptionSHS-101-LeftBreast> ;
+         fhir:reference [ fhir:v "ServiceRequest/RadiotherapyCoursePrescriptionSHS-101-LeftBreast" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyCoursePrescription-101-RTTD-LeftBreastTang" ] ;
+       fhir:description [ fhir:v "Radiotherapy Course Prescription example from Codex RTTD collection. Included because referenced by the Radiotherapy Phase Prescription." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCoursePrescription"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCoursePrescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyCoursePrescription-352-634> ;
+         fhir:reference [ fhir:v "ServiceRequest/RadiotherapyCoursePrescription-352-634" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyCoursePrescription-352-634" ] ;
+       fhir:description [ fhir:v "Example Radiotherapy Course Prescription, i.e. parent to all prescriptions in the Course." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-course-prescription"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-course-prescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Procedure/RadiotherapyCourseSummary-352-634> ;
+         fhir:reference [ fhir:v "Procedure/RadiotherapyCourseSummary-352-634" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyCourseSummary-352-634" ] ;
+       fhir:description [ fhir:v "Example Radiotherapy Course Summary." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCourseSummary"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCourseSummary>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang> ;
+         fhir:reference [ fhir:v "ServiceRequest/RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyPhasePrescription-101-RTTD-LeftBreastTang" ] ;
+       fhir:description [ fhir:v "Radiotherapy Phase Prescription example from Codex RTTD collection." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPhasePrescription"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPhasePrescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyPhasePrescription-352-50> ;
+         fhir:reference [ fhir:v "ServiceRequest/RadiotherapyPhasePrescription-352-50" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyPhasePrescription-352-50" ] ;
+       fhir:description [ fhir:v "Example Radiotherapy Phase Prescription." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-phase-prescription"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-phase-prescription>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyPlannedCourse-352-634> ;
+         fhir:reference [ fhir:v "ServiceRequest/RadiotherapyPlannedCourse-352-634" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyPlannedCourse-352-634" ] ;
+       fhir:description [ fhir:v "Example Planned Course, i.e. summary of all plans in the Course." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-planned-course"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-planned-course>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyPlannedPhase-352-48> ;
+         fhir:reference [ fhir:v "ServiceRequest/RadiotherapyPlannedPhase-352-48" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyPlannedPhase-352-48" ] ;
+       fhir:description [ fhir:v "Example Planned Phase, i.e. summary of all plans linked to the same prescription." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-planned-phase"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-planned-phase>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Procedure/RadiotherapyTreatedPhase-352-50> ;
+         fhir:reference [ fhir:v "Procedure/RadiotherapyTreatedPhase-352-50" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyTreatedPhase-352-50" ] ;
+       fhir:description [ fhir:v "Example Radiotherapy Treated Phase, i.e. all treatments related to the same prescription." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPhase"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPhase>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Procedure/RadiotherapyTreatedPlan-352-1326> ;
+         fhir:reference [ fhir:v "Procedure/RadiotherapyTreatedPlan-352-1326" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyTreatedPlan-352-1326" ] ;
+       fhir:description [ fhir:v "Example Radiotherapy Treated Plan." ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPlan"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPlan>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyTreatmentPlan-352-1479> ;
+         fhir:reference [ fhir:v "ServiceRequest/RadiotherapyTreatmentPlan-352-1479" ]
+       ] ;
+       fhir:name [ fhir:v "RadiotherapyTreatmentPlan-352-1479" ] ;
+       fhir:description [ fhir:v "Example Radiotherapy Treatment Plan." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-treatment-plan"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-treatment-plan>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/readOnly> ;
+         fhir:reference [ fhir:v "StructureDefinition/readOnly" ]
+       ] ;
+       fhir:name [ fhir:v "readOnly" ] ;
+       fhir:description [ fhir:v "ReadOnly flag is set to true if Resource information is read only and can not be modified." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/reminderTime> ;
+         fhir:reference [ fhir:v "StructureDefinition/reminderTime" ]
+       ] ;
+       fhir:name [ fhir:v "remindTime" ] ;
+       fhir:description [ fhir:v "Duration prior to scheduled time before which a reminder should be notified." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/schedulable> ;
+         fhir:reference [ fhir:v "StructureDefinition/schedulable" ]
+       ] ;
+       fhir:name [ fhir:v "schedulable" ] ;
+       fhir:description [ fhir:v "Whether the resource can be scheduled or not." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/serviceOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/serviceOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "serviceOrganization" ] ;
+       fhir:description [ fhir:v "Department(s) associated with resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/session-dose-limit> ;
+         fhir:reference [ fhir:v "StructureDefinition/session-dose-limit" ]
+       ] ;
+       fhir:name [ fhir:v "session-dose-limit" ] ;
+       fhir:description [ fhir:v "Session dose limit" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/sexOrientation> ;
+         fhir:reference [ fhir:v "StructureDefinition/sexOrientation" ]
+       ] ;
+       fhir:name [ fhir:v "sexOrientation" ] ;
+       fhir:description [ fhir:v "An individual's physical and/or emotional attraction to another individual of the same gender, opposite gender, or both genders." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Observation/Observation-Condition-DX-Stage-Category-200002-200002-M> ;
+         fhir:reference [ fhir:v "Observation/Observation-Condition-DX-Stage-Category-200002-200002-M" ]
+       ] ;
+       fhir:name [ fhir:v "Stage Category(Condition-Diagnosis contained resource) Example" ] ;
+       fhir:description [ fhir:v "Stage Category example for the *Varian ARIA API Stage Category Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/StageCategory"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/StageCategory>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Observation/Observation-DX-Stg-39500000002000000593-200002-200002> ;
+         fhir:reference [ fhir:v "Observation/Observation-DX-Stg-39500000002000000593-200002-200002" ]
+       ] ;
+       fhir:name [ fhir:v "Stage Group Example" ] ;
+       fhir:description [ fhir:v "Stage Group example for the *Varian ARIA API Stage Group Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/StageGroup"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/StageGroup>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/subComponent> ;
+         fhir:reference [ fhir:v "StructureDefinition/subComponent" ]
+       ] ;
+       fhir:name [ fhir:v "subComponent" ] ;
+       fhir:description [ fhir:v "Subcomponent of component.  It contains only extensions, no value. It acts as a group placeholder for subcomponent attribute and its value in case of abnormal observation." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/supporting-information> ;
+         fhir:reference [ fhir:v "StructureDefinition/supporting-information" ]
+       ] ;
+       fhir:name [ fhir:v "supporting-information" ] ;
+       fhir:description [ fhir:v "Task supporting information." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Task> ;
+         fhir:reference [ fhir:v "StructureDefinition/Task" ]
+       ] ;
+       fhir:name [ fhir:v "Task" ] ;
+       fhir:description [ fhir:v "Task resource represents tasks configured in ARIA.   \n\n\nA task resource describes an activity that can be performed and tracks the state of completion of that activity. It is a representation that an activity should be or has been initiated, and eventually, represents the successful or unsuccessful completion of that activity." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Task/Task-441> ;
+         fhir:reference [ fhir:v "Task/Task-441" ]
+       ] ;
+       fhir:name [ fhir:v "Task Example" ] ;
+       fhir:description [ fhir:v "Task example for the *Varian ARIA API Task Profile.*" ] ;
+       fhir:example [
+         fhir:v "http://varian.com/fhir/v1/StructureDefinition/Task"^^xsd:anyURI ;
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/Task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/task-minutesDuration> ;
+         fhir:reference [ fhir:v "StructureDefinition/task-minutesDuration" ]
+       ] ;
+       fhir:name [ fhir:v "task-minutesDuration" ] ;
+       fhir:description [ fhir:v "Minutes Duration (Time Frame) estimate required to perform task." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/total-dose-limit> ;
+         fhir:reference [ fhir:v "StructureDefinition/total-dose-limit" ]
+       ] ;
+       fhir:name [ fhir:v "total-dose-limit" ] ;
+       fhir:description [ fhir:v "Total dose limit" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/subcomponentvalue> ;
+         fhir:reference [ fhir:v "StructureDefinition/subcomponentvalue" ]
+       ] ;
+       fhir:name [ fhir:v "value" ] ;
+       fhir:description [ fhir:v "Sub-component attribute value." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/ValueSet> ;
+         fhir:reference [ fhir:v "StructureDefinition/ValueSet" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet" ] ;
+       fhir:description [ fhir:v "* ValueSet specifies a set of codes drawn from one or more code systems, intended for use in a particular context. Value sets link between CodeSystem definitions and their use in coded elements.\n\n* ^publisher = \"Varian ARIA API Profile Team\"\n\n* Value sets have 2 aspects:\n\n    * .compose:  A definition of which codes are intended to be in the value set (\"intension\") -/li-\n    *  .expansion: The list of codes that are actually in the value set under a given set of conditions (\"extension\") -/li-\n\n\n* Please refer the How to -> Valueset & Codesystem List Page for list of valueset and codesystems." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/valueset-payor-plan-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/valueset-payor-plan-type" ]
+       ] ;
+       fhir:name [ fhir:v "valueset-payor-plan-type" ] ;
+       fhir:description [ fhir:v "Payor Plan Type. Applicable: PAYOR-INFO ValueSet." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/StructureDefinition/valueset-Required> ;
+         fhir:reference [ fhir:v "StructureDefinition/valueset-Required" ]
+       ] ;
+       fhir:name [ fhir:v "valueset-Required" ] ;
+       fhir:description [ fhir:v "Valueset Required or not flag." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://varian.com/fhir/v1/Observation/vital-component-73200000000000000237-2-2-2> ;
+         fhir:reference [ fhir:v "Observation/vital-component-73200000000000000237-2-2-2" ]
+       ] ;
+       fhir:name [ fhir:v "vital-component Example" ] ;
+       fhir:description [ fhir:v "vital-component example for the *Varian ARIA API vital-component Profile.*" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "clientcreation.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "clientcreation.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Clientcreation" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "examples.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "examples.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Examples" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "profiles.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "profiles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Profiles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "radiotherapy.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "radiotherapy.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Radiotherapy" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "vaisscopes.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "vaisscopes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Vaisscopes" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "vaistokengen.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "vaistokengen.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Vaistokengen" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "valuesetandcodesystemlist.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "valuesetandcodesystemlist.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Valuesetandcodesystemlist" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

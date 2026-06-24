@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Organization-Dept-10002"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Organization Department Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Organization Department example for the *Varian ARIA API Organization Department Profile.*"/>
+    </extension>
+    <versionId value="7137"/>
+    <lastUpdated value="2017-05-04T11:19:18.720+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="Organization-Dept-10002"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;Organization-Dept-10002&quot; Version &quot;7137&quot; Updated &quot;2017-05-04 11:19:18+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Organization.html">Organization</a></p></div><p><b>identifier</b>: id: OCS1</p><p><b>active</b>: true</p><p><b>type</b>: Hospital Department <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-organization-type.html">Organization type</a>#dept)</span></p><p><b>name</b>: OCS1</p><p><b>partOf</b>: <a href="Organization/Organization-Prov-1">Organization/Organization-Prov-1: Las Vegas General</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/Organization/dept/Id"/>
+    <value value="OCS1"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="dept"/>
+      <display value="Hospital Department"/>
+    </coding>
+  </type>
+  <name value="OCS1"/>
+  <partOf>
+    <reference value="Organization/Organization-Prov-1"/>
+    <display value="Las Vegas General"/>
+  </partOf>
+</Organization>

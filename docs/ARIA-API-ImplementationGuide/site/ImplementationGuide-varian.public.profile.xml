@@ -1,0 +1,2726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="varian.public.profile"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://varian.com/fhir/v1/ImplementationGuide/varian.public.profile"/>
+  <version value="1.0.0"/>
+  <name value="varianpublicprofile"/>
+  <title value="ARIA API Profile Implementation Guide"/>
+  <status value="active"/>
+  <date value="2024-07-26T13:25:01+05:30"/>
+  <publisher value="Varian Medical Systems, Inc."/>
+  <contact>
+    <name value="Varian Medical Systems, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.varian.com/"/>
+    </telecom>
+  </contact>
+  <description value="Varian ARIA API Implementation Guide"/>
+  <copyright value="Varian Medical Systems, Inc."/>
+  <packageId value="varian.public.profile"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.0.2"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="4.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_mcode">
+    <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"/>
+    <packageId value="hl7.fhir.us.mcode"/>
+    <version value="2.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_codex_radiation_therapy">
+    <uri value="http://hl7.org/fhir/us/codex-radiation-therapy/ImplementationGuide/hl7.fhir.us.codex-radiation-therapy"/>
+    <packageId value="hl7.fhir.us.codex-radiation-therapy"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="R4 Release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludexml"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludejsn"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludemap"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="generate"/>
+      </extension>
+      <extension url="value">
+        <valueString value="xml"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="generate"/>
+      </extension>
+      <extension url="value">
+        <valueString value="json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://varian.com/fhir/v1/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#current"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="R4 Release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludexml"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludejsn"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludemap"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="generate"/>
+      </extension>
+      <extension url="value">
+        <valueString value="xml"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="generate"/>
+      </extension>
+      <extension url="value">
+        <valueString value="json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://varian.com/fhir/v1/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DocumentReference"/>
+      </reference>
+      <name value="A reference to a document"/>
+      <description value="This resource identifies the healthcare documentation created for a Patient in ARIA"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-activityAdditionalPerformer"/>
+      </reference>
+      <name value="activityAdditionalPerformer"/>
+      <description value="Performer of the Activity of Care Plan."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-activityBasedOn"/>
+      </reference>
+      <name value="activityBasedOn"/>
+      <description value="The predecessor activity this care plan activity is based on."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ActivityDefinition"/>
+      </reference>
+      <name value="ActivityDefinition"/>
+      <description value="This resource allows for the definition of some activity to be performed, it may be used to specify actions to be taken as part of a workflow, appointment or tasks."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/ActivityDefinition-844"/>
+      </reference>
+      <name value="ActivityDefinition Example"/>
+      <description value="ActivityDefinition example for the *Varian ARIA API ActivityDefinition Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/activityDefinition-category"/>
+      </reference>
+      <name value="activityDefinition-category"/>
+      <description value="Classification of Activity."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/address-telephone1"/>
+      </reference>
+      <name value="address-telephone1"/>
+      <description value="Address Telephone 1 Number."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AllergyIntolerance"/>
+      </reference>
+      <name value="AllergyIntolerance"/>
+      <description value="AllergyIntolerance represents Patient's Allergies in ARIA.&#xA;&#xA;All recorded allergies or NO KNOWN ALLERGY status will be reflected using this."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-allergy-category"/>
+      </reference>
+      <name value="AllergyIntolerance ARIA Category"/>
+      <description value="This value set defines different allergy types configured in Aria. &#xA;List of configured allergy categories are available under valueset 'aria-allergy-category'. &#xA;All values can be accessed using $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/allergy-intolerance-category."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/AllergyIntolerance-73200000000000000237-2"/>
+      </reference>
+      <name value="AllergyIntolerance Example"/>
+      <description value="AllergyIntolerance example for the *Varian AllergyIntolerance API Group Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/AllergyIntolerance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/allergyIntolerance-allergyCategoryInAria"/>
+      </reference>
+      <name value="allergyIntolerance-allergyCategoryInAria"/>
+      <description value="ARIA Coded Allergy category."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/allergyIntolerance-reaction-lifeThreatening"/>
+      </reference>
+      <name value="allergyIntolerance-reaction-lifeThreatening"/>
+      <description value="ARIA allergy reaction."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Appointment"/>
+      </reference>
+      <name value="Appointment"/>
+      <description value="A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/Appointment-162"/>
+      </reference>
+      <name value="Appointment Example"/>
+      <description value="Appointment example for the *Varian ARIA API Appointment Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/appointment-actualTime"/>
+      </reference>
+      <name value="appointment-actualTime"/>
+      <description value="Actual Start date &amp; Actual End date for Appointment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/appointment-ariaStatus"/>
+      </reference>
+      <name value="appointment-ariaStatus"/>
+      <description value="ARIA Specific Status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/appointment-visitInstructions"/>
+      </reference>
+      <name value="appointment-visitInstructions"/>
+      <description value="Visit instructions of a MO appointment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/appointment-newPatientIndicator"/>
+      </reference>
+      <name value="appointment-visitInstructions"/>
+      <description value="Visit instructions of a MO appointment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/approvalDate"/>
+      </reference>
+      <name value="approvalDate"/>
+      <description value="The date on which the Physical Exam record approved."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-procedurecode"/>
+      </reference>
+      <name value="aria-procedurecode"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/assertedOn"/>
+      </reference>
+      <name value="assertedOn"/>
+      <description value="Date on which observation result value has been approved."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AuditEvent"/>
+      </reference>
+      <name value="Audit Event"/>
+      <description value="A record of an event made for purposes of maintaining a security log. Typical uses include detection of intrusion attempts and monitoring for inappropriate usage."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AuditEvent"/>
+      </extension>
+      <reference>
+        <reference value="AuditEvent/AuditEvent-1"/>
+      </reference>
+      <name value="AuditEvent Example"/>
+      <description value="AuditEvent example for the *Varian ARIA API AuditEvent Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/AuditEvent"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BodyStructure"/>
+      </reference>
+      <name value="BodyStructure"/>
+      <description value="This resource record details about an anatomical structure. This resource may be used when a coded concept does not provide the necessary detail needed for the use case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Condition-DX-94100000000000000149-12"/>
+      </reference>
+      <name value="Cancer Condition Example"/>
+      <description value="Cancer Condition example for the *Varian ARIA API Cancer Condition Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/CancerCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CarePlan"/>
+      </reference>
+      <name value="CarePlan"/>
+      <description value="Care Plan profile is derived from FHIR Domain Resource.&#xA;It represents care plan in ARIA ."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/CarePlan-237"/>
+      </reference>
+      <name value="CarePlan Example"/>
+      <description value="CarePlan example for the *Varian ARIA API CarePlan Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/CarePlan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-careplan-template"/>
+      </reference>
+      <name value="CarePlan Template"/>
+      <description value="The configured careplan template in Aria. &#xA;List of configured templates are accessible using valueset 'aria-careplan-template'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/careplan-template"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-activity-definition"/>
+      </reference>
+      <name value="careplan-activity-definition"/>
+      <description value="Base Activity Definition reference on which this Care Plan activity is planned."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-activityAutoAssignOncologist"/>
+      </reference>
+      <name value="careplan-activityAutoAssignOncologist"/>
+      <description value="Careplan activities auto Assign oncologist flag."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CareTeam"/>
+      </reference>
+      <name value="CareTeam"/>
+      <description value="This Resource includes all the people and organizations who plan to participate in the coordination and delivery of care for a patient.&#xA;&#xA;Careteam represents department and practitioner (doctor/staff) assigned to the Patient in ARIA.&#xA;&#xA;ARIA does not configure predefined teams, so single Careteam per Patient will represent associations with Department and practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CareTeam"/>
+      </extension>
+      <reference>
+        <reference value="CareTeam/CareTeam-8"/>
+      </reference>
+      <name value="CareTeam Example"/>
+      <description value="CareTeam example for the *Varian ARIA API CareTeam Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/CareTeam"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ChargeItem"/>
+      </reference>
+      <name value="ChargeItem"/>
+      <description value="This Resource represents charges captured for an activity."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ChargeItem"/>
+      </extension>
+      <reference>
+        <reference value="ChargeItem/ChargeItem-32-830"/>
+      </reference>
+      <name value="ChargeItem Example"/>
+      <description value="ChargeItem example for the *Varian ARIA API ChargeItem Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/ChargeItem"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chargeItem-associateCharge"/>
+      </reference>
+      <name value="chargeItem-associateCharge"/>
+      <description value="Medical charges with procedure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chargeitem-category"/>
+      </reference>
+      <name value="chargeitem-category"/>
+      <description value="Type of Charge"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chargeItem-codeModifier"/>
+      </reference>
+      <name value="chargeItem-codeModifier"/>
+      <description value="Code Modifier Override on base Procedure code."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chargeitem-completedOn"/>
+      </reference>
+      <name value="chargeitem-completedOn"/>
+      <description value="Resource completed On."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/subcomponentcode"/>
+      </reference>
+      <name value="code"/>
+      <description value="Sub-component  attribute name."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/componentNote"/>
+      </reference>
+      <name value="componentnote"/>
+      <description value="Comment on component of Observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/componentOrder"/>
+      </reference>
+      <name value="componentOrder"/>
+      <description value="Lab Result Component Order."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-assertedDate"/>
+      </reference>
+      <name value="condition-assertedDate"/>
+      <description value="The date on which the existence of the Condition was first asserted or acknowledged."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-cancerBehavior"/>
+      </reference>
+      <name value="condition-cancerBehavior"/>
+      <description value="ARIA Cancer Behaviour Code. It is used to uniquely identify an ICD-O behavior code."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-clinicalStatusDate"/>
+      </reference>
+      <name value="condition-clinicalStatusDate"/>
+      <description value="The date on which symptoms of the diagnosis/problem were first known to exist."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-clinicalStatusInARIA"/>
+      </reference>
+      <name value="condition-clinicalStatusInARIA"/>
+      <description value="ARIA Codes for Diagnosis Status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CancerCondition"/>
+      </reference>
+      <name value="Condition-Diagnosis (CancerCondition)"/>
+      <description value="This resource is used to record detailed information about a  diagnosis that has risen to a level of concern. The condition could be a point in time diagnosis in context of an encounter, it could be an item on the practitioner's Problem List, or it could be a concern that doesn't exist on the practitioner's Problem List."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-isExternal"/>
+      </reference>
+      <name value="condition-isExternal"/>
+      <description value="Indicates that the diagnosis was brought in via interface (i.e. it was done external to our application)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-laterality"/>
+      </reference>
+      <name value="condition-laterality"/>
+      <description value="Designated codes for condition side of the body affected."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-rank"/>
+      </reference>
+      <name value="condition-rank"/>
+      <description value="Concepts that identify the significance or priority of the diagnosis code. Note that the codes are numeric, and the number of the code represents the ordinal priority of the associated diagnosis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Condition-Stage-isWorkingStage"/>
+      </reference>
+      <name value="Condition-Stage-isWorkingStage"/>
+      <description value="Signifies if the observation is in woking group."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-country"/>
+      </reference>
+      <name value="Country"/>
+      <description value="This value set defines a base set of codes for countries configured in Aria. &#xA;The list of country accepted under citizenShip are available under ValueSet 'aria-country'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/country"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/customAttributes"/>
+      </reference>
+      <name value="customAttributes"/>
+      <description value="Configurable Attributes on Patient. ARIA has Configurable User defined Attributes to accommodate Patient's properties which are not present in ARIA out of box."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/daily-dose-limit"/>
+      </reference>
+      <name value="daily-dose-limit"/>
+      <description value="Daily dose limit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/default"/>
+      </reference>
+      <name value="default"/>
+      <description value="The resource is default choice among similar set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/defaultServiceOrganization"/>
+      </reference>
+      <name value="defaultServiceOrganization"/>
+      <description value="Default Department of Resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Device"/>
+      </reference>
+      <name value="Device"/>
+      <description value="This resource identifies an instance or a type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.  Medical devices include durable (reusable) medical equipment, implantable devices, as well as disposable equipment used for diagnostic, treatment, and research for healthcare and public health.  Non-medical devices may include items such as a machine, cellphone, computer, application, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Device-1034"/>
+      </reference>
+      <name value="Device Example"/>
+      <description value="Device example for the *Varian ARIA API Device Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-device-type"/>
+      </reference>
+      <name value="Device Types"/>
+      <description value="List of configured device types are accessible using valueset 'aria-device-type'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/device-type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-diagnosiscode"/>
+      </reference>
+      <name value="Diagnosis Code"/>
+      <description value="List of available codes are accessible using valueset 'aria-diagnosiscode'. All values can be accessed using ValueSet $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code. Codes can be filtered on schemas using context filter i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code&amp;context=http://hl7.org/fhir/sid/icd-9-cm|icd-9-cm"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/directive-userConfirmationRequired"/>
+      </reference>
+      <name value="directive-userConfirmationRequired"/>
+      <description value="Whether User confirmation dialog flag. Applicable: DIRECTIVE ValueSet only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/DocumentReference-20000000000000000002-3-2"/>
+      </reference>
+      <name value="DocumentReference Example"/>
+      <description value="DocumentReference example for the *Varian ARIA API DocumentReference Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/DocumentReference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-documenttype"/>
+      </reference>
+      <name value="DocumentReference Type"/>
+      <description value="This valueset defines the code specifying the precise type of document. &#xA;List of configured document type are accessible using valueset 'aria-documenttype'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/documentreference-type&amp;publisher=Organization-Prov-1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentreference-authenticated"/>
+      </reference>
+      <name value="documentreference-authenticated"/>
+      <description value="Date at which document approved."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentreference-completed"/>
+      </reference>
+      <name value="documentreference-completed"/>
+      <description value="Whether the document draft has be completed for review or approval."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentreference-documentLocation"/>
+      </reference>
+      <name value="documentreference-documentLocation"/>
+      <description value="Location of document stored."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentreference-signature"/>
+      </reference>
+      <name value="documentreference-signature"/>
+      <description value="Document Signer details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentreference-supervisor"/>
+      </reference>
+      <name value="documentreference-supervisor"/>
+      <description value="Originator of Document, In ARIA its Supervisor of document."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentreference-templateName"/>
+      </reference>
+      <name value="documentreference-templateName"/>
+      <description value="Document Template Name in ARIA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/RadiotherapyConditionSHS-1"/>
+      </reference>
+      <name value="Example Breast Cancer Condition"/>
+      <description value="Example breast cancer Condition."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/CancerCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/RadiotherapyPatientSHS-216"/>
+      </reference>
+      <name value="Example Female Patient 9"/>
+      <description value="An example female radiotherapy Patient."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/RadiotherapyPractitionerSHS-1005"/>
+      </reference>
+      <name value="Example Radiotherapy Practitioner 1005"/>
+      <description value="An example radioterapy Practitioner."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Group"/>
+      </reference>
+      <name value="Group"/>
+      <description value="Group represents logical grouping of Resources like Advance Practitioners, Nurses,Oncologists, System administrators etc...      &#xA;Group comprises Doctor/Staff (Practitioner), Machine (Device) and Venue (Location) with in a department in ARIA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/Group-10005"/>
+      </reference>
+      <name value="Group Example"/>
+      <description value="Group example for the *Varian ARIA API Group Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HealthcareService"/>
+      </reference>
+      <name value="HealthcareService"/>
+      <description value="HealthcareService represents departments in ARIA as in ARIA department and services are not two separate concepts.&#xA;Although Department are already being represented by Organization resource, since many other FHIR clinical resources works on HealthcareService concept, we are mapping department in Healthcare service as well."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/HealthcareService-1"/>
+      </reference>
+      <name value="HealthcareService Example"/>
+      <description value="HealthcareService example for the *Varian ARIA API HealthcareService Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/HealthcareService"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/isChargeCaptureApplicable"/>
+      </reference>
+      <name value="isChargeCaptureApplicable"/>
+      <description value="Flag in ARIA to define charge capture after completion of a service in Facility."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/isPrimary"/>
+      </reference>
+      <name value="isPrimary"/>
+      <description value="Whether the ethnicity or race is primary? Applicable to Patient ethnicity and race."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/isPublishable"/>
+      </reference>
+      <name value="isPublishable"/>
+      <description value="Lab Result Component publishable status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/isWorkingStage"/>
+      </reference>
+      <name value="isWorkingStage"/>
+      <description value="Is Current Stage is working stage."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lastModificationTaskName"/>
+      </reference>
+      <name value="lastModificationTaskName"/>
+      <description value="Last modified by task name."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lastModificationUser"/>
+      </reference>
+      <name value="lastModificationUser"/>
+      <description value="Last modified by user."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-lastUpdatedOn"/>
+      </reference>
+      <name value="LastUpdatedOn"/>
+      <description value="Last update time of Element."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Location"/>
+      </reference>
+      <name value="Location"/>
+      <description value="Location includes both incidental locations (a place which is used for healthcare ) and dedicated, formally appointed locations.&#xA;It can be of Auxiliary type or Venue type. &#xA;Auxiliary locations include imaging machines and treatment machines.&#xA;Venues are locations within a department like treatment room, waiting room, consultation room, etc.  Some locations can be schedulable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Location-1009"/>
+      </reference>
+      <name value="Location Example"/>
+      <description value="Location example for the *Varian ARIA API Location Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/login-institution"/>
+      </reference>
+      <name value="login-institution"/>
+      <description value="Associated department in ARIA (Supported only on ARIA V18 or onwards)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-mobilephoneprovider"/>
+      </reference>
+      <name value="Mobile Phone Provider"/>
+      <description value="This value set includes various mobile phone providers configured in aria. &#xA;The list of configured mobile phone providers are available under ValueSet 'aria-mobilephoneprovider'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-mobilephoneprovider"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/modifier-application-code"/>
+      </reference>
+      <name value="modifier-application-code"/>
+      <description value="Modifier application code."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observation-DX-Stg-11200000000000000211-3-2"/>
+      </reference>
+      <name value="Observation Condition Diagnosis Stage Example"/>
+      <description value="Observation Condition Diagnosis Stage example with all attributes specified."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/StageGroup"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observation-Stg-Category-3-2-T"/>
+      </reference>
+      <name value="Observation Stage Category Example"/>
+      <description value="Observation Stage Category example with all attributes specified."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/StageCategory"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/StageCategory"/>
+      </reference>
+      <name value="Observation-StageCategory"/>
+      <description value="Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic   characteristics. Most observations are simple name/value pair assertions with some metadata, but some observations group other observations together logically, or even are multi-component observations. &#xA;&#xA;This profile is used to represent the Stage Category in Condition Diagnosis resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-stageClassification"/>
+      </reference>
+      <name value="observation-stageClassification"/>
+      <description value="Stage Classification, clinical, pathological, posttherapy, recurrence, autopsy is called the Classification."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/StageGroup"/>
+      </reference>
+      <name value="Observation-StageGroup"/>
+      <description value="Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic   characteristics. Most observations are simple name/value pair assertions with some metadata, but some observations group other observations together logically, or even are multi-component observations. &#xA;&#xA;This profile is used to represent the Stage Group in Condition Diagnosis resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observation-vital-73200000000000000237-2-2"/>
+      </reference>
+      <name value="Observation-vital Example"/>
+      <description value="Observation-vital example for the *Varian ARIA API Observation-vital Profile.*"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VitalSigns"/>
+      </reference>
+      <name value="Observation-Vital-Signs"/>
+      <description value="Vital Signs profile is derived from FHIR Observation.&#xA;&#xA;It represents Patient's Vital Signs  Observations recorded in ARIA ."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/VitalSignsComponent"/>
+      </reference>
+      <name value="Observation-Vital-Signs-Component"/>
+      <description value="Vital Signs component profile is derived from FHIR Observation.&#xA;&#xA;It represents Patient's individual Vital Signs result Observations recorded in ARIA ."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-lagfrompredecessor"/>
+      </reference>
+      <name value="offset"/>
+      <description value="Lag offset from previous activity."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Organization"/>
+      </reference>
+      <name value="Organization"/>
+      <description value="A formally or informally recognized grouping of organizations formed for the purpose of achieving some form of collective action. Includes institutions, departments etc&#xA;&#xA;Organization represents Hospital and Departments configured in ARIA. A Hospital can have multiple departments.&#xA;&#xA;Hospital is represented with category 'prov (Provider)' and Department is represented with category 'dept (Department)'. &#xA;&#xA;Hospital and Department relationship is represented on Department."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Organization-Dept-10002"/>
+      </reference>
+      <name value="Organization Department Example"/>
+      <description value="Organization Department example for the *Varian ARIA API Organization Department Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Organization-Prov-3"/>
+      </reference>
+      <name value="Organization Hospital Example"/>
+      <description value="Organization Hospital example for the *Varian ARIA API Organization Hospital Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Patient"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="This profile represents Patient Demographics, Contacts and other administrative information.&#xA;Profile Contains: Demographics, Contacts, Region specific details like Race, Ethnicity and Language (if applicable), User Defined Labels"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/Bundle-260"/>
+      </reference>
+      <name value="Patient CareTeam Bundle Example"/>
+      <description value="Patient CareTeam Bundle create example with all attributes specified."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/patient-citizenship-vs"/>
+      </reference>
+      <name value="Patient Citizenship Value Set"/>
+      <description value="Patient Citizenship Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-deathreason"/>
+      </reference>
+      <name value="Patient Death Reason"/>
+      <description value="List of configured death reasons values are available under valueset 'aria-patient-deathreason'. &#xA;All database configured values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-deathreason"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-ethinicity"/>
+      </reference>
+      <name value="Patient Ethinicity"/>
+      <description value="This value set includes patient ethnicity configured in aria. &#xA;The list of configured ethnicity are available under ValueSet 'aria-patient-ethnicity'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/ethnicity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-256"/>
+      </reference>
+      <name value="Patient Example"/>
+      <description value="Patient example for the *Varian ARIA API Patient Profile.*"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-gender"/>
+      </reference>
+      <name value="Patient Gender"/>
+      <description value="The gender of a person used for administrative purposes. &#xA;All database configured values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/person-gender"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-genderidentity"/>
+      </reference>
+      <name value="Patient Gender Identity"/>
+      <description value="This value set includes supported gender identity configured in aria. &#xA;The list of configured gender identity are available under ValueSet 'aria-patient-genderidentity'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-genderIdentity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-ids"/>
+      </reference>
+      <name value="Patient Ids"/>
+      <description value="This value set includes configured patient ids. &#xA;The list of country accepted under citizenShip are available under ValueSet 'aria-country'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/country"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-language"/>
+      </reference>
+      <name value="Patient Language"/>
+      <description value="This value set defines the set of codes that can be used to indicate patient's communication language. &#xA;The list of configured communication languages are available under ValueSet 'aria-patient-language'. &#xA;All values can be accessed using $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/languages"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-maritalstatus"/>
+      </reference>
+      <name value="Patient Marital Status"/>
+      <description value="This value set includes Marital Status values configured in aria. &#xA;The list of configured marital status are available under ValueSet 'aria-patient-maritalstatus'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/marital-status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-race"/>
+      </reference>
+      <name value="Patient Race"/>
+      <description value="This value set includes race configured in aria. &#xA;The list of configured races are available under ValueSet 'aria-patient-race'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/race"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-religion"/>
+      </reference>
+      <name value="Patient Religion"/>
+      <description value="This value set includes religion configured in aria. &#xA;The list of configured religion values are available under ValueSet 'aria-patient-religion'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/religion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-sexorientation"/>
+      </reference>
+      <name value="Patient Sexual Orientation"/>
+      <description value="This value set includes supported sexual orientation configured in aria. &#xA;The list of configured sexual orientation are available under ValueSet 'aria-patient-sexorientation'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-sexorientation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-userdefinedlabel"/>
+      </reference>
+      <name value="Patient UserDefined Label"/>
+      <description value="This value set includes user defined labels defined for Patient resource. &#xA;The list of configured labels are available under ValueSet 'aria-patient-userdefinedlabel'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-userdefinedlabel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-patient-status"/>
+      </reference>
+      <name value="Patient's Status"/>
+      <description value="This value set includes Patient Status values configured in aria. &#xA;The list of configured patient status are available under ValueSet 'aria-patient-status'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-class"/>
+      </reference>
+      <name value="patient-class"/>
+      <description value="Patient's class - In Patient | Out Patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-contact-isPrimary"/>
+      </reference>
+      <name value="patient-contact-isPrimary"/>
+      <description value="Whether the contact is primary."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-contact-subrelation"/>
+      </reference>
+      <name value="patient-contact-subrelation"/>
+      <description value="Patient's relationship with the contact person."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-deathReason"/>
+      </reference>
+      <name value="patient-deathReason"/>
+      <description value="Reason for Patient's Death."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-isTestPatient"/>
+      </reference>
+      <name value="patient-isTestPatient"/>
+      <description value="Whether Patient is test patient. (Supported only on ARIA V18 or onwards) FHIR will return test patient which are created by ARIA. Test Patient Create/update is not supported from FHIR."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-locationDetails"/>
+      </reference>
+      <name value="patient-locationDetails"/>
+      <description value="In Patient Admission details - Admission Period, Room Number."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-mobilePhoneProvider"/>
+      </reference>
+      <name value="patient-mobilePhoneProvider"/>
+      <description value="Patient's mobile phone provider details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-modeOfArrival"/>
+      </reference>
+      <name value="patient-modeOfArrival"/>
+      <description value="Patient Transportation Contact Comment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-occupation"/>
+      </reference>
+      <name value="patient-occupation"/>
+      <description value="Patient's occupation details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-photo-type"/>
+      </reference>
+      <name value="patient-photo-type"/>
+      <description value="Patient's photo type."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-retirementDetails"/>
+      </reference>
+      <name value="patient-retirementDetails"/>
+      <description value="Patient's retirement details contains information about patient's retirement date, retirement reason and retirement note."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-status"/>
+      </reference>
+      <name value="patient-status"/>
+      <description value="Patient's status with provider - New Patient | Previous Patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/performedAge"/>
+      </reference>
+      <name value="performedAge"/>
+      <description value="Age when procedure is performed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/person-gender"/>
+      </reference>
+      <name value="person-gender"/>
+      <description value="Person's Gender, if is not re-presentable with Administrative Gender Value set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Practitioner"/>
+      </reference>
+      <name value="Practitioner"/>
+      <description value="Practitioner covers all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities and this Resource is used for attribution of activities and responsibilities to these individuals. Practitioners include (but are not limited to):&#xA;&#xA;physicians, dentists, pharmacists, &#xA;physician assistants, nurses, scribes, &#xA;midwives, dietitians, therapists, optometrists, paramedics, &#xA;medical technicians, laboratory scientists, prosthetic technicians, radiographers, &#xA;social workers, professional homecare providers, official volunteers, &#xA;receptionists handling patient registration&#xA;&#xA;Practitioner represents Doctor and Staff configured in ARIA. &#xA;&#xA;Doctor/Staff demographics, role and  association with department is being represented."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Practitioner-1258"/>
+      </reference>
+      <name value="Practitioner Example"/>
+      <description value="Practitioner example for the *Varian ARIA API Practitioner Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-practitioner-ids"/>
+      </reference>
+      <name value="Practitioner Ids"/>
+      <description value="List of practitioner ids configured are available under valueset 'aria-practitioner-ids'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/practitioner-ids"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/aria-practitioner-role"/>
+      </reference>
+      <name value="Practitioner Role"/>
+      <description value="The different practitioner roles configured are available under valueset 'aria-practitioner-role'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/practitioner-role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitioner-role"/>
+      </reference>
+      <name value="practitioner-role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shs-radiotherapy-bolus-extension"/>
+      </reference>
+      <name value="Radiotherapy Bolus"/>
+      <description value="Bolus used (or to be used) for radiotherapy."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RadiotherapyCoursePrescription"/>
+      </reference>
+      <name value="Radiotherapy Course Prescription"/>
+      <description value="The elements of a treatment course that can be defined during prescription. This represents the treatment course in ARIA, not an actual prescription and is the parent for all presciptions in the course.&#xD;&#xA;It contains the data elements of a course that are not specific to planning or delivery, for example, treatment intent, relation to the diagnosis, or course status.&#xD;&#xA;Those elements are exposed as CodeX RT Radiotherapy Course Prescription although ARIA does not have an actual prescription for the complete course. See the Phase Prescription profile for actual prescriptions in ARIA.&#xD;&#xA;With the Radiotherapy Course Prescription, elements of the course can be found as soon as a course is defined in ARIA, even if no treatment plans or delivered treatments are available yet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RadiotherapyCourseSummary"/>
+      </reference>
+      <name value="Radiotherapy Course Summary"/>
+      <description value="A summary of the treatment progress in a radiotherapy course of treatment.&#xD;&#xA;When additional treatments are delivered in the same course, this resource is updated. No new resource is created."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-352"/>
+      </reference>
+      <name value="Radiotherapy Patient Example"/>
+      <description value="Example radiotherapy patient."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RadiotherapyPhasePrescription"/>
+      </reference>
+      <name value="Radiotherapy Phase Prescription"/>
+      <description value="A prescription for a radiotherapy treatment phase.&#xD;&#xA;In ARIA, a prescription can cover a single plan or complete phase implemented with one or multiple plans. During prescription it may not even be defined whether&#xD;&#xA;multiple plans will be used. Therefore, all ARIA prescriptions are exposed as Phase Prescriptions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RadiotherapyPlannedCourse"/>
+      </reference>
+      <name value="Radiotherapy Planned Course"/>
+      <description value="A summary of all plans in a radiotherapy course of treatment. Only approved plans with status other than Unapproved, Rejected, Reviewed are considered."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RadiotherapyPlannedPhase"/>
+      </reference>
+      <name value="Radiotherapy Planned Phase"/>
+      <description value="A summary of all plans in a radiotherapy treatment phase.&#xD;&#xA;In ARIA, all plans linked to the same prescription are considered as part of the same phase.&#xD;&#xA;One Radiotherapy Planned Phase is exposed for each ARIA prescription that has at least one linked plan in an approved status (other than Unapproved, Rejected, Reviewed)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/radiotherapy-prescription-energy-example"/>
+      </reference>
+      <name value="Radiotherapy Prescription Energy Example"/>
+      <description value="Radiotherapy Prescription Energy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/radiotherapy-prescription-energy-example"/>
+      </reference>
+      <name value="Radiotherapy Prescription Energy Example"/>
+      <description value="Radiotherapy Prescription Energy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/radiotherapy-prescription-modality-example"/>
+      </reference>
+      <name value="Radiotherapy Prescription Modality Example"/>
+      <description value="Radiotherapy Prescription Modality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/radiotherapy-prescription-modality-example"/>
+      </reference>
+      <name value="Radiotherapy Prescription Modality Example"/>
+      <description value="Radiotherapy Prescription Modality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/radiotherapy-prescription-site-example"/>
+      </reference>
+      <name value="Radiotherapy Prescription Site Example"/>
+      <description value="Radiotherapy Prescription Site"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RadiotherapyPrescriptionSiteExample"/>
+      </reference>
+      <name value="Radiotherapy Prescription SiteExample"/>
+      <description value="Radiotherapy Prescription Site"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/radiotherapy-prescription-technique-example"/>
+      </reference>
+      <name value="Radiotherapy Prescription Technique Example"/>
+      <description value="Radiotherapy Prescription Technique."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/radiotherapy-prescription-technique-example"/>
+      </reference>
+      <name value="Radiotherapy Prescription Technique Example"/>
+      <description value="Radiotherapy Prescription Technique."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RadiotherapyTreatedPhase"/>
+      </reference>
+      <name value="Radiotherapy Treated Phase"/>
+      <description value="A summary of the treatment progress in a radiotherapy treatment phase. In ARIA, all plans linked to the same prescription are considered as part of the same phase."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RadiotherapyTreatedPlan"/>
+      </reference>
+      <name value="Radiotherapy Treated Plan"/>
+      <description value="A summary of the treatment progress in one radiotherapy treatment plan."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RadiotherapyTreatmentPlan"/>
+      </reference>
+      <name value="Radiotherapy Treatment Plan"/>
+      <description value="A radiotherapy treatment plan."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RadiotherapyVolume"/>
+      </reference>
+      <name value="Radiotherapy Volume"/>
+      <description value="A volume of the body used in radiotherapy planning or treatment delivery.&#xD;&#xA;In ARIA, dose is specified and tracked against Reference Points. These Reference Points can represent actual points or three-dimensional volumes.&#xD;&#xA;ARIA calls all of those 'Reference Point', even if not a point. Each Reference Point in ARIA is exposed as a Radiotherapy Volume."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BodyStructure"/>
+      </extension>
+      <reference>
+        <reference value="BodyStructure/BodyStructure-PV-681"/>
+      </reference>
+      <name value="Radiotherapy Volume Example"/>
+      <description value="Example BodyStructure compliant to the RadiotherapyVolume profile."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-volume"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/RadiotherapyCoursePrescriptionSHS-101-LeftBreast"/>
+      </reference>
+      <name value="RadiotherapyCoursePrescription-101-RTTD-LeftBreastTang"/>
+      <description value="Radiotherapy Course Prescription example from Codex RTTD collection. Included because referenced by the Radiotherapy Phase Prescription."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCoursePrescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/RadiotherapyCoursePrescription-352-634"/>
+      </reference>
+      <name value="RadiotherapyCoursePrescription-352-634"/>
+      <description value="Example Radiotherapy Course Prescription, i.e. parent to all prescriptions in the Course."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-course-prescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/RadiotherapyCourseSummary-352-634"/>
+      </reference>
+      <name value="RadiotherapyCourseSummary-352-634"/>
+      <description value="Example Radiotherapy Course Summary."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCourseSummary"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang"/>
+      </reference>
+      <name value="RadiotherapyPhasePrescription-101-RTTD-LeftBreastTang"/>
+      <description value="Radiotherapy Phase Prescription example from Codex RTTD collection."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPhasePrescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/RadiotherapyPhasePrescription-352-50"/>
+      </reference>
+      <name value="RadiotherapyPhasePrescription-352-50"/>
+      <description value="Example Radiotherapy Phase Prescription."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-phase-prescription"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/RadiotherapyPlannedCourse-352-634"/>
+      </reference>
+      <name value="RadiotherapyPlannedCourse-352-634"/>
+      <description value="Example Planned Course, i.e. summary of all plans in the Course."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-planned-course"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/RadiotherapyPlannedPhase-352-48"/>
+      </reference>
+      <name value="RadiotherapyPlannedPhase-352-48"/>
+      <description value="Example Planned Phase, i.e. summary of all plans linked to the same prescription."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-planned-phase"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/RadiotherapyTreatedPhase-352-50"/>
+      </reference>
+      <name value="RadiotherapyTreatedPhase-352-50"/>
+      <description value="Example Radiotherapy Treated Phase, i.e. all treatments related to the same prescription."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPhase"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/RadiotherapyTreatedPlan-352-1326"/>
+      </reference>
+      <name value="RadiotherapyTreatedPlan-352-1326"/>
+      <description value="Example Radiotherapy Treated Plan."/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPlan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/RadiotherapyTreatmentPlan-352-1479"/>
+      </reference>
+      <name value="RadiotherapyTreatmentPlan-352-1479"/>
+      <description value="Example Radiotherapy Treatment Plan."/>
+      <exampleCanonical value="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-treatment-plan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/readOnly"/>
+      </reference>
+      <name value="readOnly"/>
+      <description value="ReadOnly flag is set to true if Resource information is read only and can not be modified."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reminderTime"/>
+      </reference>
+      <name value="remindTime"/>
+      <description value="Duration prior to scheduled time before which a reminder should be notified."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/schedulable"/>
+      </reference>
+      <name value="schedulable"/>
+      <description value="Whether the resource can be scheduled or not."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/serviceOrganization"/>
+      </reference>
+      <name value="serviceOrganization"/>
+      <description value="Department(s) associated with resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/session-dose-limit"/>
+      </reference>
+      <name value="session-dose-limit"/>
+      <description value="Session dose limit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sexOrientation"/>
+      </reference>
+      <name value="sexOrientation"/>
+      <description value="An individual's physical and/or emotional attraction to another individual of the same gender, opposite gender, or both genders."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observation-Condition-DX-Stage-Category-200002-200002-M"/>
+      </reference>
+      <name value="Stage Category(Condition-Diagnosis contained resource) Example"/>
+      <description value="Stage Category example for the *Varian ARIA API Stage Category Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/StageCategory"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Observation-DX-Stg-39500000002000000593-200002-200002"/>
+      </reference>
+      <name value="Stage Group Example"/>
+      <description value="Stage Group example for the *Varian ARIA API Stage Group Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/StageGroup"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/subComponent"/>
+      </reference>
+      <name value="subComponent"/>
+      <description value="Subcomponent of component.  It contains only extensions, no value. It acts as a group placeholder for subcomponent attribute and its value in case of abnormal observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/supporting-information"/>
+      </reference>
+      <name value="supporting-information"/>
+      <description value="Task supporting information."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Task"/>
+      </reference>
+      <name value="Task"/>
+      <description value="Task resource represents tasks configured in ARIA.   &#xA;&#xA;&#xA;A task resource describes an activity that can be performed and tracks the state of completion of that activity. It is a representation that an activity should be or has been initiated, and eventually, represents the successful or unsuccessful completion of that activity."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/Task-441"/>
+      </reference>
+      <name value="Task Example"/>
+      <description value="Task example for the *Varian ARIA API Task Profile.*"/>
+      <exampleCanonical value="http://varian.com/fhir/v1/StructureDefinition/Task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/task-minutesDuration"/>
+      </reference>
+      <name value="task-minutesDuration"/>
+      <description value="Minutes Duration (Time Frame) estimate required to perform task."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/total-dose-limit"/>
+      </reference>
+      <name value="total-dose-limit"/>
+      <description value="Total dose limit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/subcomponentvalue"/>
+      </reference>
+      <name value="value"/>
+      <description value="Sub-component attribute value."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ValueSet"/>
+      </reference>
+      <name value="ValueSet"/>
+      <description value="* ValueSet specifies a set of codes drawn from one or more code systems, intended for use in a particular context. Value sets link between CodeSystem definitions and their use in coded elements.&#xA;&#xA;* ^publisher = &quot;Varian ARIA API Profile Team&quot;&#xA;&#xA;* Value sets have 2 aspects:&#xA;&#xA;    * .compose:  A definition of which codes are intended to be in the value set (&quot;intension&quot;) -/li-&#xA;    *  .expansion: The list of codes that are actually in the value set under a given set of conditions (&quot;extension&quot;) -/li-&#xA;&#xA;&#xA;* Please refer the How to -&gt; Valueset &amp; Codesystem List Page for list of valueset and codesystems."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/valueset-payor-plan-type"/>
+      </reference>
+      <name value="valueset-payor-plan-type"/>
+      <description value="Payor Plan Type. Applicable: PAYOR-INFO ValueSet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/valueset-Required"/>
+      </reference>
+      <name value="valueset-Required"/>
+      <description value="Valueset Required or not flag."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/vital-component-73200000000000000237-2-2-2"/>
+      </reference>
+      <name value="vital-component Example"/>
+      <description value="vital-component example for the *Varian ARIA API vital-component Profile.*"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="clientcreation.html"/>
+        </extension>
+        <nameUrl value="clientcreation.html"/>
+        <title value="Clientcreation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="examples.html"/>
+        </extension>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="profiles.html"/>
+        </extension>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="radiotherapy.html"/>
+        </extension>
+        <nameUrl value="radiotherapy.html"/>
+        <title value="Radiotherapy"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="vaisscopes.html"/>
+        </extension>
+        <nameUrl value="vaisscopes.html"/>
+        <title value="Vaisscopes"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="vaistokengen.html"/>
+        </extension>
+        <nameUrl value="vaistokengen.html"/>
+        <title value="Vaistokengen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="valuesetandcodesystemlist.html"/>
+        </extension>
+        <nameUrl value="valuesetandcodesystemlist.html"/>
+        <title value="Valuesetandcodesystemlist"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

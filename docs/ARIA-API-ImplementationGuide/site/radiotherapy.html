@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\Radiotherapy - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Radiotherapy</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Radiotherapy</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#dose-values" id="markdown-toc-dose-values">Dose Values</a></li>
+  <li><a href="#radiotherapy-courses-in-aria" id="markdown-toc-radiotherapy-courses-in-aria">Radiotherapy Courses in ARIA</a>    <ul>
+      <li><a href="#treatment-intent" id="markdown-toc-treatment-intent">Treatment Intent</a></li>
+      <li><a href="#diagnoses" id="markdown-toc-diagnoses">Diagnoses</a></li>
+      <li><a href="#start-date-and-completion-date" id="markdown-toc-start-date-and-completion-date">Start Date and Completion Date</a></li>
+      <li><a href="#course-status" id="markdown-toc-course-status">Course Status</a></li>
+    </ul>
+  </li>
+  <li><a href="#radiotherapy-prescriptions" id="markdown-toc-radiotherapy-prescriptions">Radiotherapy Prescriptions</a>    <ul>
+      <li><a href="#mapping-to-snomed-ct" id="markdown-toc-mapping-to-snomed-ct">Mapping to SNOMED CT</a></li>
+    </ul>
+  </li>
+  <li><a href="#radiotherapy-treatment-plans" id="markdown-toc-radiotherapy-treatment-plans">Radiotherapy Treatment Plans</a>    <ul>
+      <li><a href="#target-volumes" id="markdown-toc-target-volumes">Target Volumes</a></li>
+      <li><a href="#using-reference-points-across-multiple-plans" id="markdown-toc-using-reference-points-across-multiple-plans">Using Reference Points across multiple plans</a></li>
+    </ul>
+  </li>
+  <li><a href="#radiotherapy-treatment-summaries" id="markdown-toc-radiotherapy-treatment-summaries">Radiotherapy Treatment Summaries</a></li>
+  <li><a href="#summary" id="markdown-toc-summary">Summary</a>    <ul>
+      <li><a href="#radiotherapy-treatment-sites" id="markdown-toc-radiotherapy-treatment-sites">Radiotherapy Treatment Sites</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<style>
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid black;
+}
+blockquote {
+    color: #517495;
+    border-left: solid #517495;
+    padding-left: 10px;
+}
+</style>
+
+<p>This page describes how radiotherapy (RT) data is exposed from ARIA in FHIR format.
+It follows the</p>
+
+<ul>
+  <li><a href="https://hl7.org/fhir/us/codex-radiation-therapy/STU1/">CodeX™ RT STU 1 Implementation Guide</a></li>
+</ul>
+
+<p>which is based on the radiotherapy contents of the</p>
+
+<ul>
+  <li><a href="https://hl7.org/fhir/us/mcode/STU2.1/">minimal Common Oncology Data Elements (mCODE) STU 2.1</a></li>
+</ul>
+
+<p>The treatment summaries comply to the (<a href="https://www.ihe-ro.org/">IHE-RO</a>) Exchange of Radiotherapy Summaries (<a href="https://www.ihe-ro.org/doku.php?id=doc:profiles:xrts">XRTS</a>) Supplement. ARIA covers the role of a combined Treatment Summary Provider and RO Repository actor with the limitation that it does not support treatment summaries from other systems. Treatment Observer actors can read RT summaries from ARIA, but only for summaries that ARIA itself has produced.</p>
+
+<p>The detailed data model of mCODE and CodeX RT and mapping to FHIR resources is described in the respective IGs.</p>
+
+<ul>
+  <li>
+    <p>mCODE narrative on Course Summary and related concepts in <a href="https://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-course-summary.html#usage">mCODE STU 2.1</a></p>
+  </li>
+  <li>
+    <p><a href="https://hl7.org/fhir/us/mcode/STU2.1/glossary.html">mCODE Glossary</a></p>
+  </li>
+  <li>
+    <p><a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/overview.html">CodeX RT Profiles Overview</a></p>
+  </li>
+</ul>
+
+<p>To understand the mapping form ARIA, it is important to become familiar with these CodeX RT profiles.</p>
+
+<p><img src="CodeXRTDataModel.svg" alt="RT Summary Resources Model" width="1100px" style="float:none; margin: 0px 0px 0px 0px;" /></p>
+
+<p>The profiles describe what is prescribed (left column), what is planned (middle column) and what is delivered (right column) at different levels of detail.</p>
+
+<p>The level of detail ranges from single plans (lower row), to summary over a phase (middle row) to summary over a complete course (upper row).</p>
+
+<p>Not shown in this figure is the Resource profile for <a href="StructureDefinition-RadiotherapyVolume.html">Radiotherapy Volumes</a> based on the Resource type BodyStructure, which represents the Target Volumes to which these ServiceRequest and Procedure profiles prescribe dose, plan dose, and record delivered dose.</p>
+
+<p>In this model, ARIA does not support Plan Prescriptions. As RT Prescriptions in ARIA can generally cover more than one plan, all ARIA RT Prescriptions are exposed as Phase Prescriptions, even though in practice some ARIA prescriptions may cover only a single plan.
+However, additional plans could be linked anytime to a prescription and thus the mapping to Phase Prescription is indicated.</p>
+
+<h3 id="dose-values">Dose Values</h3>
+
+<blockquote>
+  <p>All elements containing physical dose have unit cGy as per mCODE and CodeX RT specifications.</p>
+</blockquote>
+
+<p>Even if ARIA is configured to display dose in Gy, the dose values exposed in the CodeX RT and mCODE extensions are in cGy.</p>
+
+<h2 id="radiotherapy-courses-in-aria">Radiotherapy Courses in ARIA</h2>
+
+<p>Courses in ARIA are mapped to courses in mCODE. mCODE requires a course to cover all treatments from first delivery of radiation until all body sites in need of radiation have been treated (<a href="https://hl7.org/fhir/us/mcode/STU2.1/glossary.html">mCODE Glossary</a>). ARIA does not prevent the user to assign courses to shorter episodes of care than foreseen by mCODE. For example, separate courses can be created for separate treatment sites and can be treated in parallel. In this case, ARIA exposes separate courses also in ARIA API. To match the mCODE definition of a course, the courses have to be created and used in ARIA accordingly.</p>
+
+<p>While the course is one object in ARIA, the various aspects of a course are covered in multiple CodeX RT profiles. For example, the aspects defined during prescription such as the treatment intent the relation to diagnoses are available in the Course Prescription profile. The summary of planned dose over a course is covered in the Planned Course Profile, and the summary of delivered dose over a course is covered in the Course Summary Profile. Some aspects such as course identifier, course status, or treatment intent, are repeated in all three course level profiles.</p>
+
+<h3 id="treatment-intent">Treatment Intent</h3>
+
+<p>In ARIA, the treatment intent, such as curative or palliative, is defined per course. The treatment intent can be set or changed in the Plan Parameters workspace or External Beam Planning.</p>
+
+<p>The treatment intent of the course is exposed with the respective mCODE extension in the Course Prescription, Planned Course, and Course Summary as defined in CodeX RT and mCODE.
+ARIA exposes the treatment intent also in Phase Prescription and Planned Phase Resources, although not required by the respective CodeX RT profiles.</p>
+
+<p>In ARIA, the treatment intent is selected from a user editable list.
+The intent values currently configured in ARIA can be queried as ValueSet</p>
+
+<p><code class="language-plaintext highlighter-rouge">http://varian.com/fhir/CodeSystem/radiotherapy-therapeutic-intent</code></p>
+
+<p>On FHIR, ARIA provides the treatment intent using those configured values.
+Additionally, ARIA tries to map the values to the SNOMED CT codes defined in mCODE. If this mapping is successful, the SNOMED CT code is exposed in addition to the ARIA specific code.</p>
+
+<h3 id="diagnoses">Diagnoses</h3>
+
+<p>ARIA supports one or multiple diagnoses per course.
+The diagnoses selected for a course are exposed in all radiotherapy resources as code (element reasonCode) and as reference to a Condition resource that represents the diagnosis (element reasonReference).</p>
+
+<blockquote>
+  <p>Diagnoses can be linked to courses in the Plan Parameters workspace or in External Beam Planning.</p>
+</blockquote>
+
+<p>The preferred coding of CodeX RT and mCODE is ICD-10. ARIA supports other coding schemes that may be used instead of ICD-10 or in parallel to ICD-10. If more than one diagnosis code is assigned, ARIA exposes all assigned diagnosis codes.</p>
+
+<h3 id="start-date-and-completion-date">Start Date and Completion Date</h3>
+<p>Note that the performedPeriod.start/end dates and times exposed in ARIA API Procedures (Course Summary, Treated Phase, Treated Plan) are derived from actual treatment records.
+ARIA supports additionally the course start and completion dates and times, which can be modified by the user and are independent from actual treatment records. Those user defined start and end dates and times are exposed in the Planned Course ServiceRequest as start and end dates and times.</p>
+
+<h3 id="course-status">Course Status</h3>
+<p>Courses in ARIA can be in status ACTIVE or COMPLETED. Setting a course to completed is a manual step in Plan Parameters Workspace or External Beam Planning.</p>
+
+<h2 id="radiotherapy-prescriptions">Radiotherapy Prescriptions</h2>
+
+<p><img src="PrescriptionMapping.svg" alt="Radiotherapy Prescriptions" width="700px" style="float:none; margin: 0px 0px 0px 0px;" /></p>
+
+<ul>
+  <li>Each RT Prescription in ARIA is exposed as a <a href="StructureDefinition-RadiotherapyPhasePrescription.html">Radiotherapy Phase Prescription</a>.</li>
+  <li>Each course in ARIA is exposed as a <a href="StructureDefinition-RadiotherapyCoursePrescription.html">Radiotherapy Course Prescription</a>.
+This is not an actual prescription but serves as a parent for all prescriptions in the course. It contains the data elements of a course that are not specific to planning or delivery and that are common to all prescriptions in the course, for example, treatment intent, relation to the diagnosis, course status.</li>
+</ul>
+
+<p>An RT Prescription in ARIA can model one series of equivalent treatments, defined by the number of fractions and dose to one or more target volumes. It can therefore prescribe treatment with a single plan or a phase (i.e. one series of treatment), but not a complete course, except if the course would consist of a single series of equivalent treatments.
+The RT Prescription of ARIA is exposed as Radiotherapy Phase Prescription even if no plan or only a single plan is linked.
+Note that for prescription targets, no mCODE Radiotherapy Volumes are exposed because prescription targets in ARIA are not modelled as self-standing entities and are not share across prescriptions. In Phase Prescriptions, the prescription targets are only referenced by identifier and display name.</p>
+
+<p>In ARIA, dose defined in multiple prescriptions is not summed up. Targets may have the same name in multiple prescriptions but are not linked or accumulated between prescriptions. However, if prescription have corresponding plans assigned, these plans can share Reference Points, and then planned and delivered dose for treating multiple prescriptions is summed up. Summation is done per Reference Point, also across courses if plans from multiple courses track dose to the same Reference Points.</p>
+
+<p>Prescription sites are exposed as bodySite in the Radiotherapy Phase Prescription.</p>
+
+<h3 id="mapping-to-snomed-ct">Mapping to SNOMED CT</h3>
+
+<p>The prescription sites, modalities, and techniques are only encoded with SNOMED CT codes if they can be mapped from ARIA’s defined terms.</p>
+
+<p>ARIA defined terms, also called ‘list values’, are managed in the Prescribe Treatment workspace.
+ARIA tries to map these terms ARIA to SNOMED CT codes as specified by mCODE. This mapping is only successful if one of the supported default terms are selected but not for user defined terms.
+In any case, the internally used value from ARIS’s configurable picklist is exposed as a code. The currently configured list values can be queried as ValueSet</p>
+
+<p><code class="language-plaintext highlighter-rouge">http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site</code></p>
+
+<p>If the mapping to a SNOMED CT code is successful, then additionally the SNOMED CT code is exposed.</p>
+
+<h2 id="radiotherapy-treatment-plans">Radiotherapy Treatment Plans</h2>
+
+<p><img src="PlanMapping.svg" alt="Radiotherapy Treatment Plans" width="700px" style="float:none; margin: 0px 0px 0px 0px;" /></p>
+
+<ul>
+  <li>The sum of all plans in the same course is exposed as <a href="StructureDefinition-RadiotherapyPlannedCourse.html">Radiotherapy Planned Course</a>.</li>
+  <li>The sum of all plans that are linked to the same prescription is exposed as <a href="StructureDefinition-RadiotherapyPlannedPhase.html">Radiotherapy Planned Phase</a>.</li>
+  <li>Single plans are exposed as <a href="StructureDefinition-RadiotherapyTreatmentPlan.html">Radiotherapy Treatment Plan</a>.</li>
+</ul>
+
+<blockquote>
+  <p>Only plans in the following states are counted on phase and course level:<br />Treatment Approved, Planning Approved, 3rd Party Approved, Unplanned Treatment, Retired, Completed Early, Completed.<br />Fractions and dose of plans in status Unapproved, Rejected, or Reviewed are not counted.</p>
+</blockquote>
+
+<blockquote>
+  <p>Treatment plans have to be linked to prescriptions to declare that they belong to same phase.<br />Plans can be linked to prescriptions in Plan Parameters workspace or in External Beam Planning.</p>
+</blockquote>
+
+<p>In case of plan revisions, the retired plans are exposed with status revoked. The new revision references the predecessor using ServiceRequest.replaces. Note that only the remaining dose and fractions are contained in the Treatment Plan and Planned Phase of the new revision. They are summed up with the predecessor fractions and dose on the next higher level. See CodeX RT for an example how revisions are handled.</p>
+
+<p><strong>Body Sites</strong> in Plan Summary resources is taken from the linked prescription.</p>
+
+<p><strong>Diagnoses</strong> in Plan Summary resources are taken from the course in ARIA (see section on course).</p>
+
+<h3 id="target-volumes">Target Volumes</h3>
+
+<p>Ideally, the same volumes would be referenced in prescriptions, planning and in the summary of delivered treatments.</p>
+
+<p>In ARIA, there is no link between volumes to which dose is prescribed, and volumes in planning and dose tracking. In planning and dose tracking, nominal scalar doses are tracked against <strong>Reference Points</strong>.
+Target volumes in prescriptions are not linked to Reference Points but annotated by name in the Radiotherapy Phase Prescriptions. BodyStructure Resources are generated for Reference Points in plans or treatment summaries but not for volumes of radiotherapy prescriptions.</p>
+
+<p><strong>RT Plans and Delivered Treatment:</strong> For each Reference Point in ARIA, a Radiotherapy Volume is created. As a unique identifier the same Dose Reference UID is used as in DICOM RT Plans.</p>
+
+<p>Reference Points do not have anatomy codes in ARIA.</p>
+
+<p>Reference Points can represent calculated point dose or represent the nominal dose to target volumes.</p>
+
+<ul>
+  <li><strong>Points</strong> Actual points for which the location is defined in a 3D planning image. This is expressed by the respective element isPointDose = true.</li>
+  <li><strong>Conceptual Volumes</strong> Reference Points in ARIA that have no location defined. Those represent rather conceptual volumes than actual points. The dose is then a nominal planned dose (isPointDose = false).</li>
+</ul>
+
+<p>Within ARIA, the user confirms during Planning Approval of a plan that the targets to which dose is planned (Reference Points) correspond to the target volumes of the linked prescription.</p>
+
+<p>If the plan is created from a prescription, then the relation between prescription targets and Reference Points is 1:1, but this does not need to be the case in general. For example, the prescription may prescribe dose to the whole brain, while Treatment Plans may plan dose separately to each hemisphere. A combined reference point for Whole Brain may or may not exist.</p>
+
+<blockquote>
+  <p>Where target volumes are the same in prescription and planning, the Reference Points names should be chosen to match the target volumes in the respective prescription.</p>
+</blockquote>
+
+<h3 id="using-reference-points-across-multiple-plans">Using Reference Points across multiple plans</h3>
+
+<p>Plans that contribute dose to the same target volumes can declare this by using the same Reference Points in ARIA. Only if common Reference Points are used, the dose of multiple plans is summed up.</p>
+
+<blockquote>
+  <p>Dose is summed up between plans if the same Reference Points are used.</p>
+</blockquote>
+
+<p>Note that when a plan has already been used in treatment, new Reference Points cannot be assigned anymore. Therefore, Reference Points that are intended to track dose across plans must be defined before the first treatment.</p>
+
+<p>Modality, technique, and energy in plan summaries are determined from that actual plan properties, for example, whether the plan is a VMAT or IMRT plan it determined from the plan’s control points.</p>
+
+<h2 id="radiotherapy-treatment-summaries">Radiotherapy Treatment Summaries</h2>
+
+<p><img src="DeliveredTreatmentMapping.svg" alt="Radiotherapy Treatment Summaries" width="700px" style="float:none; margin: 0px 0px 0px 0px;" /></p>
+
+<ul>
+  <li>The sum of treatments delivered with all plans in the same course is exposed as <a href="StructureDefinition-RadiotherapyCourseSummary.html">Radiotherapy Course Summary</a>.</li>
+  <li>The sum of treatments delivered with all plans that are linked to the same RT Prescription is exposed as <a href="StructureDefinition-RadiotherapyTreatedPhase.html">Radiotherapy Treated Phase</a>.</li>
+  <li>The treatment delivered with a single Treatment Plan is exposed as <a href="StructureDefinition-RadiotherapyTreatedPlan.html">Radiotherapy Treated Plan</a>.</li>
+</ul>
+
+<p>The number of delivered Sessions is determined from treatment records, grouping the treatments according to time stamps. If more than 60min elapse between two treatment records, this counts as two separate Sessions. This is consistent with the visualization in the ARIA RTM workspaces.</p>
+
+<h2 id="summary">Summary</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Course Prescription</th>
+      <th>Phase Prescription</th>
+      <th>Plan Summaries<br />(Planned Course, Planned Phase, Treatment Plan)</th>
+      <th>Treatment Summary <br />(Course Summary, Treated Phase, Treated Plan)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body Site(s)</td>
+      <td>From contained phases (see there)</td>
+      <td>Values from configurable list, mapped to SNOMED CT if possible</td>
+      <td>From related prescription(s)</td>
+      <td>From related prescription(s)</td>
+    </tr>
+    <tr>
+      <td>Modality, Technique, Energy</td>
+      <td>n/a</td>
+      <td>Values from configurable list, mapped to SNOMED CT if possible.</td>
+      <td>From plans</td>
+      <td>From plans</td>
+    </tr>
+    <tr>
+      <td>Start Date, End Date</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td><strong>Planned Course:</strong> User defined start and end date of the course. <br /><strong>Planned Phase, Treatment Plan:</strong> n/a</td>
+      <td>From treatment records</td>
+    </tr>
+    <tr>
+      <td>Number of Sessions</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>Actual treatment sessions (grouped by time stamps as in ARIA)</td>
+    </tr>
+    <tr>
+      <td>Number of Fractions</td>
+      <td>n/a</td>
+      <td>Prescribed fractions</td>
+      <td><strong>Planned Course:</strong> Sum of all planned fractions from all plans.<br /><strong>Planned Phase:</strong> Sum of delivered fractions from all plans linked to the prescription. Maximum from all volumes (should be the same for all volumes according to XRTS)<br /><strong>Treatment Plan:</strong> Number of planned fractions of the plan.</td>
+      <td><strong>Course Summary:</strong> Sum of all planned fractions from all plans.<br /><strong>Treated Phase:</strong> Sum of delivered fractions from all plans linked to the prescription. Maximum from all volumes (should be the same for all volumes according to XRTS) <br /><strong>Treated Plan:</strong><br />Treated fractions of this plan.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="radiotherapy-treatment-sites">Radiotherapy Treatment Sites</h3>
+
+<p>The following figure summarizes the mapping of prescription sites and targets to ARIA API.</p>
+
+<p><img src="SiteEncoding.svg" alt="Radiotherapy Treatment Sites" width="900px" style="float:none; margin: 0px 0px 0px 0px;" /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

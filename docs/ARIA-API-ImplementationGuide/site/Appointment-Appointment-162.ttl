@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Appointment/Appointment-162> a fhir:_Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Appointment-162"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Appointment Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Appointment example for the *Varian ARIA API Appointment Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "390183" ] ;
+     fhir:lastUpdated [ fhir:v "2023-10-09T03:37:01.580+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/Appointment"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/Appointment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"Appointment-162\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;Appointment-162&quot; Version &quot;390183&quot; Updated &quot;2023-10-09 03:37:01+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Appointment.html\">Appointment</a></p></div><p><b>remindTime</b>: 30 Minutes</p><p><b>appointment-actualTime</b>: 1970-01-01 05:30:00+0530 --&gt; 1970-01-01 05:30:00+0530</p><p><b>appointment-ariaStatus</b>: Open <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (appointment-status#Open)</span></p><blockquote><p><b>modifierExtension[http://varian.com/fhir/v1/StructureDefinition/readOnly]</b></p></blockquote><p><b>identifier</b>: id: FHIR_e626a554-3645-4a87-8d52-2c8c2a34a45a</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: Qin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activityDefinition-category#Qin)</span></p><p><b>serviceType</b>: Place Planning Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Place Planning Order)</span></p><p><b>priority</b>: 1</p><p><b>start</b>: Oct 9, 2023, 8:26:00 AM</p><p><b>end</b>: Oct 9, 2023, 8:40:00 AM</p><p><b>minutesDuration</b>: 14</p><p><b>created</b>: 2023-10-09 03:37:01+0530</p><p><b>comment</b>: Created By ARIA_API</p><p><b>basedOn</b>: <a href=\"ServiceRequest/ActivityInstance-4071\">ServiceRequest/ActivityInstance-4071</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: HealthcareService <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href=\"HealthcareService-HealthcareService-1.html\">HealthcareService/HealthcareService-1: Radiation Therapy</a> &quot;Radiation Therapy&quot;</p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href=\"Patient/Patient-48\">Patient/Patient-48: Wilson</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><blockquote><p><b>id</b></p>929</blockquote><p><b>type</b>: Device <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href=\"Device/Device-1035\">Device/Device-1035: SupportDevId2</a></p><p><b>status</b>: accepted</p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/reminderTime"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Minutes" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/appointment-actualTime"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Period ;
+       fhir:start [ fhir:v "1970-01-01T05:30:00+05:30"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "1970-01-01T05:30:00+05:30"^^xsd:dateTime ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/appointment-ariaStatus"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Appointment/appointment-status"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Open" ] ;
+         fhir:display [ fhir:v "Open" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:modifierExtension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/readOnly"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/UID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "FHIR_e626a554-3645-4a87-8d52-2c8c2a34a45a" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "booked"] ; # 
+  fhir:serviceCategory ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activityDefinition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Qin" ] ;
+       fhir:display [ fhir:v "Qin" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceType ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Place Planning Order" ] ;
+       fhir:display [ fhir:v "Place Planning Order" ]
+     ] )
+  ] ) ; # 
+  fhir:priority [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:start [ fhir:v "2023-10-09T08:26:00.507+05:30"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2023-10-09T08:40:00.507+05:30"^^xsd:dateTime] ; # 
+  fhir:minutesDuration [ fhir:v "14"^^xsd:positiveInteger] ; # 
+  fhir:created [ fhir:v "2023-10-09T03:37:01+05:30"^^xsd:dateTime] ; # 
+  fhir:comment [ fhir:v "Created By ARIA_API"] ; # 
+  fhir:basedOn ( [
+     fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4071> ;
+     fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4071" ]
+  ] ) ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PART" ] ;
+         fhir:display [ fhir:v "HealthcareService" ]
+       ] )
+     ] ) ;
+     fhir:actor [
+       fhir:link <http://varian.com/fhir/v1/HealthcareService/HealthcareService-1> ;
+       fhir:reference [ fhir:v "HealthcareService/HealthcareService-1" ] ;
+       fhir:display [ fhir:v "Radiation Therapy" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PART" ] ;
+         fhir:display [ fhir:v "Patient" ]
+       ] )
+     ] ) ;
+     fhir:actor [
+       fhir:link <http://varian.com/fhir/v1/Patient/Patient-48> ;
+       fhir:reference [ fhir:v "Patient/Patient-48" ] ;
+       fhir:display [ fhir:v "Wilson" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:id [ fhir:v "929" ] ;
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PART" ] ;
+         fhir:display [ fhir:v "Device" ]
+       ] )
+     ] ) ;
+     fhir:actor [
+       fhir:link <http://varian.com/fhir/v1/Device/Device-1035> ;
+       fhir:reference [ fhir:v "Device/Device-1035" ] ;
+       fhir:display [ fhir:v "SupportDevId2" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

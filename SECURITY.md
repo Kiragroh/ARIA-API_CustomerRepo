@@ -10,7 +10,7 @@ Do not commit:
 - patient identifiers, names, birth dates, document text or unredacted API responses
 - generated PDFs, DOCX files, screenshots, logs or exported clinical data
 
-The curated `docs/ARIA_API_VAIS_Short_Setup_Guide_V3.pdf` is intentionally public documentation. Do not add patient-specific or environment-specific PDFs.
+The curated `docs/ARIA_API_VAIS_Short_Setup_Guide_V3.pdf`, `docs/ARIA-API-ImplementationGuide/` and `examples/examples.json/` are intentionally public documentation. Do not add patient-specific exports, live API responses or environment-specific PDFs.
 
 Use `.env`, environment variables, Windows Credential Manager or a local `settings.local.json` for live credentials and endpoints.
 

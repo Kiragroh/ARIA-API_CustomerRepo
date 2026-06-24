@@ -92,6 +92,10 @@ LPT[1-9]
 !banner.png
 !docs/
 !docs/ARIA_API_VAIS_Short_Setup_Guide_V3.pdf
+!docs/ARIA-API-ImplementationGuide/
+!docs/ARIA-API-ImplementationGuide/**
+!examples/examples.json/
+!examples/examples.json/**
 
 # Secrets and machine-local settings
 .env

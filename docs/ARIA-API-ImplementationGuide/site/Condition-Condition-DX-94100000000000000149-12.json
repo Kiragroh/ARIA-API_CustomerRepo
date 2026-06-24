@@ -1,0 +1,894 @@
+{
+  "resourceType" : "Condition",
+  "id" : "Condition-DX-94100000000000000149-12",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Cancer Condition Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Cancer Condition example for the *Varian ARIA API Cancer Condition Profile.*"
+    }],
+    "versionId" : "194166885606073",
+    "lastUpdated" : "2023-10-11T03:47:08.350+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/CancerCondition",
+    "http://varian.com/fhir/v1/StructureDefinition/Condition"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"Condition-DX-94100000000000000149-12\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;Condition-DX-94100000000000000149-12&quot; Version &quot;194166885606073&quot; Updated &quot;2023-10-11 03:47:08+0530&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-CancerCondition.html\">Condition-Diagnosis (CancerCondition)</a>, <code>http://varian.com/fhir/v1/StructureDefinition/Condition</code></p></div><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>condition-clinicalStatusDate</b>: 2023-10-11</p><p><b>condition-clinicalStatusInARIA</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (clinical-status#Active)</span></p><p><b>condition-rank</b>: Third <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-rank#3; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0359.html\">diagnosisPriority</a>#3 &quot;For tertiary diagnosis&quot;)</span></p><p><b>condition-isExternal</b>: false</p><p><b>identifier</b>: id:\u00a015504d83-2ed0-4acd-9cc7-955069da4c1a</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Diagnosis Display text FHIR Verification <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-ICD-9CM-procedurecodes.html\">ICD-9-CM (procedure codes)</a>#170.8 &quot;Malignant neoplasm of short bones of lower limb&quot;)</span></p><p><b>bodySite</b>: Bone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (body-site#Bone)</span>, Ear <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (primary-site#Ear)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>onset</b>: 2023-09-11</p><p><b>recordedDate</b>: 2023-10-11 03:47:08+0530</p><p><b>recorder</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><blockquote><p><b>stage</b></p><p><b>summary</b>: Stage IVB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage IVB)</span></p><p><b>assessment</b>: <a name=\"Observation-DX-Stg-94100000000000000149-12-11\"> </a></p><blockquote><p/><p><a name=\"Observation-DX-Stg-94100000000000000149-12-11\"> </a></p><p><b>Condition-Stage-isWorkingStage</b>: false</p><p><b>identifier</b>: id:\u00a011</p><p><b>status</b>: preliminary</p><p><b>code</b>: Diagnosis Stage Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#diagnosis-stage-group)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Stage IVB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage IVB)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"#Observation-Stg-Category-12-11-G\">#Observation-Stg-Category-12-11-G: G1</a></li><li><a href=\"#Observation-Stg-Category-12-11-M\">#Observation-Stg-Category-12-11-M: M1</a></li><li><a href=\"#Observation-Stg-Category-12-11-N\">#Observation-Stg-Category-12-11-N: N1</a></li><li><a href=\"#Observation-Stg-Category-12-11-T\">#Observation-Stg-Category-12-11-T: T1</a></li></ul></blockquote></blockquote><blockquote><p><b>stage</b></p><p><b>summary</b>: Stage III <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage III)</span></p><p><b>assessment</b>: <a name=\"Observation-DX-Stg-94100000000000000149-12-10\"> </a></p><blockquote><p/><p><a name=\"Observation-DX-Stg-94100000000000000149-12-10\"> </a></p><p><b>Condition-Stage-isWorkingStage</b>: false</p><p><b>identifier</b>: id:\u00a010</p><p><b>status</b>: preliminary</p><p><b>code</b>: Diagnosis Stage Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#diagnosis-stage-group)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Stage III <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage III)</span></p><p><b>method</b>: MSTS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#MSTS)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"#Observation-Stg-Category-12-10-G\">#Observation-Stg-Category-12-10-G: GL</a></li><li><a href=\"#Observation-Stg-Category-12-10-M\">#Observation-Stg-Category-12-10-M: M1</a></li><li><a href=\"#Observation-Stg-Category-12-10-T\">#Observation-Stg-Category-12-10-T: TX</a></li></ul></blockquote></blockquote><blockquote><p><b>stage</b></p><p><b>summary</b>: Stage IVB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage IVB)</span></p><p><b>assessment</b>: <a name=\"Observation-DX-Stg-94100000000000000149-12-12\"> </a></p><blockquote><p/><p><a name=\"Observation-DX-Stg-94100000000000000149-12-12\"> </a></p><p><b>Condition-Stage-isWorkingStage</b>: true</p><p><b>identifier</b>: id:\u00a012</p><p><b>status</b>: preliminary</p><p><b>code</b>: Diagnosis Stage Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#diagnosis-stage-group)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Stage IVB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage IVB)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"#Observation-Stg-Category-12-12-G\">#Observation-Stg-Category-12-12-G: G1</a></li><li><a href=\"#Observation-Stg-Category-12-12-M\">#Observation-Stg-Category-12-12-M: M1</a></li><li><a href=\"#Observation-Stg-Category-12-12-N\">#Observation-Stg-Category-12-12-N: N0</a></li><li><a href=\"#Observation-Stg-Category-12-12-T\">#Observation-Stg-Category-12-12-T: T0</a></li></ul></blockquote></blockquote><h3>Evidences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Diagnosis Method Text by FHIR Verification <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-method#X-ray &quot;X-ray&quot;)</span></td></tr></table><p><b>note</b>: Diagnosis created by FHIR Verification Test !!!</p><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-11-G</b><a name=\"Observation-Stg-Category-12-11-G\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: G <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#G)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Well differentiated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#G1)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-11-M</b><a name=\"Observation-Stg-Category-12-11-M\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: M <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#M)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Distant metastasis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#M1)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-11-N</b><a name=\"Observation-Stg-Category-12-11-N\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: N <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#N)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Regional lymph node metastasis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#N1)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-11-T</b><a name=\"Observation-Stg-Category-12-11-T\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: T <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#T)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Tumor confined within the cortex <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#T1)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-DX-Stg-94100000000000000149-12-11</b><a name=\"Observation-DX-Stg-94100000000000000149-12-11\"> </a></p><p><b>Condition-Stage-isWorkingStage</b>: false</p><p><b>identifier</b>: id:\u00a011</p><p><b>status</b>: preliminary</p><p><b>code</b>: Diagnosis Stage Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#diagnosis-stage-group)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Stage IVB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage IVB)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"#Observation-Stg-Category-12-11-G\">#Observation-Stg-Category-12-11-G: G1</a></li><li><a href=\"#Observation-Stg-Category-12-11-M\">#Observation-Stg-Category-12-11-M: M1</a></li><li><a href=\"#Observation-Stg-Category-12-11-N\">#Observation-Stg-Category-12-11-N: N1</a></li><li><a href=\"#Observation-Stg-Category-12-11-T\">#Observation-Stg-Category-12-11-T: T1</a></li></ul></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-10-G</b><a name=\"Observation-Stg-Category-12-10-G\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: G <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#G)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Low Grade <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#GL)</span></p><p><b>method</b>: MSTS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#MSTS)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-10-M</b><a name=\"Observation-Stg-Category-12-10-M\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: M <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#M)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Distant metastasis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#M1)</span></p><p><b>method</b>: MSTS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#MSTS)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-10-T</b><a name=\"Observation-Stg-Category-12-10-T\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: T <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#T)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Tumor can not be assessed/determined <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#TX)</span></p><p><b>method</b>: MSTS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#MSTS)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-DX-Stg-94100000000000000149-12-10</b><a name=\"Observation-DX-Stg-94100000000000000149-12-10\"> </a></p><p><b>Condition-Stage-isWorkingStage</b>: false</p><p><b>identifier</b>: id:\u00a010</p><p><b>status</b>: preliminary</p><p><b>code</b>: Diagnosis Stage Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#diagnosis-stage-group)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Stage III <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage III)</span></p><p><b>method</b>: MSTS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#MSTS)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"#Observation-Stg-Category-12-10-G\">#Observation-Stg-Category-12-10-G: GL</a></li><li><a href=\"#Observation-Stg-Category-12-10-M\">#Observation-Stg-Category-12-10-M: M1</a></li><li><a href=\"#Observation-Stg-Category-12-10-T\">#Observation-Stg-Category-12-10-T: TX</a></li></ul></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-12-G</b><a name=\"Observation-Stg-Category-12-12-G\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: G <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#G)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Well differentiated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#G1)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-12-M</b><a name=\"Observation-Stg-Category-12-12-M\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: M <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#M)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Distant metastasis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#M1)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-12-N</b><a name=\"Observation-Stg-Category-12-12-N\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: N <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#N)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: No regional lymph node metastasis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#N0)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-Stg-Category-12-12-T</b><a name=\"Observation-Stg-Category-12-12-T\"> </a></p><p><b>status</b>: preliminary</p><p><b>code</b>: T <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#T)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: No evidence of primary tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#T0)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #Observation-DX-Stg-94100000000000000149-12-12</b><a name=\"Observation-DX-Stg-94100000000000000149-12-12\"> </a></p><p><b>Condition-Stage-isWorkingStage</b>: true</p><p><b>identifier</b>: id:\u00a012</p><p><b>status</b>: preliminary</p><p><b>code</b>: Diagnosis Stage Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#diagnosis-stage-group)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Stage IVB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage IVB)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"#Observation-Stg-Category-12-12-G\">#Observation-Stg-Category-12-12-G: G1</a></li><li><a href=\"#Observation-Stg-Category-12-12-M\">#Observation-Stg-Category-12-12-M: M1</a></li><li><a href=\"#Observation-Stg-Category-12-12-N\">#Observation-Stg-Category-12-12-N: N0</a></li><li><a href=\"#Observation-Stg-Category-12-12-T\">#Observation-Stg-Category-12-12-T: T0</a></li></ul></blockquote></div>"
+  },
+  "contained" : [{
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-11-G",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "G",
+        "display" : "G"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:05+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.720+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "G1",
+        "display" : "Well differentiated"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-11-M",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "M",
+        "display" : "M"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:05+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.720+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "M1",
+        "display" : "Distant metastasis"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-11-N",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "N",
+        "display" : "N"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:05+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.720+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "N1",
+        "display" : "Regional lymph node metastasis"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-11-T",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "T",
+        "display" : "T"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:05+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.720+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "T1",
+        "display" : "Tumor confined within the cortex"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-DX-Stg-94100000000000000149-12-11",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageGroup",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/Condition-Stage-isWorkingStage",
+      "valueBoolean" : false
+    }],
+    "identifier" : [{
+      "system" : "http://varian.com/fhir/identifier/Condition/cancer-stage-id",
+      "value" : "11"
+    }],
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "diagnosis-stage-group",
+        "display" : "Diagnosis Stage Group"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:05+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.720+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "Stage IVB",
+        "display" : "Stage IVB"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    },
+    "hasMember" : [{
+      "reference" : "#Observation-Stg-Category-12-11-G",
+      "display" : "G1"
+    },
+    {
+      "reference" : "#Observation-Stg-Category-12-11-M",
+      "display" : "M1"
+    },
+    {
+      "reference" : "#Observation-Stg-Category-12-11-N",
+      "display" : "N1"
+    },
+    {
+      "reference" : "#Observation-Stg-Category-12-11-T",
+      "display" : "T1"
+    }]
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-10-G",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "G",
+        "display" : "G"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:04+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.657+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "GL",
+        "display" : "Low Grade"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "MSTS"
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-10-M",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "M",
+        "display" : "M"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:04+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.657+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "M1",
+        "display" : "Distant metastasis"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "MSTS"
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-10-T",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "T",
+        "display" : "T"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:04+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.657+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "TX",
+        "display" : "Tumor can not be assessed/determined"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "MSTS"
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-DX-Stg-94100000000000000149-12-10",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageGroup",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/Condition-Stage-isWorkingStage",
+      "valueBoolean" : false
+    }],
+    "identifier" : [{
+      "system" : "http://varian.com/fhir/identifier/Condition/cancer-stage-id",
+      "value" : "10"
+    }],
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "diagnosis-stage-group",
+        "display" : "Diagnosis Stage Group"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:04+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.657+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "Stage III",
+        "display" : "Stage III"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "MSTS"
+      }]
+    },
+    "hasMember" : [{
+      "reference" : "#Observation-Stg-Category-12-10-G",
+      "display" : "GL"
+    },
+    {
+      "reference" : "#Observation-Stg-Category-12-10-M",
+      "display" : "M1"
+    },
+    {
+      "reference" : "#Observation-Stg-Category-12-10-T",
+      "display" : "TX"
+    }]
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-12-G",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "G",
+        "display" : "G"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:07+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.750+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "G1",
+        "display" : "Well differentiated"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-12-M",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "M",
+        "display" : "M"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:07+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.750+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "M1",
+        "display" : "Distant metastasis"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-12-N",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "N",
+        "display" : "N"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:07+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.750+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "N0",
+        "display" : "No regional lymph node metastasis"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-Stg-Category-12-12-T",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "T",
+        "display" : "T"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:07+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.750+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "T0",
+        "display" : "No evidence of primary tumor"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    }
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "Observation-DX-Stg-94100000000000000149-12-12",
+    "meta" : {
+      "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageGroup",
+      "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+    },
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/Condition-Stage-isWorkingStage",
+      "valueBoolean" : true
+    }],
+    "identifier" : [{
+      "system" : "http://varian.com/fhir/identifier/Condition/cancer-stage-id",
+      "value" : "12"
+    }],
+    "status" : "preliminary",
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+        "code" : "diagnosis-stage-group",
+        "display" : "Diagnosis Stage Group"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/Patient-152",
+      "display" : "Wilson, Johnathan"
+    },
+    "effectiveTiming" : {
+      "event" : ["2023-10-11T03:47:07+05:30"],
+      "code" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+          "code" : "Pre-chemotherapy"
+        }]
+      }
+    },
+    "issued" : "2023-10-11T03:47:08.750+05:30",
+    "performer" : [{
+      "reference" : "Practitioner/Practitioner-1002",
+      "display" : "JohnWilsonFhir"
+    }],
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "Stage IVB",
+        "display" : "Stage IVB"
+      }]
+    },
+    "method" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+        "code" : "AJCC 5th Ed."
+      }]
+    },
+    "hasMember" : [{
+      "reference" : "#Observation-Stg-Category-12-12-G",
+      "display" : "G1"
+    },
+    {
+      "reference" : "#Observation-Stg-Category-12-12-M",
+      "display" : "M1"
+    },
+    {
+      "reference" : "#Observation-Stg-Category-12-12-N",
+      "display" : "N0"
+    },
+    {
+      "reference" : "#Observation-Stg-Category-12-12-T",
+      "display" : "T0"
+    }]
+  }],
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/modifier-application-code",
+    "valueString" : "radiation-oncology"
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-clinicalStatusDate",
+    "valueDateTime" : "2023-10-11"
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-clinicalStatusInARIA",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/clinical-status",
+        "code" : "Active",
+        "display" : "Active"
+      }]
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-rank",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-rank",
+        "code" : "3",
+        "display" : "Third"
+      },
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0359",
+        "code" : "3",
+        "display" : "For tertiary diagnosis"
+      }]
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-isExternal",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "system" : "http://varian.com/fhir/identifier/Condition/unique-id",
+    "value" : "15504d83-2ed0-4acd-9cc7-955069da4c1a"
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active",
+      "display" : "Active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis",
+      "display" : "Encounter Diagnosis"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-9-cm",
+      "code" : "170.8",
+      "display" : "Malignant neoplasm of short bones of lower limb"
+    }],
+    "text" : "Diagnosis Display text FHIR Verification"
+  },
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/body-site",
+      "code" : "Bone",
+      "display" : "Bone"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/primary-site",
+      "code" : "Ear",
+      "display" : "Ear"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/Patient-152",
+    "display" : "Wilson, Johnathan"
+  },
+  "onsetDateTime" : "2023-09-11",
+  "recordedDate" : "2023-10-11T03:47:08+05:30",
+  "recorder" : {
+    "reference" : "Practitioner/Practitioner-1002",
+    "display" : "JohnWilsonFhir"
+  },
+  "stage" : [{
+    "summary" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "Stage IVB",
+        "display" : "Stage IVB"
+      }]
+    },
+    "assessment" : [{
+      "reference" : "#Observation-DX-Stg-94100000000000000149-12-11",
+      "display" : "G1, M1, N1, T1"
+    }]
+  },
+  {
+    "summary" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "Stage III",
+        "display" : "Stage III"
+      }]
+    },
+    "assessment" : [{
+      "reference" : "#Observation-DX-Stg-94100000000000000149-12-10",
+      "display" : "GL, M1, TX"
+    }]
+  },
+  {
+    "summary" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+        "code" : "Stage IVB",
+        "display" : "Stage IVB"
+      }]
+    },
+    "assessment" : [{
+      "reference" : "#Observation-DX-Stg-94100000000000000149-12-12",
+      "display" : "G1, M1, N0, T0"
+    }]
+  }],
+  "evidence" : [{
+    "code" : [{
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-method",
+        "code" : "X-ray",
+        "display" : "X-ray"
+      }],
+      "text" : "Diagnosis Method Text by FHIR Verification"
+    }]
+  }],
+  "note" : [{
+    "text" : "Diagnosis created by FHIR Verification Test !!!"
+  }]
+}

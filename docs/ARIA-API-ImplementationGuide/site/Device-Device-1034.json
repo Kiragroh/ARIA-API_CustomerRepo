@@ -1,0 +1,74 @@
+{
+  "resourceType" : "Device",
+  "id" : "Device-1034",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Device Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Device example for the *Varian ARIA API Device Profile.*"
+    }],
+    "versionId" : "44033",
+    "lastUpdated" : "2020-07-23T11:49:54.900+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/Device"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"Device-1034\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;Device-1034&quot; Version &quot;44033&quot; Updated &quot;2020-07-23 11:49:54+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Device.html\">Device</a></p></div><p><b>schedulable</b>: true</p><p><b>serviceOrganization</b>: <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>identifier</b>: id:\u00a0SupportDevId1</p><p><b>status</b>: active</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>SupportDevName1</td><td>user-friendly-name</td></tr></table><p><b>modelNumber</b>: ChairModel</p><p><b>type</b>: PatientSupportDevice <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (device-type#PatientSupportDevice)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/schedulable",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/serviceOrganization",
+    "valueReference" : {
+      "reference" : "Organization/Organization-Dept-1",
+      "display" : "Radiation Therapy"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://varian.com/fhir/identifier/Device/Id",
+    "value" : "SupportDevId1"
+  }],
+  "status" : "active",
+  "_status" : {
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Device/status",
+          "code" : "Active",
+          "display" : "Active"
+        }]
+      }
+    }]
+  },
+  "deviceName" : [{
+    "name" : "SupportDevName1",
+    "type" : "user-friendly-name"
+  }],
+  "modelNumber" : "ChairModel",
+  "_modelNumber" : {
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Device/device-model",
+          "code" : "ChairModel",
+          "display" : "ChairModel"
+        }]
+      }
+    }]
+  },
+  "type" : {
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Device/device-type",
+      "code" : "PatientSupportDevice",
+      "display" : "PatientSupportDevice"
+    }],
+    "text" : "PatientSupportDevice"
+  }
+}

@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ActivityDefinition-844"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "ActivityDefinition Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "ActivityDefinition example for the *Varian ARIA API ActivityDefinition Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "394588" ] ;
+     fhir:lastUpdated [ fhir:v "2023-10-10T15:27:49.330+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"ActivityDefinition-844\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ActivityDefinition &quot;ActivityDefinition-844&quot; Version &quot;394588&quot; Updated &quot;2023-10-10 15:27:49+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ActivityDefinition.html\">ActivityDefinition</a></p></div><p><b>activityDefinition-category</b>: C-Port Film <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activityDefinition-category#C-Port Film)</span></p><p><b>url</b>: <code>http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: new Actiity</p><p><b>status</b>: active</p><p><b>date</b>: 2023-10-10 15:27:49+0530</p><p><b>publisher</b>: Varian Medical Systems, Inc.</p><p><b>contact</b>: Varian Medical Systems, Inc.: <a href=\"https://www.varian.com/\">https://www.varian.com/</a></p><p><b>description</b>: Desc</p><h3>UseContexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>service-organization (Details: http://varian.com/fhir/CodeSystem/activityDefinition-usage-context-type code service-organization = 'service-organization', stated as 'service-organization')</td><td><a href=\"Organization/Organization-Dept-10015\">Organization/Organization-Dept-10015: Ortho</a></td></tr></table><p><b>copyright</b>: Varian Medical Systems, Inc.</p><p><b>kind</b>: Appointment</p><p><b>timing</b>: 10 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 10 = '10')</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityDefinition-category"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-reference"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <http://varian.com/fhir/v1//fhir/ValueSet?url=http://varian.com/fhir/ValueSet/activity-category&publisher=Organization-Dept-10015> ;
+             fhir:reference [ fhir:v "/fhir/ValueSet?url=http://varian.com/fhir/ValueSet/activity-category&publisher=Organization-Dept-10015" ]
+           ]
+         ] ) ;
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activityDefinition-category"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C-Port Film" ] ;
+         fhir:display [ fhir:v "C-Port Film" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [
+     fhir:v "new Actiity" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-name"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "new Actiity" ] ;
+           fhir:display [ fhir:v "new Actiity" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:status [
+     fhir:v "active" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/ActivityDefinition/status"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Active" ] ;
+           fhir:display [ fhir:v "Active" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2023-10-10T15:27:49+05:30"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Varian Medical Systems, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.varian.com/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Desc"] ; # 
+  fhir:useContext ( [
+     fhir:code [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activityDefinition-usage-context-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "service-organization" ] ;
+       fhir:display [ fhir:v "service-organization" ]
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-10015> ;
+       fhir:reference [ fhir:v "Organization/Organization-Dept-10015" ] ;
+       fhir:display [ fhir:v "Ortho" ]
+     ]
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:kind [
+     fhir:v "Appointment" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/ActivityDefinition/activity-definition-kind"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Appointment" ] ;
+           fhir:display [ fhir:v "Appointment" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Duration ;
+     fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "min" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "10" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

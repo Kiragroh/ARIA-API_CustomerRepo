@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Practitioner-1258"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Practitioner Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Practitioner example for the *Varian ARIA API Practitioner Profile.*"/>
+    </extension>
+    <versionId value="397552"/>
+    <lastUpdated value="2023-10-09T03:40:13.247+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Practitioner"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="Practitioner-1258"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;Practitioner-1258&quot; Version &quot;397552&quot; Updated &quot;2023-10-09 03:40:13+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Practitioner.html">Practitioner</a></p></div><p><b>serviceOrganization</b>: <a href="Organization/Organization-Dept-1">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>serviceOrganization</b>: <a href="Organization-Organization-Dept-10002.html">Organization/Organization-Dept-10002: OCS1</a> &quot;OCS1&quot;</p><p><b>person-gender</b>: Male <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (person-gender#male)</span></p><p><b>practitioner-role</b>: Oncologist <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (practitioner-role#oncologist)</span></p><p><b>identifier</b>: id: ID_1696803013038 (use: USUAL), id: F95281821</p><p><b>active</b>: true</p><p><b>name</b>: DSPName_1696803012978 , ,àkilomètresdeGroß トは最高でした,yīèr (OFFICIAL)</p><p><b>telecom</b>: ph: 97466165465(HOME), <a href="mailto:email@email.com">email@email.com</a>, 00004698865(WORK), fax: 000090065(WORK)</p><p><b>address</b>: ढणतथदधनपफबυΦφΧě末 Maharashtra 411017 IND (WORK)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1985-03-11</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>BS <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (qualification#BS)</span></td></tr></table></div>
+  </text>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-1"/>
+      <display value="Radiation Therapy"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-10002"/>
+      <display value="OCS1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/person-gender">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/person-gender"/>
+        <code value="male"/>
+        <display value="Male"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/practitioner-role">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/Practitioner/practitioner-role"/>
+        <code value="oncologist"/>
+        <display value="Oncologist"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://varian.com/fhir/identifier/Practitioner/Id"/>
+    <value value="ID_1696803013038"/>
+  </identifier>
+  <identifier id="20">
+    <system value="http://varian.com/fhir/identifier/Practitioner/14/Doct_DEA_ID"/>
+    <value value="F95281821"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="usual"/>
+    <given value="DSPName_1696803012978"/>
+  </name>
+  <name>
+    <use value="official"/>
+    <family value="トは最高でした,yīèr"/>
+    <given value=",àkilomètresdeGroß"/>
+    <prefix value="Dr"/>
+    <suffix value="MD"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="97466165465"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="email@email.com"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="pager"/>
+    <value value="00004698865"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="000090065"/>
+    <use value="work"/>
+  </telecom>
+  <address id="709">
+    <use value="work"/>
+    <type value="both"/>
+    <city value="ढणतथदधनपफबυΦφΧě末"/>
+    <state value="Maharashtra"/>
+    <postalCode value="411017"/>
+    <country value="IND"/>
+  </address>
+  <gender value="male"/>
+  <birthDate value="1985-03-11"/>
+  <qualification>
+    <code>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/Practitioner/qualification"/>
+        <code value="BS"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Device/Device-1034> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Device-1034"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Device Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Device example for the *Varian ARIA API Device Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "44033" ] ;
+     fhir:lastUpdated [ fhir:v "2020-07-23T11:49:54.900+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/Device"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/Device>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"Device-1034\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;Device-1034&quot; Version &quot;44033&quot; Updated &quot;2020-07-23 11:49:54+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Device.html\">Device</a></p></div><p><b>schedulable</b>: true</p><p><b>serviceOrganization</b>: <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>identifier</b>: id: SupportDevId1</p><p><b>status</b>: active</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>SupportDevName1</td><td>user-friendly-name</td></tr></table><p><b>modelNumber</b>: ChairModel</p><p><b>type</b>: PatientSupportDevice <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (device-type#PatientSupportDevice)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/schedulable"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/serviceOrganization"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-1> ;
+       fhir:reference [ fhir:v "Organization/Organization-Dept-1" ] ;
+       fhir:display [ fhir:v "Radiation Therapy" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Device/Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "SupportDevId1" ]
+  ] ) ; # 
+  fhir:status [
+     fhir:v "active" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Device/status"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Active" ] ;
+           fhir:display [ fhir:v "Active" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "SupportDevName1" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:modelNumber [
+     fhir:v "ChairModel" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Device/device-model"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ChairModel" ] ;
+           fhir:display [ fhir:v "ChairModel" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Device/device-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PatientSupportDevice" ] ;
+       fhir:display [ fhir:v "PatientSupportDevice" ]
+     ] ) ;
+     fhir:text [ fhir:v "PatientSupportDevice" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

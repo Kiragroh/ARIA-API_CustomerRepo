@@ -1,0 +1,116 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "Practitioner-1258",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Practitioner Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Practitioner example for the *Varian ARIA API Practitioner Profile.*"
+    }],
+    "versionId" : "397552",
+    "lastUpdated" : "2023-10-09T03:40:13.247+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/Practitioner"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Practitioner-1258\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Practitioner-1258&quot; Version &quot;397552&quot; Updated &quot;2023-10-09 03:40:13+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Practitioner.html\">Practitioner</a></p></div><p><b>serviceOrganization</b>: <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>serviceOrganization</b>: <a href=\"Organization-Organization-Dept-10002.html\">Organization/Organization-Dept-10002: OCS1</a> &quot;OCS1&quot;</p><p><b>person-gender</b>: Male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (person-gender#male)</span></p><p><b>practitioner-role</b>: Oncologist <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (practitioner-role#oncologist)</span></p><p><b>identifier</b>: id:\u00a0ID_1696803013038\u00a0(use:\u00a0USUAL), id:\u00a0F95281821</p><p><b>active</b>: true</p><p><b>name</b>: DSPName_1696803012978 , ,àkilomètresdeGroß トは最高でした,yīèr (OFFICIAL)</p><p><b>telecom</b>: ph: 97466165465(HOME), <a href=\"mailto:email@email.com\">email@email.com</a>, 00004698865(WORK), fax: 000090065(WORK)</p><p><b>address</b>: ढणतथदधनपफबυΦφΧě末 Maharashtra 411017 IND (WORK)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1985-03-11</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>BS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (qualification#BS)</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/serviceOrganization",
+    "valueReference" : {
+      "reference" : "Organization/Organization-Dept-1",
+      "display" : "Radiation Therapy"
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/serviceOrganization",
+    "valueReference" : {
+      "reference" : "Organization/Organization-Dept-10002",
+      "display" : "OCS1"
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/person-gender",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/person-gender",
+        "code" : "male",
+        "display" : "Male"
+      }]
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/practitioner-role",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Practitioner/practitioner-role",
+        "code" : "oncologist",
+        "display" : "Oncologist"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "http://varian.com/fhir/identifier/Practitioner/Id",
+    "value" : "ID_1696803013038"
+  },
+  {
+    "id" : "20",
+    "system" : "http://varian.com/fhir/identifier/Practitioner/14/Doct_DEA_ID",
+    "value" : "F95281821"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "usual",
+    "given" : ["DSPName_1696803012978"]
+  },
+  {
+    "use" : "official",
+    "family" : "トは最高でした,yīèr",
+    "given" : [",àkilomètresdeGroß"],
+    "prefix" : ["Dr"],
+    "suffix" : ["MD"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "97466165465",
+    "use" : "home"
+  },
+  {
+    "system" : "email",
+    "value" : "email@email.com",
+    "use" : "work"
+  },
+  {
+    "system" : "pager",
+    "value" : "00004698865",
+    "use" : "work"
+  },
+  {
+    "system" : "fax",
+    "value" : "000090065",
+    "use" : "work"
+  }],
+  "address" : [{
+    "id" : "709",
+    "use" : "work",
+    "type" : "both",
+    "city" : "ढणतथदधनपफबυΦφΧě末",
+    "state" : "Maharashtra",
+    "postalCode" : "411017",
+    "country" : "IND"
+  }],
+  "gender" : "male",
+  "birthDate" : "1985-03-11",
+  "qualification" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Practitioner/qualification",
+        "code" : "BS"
+      }]
+    }
+  }]
+}

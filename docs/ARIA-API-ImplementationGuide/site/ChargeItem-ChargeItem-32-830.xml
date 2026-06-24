@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ChargeItem xmlns="http://hl7.org/fhir">
+  <id value="ChargeItem-32-830"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="ChargeItem Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="ChargeItem example for the *Varian ARIA API ChargeItem Profile.*"/>
+    </extension>
+    <versionId value="194162602666556"/>
+    <lastUpdated value="2023-10-10T14:55:20.947+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/ChargeItem"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ChargeItem</b><a name="ChargeItem-32-830"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ChargeItem &quot;ChargeItem-32-830&quot; Version &quot;194162602666556&quot; Updated &quot;2023-10-10 14:55:20+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ChargeItem.html">ChargeItem</a></p></div><p><b>chargeItem-associateCharge</b>: </p><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
+  </text>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/chargeItem-code-modifier">
+    <valueCodeableConcept>
+      <coding>
+        <code value="32"/>
+        <display value="62"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/chargeItem-code-modifier">
+    <valueCodeableConcept>
+      <coding>
+        <code value="35"/>
+        <display value="77"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/chargeItem-code-modifier">
+    <valueCodeableConcept>
+      <coding>
+        <code value="20"/>
+        <display value="BB"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/chargeItem-associateCharge">
+    <valueMoney>
+      <value value="0.0"/>
+      <currency value="$"/>
+    </valueMoney>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/chargeItem-category">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/chargeitem-category"/>
+        <code value="Technical"/>
+        <display value="Technical"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/completedOn">
+    <valueDateTime value="2023-10-10T14:29:27+05:30"/>
+  </extension>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/ChargeItem/RadOnc-Id"/>
+    <value value="807"/>
+  </identifier>
+  <status value="billed"/>
+  <code>
+    <coding>
+      <system value="ARIA Code"/>
+      <code value="77413"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient-244"/>
+  </subject>
+  <occurrencePeriod>
+    <start value="2023-10-10T14:24:00+05:30"/>
+    <end value="2023-10-10T14:24:00+05:30"/>
+  </occurrencePeriod>
+  <performer>
+    <function>
+      <coding>
+        <system value="https://ncit.nci.nih.gov"/>
+        <code value="C170895"/>
+        <display value="Primary Oncologist"/>
+      </coding>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/careteam-participant-role"/>
+        <code value="primary-oncologist"/>
+        <display value="Primary Oncologist"/>
+      </coding>
+    </function>
+    <actor>
+      <reference value="Practitioner/Practitioner-1077"/>
+      <display value="DSPName_1554502999130 (Profile Not Attached)"/>
+    </actor>
+  </performer>
+  <performer>
+    <function>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/careteam-participant-role"/>
+        <code value="covering-oncologist"/>
+        <display value="Covering Oncologist"/>
+      </coding>
+    </function>
+    <actor>
+      <reference value="Practitioner/Practitioner-1078"/>
+      <display value="DSPName_1554502999429 (Profile Not Attached)"/>
+    </actor>
+  </performer>
+  <performingOrganization>
+    <reference value="Organization-Dept/Organization-Dept-1"/>
+    <display value="Radiation Therapy"/>
+  </performingOrganization>
+  <costCenter>
+    <reference value="Organization/Organization-Prov-1"/>
+    <display value="Las Vegas General"/>
+  </costCenter>
+  <quantity>
+    <value value="1"/>
+  </quantity>
+  <priceOverride>
+    <value value="0.0000"/>
+    <currency value="$"/>
+  </priceOverride>
+  <enterer>
+    <reference value="Practitioner/Practitioner-1077"/>
+    <display value="DSPName_1554502999130 (Profile Not Attached)"/>
+  </enterer>
+  <enteredDate value="2023-10-10T14:24:00+05:30"/>
+  <reason>
+    <coding>
+      <system value="IcdCode"/>
+      <code value="D00.0"/>
+      <display value="1"/>
+    </coding>
+  </reason>
+  <account>
+    <reference value="Account-7"/>
+    <identifier>
+      <system value="http://varian.com/fhir/identifier/Account/Id"/>
+      <value value="Acc1"/>
+    </identifier>
+  </account>
+  <supportingInformation>
+    <reference value="Condition-DX/Condition-DX-14200000000000000241-2"/>
+  </supportingInformation>
+</ChargeItem>

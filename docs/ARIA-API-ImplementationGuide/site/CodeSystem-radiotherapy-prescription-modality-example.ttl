@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/CodeSystem/radiotherapy-prescription-modality-example> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "radiotherapy-prescription-modality-example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "RadiotherapyPrescriptionModalityExample"] ; # 
+  fhir:title [ fhir:v "Radiotherapy Prescription Modality Example"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-26T13:25:01+05:30"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Varian Medical Systems, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.varian.com/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Radiotherapy Prescription Modality"] ; # 
+  fhir:copyright [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BRACHYTHERAPY" ] ;
+     fhir:display [ fhir:v "Brachytherapy" ] ;
+     fhir:definition [ fhir:v "Brachytherapy." ]
+  ] [
+     fhir:code [ fhir:v "ELECTRON" ] ;
+     fhir:display [ fhir:v "Electron" ] ;
+     fhir:definition [ fhir:v "Electrons." ]
+  ] [
+     fhir:code [ fhir:v "PHOTON" ] ;
+     fhir:display [ fhir:v "Photon" ] ;
+     fhir:definition [ fhir:v "Photons." ]
+  ] [
+     fhir:code [ fhir:v "PROTON" ] ;
+     fhir:display [ fhir:v "Proton" ] ;
+     fhir:definition [ fhir:v "Protons." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

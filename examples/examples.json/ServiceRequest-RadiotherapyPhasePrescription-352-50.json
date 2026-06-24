@@ -1,0 +1,193 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "RadiotherapyPhasePrescription-352-50",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "RadiotherapyPhasePrescription-352-50"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Example Radiotherapy Phase Prescription."
+    }],
+    "versionId" : "3249827",
+    "lastUpdated" : "2022-12-02T15:50:45.400+01:00",
+    "profile" : ["http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-phase-prescription",
+    "http://fhir.siemens-healthineers.com/fhir/R4/StructureDefinition/shs-radiotherapy-phase-prescription-service-request",
+    "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPhasePrescription"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"RadiotherapyPhasePrescription-352-50\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;RadiotherapyPhasePrescription-352-50&quot; Version &quot;3249827&quot; Updated &quot;2022-12-02 15:50:45+0100&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-phase-prescription.html\">Radiotherapy Phase Prescription</a>, <code>http://fhir.siemens-healthineers.com/fhir/R4/StructureDefinition/shs-radiotherapy-phase-prescription-service-request</code>, <a href=\"StructureDefinition-RadiotherapyPhasePrescription.html\">Radiotherapy Phase Prescription</a></p></div><p><b>Procedure Intent Extension</b>: Radical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (radiotherapy-therapeutic-intent#Radical)</span></p><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html\">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using electrons (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#45643008)</span></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html\">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Conformal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (radiotherapy-prescription-technique#Conformal; <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html\">NullFlavor</a>#UNC &quot;un-encoded&quot;)</span></p></blockquote><p><b>Number of Prescribed Fractions</b>: 4</p><blockquote><p><b>Dose Prescribed to Volume</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <span>: Left Breast Boost</span></p><blockquote><p><b>url</b></p><code>fractionDose</code></blockquote><p><b>value</b>: 200.0 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 800.0 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p></blockquote><blockquote><p><b>Radiotherapy Bolus</b></p><blockquote><p><b>url</b></p><code>type</code></blockquote><p><b>value</b>: 1 cm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (radiotherapy-bolus#1 CM)</span></p><blockquote><p><b>url</b></p><code>frequency</code></blockquote><p><b>value</b>: Every Other Treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (radiotherapy-bolus-frequency#EVERY OTHER TREATMENT)</span></p></blockquote><p><b>identifier</b>: id:\u00a050\u00a0(use:\u00a0OFFICIAL), id:\u00a0Left Breast Boost\u00a0(use:\u00a0USUAL), id:\u00a0Boost\u00a0(use:\u00a0SECONDARY)</p><p><b>basedOn</b>: <a href=\"ServiceRequest-RadiotherapyCoursePrescription-352-634.html\">ServiceRequest/RadiotherapyCoursePrescription-352-634: C1_Both_Breast</a></p><p><b>status</b>: active</p><p><b>intent</b>: original-order</p><p><b>category</b>: Radiation oncology AND/OR radiotherapy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108290001)</span></p><p><b>code</b>: Radiotherapy treatment phase (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1222565005)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-352.html\">Patient/Patient-352: Sister-22B, Jane</a> &quot; SISTER-22B&quot;</p><p><b>occurrence</b>: Code: 5 Times a week</p><p><b>authoredOn</b>: 2022-12-02 15:50:45+0100</p><p><b>requester</b>: <a href=\"Practitioner-Practitioner-1005.html\">Practitioner/Practitioner-1005: aria\\varianinstaller</a></p><p><b>reasonReference</b>: <a href=\"Condition/Condition-DX-65100000000000000156-2\">Condition/Condition-DX-65100000000000000156-2: C50.9:Malignant neoplasm: breast, unspecified</a></p><p><b>bodySite</b>: Breast, Left <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (radiotherapy-prescription-site#Breast, Left; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76752008 &quot;Breast structure (body structure)&quot;)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-therapeutic-intent",
+        "code" : "Radical",
+        "display" : "Radical"
+      }],
+      "text" : "Radical"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "45643008",
+          "display" : "External beam radiation therapy using electrons (procedure)"
+        }]
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique",
+          "code" : "Conformal",
+          "display" : "Conformal"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+          "code" : "UNC",
+          "display" : "un-encoded"
+        }],
+        "text" : "Conformal"
+      }
+    }],
+    "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-fractions-prescribed",
+    "valuePositiveInt" : 4
+  },
+  {
+    "extension" : [{
+      "url" : "volume",
+      "valueReference" : {
+        "identifier" : {
+          "use" : "official",
+          "system" : "http://varian.com/fhir/identifier/radiotherapyDoseReferenceId",
+          "value" : "RadiotherapyPhasePrescription-352-50-Left Breast Boost"
+        },
+        "display" : "Left Breast Boost"
+      }
+    },
+    {
+      "url" : "fractionDose",
+      "valueQuantity" : {
+        "value" : 200.0,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cGy"
+      }
+    },
+    {
+      "url" : "totalDose",
+      "valueQuantity" : {
+        "value" : 800.0,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cGy"
+      }
+    }],
+    "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-dose-prescribed-to-volume"
+  },
+  {
+    "extension" : [{
+      "url" : "type",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-bolus",
+          "code" : "1 CM",
+          "display" : "1 cm"
+        }],
+        "text" : "1 cm"
+      }
+    },
+    {
+      "url" : "frequency",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-bolus-frequency",
+          "code" : "EVERY OTHER TREATMENT",
+          "display" : "Every Other Treatment"
+        }],
+        "text" : "Every Other Treatment"
+      }
+    }],
+    "url" : "http://fhir.siemens-healthineers.com/fhir/R4/StructureDefinition/shs-radiotherapy-bolus-extension"
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://varian.com/fhir/identifier/RadiotherapyPhase/RadOnc-Id",
+    "value" : "50"
+  },
+  {
+    "use" : "usual",
+    "system" : "http://varian.com/fhir/identifier/radiotherapyPrescriptionId",
+    "value" : "Left Breast Boost"
+  },
+  {
+    "use" : "secondary",
+    "system" : "http://varian.com/fhir/identifier/radiotherapyPhaseId",
+    "value" : "Boost"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/RadiotherapyCoursePrescription-352-634",
+    "display" : "C1_Both_Breast"
+  }],
+  "status" : "active",
+  "intent" : "original-order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108290001",
+      "display" : "Radiation oncology AND/OR radiotherapy"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1222565005",
+      "display" : "Radiotherapy treatment phase (regime/therapy)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-352",
+    "display" : "Sister-22B, Jane"
+  },
+  "occurrenceTiming" : {
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-frequency",
+        "code" : "5 Times a week",
+        "display" : "5 Times a week"
+      }],
+      "text" : "5 Times a week"
+    }
+  },
+  "authoredOn" : "2022-12-02T15:50:45+01:00",
+  "requester" : {
+    "reference" : "Practitioner/Practitioner-1005",
+    "display" : "aria\\varianinstaller"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/Condition-DX-65100000000000000156-2",
+    "display" : "C50.9:Malignant neoplasm: breast, unspecified"
+  }],
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site",
+      "code" : "Breast, Left",
+      "display" : "Breast, Left"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "76752008",
+      "display" : "Breast structure (body structure)"
+    }],
+    "text" : "Breast, Left"
+  }]
+}

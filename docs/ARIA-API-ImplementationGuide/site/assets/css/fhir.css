@@ -1,0 +1,24 @@
+
+#family-nav {
+  line-height: 50px;
+  float: right;
+  margin-top: 4px;
+  color: #808080;
+}
+#family-logo {
+  float: right;
+  margin-left: 6px;
+}
+
+#left-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 4px;
+  color: #808080;
+}
+
+#left-logo {
+  float: left;
+  margin-left: 6px;
+}
+

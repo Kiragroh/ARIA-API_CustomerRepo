@@ -1,0 +1,128 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "radiotherapy-prescription-technique-example",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+  "version" : "1.0.0",
+  "name" : "RadiotherapyPrescriptionTechniqueExample",
+  "title" : "Radiotherapy Prescription Technique Example",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-07-26T13:25:01+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "description" : "Radiotherapy Prescription Technique.",
+  "copyright" : "Varian Medical Systems, Inc.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 25,
+  "concept" : [{
+    "code" : "3 Field Plan",
+    "display" : "3 Field Plan"
+  },
+  {
+    "code" : "4 Field Box",
+    "display" : "4 Field Box"
+  },
+  {
+    "code" : "Arc",
+    "display" : "Arc"
+  },
+  {
+    "code" : "CHART",
+    "display" : "CHART"
+  },
+  {
+    "code" : "Conformal",
+    "display" : "Conformal"
+  },
+  {
+    "code" : "Dogleg / Hockey-Stick",
+    "display" : "Dogleg / Hockey-Stick"
+  },
+  {
+    "code" : "Dual Isocentre",
+    "display" : "Dual Isocentre"
+  },
+  {
+    "code" : "Hemi-Body",
+    "display" : "Hemi-Body"
+  },
+  {
+    "code" : "IMRT",
+    "display" : "IMRT"
+  },
+  {
+    "code" : "Inverted-Y",
+    "display" : "Inverted-Y"
+  },
+  {
+    "code" : "Mantle",
+    "display" : "Mantle"
+  },
+  {
+    "code" : "Moving Gap",
+    "display" : "Moving Gap"
+  },
+  {
+    "code" : "Parallel Opposed Pair",
+    "display" : "Parallel Opposed Pair"
+  },
+  {
+    "code" : "Single",
+    "display" : "Single"
+  },
+  {
+    "code" : "Stereotactic",
+    "display" : "Stereotactic"
+  },
+  {
+    "code" : "ARC THERAPY",
+    "display" : "Arc Therapy"
+  },
+  {
+    "code" : "DOUBLE SCATTERING",
+    "display" : "Double Scattering"
+  },
+  {
+    "code" : "HIGH DOSE TREATMENT",
+    "display" : "High Dose Treatment"
+  },
+  {
+    "code" : "MODULATED SCANNING",
+    "display" : "Modulated Scanning"
+  },
+  {
+    "code" : "SINGLE SCATTERING",
+    "display" : "Single Scattering"
+  },
+  {
+    "code" : "SRS ARC THERAPY",
+    "display" : "SRS Arc Therapy"
+  },
+  {
+    "code" : "SRS STATIC",
+    "display" : "SRS Static"
+  },
+  {
+    "code" : "TOTAL BODY IRRADIATION",
+    "display" : "Total Body Irradiation"
+  },
+  {
+    "code" : "WOBBLING",
+    "display" : "Wobbling"
+  },
+  {
+    "code" : "Electron Applicator",
+    "display" : "Electron Applicator"
+  }]
+}

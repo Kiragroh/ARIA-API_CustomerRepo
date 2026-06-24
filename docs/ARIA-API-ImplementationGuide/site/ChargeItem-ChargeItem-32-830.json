@@ -1,0 +1,155 @@
+{
+  "resourceType" : "ChargeItem",
+  "id" : "ChargeItem-32-830",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "ChargeItem Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "ChargeItem example for the *Varian ARIA API ChargeItem Profile.*"
+    }],
+    "versionId" : "194162602666556",
+    "lastUpdated" : "2023-10-10T14:55:20.947+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/ChargeItem"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ChargeItem</b><a name=\"ChargeItem-32-830\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ChargeItem &quot;ChargeItem-32-830&quot; Version &quot;194162602666556&quot; Updated &quot;2023-10-10 14:55:20+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ChargeItem.html\">ChargeItem</a></p></div><p><b>chargeItem-associateCharge</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/chargeItem-code-modifier",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "32",
+        "display" : "62"
+      }]
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/chargeItem-code-modifier",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "35",
+        "display" : "77"
+      }]
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/chargeItem-code-modifier",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "20",
+        "display" : "BB"
+      }]
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/chargeItem-associateCharge",
+    "valueMoney" : {
+      "value" : 0.0,
+      "currency" : "$"
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/chargeItem-category",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/chargeitem-category",
+        "code" : "Technical",
+        "display" : "Technical"
+      }]
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/completedOn",
+    "valueDateTime" : "2023-10-10T14:29:27+05:30"
+  }],
+  "identifier" : [{
+    "system" : "http://varian.com/fhir/identifier/ChargeItem/RadOnc-Id",
+    "value" : "807"
+  }],
+  "status" : "billed",
+  "code" : {
+    "coding" : [{
+      "system" : "ARIA Code",
+      "code" : "77413"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-244"
+  },
+  "occurrencePeriod" : {
+    "start" : "2023-10-10T14:24:00+05:30",
+    "end" : "2023-10-10T14:24:00+05:30"
+  },
+  "performer" : [{
+    "function" : {
+      "coding" : [{
+        "system" : "https://ncit.nci.nih.gov",
+        "code" : "C170895",
+        "display" : "Primary Oncologist"
+      },
+      {
+        "system" : "http://varian.com/fhir/CodeSystem/careteam-participant-role",
+        "code" : "primary-oncologist",
+        "display" : "Primary Oncologist"
+      }]
+    },
+    "actor" : {
+      "reference" : "Practitioner/Practitioner-1077",
+      "display" : "DSPName_1554502999130 (Profile Not Attached)"
+    }
+  },
+  {
+    "function" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/careteam-participant-role",
+        "code" : "covering-oncologist",
+        "display" : "Covering Oncologist"
+      }]
+    },
+    "actor" : {
+      "reference" : "Practitioner/Practitioner-1078",
+      "display" : "DSPName_1554502999429 (Profile Not Attached)"
+    }
+  }],
+  "performingOrganization" : {
+    "reference" : "Organization-Dept/Organization-Dept-1",
+    "display" : "Radiation Therapy"
+  },
+  "costCenter" : {
+    "reference" : "Organization/Organization-Prov-1",
+    "display" : "Las Vegas General"
+  },
+  "quantity" : {
+    "value" : 1
+  },
+  "priceOverride" : {
+    "value" : 0.0000,
+    "currency" : "$"
+  },
+  "enterer" : {
+    "reference" : "Practitioner/Practitioner-1077",
+    "display" : "DSPName_1554502999130 (Profile Not Attached)"
+  },
+  "enteredDate" : "2023-10-10T14:24:00+05:30",
+  "reason" : [{
+    "coding" : [{
+      "system" : "IcdCode",
+      "code" : "D00.0",
+      "display" : "1"
+    }]
+  }],
+  "account" : [{
+    "reference" : "Account-7",
+    "identifier" : {
+      "system" : "http://varian.com/fhir/identifier/Account/Id",
+      "value" : "Acc1"
+    }
+  }],
+  "supportingInformation" : [{
+    "reference" : "Condition-DX/Condition-DX-14200000000000000241-2"
+  }]
+}

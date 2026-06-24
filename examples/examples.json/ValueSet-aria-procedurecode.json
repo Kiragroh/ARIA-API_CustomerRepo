@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aria-procedurecode",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://varian.com/fhir/v1/ValueSet/aria-procedurecode",
+  "version" : "1.0.0",
+  "status" : "draft",
+  "date" : "2024-07-26T13:25:01+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "copyright" : "Varian Medical Systems, Inc."
+}

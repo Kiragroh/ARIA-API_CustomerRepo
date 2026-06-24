@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Condition/RadiotherapyConditionSHS-1> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadiotherapyConditionSHS-1"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "191220556339428" ] ;
+     fhir:lastUpdated [ fhir:v "2021-11-24T20:43:43.053+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/CancerCondition"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/CancerCondition>
+     ] [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/Condition"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/Condition>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HTEST" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"RadiotherapyConditionSHS-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;RadiotherapyConditionSHS-1&quot; Version &quot;191220556339428&quot; Updated &quot;2021-11-24 20:43:43+0100&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-CancerCondition.html\">Condition-Diagnosis (CancerCondition)</a>, <code>http://varian.com/fhir/v1/StructureDefinition/Condition</code></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActReason http://terminology.hl7.org/CodeSystem/v3-ActReason}\">http://terminology.hl7.org/CodeSystem/v3-ActReason</span></p></div><p><b>identifier</b>: id: 2, id: 100145, id: ARIA_29cca0b5-b559-4078-a770-2e34afde5b7d</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Provisional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#provisional)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Malignant neoplasm of breast (female), unspecified site <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-ICD-9CM-procedurecodes.html\">ICD-9-CM (procedure codes)</a>#174.9 &quot;Malignant neoplasm of breast (female) unspecified site&quot;)</span></p><p><b>bodySite</b>: Breast, NOS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#509)</span>, Breast <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (body-site#Breast)</span></p><p><b>subject</b>: <a href=\"Patient-RadiotherapyPatientSHS-216.html\">Patient/RadiotherapyPatientSHS-216: Sister, Jane</a> &quot; SISTER&quot;</p><p><b>onset</b>: 2021-11-24</p><p><b>recordedDate</b>: 2021-11-24 20:43:43+0100</p><p><b>recorder</b>: <a href=\"Practitioner-RadiotherapyPractitionerSHS-1005.html\">Practitioner/RadiotherapyPractitionerSHS-1005: Varian Installer</a> &quot; WILSON&quot;</p><h3>Evidences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (method#Unknown)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Condition/MedOnc-Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2" ]
+  ] [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/RadOnc-Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "100145" ]
+  ] [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Condition/unique-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ARIA_29cca0b5-b559-4078-a770-2e34afde5b7d" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "provisional" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-9-cm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "174.9" ] ;
+       fhir:display [ fhir:v "Malignant neoplasm of breast (female) unspecified site" ]
+     ] ) ;
+     fhir:text [ fhir:v "Malignant neoplasm of breast (female), unspecified site" ]
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "509" ] ;
+       fhir:display [ fhir:v "Breast, NOS" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Condition/diagnosis/body-site"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Breast" ] ;
+       fhir:display [ fhir:v "Breast" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://varian.com/fhir/v1/Patient/RadiotherapyPatientSHS-216> ;
+     fhir:reference [ fhir:v "Patient/RadiotherapyPatientSHS-216" ] ;
+     fhir:display [ fhir:v "Sister, Jane" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2021-11-24"^^xsd:date] ; # 
+  fhir:recordedDate [ fhir:v "2021-11-24T20:43:43+01:00"^^xsd:dateTime] ; # 
+  fhir:recorder [
+     fhir:link <http://varian.com/fhir/v1/Practitioner/RadiotherapyPractitionerSHS-1005> ;
+     fhir:reference [ fhir:v "Practitioner/RadiotherapyPractitionerSHS-1005" ] ;
+     fhir:display [ fhir:v "Varian Installer" ]
+  ] ; # 
+  fhir:evidence ( [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Condition/diagnosis/method"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Unknown" ] ;
+         fhir:display [ fhir:v "Unknown" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

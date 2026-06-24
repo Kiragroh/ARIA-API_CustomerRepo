@@ -1,0 +1,1254 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "e7cd9359-ec9a-4ea2-a179-f50a366887ec",
+  "meta" : {
+    "lastUpdated" : "2024-07-26T13:25:01.410+05:30"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://varian.com/fhir/v1/ValueSet/aria-procedurecode",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://varian.com/fhir/v1/ValueSet/aria-procedurecode",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "date" : "2024-07-26T13:25:01+05:30",
+      "expansion" : {
+        "identifier" : "urn:uuid:b8ba543f-8c74-4c6f-a7b5-b8e28bf843e9",
+        "timestamp" : "2024-07-26T13:28:45+05:30",
+        "total" : 0,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://varian.com/fhir/ValueSet/condition-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px\">This value set cannot be expanded because of the way it is defined - it has an infinite number of members</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://varian.com/fhir/ValueSet/condition-code",
+      "version" : "1.0.0",
+      "name" : "DiagnosisCode",
+      "title" : "Diagnosis Code",
+      "status" : "active",
+      "date" : "2024-07-26T13:25:01+05:30",
+      "expansion" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
+          "valueBoolean" : true
+        }],
+        "identifier" : "urn:uuid:d5d47e56-bd2a-4cb7-9e9c-938027b978f9",
+        "timestamp" : "2024-07-26T08:00:01.224Z",
+        "total" : 0,
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-energy-example",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-radiotherapy-prescription-energy-example.html\">codesystem Radiotherapy Prescription Energy Example v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-energy-example-6X\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-energy-example.html#radiotherapy-prescription-energy-example-6X\">6X</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example</td><td>6X</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-energy-example-8X\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-energy-example.html#radiotherapy-prescription-energy-example-8X\">8X</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example</td><td>8X</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-energy-example-20X\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-energy-example.html#radiotherapy-prescription-energy-example-20X\">20X</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example</td><td>20X</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-energy-example-20E\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-energy-example.html#radiotherapy-prescription-energy-example-20E\">20E</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example</td><td>20E</td></tr></table></div>"
+      },
+      "url" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-energy-example",
+      "version" : "1.0.0",
+      "name" : "RadiotherapyPrescriptionEnergyExample",
+      "title" : "Radiotherapy Prescription Energy Example",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-07-26T13:25:01+05:30",
+      "expansion" : {
+        "identifier" : "urn:uuid:bdc6a70a-1e74-4e82-8287-1d49ba77d017",
+        "timestamp" : "2024-07-26T13:30:29+05:30",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example",
+          "code" : "6X",
+          "display" : "6X"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example",
+          "code" : "8X",
+          "display" : "8X"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example",
+          "code" : "20X",
+          "display" : "20X"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example",
+          "code" : "20E",
+          "display" : "20E"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-modality-example",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-radiotherapy-prescription-modality-example.html\">codesystem Radiotherapy Prescription Modality Example v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-modality-example-BRACHYTHERAPY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-modality-example.html#radiotherapy-prescription-modality-example-BRACHYTHERAPY\">BRACHYTHERAPY</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example</td><td>Brachytherapy</td><td><div><p>Brachytherapy.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-modality-example-ELECTRON\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-modality-example.html#radiotherapy-prescription-modality-example-ELECTRON\">ELECTRON</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example</td><td>Electron</td><td><div><p>Electrons.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-modality-example-PHOTON\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-modality-example.html#radiotherapy-prescription-modality-example-PHOTON\">PHOTON</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example</td><td>Photon</td><td><div><p>Photons.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-modality-example-PROTON\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-modality-example.html#radiotherapy-prescription-modality-example-PROTON\">PROTON</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example</td><td>Proton</td><td><div><p>Protons.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-modality-example",
+      "version" : "1.0.0",
+      "name" : "RadiotherapyPrescriptionModalityExample",
+      "title" : "Radiotherapy Prescription Modality Example",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-07-26T13:25:01+05:30",
+      "expansion" : {
+        "identifier" : "urn:uuid:c38aa040-e5f8-4b70-a5be-037266e1e25d",
+        "timestamp" : "2024-07-26T13:30:29+05:30",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example",
+          "code" : "BRACHYTHERAPY",
+          "display" : "Brachytherapy"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example",
+          "code" : "ELECTRON",
+          "display" : "Electron"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example",
+          "code" : "PHOTON",
+          "display" : "Photon"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example",
+          "code" : "PROTON",
+          "display" : "Proton"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-technique-example",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 25 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-radiotherapy-prescription-technique-example.html\">codesystem Radiotherapy Prescription Technique Example v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-3-Field-Plan\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-3FieldPlan\">3 Field Plan</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>3 Field Plan</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-4-Field-Box\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-4FieldBox\">4 Field Box</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>4 Field Box</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Arc\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-Arc\">Arc</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Arc</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-CHART\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-CHART\">CHART</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>CHART</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Conformal\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-Conformal\">Conformal</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Conformal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Dogleg---Hockey-Stick\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-Dogleg.47Hockey-Stick\">Dogleg / Hockey-Stick</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Dogleg / Hockey-Stick</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Dual-Isocentre\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-DualIsocentre\">Dual Isocentre</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Dual Isocentre</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Hemi-Body\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-Hemi-Body\">Hemi-Body</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Hemi-Body</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-IMRT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-IMRT\">IMRT</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>IMRT</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Inverted-Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-Inverted-Y\">Inverted-Y</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Inverted-Y</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Mantle\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-Mantle\">Mantle</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Mantle</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Moving-Gap\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-MovingGap\">Moving Gap</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Moving Gap</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Parallel-Opposed-Pair\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-ParallelOpposedPair\">Parallel Opposed Pair</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Parallel Opposed Pair</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Single\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-Single\">Single</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Single</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Stereotactic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-Stereotactic\">Stereotactic</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Stereotactic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-ARC-THERAPY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-ARCTHERAPY\">ARC THERAPY</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Arc Therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-DOUBLE-SCATTERING\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-DOUBLESCATTERING\">DOUBLE SCATTERING</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Double Scattering</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-HIGH-DOSE-TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-HIGHDOSETREATMENT\">HIGH DOSE TREATMENT</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>High Dose Treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-MODULATED-SCANNING\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-MODULATEDSCANNING\">MODULATED SCANNING</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Modulated Scanning</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-SINGLE-SCATTERING\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-SINGLESCATTERING\">SINGLE SCATTERING</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Single Scattering</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-SRS-ARC-THERAPY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-SRSARCTHERAPY\">SRS ARC THERAPY</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>SRS Arc Therapy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-SRS-STATIC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-SRSSTATIC\">SRS STATIC</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>SRS Static</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-TOTAL-BODY-IRRADIATION\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-TOTALBODYIRRADIATION\">TOTAL BODY IRRADIATION</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Total Body Irradiation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-WOBBLING\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-WOBBLING\">WOBBLING</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Wobbling</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-technique-example-Electron-Applicator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-technique-example.html#radiotherapy-prescription-technique-example-ElectronApplicator\">Electron Applicator</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example</td><td>Electron Applicator</td></tr></table></div>"
+      },
+      "url" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-technique-example",
+      "version" : "1.0.0",
+      "name" : "RadiotherapyPrescriptionTechniqueExample",
+      "title" : "Radiotherapy Prescription Technique Example",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-07-26T13:25:01+05:30",
+      "expansion" : {
+        "identifier" : "urn:uuid:5cf922b9-e40e-41eb-b9e1-679f79ae2712",
+        "timestamp" : "2024-07-26T13:30:29+05:30",
+        "total" : 25,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "3 Field Plan",
+          "display" : "3 Field Plan"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "4 Field Box",
+          "display" : "4 Field Box"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Arc",
+          "display" : "Arc"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "CHART",
+          "display" : "CHART"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Conformal",
+          "display" : "Conformal"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Dogleg / Hockey-Stick",
+          "display" : "Dogleg / Hockey-Stick"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Dual Isocentre",
+          "display" : "Dual Isocentre"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Hemi-Body",
+          "display" : "Hemi-Body"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "IMRT",
+          "display" : "IMRT"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Inverted-Y",
+          "display" : "Inverted-Y"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Mantle",
+          "display" : "Mantle"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Moving Gap",
+          "display" : "Moving Gap"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Parallel Opposed Pair",
+          "display" : "Parallel Opposed Pair"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Single",
+          "display" : "Single"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Stereotactic",
+          "display" : "Stereotactic"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "ARC THERAPY",
+          "display" : "Arc Therapy"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "DOUBLE SCATTERING",
+          "display" : "Double Scattering"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "HIGH DOSE TREATMENT",
+          "display" : "High Dose Treatment"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "MODULATED SCANNING",
+          "display" : "Modulated Scanning"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "SINGLE SCATTERING",
+          "display" : "Single Scattering"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "SRS ARC THERAPY",
+          "display" : "SRS Arc Therapy"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "SRS STATIC",
+          "display" : "SRS Static"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "TOTAL BODY IRRADIATION",
+          "display" : "Total Body Irradiation"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "WOBBLING",
+          "display" : "Wobbling"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+          "code" : "Electron Applicator",
+          "display" : "Electron Applicator"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-site-example",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 181 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-radiotherapy-prescription-site-example.html\">codesystem Radiotherapy Prescription Site Example v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Abdomen\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Abdomen\">Abdomen</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Abdomen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Adrenal-Gland--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-AdrenalGland.44Left\">Adrenal Gland, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Adrenal Gland, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Adrenal-Gland--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-AdrenalGland.44Right\">Adrenal Gland, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Adrenal Gland, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Anus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Anus\">Anus</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Anus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Arm--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Arm.44Left\">Arm, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Arm, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Arm--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Arm.44Right\">Arm, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Arm, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Axilla--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Axilla.44Left\">Axilla, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Axilla, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Axilla--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Axilla.44Right\">Axilla, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Axilla, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Back\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Back\">Back</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Back</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Bile-Duct\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-BileDuct\">Bile Duct</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Bile Duct</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Bladder\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Bladder\">Bladder</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Bladder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Bone-Marrow--Diffuse-\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-BoneMarrow.40Diffuse.41\">Bone Marrow (Diffuse)</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Bone Marrow (Diffuse)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Brain\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Brain\">Brain</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Brain</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Breast--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Breast.44Left\">Breast, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Breast, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Breast--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Breast.44Right\">Breast, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Breast, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Bronchus--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Bronchus.44Left\">Bronchus, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Bronchus, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Bronchus--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Bronchus.44Right\">Bronchus, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Bronchus, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Buccal-Mucosa\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-BuccalMucosa\">Buccal Mucosa</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Buccal Mucosa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Caecum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Caecum\">Caecum</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Caecum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Canthus--Left-Inner\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Canthus.44LeftInner\">Canthus, Left Inner</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Canthus, Left Inner</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Canthus--Left-Outer\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Canthus.44LeftOuter\">Canthus, Left Outer</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Canthus, Left Outer</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Canthus--Right-Inner\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Canthus.44RightInner\">Canthus, Right Inner</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Canthus, Right Inner</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Canthus--Right-Outer\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Canthus.44RightOuter\">Canthus, Right Outer</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Canthus, Right Outer</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Cervical-Spine\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-CervicalSpine\">Cervical Spine</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Cervical Spine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Cervix\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Cervix\">Cervix</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Cervix</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Cheek--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Cheek.44Left\">Cheek, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Cheek, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Cheek--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Cheek.44Right\">Cheek, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Cheek, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Chest-Wall--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-ChestWall.44Left\">Chest Wall, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Chest Wall, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Chest-Wall--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-ChestWall.44Right\">Chest Wall, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Chest Wall, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Coccyx\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Coccyx\">Coccyx</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Coccyx</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Cochlea\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Cochlea\">Cochlea</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Cochlea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Colon\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Colon\">Colon</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Colon</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Cranium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Cranium\">Cranium</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Cranium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Deep-Cervical-Chain-Nodes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-DeepCervicalChainNodes\">Deep Cervical Chain Nodes</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Deep Cervical Chain Nodes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Deep-Inguinal-Nodes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-DeepInguinalNodes\">Deep Inguinal Nodes</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Deep Inguinal Nodes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Duodenum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Duodenum\">Duodenum</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Duodenum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ethmoid-Sinus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-EthmoidSinus\">Ethmoid Sinus</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ethmoid Sinus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Eye--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Eye.44Left\">Eye, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Eye, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Eye--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Eye.44Right\">Eye, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Eye, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Face\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Face\">Face</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Face</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Fallopian-Tube--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-FallopianTube.44Left\">Fallopian Tube, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Fallopian Tube, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Fallopian-Tube--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-FallopianTube.44Right\">Fallopian Tube, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Fallopian Tube, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Femur-Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-FemurLeft\">Femur Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Femur Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Femur-Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-FemurRight\">Femur Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Femur Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Fibula--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Fibula.44Left\">Fibula, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Fibula, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Fibula--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Fibula.44Right\">Fibula, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Fibula, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Foot--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Foot.44Left\">Foot, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Foot, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Foot--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Foot.44Right\">Foot, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Foot, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Forearm--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Forearm.44Left\">Forearm, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Forearm, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Forearm--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Forearm.44Right\">Forearm, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Forearm, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Frontal-Lobe\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-FrontalLobe\">Frontal Lobe</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Frontal Lobe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Gall-Bladder\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-GallBladder\">Gall Bladder</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Gall Bladder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Groin--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Groin.44Left\">Groin, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Groin, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Groin--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Groin.44Right\">Groin, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Groin, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Hand--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Hand.44Left\">Hand, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Hand, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Hand--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Hand.44Right\">Hand, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Hand, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Hard-Palate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-HardPalate\">Hard Palate</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Hard Palate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Head-and-Neck\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-HeadandNeck\">Head and Neck</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Head and Neck</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Heart\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Heart\">Heart</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Heart</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Hemi-Body--Lower\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Hemi-Body.44Lower\">Hemi-Body, Lower</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Hemi-Body, Lower</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Hemi-Body--Upper\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Hemi-Body.44Upper\">Hemi-Body, Upper</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Hemi-Body, Upper</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Hip--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Hip.44Left\">Hip, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Hip, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Hip--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Hip.44Right\">Hip, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Hip, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Humerus--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Humerus.44Left\">Humerus, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Humerus, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Humerus--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Humerus.44Right\">Humerus, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Humerus, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ileum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ileum\">Ileum</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ileum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ilium--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ilium.44Left\">Ilium, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ilium, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ilium--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ilium.44Right\">Ilium, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ilium, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Infraclavicular-Nodes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-InfraclavicularNodes\">Infraclavicular Nodes</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Infraclavicular Nodes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Internal-Iliac-Nodes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-InternalIliacNodes\">Internal Iliac Nodes</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Internal Iliac Nodes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ischium\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ischium\">Ischium</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ischium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Jejunum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Jejunum\">Jejunum</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Jejunum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Kidney--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Kidney.44Left\">Kidney, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Kidney, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Kidney--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Kidney.44Right\">Kidney, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Kidney, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Knee--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Knee.44Left\">Knee, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Knee, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Knee--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Knee.44Right\">Knee, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Knee, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Laryngopharynx\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Laryngopharynx\">Laryngopharynx</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Laryngopharynx</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Larynx\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Larynx\">Larynx</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Larynx</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Leg--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Leg.44Left\">Leg, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Leg, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Leg--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Leg.44Right\">Leg, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Leg, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Lip--Lower\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Lip.44Lower\">Lip, Lower</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Lip, Lower</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Lip--Upper\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Lip.44Upper\">Lip, Upper</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Lip, Upper</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Liver\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Liver\">Liver</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Liver</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Lumbar-Spine\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-LumbarSpine\">Lumbar Spine</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Lumbar Spine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Lung--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Lung.44Left\">Lung, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Lung, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Lung--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Lung.44Right\">Lung, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Lung, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Mandible\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Mandible\">Mandible</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Mandible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Maxilla\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Maxilla\">Maxilla</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Maxilla</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Maxillary-Antrum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-MaxillaryAntrum\">Maxillary Antrum</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Maxillary Antrum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Meninges\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Meninges\">Meninges</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Meninges</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Middle-Ear\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-MiddleEar\">Middle Ear</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Middle Ear</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Nasopharynx\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Nasopharynx\">Nasopharynx</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Nasopharynx</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Neck\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Neck\">Neck</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Neck</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Neck-Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-NeckLeft\">Neck Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Neck Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Neck-Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-NeckRight\">Neck Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Neck Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Nipple--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Nipple.44Left\">Nipple, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Nipple, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Nipple--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Nipple.44Right\">Nipple, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Nipple, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Nose\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Nose\">Nose</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Nose</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Occipital-Lobe\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-OccipitalLobe\">Occipital Lobe</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Occipital Lobe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Oesophagus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Oesophagus\">Oesophagus</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Oesophagus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Orbit-Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-OrbitLeft\">Orbit Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Orbit Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Orbit-Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-OrbitRight\">Orbit Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Orbit Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Oropharynx\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Oropharynx\">Oropharynx</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Oropharynx</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ovary--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ovary.44Left\">Ovary, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ovary, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ovary--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ovary.44Right\">Ovary, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ovary, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pancreas\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Pancreas\">Pancreas</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pancreas</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Paranasal-Sinus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-ParanasalSinus\">Paranasal Sinus</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Paranasal Sinus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Para-Sternal-Nodes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Para-SternalNodes\">Para-Sternal Nodes</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Para-Sternal Nodes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-ParaThyroid\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-ParaThyroid\">ParaThyroid</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>ParaThyroid</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Parietal-Lobe\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-ParietalLobe\">Parietal Lobe</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Parietal Lobe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Parotid--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Parotid.44Left\">Parotid, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Parotid, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Parotid--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Parotid.44Right\">Parotid, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Parotid, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pelvis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Pelvis\">Pelvis</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pelvis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Penis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Penis\">Penis</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Penis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Penis--Glans\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Penis.44Glans\">Penis, Glans</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Penis, Glans</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Perineum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Perineum\">Perineum</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Perineum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pharynx\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Pharynx\">Pharynx</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pharynx</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pineal-Gland\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-PinealGland\">Pineal Gland</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pineal Gland</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pinna--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Pinna.44Left\">Pinna, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pinna, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pinna--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Pinna.44Right\">Pinna, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pinna, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pituitary\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Pituitary\">Pituitary</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pituitary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Post-Cricoid\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Post-Cricoid\">Post-Cricoid</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Post-Cricoid</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pre-Sacral-Nodes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Pre-SacralNodes\">Pre-Sacral Nodes</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pre-Sacral Nodes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Prostate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Prostate\">Prostate</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Prostate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Prostate-and-Seminal-Vesicles\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-ProstateandSeminalVesicles\">Prostate and Seminal Vesicles</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Prostate and Seminal Vesicles</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pubis--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Pubis.44Left\">Pubis, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pubis, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Pubis--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Pubis.44Right\">Pubis, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Pubis, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Radius--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Radius.44Left\">Radius, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Radius, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Radius--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Radius.44Right\">Radius, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Radius, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Rectum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Rectum\">Rectum</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Rectum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Retina--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Retina.44Left\">Retina, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Retina, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Retina--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Retina.44Right\">Retina, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Retina, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ribs--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ribs.44Left\">Ribs, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ribs, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ribs--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ribs.44Right\">Ribs, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ribs, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Sacro-Iliac-Joints\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Sacro-IliacJoints\">Sacro-Iliac Joints</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Sacro-Iliac Joints</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Sacro-Iliac--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Sacro-Iliac.44Left\">Sacro-Iliac, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Sacro-Iliac, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Sacro-Iliac--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Sacro-Iliac.44Right\">Sacro-Iliac, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Sacro-Iliac, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Sacrum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Sacrum\">Sacrum</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Sacrum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Scalp\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Scalp\">Scalp</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Scalp</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Scapula--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Scapula.44Left\">Scapula, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Scapula, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Scapula--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Scapula.44Right\">Scapula, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Scapula, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Scrotum\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Scrotum\">Scrotum</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Scrotum</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Seminal-Vesicles\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SeminalVesicles\">Seminal Vesicles</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Seminal Vesicles</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Soft-Palate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SoftPalate\">Soft Palate</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Soft Palate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Spinal-Cord\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SpinalCord\">Spinal Cord</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Spinal Cord</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Spinal-Cord--Cervical\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SpinalCord.44Cervical\">Spinal Cord, Cervical</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Spinal Cord, Cervical</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Spinal-Cord--Lumbar\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SpinalCord.44Lumbar\">Spinal Cord, Lumbar</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Spinal Cord, Lumbar</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Spinal-Cord--Thoracic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SpinalCord.44Thoracic\">Spinal Cord, Thoracic</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Spinal Cord, Thoracic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Spleen\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Spleen\">Spleen</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Spleen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Stomach\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Stomach\">Stomach</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Stomach</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Sublingual-Glands\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SublingualGlands\">Sublingual Glands</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Sublingual Glands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Submandibular-Glands\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SubmandibularGlands\">Submandibular Glands</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Submandibular Glands</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Submandibular-Nodes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SubmandibularNodes\">Submandibular Nodes</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Submandibular Nodes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Superficial-Inguinal-Nodes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-SuperficialInguinalNodes\">Superficial Inguinal Nodes</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Superficial Inguinal Nodes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Temporal-Lobe\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-TemporalLobe\">Temporal Lobe</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Temporal Lobe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Testis\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Testis\">Testis</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Testis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Thigh\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Thigh\">Thigh</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Thigh</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Thorax\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Thorax\">Thorax</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Thorax</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Thymus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Thymus\">Thymus</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Thymus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Thyroid\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Thyroid\">Thyroid</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Thyroid</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Tibia--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Tibia.44Left\">Tibia, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Tibia, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Tibia--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Tibia.44Right\">Tibia, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Tibia, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Tongue\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Tongue\">Tongue</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Tongue</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Tonsil--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Tonsil.44Left\">Tonsil, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Tonsil, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Tonsil--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Tonsil.44Right\">Tonsil, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Tonsil, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Total-Body\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-TotalBody\">Total Body</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Total Body</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Total-Skin\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-TotalSkin\">Total Skin</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Total Skin</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Trachea\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Trachea\">Trachea</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Trachea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ulna--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ulna.44Left\">Ulna, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ulna, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ulna--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ulna.44Right\">Ulna, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ulna, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ureter--Left\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ureter.44Left\">Ureter, Left</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ureter, Left</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Ureter--Right\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Ureter.44Right\">Ureter, Right</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Ureter, Right</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Urethra\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Urethra\">Urethra</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Urethra</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Uterus\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Uterus\">Uterus</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Uterus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Vagina\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Vagina\">Vagina</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Vagina</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Vertebrae--Cervical\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Vertebrae.44Cervical\">Vertebrae, Cervical</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Vertebrae, Cervical</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Vertebrae--Lumbar\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Vertebrae.44Lumbar\">Vertebrae, Lumbar</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Vertebrae, Lumbar</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Vertebrae--Sacral\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Vertebrae.44Sacral\">Vertebrae, Sacral</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Vertebrae, Sacral</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Vertebrae--Thoracic\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Vertebrae.44Thoracic\">Vertebrae, Thoracic</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Vertebrae, Thoracic</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Vulva\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Vulva\">Vulva</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Vulva</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---varian.com-fhir-CodeSystem-radiotherapy-prescription-site-example-Tumor-bed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-radiotherapy-prescription-site-example.html#radiotherapy-prescription-site-example-Tumorbed\">Tumor bed</a></td><td>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</td><td>Tumor bed</td></tr></table></div>"
+      },
+      "url" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-site-example",
+      "version" : "1.0.0",
+      "name" : "RadiotherapyPrescriptionSiteExample",
+      "title" : "Radiotherapy Prescription SiteExample",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-07-26T13:25:01+05:30",
+      "expansion" : {
+        "identifier" : "urn:uuid:77e31738-d74f-487f-87e3-d999627492a0",
+        "timestamp" : "2024-07-26T13:30:30+05:30",
+        "total" : 181,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Abdomen",
+          "display" : "Abdomen"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Adrenal Gland, Left",
+          "display" : "Adrenal Gland, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Adrenal Gland, Right",
+          "display" : "Adrenal Gland, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Anus",
+          "display" : "Anus"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Arm, Left",
+          "display" : "Arm, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Arm, Right",
+          "display" : "Arm, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Axilla, Left",
+          "display" : "Axilla, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Axilla, Right",
+          "display" : "Axilla, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Back",
+          "display" : "Back"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Bile Duct",
+          "display" : "Bile Duct"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Bladder",
+          "display" : "Bladder"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Bone Marrow (Diffuse)",
+          "display" : "Bone Marrow (Diffuse)"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Brain",
+          "display" : "Brain"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Breast, Left",
+          "display" : "Breast, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Breast, Right",
+          "display" : "Breast, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Bronchus, Left",
+          "display" : "Bronchus, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Bronchus, Right",
+          "display" : "Bronchus, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Buccal Mucosa",
+          "display" : "Buccal Mucosa"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Caecum",
+          "display" : "Caecum"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Canthus, Left Inner",
+          "display" : "Canthus, Left Inner"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Canthus, Left Outer",
+          "display" : "Canthus, Left Outer"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Canthus, Right Inner",
+          "display" : "Canthus, Right Inner"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Canthus, Right Outer",
+          "display" : "Canthus, Right Outer"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Cervical Spine",
+          "display" : "Cervical Spine"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Cervix",
+          "display" : "Cervix"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Cheek, Left",
+          "display" : "Cheek, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Cheek, Right",
+          "display" : "Cheek, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Chest Wall, Left",
+          "display" : "Chest Wall, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Chest Wall, Right",
+          "display" : "Chest Wall, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Coccyx",
+          "display" : "Coccyx"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Cochlea",
+          "display" : "Cochlea"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Colon",
+          "display" : "Colon"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Cranium",
+          "display" : "Cranium"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Deep Cervical Chain Nodes",
+          "display" : "Deep Cervical Chain Nodes"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Deep Inguinal Nodes",
+          "display" : "Deep Inguinal Nodes"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Duodenum",
+          "display" : "Duodenum"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ethmoid Sinus",
+          "display" : "Ethmoid Sinus"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Eye, Left",
+          "display" : "Eye, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Eye, Right",
+          "display" : "Eye, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Face",
+          "display" : "Face"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Fallopian Tube, Left",
+          "display" : "Fallopian Tube, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Fallopian Tube, Right",
+          "display" : "Fallopian Tube, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Femur Left",
+          "display" : "Femur Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Femur Right",
+          "display" : "Femur Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Fibula, Left",
+          "display" : "Fibula, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Fibula, Right",
+          "display" : "Fibula, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Foot, Left",
+          "display" : "Foot, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Foot, Right",
+          "display" : "Foot, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Forearm, Left",
+          "display" : "Forearm, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Forearm, Right",
+          "display" : "Forearm, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Frontal Lobe",
+          "display" : "Frontal Lobe"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Gall Bladder",
+          "display" : "Gall Bladder"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Groin, Left",
+          "display" : "Groin, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Groin, Right",
+          "display" : "Groin, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Hand, Left",
+          "display" : "Hand, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Hand, Right",
+          "display" : "Hand, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Hard Palate",
+          "display" : "Hard Palate"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Head and Neck",
+          "display" : "Head and Neck"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Heart",
+          "display" : "Heart"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Hemi-Body, Lower",
+          "display" : "Hemi-Body, Lower"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Hemi-Body, Upper",
+          "display" : "Hemi-Body, Upper"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Hip, Left",
+          "display" : "Hip, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Hip, Right",
+          "display" : "Hip, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Humerus, Left",
+          "display" : "Humerus, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Humerus, Right",
+          "display" : "Humerus, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ileum",
+          "display" : "Ileum"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ilium, Left",
+          "display" : "Ilium, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ilium, Right",
+          "display" : "Ilium, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Infraclavicular Nodes",
+          "display" : "Infraclavicular Nodes"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Internal Iliac Nodes",
+          "display" : "Internal Iliac Nodes"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ischium",
+          "display" : "Ischium"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Jejunum",
+          "display" : "Jejunum"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Kidney, Left",
+          "display" : "Kidney, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Kidney, Right",
+          "display" : "Kidney, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Knee, Left",
+          "display" : "Knee, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Knee, Right",
+          "display" : "Knee, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Laryngopharynx",
+          "display" : "Laryngopharynx"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Larynx",
+          "display" : "Larynx"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Leg, Left",
+          "display" : "Leg, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Leg, Right",
+          "display" : "Leg, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Lip, Lower",
+          "display" : "Lip, Lower"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Lip, Upper",
+          "display" : "Lip, Upper"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Liver",
+          "display" : "Liver"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Lumbar Spine",
+          "display" : "Lumbar Spine"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Lung, Left",
+          "display" : "Lung, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Lung, Right",
+          "display" : "Lung, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Mandible",
+          "display" : "Mandible"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Maxilla",
+          "display" : "Maxilla"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Maxillary Antrum",
+          "display" : "Maxillary Antrum"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Meninges",
+          "display" : "Meninges"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Middle Ear",
+          "display" : "Middle Ear"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Nasopharynx",
+          "display" : "Nasopharynx"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Neck",
+          "display" : "Neck"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Neck Left",
+          "display" : "Neck Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Neck Right",
+          "display" : "Neck Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Nipple, Left",
+          "display" : "Nipple, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Nipple, Right",
+          "display" : "Nipple, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Nose",
+          "display" : "Nose"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Occipital Lobe",
+          "display" : "Occipital Lobe"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Oesophagus",
+          "display" : "Oesophagus"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Orbit Left",
+          "display" : "Orbit Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Orbit Right",
+          "display" : "Orbit Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Oropharynx",
+          "display" : "Oropharynx"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ovary, Left",
+          "display" : "Ovary, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ovary, Right",
+          "display" : "Ovary, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pancreas",
+          "display" : "Pancreas"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Paranasal Sinus",
+          "display" : "Paranasal Sinus"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Para-Sternal Nodes",
+          "display" : "Para-Sternal Nodes"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "ParaThyroid",
+          "display" : "ParaThyroid"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Parietal Lobe",
+          "display" : "Parietal Lobe"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Parotid, Left",
+          "display" : "Parotid, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Parotid, Right",
+          "display" : "Parotid, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pelvis",
+          "display" : "Pelvis"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Penis",
+          "display" : "Penis"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Penis, Glans",
+          "display" : "Penis, Glans"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Perineum",
+          "display" : "Perineum"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pharynx",
+          "display" : "Pharynx"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pineal Gland",
+          "display" : "Pineal Gland"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pinna, Left",
+          "display" : "Pinna, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pinna, Right",
+          "display" : "Pinna, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pituitary",
+          "display" : "Pituitary"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Post-Cricoid",
+          "display" : "Post-Cricoid"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pre-Sacral Nodes",
+          "display" : "Pre-Sacral Nodes"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Prostate",
+          "display" : "Prostate"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Prostate and Seminal Vesicles",
+          "display" : "Prostate and Seminal Vesicles"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pubis, Left",
+          "display" : "Pubis, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Pubis, Right",
+          "display" : "Pubis, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Radius, Left",
+          "display" : "Radius, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Radius, Right",
+          "display" : "Radius, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Rectum",
+          "display" : "Rectum"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Retina, Left",
+          "display" : "Retina, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Retina, Right",
+          "display" : "Retina, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ribs, Left",
+          "display" : "Ribs, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ribs, Right",
+          "display" : "Ribs, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Sacro-Iliac Joints",
+          "display" : "Sacro-Iliac Joints"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Sacro-Iliac, Left",
+          "display" : "Sacro-Iliac, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Sacro-Iliac, Right",
+          "display" : "Sacro-Iliac, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Sacrum",
+          "display" : "Sacrum"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Scalp",
+          "display" : "Scalp"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Scapula, Left",
+          "display" : "Scapula, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Scapula, Right",
+          "display" : "Scapula, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Scrotum",
+          "display" : "Scrotum"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Seminal Vesicles",
+          "display" : "Seminal Vesicles"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Soft Palate",
+          "display" : "Soft Palate"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Spinal Cord",
+          "display" : "Spinal Cord"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Spinal Cord, Cervical",
+          "display" : "Spinal Cord, Cervical"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Spinal Cord, Lumbar",
+          "display" : "Spinal Cord, Lumbar"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Spinal Cord, Thoracic",
+          "display" : "Spinal Cord, Thoracic"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Spleen",
+          "display" : "Spleen"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Stomach",
+          "display" : "Stomach"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Sublingual Glands",
+          "display" : "Sublingual Glands"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Submandibular Glands",
+          "display" : "Submandibular Glands"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Submandibular Nodes",
+          "display" : "Submandibular Nodes"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Superficial Inguinal Nodes",
+          "display" : "Superficial Inguinal Nodes"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Temporal Lobe",
+          "display" : "Temporal Lobe"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Testis",
+          "display" : "Testis"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Thigh",
+          "display" : "Thigh"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Thorax",
+          "display" : "Thorax"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Thymus",
+          "display" : "Thymus"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Thyroid",
+          "display" : "Thyroid"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Tibia, Left",
+          "display" : "Tibia, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Tibia, Right",
+          "display" : "Tibia, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Tongue",
+          "display" : "Tongue"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Tonsil, Left",
+          "display" : "Tonsil, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Tonsil, Right",
+          "display" : "Tonsil, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Total Body",
+          "display" : "Total Body"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Total Skin",
+          "display" : "Total Skin"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Trachea",
+          "display" : "Trachea"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ulna, Left",
+          "display" : "Ulna, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ulna, Right",
+          "display" : "Ulna, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ureter, Left",
+          "display" : "Ureter, Left"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Ureter, Right",
+          "display" : "Ureter, Right"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Urethra",
+          "display" : "Urethra"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Uterus",
+          "display" : "Uterus"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Vagina",
+          "display" : "Vagina"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Vertebrae, Cervical",
+          "display" : "Vertebrae, Cervical"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Vertebrae, Lumbar",
+          "display" : "Vertebrae, Lumbar"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Vertebrae, Sacral",
+          "display" : "Vertebrae, Sacral"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Vertebrae, Thoracic",
+          "display" : "Vertebrae, Thoracic"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Vulva",
+          "display" : "Vulva"
+        },
+        {
+          "system" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+          "code" : "Tumor bed",
+          "display" : "Tumor bed"
+        }]
+      }
+    }
+  }]
+}

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Group xmlns="http://hl7.org/fhir">
+  <id value="Group-10005"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Group Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Group example for the *Varian ARIA API Group Profile.*"/>
+    </extension>
+    <versionId value="42766"/>
+    <lastUpdated value="2017-02-02T09:26:07.670+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Group"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Group</b><a name="Group-10005"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Group &quot;Group-10005&quot; Version &quot;42766&quot; Updated &quot;2017-02-02 09:26:07+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Group.html">Group</a></p></div><p><b>active</b>: true</p><p><b>type</b>: practitioner</p><p><b>actual</b>: true</p><p><b>code</b>: ResourceAndStaff <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (group-code#ResourceAndStaff)</span></p><p><b>name</b>: CareTeamGroup</p><p><b>managingEntity</b>: <a href="Organization/Organization-Dept-1">Organization/Organization-Dept-1: Radiation Therapy</a></p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1000">Device/Device-1000: Def_CTScanner</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Practitioner/Practitioner-1004">Practitioner/Practitioner-1004: RobertChaseFhir</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Practitioner-Practitioner-1005.html">Practitioner/Practitioner-1005: LeesaCuddyFhir</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Practitioner/Practitioner-1006">Practitioner/Practitioner-1006: JillDaneFhir</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Location/Location-1007">Location/Location-1007: Trt001</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Location/Location-1010">Location/Location-1010: VenueTrt002</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1022">Device/Device-1022: BrachyId1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1023">Device/Device-1023: BrachyId2</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1024">Device/Device-1024: CTScannerId1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1025">Device/Device-1025: CTScannerId2</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1026">Device/Device-1026: ExternalBeamId1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1027">Device/Device-1027: ExternalBeamId2</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1028">Device/Device-1028: ProtonBeamId1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1029">Device/Device-1029: ProtonBeamId2</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1030">Device/Device-1030: JigId1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1031">Device/Device-1031: JigId2</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1032">Device/Device-1032: MillMacId1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1033">Device/Device-1033: MillMacId2</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device-Device-1034.html">Device/Device-1034: SupportDevId1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1035">Device/Device-1035: SupportDevId2</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1036">Device/Device-1036: SimulatorId1</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Device/Device-1037">Device/Device-1037: SimulatorId2</a></p></blockquote></div>
+  </text>
+  <active value="true"/>
+  <type value="practitioner"/>
+  <actual value="true"/>
+  <code>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/Group/group-code"/>
+      <code value="ResourceAndStaff"/>
+      <display value="ResourceAndStaff"/>
+    </coding>
+  </code>
+  <name value="CareTeamGroup">
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/Group/group-display-label"/>
+          <code value="CareTeamGroup"/>
+          <display value="CareTeamGroup"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </name>
+  <managingEntity>
+    <reference value="Organization/Organization-Dept-1"/>
+    <display value="Radiation Therapy"/>
+  </managingEntity>
+  <member>
+    <entity>
+      <reference value="Device/Device-1000"/>
+      <display value="Def_CTScanner"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Practitioner/Practitioner-1002"/>
+      <display value="JohnWilsonFhir"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Practitioner/Practitioner-1004"/>
+      <display value="RobertChaseFhir"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Practitioner/Practitioner-1005"/>
+      <display value="LeesaCuddyFhir"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Practitioner/Practitioner-1006"/>
+      <display value="JillDaneFhir"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Location/Location-1007"/>
+      <display value="Trt001"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Location/Location-1010"/>
+      <display value="VenueTrt002"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1022"/>
+      <display value="BrachyId1"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1023"/>
+      <display value="BrachyId2"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1024"/>
+      <display value="CTScannerId1"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1025"/>
+      <display value="CTScannerId2"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1026"/>
+      <display value="ExternalBeamId1"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1027"/>
+      <display value="ExternalBeamId2"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1028"/>
+      <display value="ProtonBeamId1"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1029"/>
+      <display value="ProtonBeamId2"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1030"/>
+      <display value="JigId1"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1031"/>
+      <display value="JigId2"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1032"/>
+      <display value="MillMacId1"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1033"/>
+      <display value="MillMacId2"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1034"/>
+      <display value="SupportDevId1"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1035"/>
+      <display value="SupportDevId2"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1036"/>
+      <display value="SimulatorId1"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Device/Device-1037"/>
+      <display value="SimulatorId2"/>
+    </entity>
+  </member>
+</Group>

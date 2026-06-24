@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="radiotherapy-prescription-site-example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example"/>
+  <version value="1.0.0"/>
+  <name value="RadiotherapyPrescriptionSiteExample"/>
+  <title value="Radiotherapy Prescription Site Example"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-26T13:25:01+05:30"/>
+  <publisher value="Varian Medical Systems, Inc."/>
+  <contact>
+    <name value="Varian Medical Systems, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.varian.com/"/>
+    </telecom>
+  </contact>
+  <description value="Radiotherapy Prescription Site"/>
+  <copyright value="Varian Medical Systems, Inc."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="181"/>
+  <concept>
+    <code value="Abdomen"/>
+    <display value="Abdomen"/>
+  </concept>
+  <concept>
+    <code value="Adrenal Gland, Left"/>
+    <display value="Adrenal Gland, Left"/>
+  </concept>
+  <concept>
+    <code value="Adrenal Gland, Right"/>
+    <display value="Adrenal Gland, Right"/>
+  </concept>
+  <concept>
+    <code value="Anus"/>
+    <display value="Anus"/>
+  </concept>
+  <concept>
+    <code value="Arm, Left"/>
+    <display value="Arm, Left"/>
+  </concept>
+  <concept>
+    <code value="Arm, Right"/>
+    <display value="Arm, Right"/>
+  </concept>
+  <concept>
+    <code value="Axilla, Left"/>
+    <display value="Axilla, Left"/>
+  </concept>
+  <concept>
+    <code value="Axilla, Right"/>
+    <display value="Axilla, Right"/>
+  </concept>
+  <concept>
+    <code value="Back"/>
+    <display value="Back"/>
+  </concept>
+  <concept>
+    <code value="Bile Duct"/>
+    <display value="Bile Duct"/>
+  </concept>
+  <concept>
+    <code value="Bladder"/>
+    <display value="Bladder"/>
+  </concept>
+  <concept>
+    <code value="Bone Marrow (Diffuse)"/>
+    <display value="Bone Marrow (Diffuse)"/>
+  </concept>
+  <concept>
+    <code value="Brain"/>
+    <display value="Brain"/>
+  </concept>
+  <concept>
+    <code value="Breast, Left"/>
+    <display value="Breast, Left"/>
+  </concept>
+  <concept>
+    <code value="Breast, Right"/>
+    <display value="Breast, Right"/>
+  </concept>
+  <concept>
+    <code value="Bronchus, Left"/>
+    <display value="Bronchus, Left"/>
+  </concept>
+  <concept>
+    <code value="Bronchus, Right"/>
+    <display value="Bronchus, Right"/>
+  </concept>
+  <concept>
+    <code value="Buccal Mucosa"/>
+    <display value="Buccal Mucosa"/>
+  </concept>
+  <concept>
+    <code value="Caecum"/>
+    <display value="Caecum"/>
+  </concept>
+  <concept>
+    <code value="Canthus, Left Inner"/>
+    <display value="Canthus, Left Inner"/>
+  </concept>
+  <concept>
+    <code value="Canthus, Left Outer"/>
+    <display value="Canthus, Left Outer"/>
+  </concept>
+  <concept>
+    <code value="Canthus, Right Inner"/>
+    <display value="Canthus, Right Inner"/>
+  </concept>
+  <concept>
+    <code value="Canthus, Right Outer"/>
+    <display value="Canthus, Right Outer"/>
+  </concept>
+  <concept>
+    <code value="Cervical Spine"/>
+    <display value="Cervical Spine"/>
+  </concept>
+  <concept>
+    <code value="Cervix"/>
+    <display value="Cervix"/>
+  </concept>
+  <concept>
+    <code value="Cheek, Left"/>
+    <display value="Cheek, Left"/>
+  </concept>
+  <concept>
+    <code value="Cheek, Right"/>
+    <display value="Cheek, Right"/>
+  </concept>
+  <concept>
+    <code value="Chest Wall, Left"/>
+    <display value="Chest Wall, Left"/>
+  </concept>
+  <concept>
+    <code value="Chest Wall, Right"/>
+    <display value="Chest Wall, Right"/>
+  </concept>
+  <concept>
+    <code value="Coccyx"/>
+    <display value="Coccyx"/>
+  </concept>
+  <concept>
+    <code value="Cochlea"/>
+    <display value="Cochlea"/>
+  </concept>
+  <concept>
+    <code value="Colon"/>
+    <display value="Colon"/>
+  </concept>
+  <concept>
+    <code value="Cranium"/>
+    <display value="Cranium"/>
+  </concept>
+  <concept>
+    <code value="Deep Cervical Chain Nodes"/>
+    <display value="Deep Cervical Chain Nodes"/>
+  </concept>
+  <concept>
+    <code value="Deep Inguinal Nodes"/>
+    <display value="Deep Inguinal Nodes"/>
+  </concept>
+  <concept>
+    <code value="Duodenum"/>
+    <display value="Duodenum"/>
+  </concept>
+  <concept>
+    <code value="Ethmoid Sinus"/>
+    <display value="Ethmoid Sinus"/>
+  </concept>
+  <concept>
+    <code value="Eye, Left"/>
+    <display value="Eye, Left"/>
+  </concept>
+  <concept>
+    <code value="Eye, Right"/>
+    <display value="Eye, Right"/>
+  </concept>
+  <concept>
+    <code value="Face"/>
+    <display value="Face"/>
+  </concept>
+  <concept>
+    <code value="Fallopian Tube, Left"/>
+    <display value="Fallopian Tube, Left"/>
+  </concept>
+  <concept>
+    <code value="Fallopian Tube, Right"/>
+    <display value="Fallopian Tube, Right"/>
+  </concept>
+  <concept>
+    <code value="Femur Left"/>
+    <display value="Femur Left"/>
+  </concept>
+  <concept>
+    <code value="Femur Right"/>
+    <display value="Femur Right"/>
+  </concept>
+  <concept>
+    <code value="Fibula, Left"/>
+    <display value="Fibula, Left"/>
+  </concept>
+  <concept>
+    <code value="Fibula, Right"/>
+    <display value="Fibula, Right"/>
+  </concept>
+  <concept>
+    <code value="Foot, Left"/>
+    <display value="Foot, Left"/>
+  </concept>
+  <concept>
+    <code value="Foot, Right"/>
+    <display value="Foot, Right"/>
+  </concept>
+  <concept>
+    <code value="Forearm, Left"/>
+    <display value="Forearm, Left"/>
+  </concept>
+  <concept>
+    <code value="Forearm, Right"/>
+    <display value="Forearm, Right"/>
+  </concept>
+  <concept>
+    <code value="Frontal Lobe"/>
+    <display value="Frontal Lobe"/>
+  </concept>
+  <concept>
+    <code value="Gall Bladder"/>
+    <display value="Gall Bladder"/>
+  </concept>
+  <concept>
+    <code value="Groin, Left"/>
+    <display value="Groin, Left"/>
+  </concept>
+  <concept>
+    <code value="Groin, Right"/>
+    <display value="Groin, Right"/>
+  </concept>
+  <concept>
+    <code value="Hand, Left"/>
+    <display value="Hand, Left"/>
+  </concept>
+  <concept>
+    <code value="Hand, Right"/>
+    <display value="Hand, Right"/>
+  </concept>
+  <concept>
+    <code value="Hard Palate"/>
+    <display value="Hard Palate"/>
+  </concept>
+  <concept>
+    <code value="Head and Neck"/>
+    <display value="Head and Neck"/>
+  </concept>
+  <concept>
+    <code value="Heart"/>
+    <display value="Heart"/>
+  </concept>
+  <concept>
+    <code value="Hemi-Body, Lower"/>
+    <display value="Hemi-Body, Lower"/>
+  </concept>
+  <concept>
+    <code value="Hemi-Body, Upper"/>
+    <display value="Hemi-Body, Upper"/>
+  </concept>
+  <concept>
+    <code value="Hip, Left"/>
+    <display value="Hip, Left"/>
+  </concept>
+  <concept>
+    <code value="Hip, Right"/>
+    <display value="Hip, Right"/>
+  </concept>
+  <concept>
+    <code value="Humerus, Left"/>
+    <display value="Humerus, Left"/>
+  </concept>
+  <concept>
+    <code value="Humerus, Right"/>
+    <display value="Humerus, Right"/>
+  </concept>
+  <concept>
+    <code value="Ileum"/>
+    <display value="Ileum"/>
+  </concept>
+  <concept>
+    <code value="Ilium, Left"/>
+    <display value="Ilium, Left"/>
+  </concept>
+  <concept>
+    <code value="Ilium, Right"/>
+    <display value="Ilium, Right"/>
+  </concept>
+  <concept>
+    <code value="Infraclavicular Nodes"/>
+    <display value="Infraclavicular Nodes"/>
+  </concept>
+  <concept>
+    <code value="Internal Iliac Nodes"/>
+    <display value="Internal Iliac Nodes"/>
+  </concept>
+  <concept>
+    <code value="Ischium"/>
+    <display value="Ischium"/>
+  </concept>
+  <concept>
+    <code value="Jejunum"/>
+    <display value="Jejunum"/>
+  </concept>
+  <concept>
+    <code value="Kidney, Left"/>
+    <display value="Kidney, Left"/>
+  </concept>
+  <concept>
+    <code value="Kidney, Right"/>
+    <display value="Kidney, Right"/>
+  </concept>
+  <concept>
+    <code value="Knee, Left"/>
+    <display value="Knee, Left"/>
+  </concept>
+  <concept>
+    <code value="Knee, Right"/>
+    <display value="Knee, Right"/>
+  </concept>
+  <concept>
+    <code value="Laryngopharynx"/>
+    <display value="Laryngopharynx"/>
+  </concept>
+  <concept>
+    <code value="Larynx"/>
+    <display value="Larynx"/>
+  </concept>
+  <concept>
+    <code value="Leg, Left"/>
+    <display value="Leg, Left"/>
+  </concept>
+  <concept>
+    <code value="Leg, Right"/>
+    <display value="Leg, Right"/>
+  </concept>
+  <concept>
+    <code value="Lip, Lower"/>
+    <display value="Lip, Lower"/>
+  </concept>
+  <concept>
+    <code value="Lip, Upper"/>
+    <display value="Lip, Upper"/>
+  </concept>
+  <concept>
+    <code value="Liver"/>
+    <display value="Liver"/>
+  </concept>
+  <concept>
+    <code value="Lumbar Spine"/>
+    <display value="Lumbar Spine"/>
+  </concept>
+  <concept>
+    <code value="Lung, Left"/>
+    <display value="Lung, Left"/>
+  </concept>
+  <concept>
+    <code value="Lung, Right"/>
+    <display value="Lung, Right"/>
+  </concept>
+  <concept>
+    <code value="Mandible"/>
+    <display value="Mandible"/>
+  </concept>
+  <concept>
+    <code value="Maxilla"/>
+    <display value="Maxilla"/>
+  </concept>
+  <concept>
+    <code value="Maxillary Antrum"/>
+    <display value="Maxillary Antrum"/>
+  </concept>
+  <concept>
+    <code value="Meninges"/>
+    <display value="Meninges"/>
+  </concept>
+  <concept>
+    <code value="Middle Ear"/>
+    <display value="Middle Ear"/>
+  </concept>
+  <concept>
+    <code value="Nasopharynx"/>
+    <display value="Nasopharynx"/>
+  </concept>
+  <concept>
+    <code value="Neck"/>
+    <display value="Neck"/>
+  </concept>
+  <concept>
+    <code value="Neck Left"/>
+    <display value="Neck Left"/>
+  </concept>
+  <concept>
+    <code value="Neck Right"/>
+    <display value="Neck Right"/>
+  </concept>
+  <concept>
+    <code value="Nipple, Left"/>
+    <display value="Nipple, Left"/>
+  </concept>
+  <concept>
+    <code value="Nipple, Right"/>
+    <display value="Nipple, Right"/>
+  </concept>
+  <concept>
+    <code value="Nose"/>
+    <display value="Nose"/>
+  </concept>
+  <concept>
+    <code value="Occipital Lobe"/>
+    <display value="Occipital Lobe"/>
+  </concept>
+  <concept>
+    <code value="Oesophagus"/>
+    <display value="Oesophagus"/>
+  </concept>
+  <concept>
+    <code value="Orbit Left"/>
+    <display value="Orbit Left"/>
+  </concept>
+  <concept>
+    <code value="Orbit Right"/>
+    <display value="Orbit Right"/>
+  </concept>
+  <concept>
+    <code value="Oropharynx"/>
+    <display value="Oropharynx"/>
+  </concept>
+  <concept>
+    <code value="Ovary, Left"/>
+    <display value="Ovary, Left"/>
+  </concept>
+  <concept>
+    <code value="Ovary, Right"/>
+    <display value="Ovary, Right"/>
+  </concept>
+  <concept>
+    <code value="Pancreas"/>
+    <display value="Pancreas"/>
+  </concept>
+  <concept>
+    <code value="Paranasal Sinus"/>
+    <display value="Paranasal Sinus"/>
+  </concept>
+  <concept>
+    <code value="Para-Sternal Nodes"/>
+    <display value="Para-Sternal Nodes"/>
+  </concept>
+  <concept>
+    <code value="ParaThyroid"/>
+    <display value="ParaThyroid"/>
+  </concept>
+  <concept>
+    <code value="Parietal Lobe"/>
+    <display value="Parietal Lobe"/>
+  </concept>
+  <concept>
+    <code value="Parotid, Left"/>
+    <display value="Parotid, Left"/>
+  </concept>
+  <concept>
+    <code value="Parotid, Right"/>
+    <display value="Parotid, Right"/>
+  </concept>
+  <concept>
+    <code value="Pelvis"/>
+    <display value="Pelvis"/>
+  </concept>
+  <concept>
+    <code value="Penis"/>
+    <display value="Penis"/>
+  </concept>
+  <concept>
+    <code value="Penis, Glans"/>
+    <display value="Penis, Glans"/>
+  </concept>
+  <concept>
+    <code value="Perineum"/>
+    <display value="Perineum"/>
+  </concept>
+  <concept>
+    <code value="Pharynx"/>
+    <display value="Pharynx"/>
+  </concept>
+  <concept>
+    <code value="Pineal Gland"/>
+    <display value="Pineal Gland"/>
+  </concept>
+  <concept>
+    <code value="Pinna, Left"/>
+    <display value="Pinna, Left"/>
+  </concept>
+  <concept>
+    <code value="Pinna, Right"/>
+    <display value="Pinna, Right"/>
+  </concept>
+  <concept>
+    <code value="Pituitary"/>
+    <display value="Pituitary"/>
+  </concept>
+  <concept>
+    <code value="Post-Cricoid"/>
+    <display value="Post-Cricoid"/>
+  </concept>
+  <concept>
+    <code value="Pre-Sacral Nodes"/>
+    <display value="Pre-Sacral Nodes"/>
+  </concept>
+  <concept>
+    <code value="Prostate"/>
+    <display value="Prostate"/>
+  </concept>
+  <concept>
+    <code value="Prostate and Seminal Vesicles"/>
+    <display value="Prostate and Seminal Vesicles"/>
+  </concept>
+  <concept>
+    <code value="Pubis, Left"/>
+    <display value="Pubis, Left"/>
+  </concept>
+  <concept>
+    <code value="Pubis, Right"/>
+    <display value="Pubis, Right"/>
+  </concept>
+  <concept>
+    <code value="Radius, Left"/>
+    <display value="Radius, Left"/>
+  </concept>
+  <concept>
+    <code value="Radius, Right"/>
+    <display value="Radius, Right"/>
+  </concept>
+  <concept>
+    <code value="Rectum"/>
+    <display value="Rectum"/>
+  </concept>
+  <concept>
+    <code value="Retina, Left"/>
+    <display value="Retina, Left"/>
+  </concept>
+  <concept>
+    <code value="Retina, Right"/>
+    <display value="Retina, Right"/>
+  </concept>
+  <concept>
+    <code value="Ribs, Left"/>
+    <display value="Ribs, Left"/>
+  </concept>
+  <concept>
+    <code value="Ribs, Right"/>
+    <display value="Ribs, Right"/>
+  </concept>
+  <concept>
+    <code value="Sacro-Iliac Joints"/>
+    <display value="Sacro-Iliac Joints"/>
+  </concept>
+  <concept>
+    <code value="Sacro-Iliac, Left"/>
+    <display value="Sacro-Iliac, Left"/>
+  </concept>
+  <concept>
+    <code value="Sacro-Iliac, Right"/>
+    <display value="Sacro-Iliac, Right"/>
+  </concept>
+  <concept>
+    <code value="Sacrum"/>
+    <display value="Sacrum"/>
+  </concept>
+  <concept>
+    <code value="Scalp"/>
+    <display value="Scalp"/>
+  </concept>
+  <concept>
+    <code value="Scapula, Left"/>
+    <display value="Scapula, Left"/>
+  </concept>
+  <concept>
+    <code value="Scapula, Right"/>
+    <display value="Scapula, Right"/>
+  </concept>
+  <concept>
+    <code value="Scrotum"/>
+    <display value="Scrotum"/>
+  </concept>
+  <concept>
+    <code value="Seminal Vesicles"/>
+    <display value="Seminal Vesicles"/>
+  </concept>
+  <concept>
+    <code value="Soft Palate"/>
+    <display value="Soft Palate"/>
+  </concept>
+  <concept>
+    <code value="Spinal Cord"/>
+    <display value="Spinal Cord"/>
+  </concept>
+  <concept>
+    <code value="Spinal Cord, Cervical"/>
+    <display value="Spinal Cord, Cervical"/>
+  </concept>
+  <concept>
+    <code value="Spinal Cord, Lumbar"/>
+    <display value="Spinal Cord, Lumbar"/>
+  </concept>
+  <concept>
+    <code value="Spinal Cord, Thoracic"/>
+    <display value="Spinal Cord, Thoracic"/>
+  </concept>
+  <concept>
+    <code value="Spleen"/>
+    <display value="Spleen"/>
+  </concept>
+  <concept>
+    <code value="Stomach"/>
+    <display value="Stomach"/>
+  </concept>
+  <concept>
+    <code value="Sublingual Glands"/>
+    <display value="Sublingual Glands"/>
+  </concept>
+  <concept>
+    <code value="Submandibular Glands"/>
+    <display value="Submandibular Glands"/>
+  </concept>
+  <concept>
+    <code value="Submandibular Nodes"/>
+    <display value="Submandibular Nodes"/>
+  </concept>
+  <concept>
+    <code value="Superficial Inguinal Nodes"/>
+    <display value="Superficial Inguinal Nodes"/>
+  </concept>
+  <concept>
+    <code value="Temporal Lobe"/>
+    <display value="Temporal Lobe"/>
+  </concept>
+  <concept>
+    <code value="Testis"/>
+    <display value="Testis"/>
+  </concept>
+  <concept>
+    <code value="Thigh"/>
+    <display value="Thigh"/>
+  </concept>
+  <concept>
+    <code value="Thorax"/>
+    <display value="Thorax"/>
+  </concept>
+  <concept>
+    <code value="Thymus"/>
+    <display value="Thymus"/>
+  </concept>
+  <concept>
+    <code value="Thyroid"/>
+    <display value="Thyroid"/>
+  </concept>
+  <concept>
+    <code value="Tibia, Left"/>
+    <display value="Tibia, Left"/>
+  </concept>
+  <concept>
+    <code value="Tibia, Right"/>
+    <display value="Tibia, Right"/>
+  </concept>
+  <concept>
+    <code value="Tongue"/>
+    <display value="Tongue"/>
+  </concept>
+  <concept>
+    <code value="Tonsil, Left"/>
+    <display value="Tonsil, Left"/>
+  </concept>
+  <concept>
+    <code value="Tonsil, Right"/>
+    <display value="Tonsil, Right"/>
+  </concept>
+  <concept>
+    <code value="Total Body"/>
+    <display value="Total Body"/>
+  </concept>
+  <concept>
+    <code value="Total Skin"/>
+    <display value="Total Skin"/>
+  </concept>
+  <concept>
+    <code value="Trachea"/>
+    <display value="Trachea"/>
+  </concept>
+  <concept>
+    <code value="Ulna, Left"/>
+    <display value="Ulna, Left"/>
+  </concept>
+  <concept>
+    <code value="Ulna, Right"/>
+    <display value="Ulna, Right"/>
+  </concept>
+  <concept>
+    <code value="Ureter, Left"/>
+    <display value="Ureter, Left"/>
+  </concept>
+  <concept>
+    <code value="Ureter, Right"/>
+    <display value="Ureter, Right"/>
+  </concept>
+  <concept>
+    <code value="Urethra"/>
+    <display value="Urethra"/>
+  </concept>
+  <concept>
+    <code value="Uterus"/>
+    <display value="Uterus"/>
+  </concept>
+  <concept>
+    <code value="Vagina"/>
+    <display value="Vagina"/>
+  </concept>
+  <concept>
+    <code value="Vertebrae, Cervical"/>
+    <display value="Vertebrae, Cervical"/>
+  </concept>
+  <concept>
+    <code value="Vertebrae, Lumbar"/>
+    <display value="Vertebrae, Lumbar"/>
+  </concept>
+  <concept>
+    <code value="Vertebrae, Sacral"/>
+    <display value="Vertebrae, Sacral"/>
+  </concept>
+  <concept>
+    <code value="Vertebrae, Thoracic"/>
+    <display value="Vertebrae, Thoracic"/>
+  </concept>
+  <concept>
+    <code value="Vulva"/>
+    <display value="Vulva"/>
+  </concept>
+  <concept>
+    <code value="Tumor bed"/>
+    <display value="Tumor bed"/>
+  </concept>
+</CodeSystem>

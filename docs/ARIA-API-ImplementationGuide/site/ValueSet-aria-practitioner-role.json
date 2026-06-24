@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aria-practitioner-role",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://varian.com/fhir/ValueSet/practitioner-role",
+  "version" : "1.0.0",
+  "name" : "PractitionerRole",
+  "title" : "Practitioner Role",
+  "status" : "active",
+  "date" : "2024-07-26T13:25:01+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "description" : "The different practitioner roles configured are available under valueset 'aria-practitioner-role'. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/practitioner-role",
+  "copyright" : "Varian Medical Systems, Inc.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Practitioner/practitioner-role"
+    }]
+  }
+}

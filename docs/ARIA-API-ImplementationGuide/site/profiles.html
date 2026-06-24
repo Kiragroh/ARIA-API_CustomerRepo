@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\Profiles - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Profiles</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Profiles</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<table width="100%">
+ <tr class="frm-group">
+  <td class="frm-group rotate" rowspan="2"><div>Foundation</div></td>
+  <td class="frm-category">Conformance</td>
+  <td class="frm-category">Terminology</td>
+  <td class="frm-category">Security</td>
+  <td class="frm-category">Documents</td>
+  <td class="frm-category">Other</td>
+ </tr>
+ <tr class="frm-contents" style="height:80px;">
+  <td class="frm-set"><ul class="frm-set">
+<!-- -Conformance-->
+   
+
+ 
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!-- Terminology--> 
+     
+
+
+<li><a href="StructureDefinition-ValueSet.html" title="ValueSet">ValueSet</a></li>
+ 
+ </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!-- Security-->
+   
+
+
+<li><a href="StructureDefinition-AuditEvent.html" title="AuditEvent">AuditEvent</a></li>
+ 
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!-- Documents -->
+    
+
+
+<li><a href="StructureDefinition-DocumentReference.html" title="Document-Reference">Document-Reference</a></li>
+ 
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!--Other -->  
+  
+
+ 
+    
+  </ul></td>
+ </tr>
+ <tr class="frm-break"><td colspan="6"></td></tr>
+ <tr class="frm-group">
+  <td class="frm-group rotate" rowspan="2"><div>Base</div></td>
+  <td class="frm-category">Individuals</td>
+  <td class="frm-category">Entities #1</td>
+  <td class="frm-category">Entities #2</td>
+  <td class="frm-category">Workflow</td>
+  <td class="frm-category">Management</td>
+ </tr>
+ <tr class="frm-contents" style="height:80px;">
+  <td class="frm-set"><ul class="frm-set">
+   <!-- Individuals -->
+  
+
+
+<li><a href="StructureDefinition-Patient.html" title="Patient">Patient</a></li>
+
+<li><a href="StructureDefinition-Practitioner.html" title="Practitioner">Practitioner</a></li>
+
+<li><a href="StructureDefinition-Group.html" title="Group">Group</a></li>
+
+    
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+    <!-- Entities #1 -->
+
+
+
+<li><a href="StructureDefinition-Organization.html" title="Organization">Organization</a></li>
+
+<li><a href="StructureDefinition-HealthcareService.html" title="HealthcareService">HealthcareService</a></li>
+
+<li><a href="StructureDefinition-Location.html" title="Location">Location</a></li>
+
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+   <!-- Entities #2 -->
+      
+
+
+<li><a href="StructureDefinition-Device.html" title="Device">Device</a></li>
+
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+    <!-- Workflow -->
+  	  
+
+
+<li><a href="StructureDefinition-ActivityDefinition.html" title="ActivityDefinition">ActivityDefinition</a></li>
+
+<li><a href="StructureDefinition-Task.html" title="Task">Task</a></li>
+
+<li><a href="StructureDefinition-Appointment.html" title="Appointment">Appointment</a></li>
+
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+    <!--Management -->
+      
+
+
+  </ul></td>
+ </tr>
+ <tr class="frm-break"><td colspan="6"></td></tr>
+ <tr class="frm-group">
+  <td class="frm-group rotate" rowspan="2"><div>Clinical</div></td>
+  <td class="frm-category">Summary</td>
+  <td class="frm-category">Diagnostics</td>
+  <td class="frm-category">Medications</td>
+  <td class="frm-category">Care Provision</td>
+  <td class="frm-category">Request &amp; Response</td>
+ </tr>
+ <tr class="frm-contents" style="height:80px;">
+  <td class="frm-set"><ul class="frm-set">
+  <!--Summary -->  
+    
+
+
+<li><a href="StructureDefinition-CancerCondition.html" title="Condition-Diagnosis(CancerCondition)">Condition-Diagnosis(CancerCondition)</a></li>
+
+<li><a href="StructureDefinition-AllergyIntolerance.html" title="AllergyIntolerance">AllergyIntolerance</a></li>
+
+<li><a href="StructureDefinition-CarePlan.html" title="CarePlan">CarePlan</a></li>
+
+<li><a href="StructureDefinition-RadiotherapyCourseSummary.html" title="Procedure-RadiotherapyCourseSummary">Procedure-RadiotherapyCourseSummary</a></li>
+
+<li><a href="StructureDefinition-RadiotherapyTreatedPhase.html" title="Procedure-RadiotherapyTreatedPhase">Procedure-RadiotherapyTreatedPhase</a></li>
+
+<li><a href="StructureDefinition-RadiotherapyTreatedPlan.html" title="Procedure-RadiotherapyTreatedPlan">Procedure-RadiotherapyTreatedPlan</a></li>
+
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!--Diagnostics -->  
+      
+
+
+<li><a href="StructureDefinition-StageGroup.html" title="Observation-StageGroup">Observation-StageGroup</a></li>
+
+<li><a href="StructureDefinition-StageCategory.html" title="Observation-StageCategory">Observation-StageCategory</a></li>
+
+<li><a href="StructureDefinition-VitalSigns.html" title="Observation-VitalSigns">Observation-VitalSigns</a></li>
+
+<li><a href="StructureDefinition-VitalSignsComponent.html" title="Observation-VitalSignsComponent">Observation-VitalSignsComponent</a></li>
+
+<li><a href="StructureDefinition-BodyStructure.html" title="BodyStructure">BodyStructure</a></li>
+
+    
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!--Medications -->  
+        
+
+
+
+    
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!-- Care Provision -->  
+        
+
+
+<li><a href="StructureDefinition-CareTeam.html" title="CareTeam">CareTeam</a></li>
+
+<li><a href="StructureDefinition-RadiotherapyCoursePrescription.html" title="ServiceRequest-RadiotherapyCoursePrescription">ServiceRequest-RadiotherapyCoursePrescription</a></li>
+
+<li><a href="StructureDefinition-RadiotherapyPhasePrescription.html" title="ServiceRequest-RadiotherapyPhasePrescription">ServiceRequest-RadiotherapyPhasePrescription</a></li>
+
+<li><a href="StructureDefinition-RadiotherapyPlannedCourse.html" title="ServiceRequest-RadiotherapyPlannedCourse">ServiceRequest-RadiotherapyPlannedCourse</a></li>
+
+<li><a href="StructureDefinition-RadiotherapyPlannedPhase.html" title="ServiceRequest-RadiotherapyPlannedPhase">ServiceRequest-RadiotherapyPlannedPhase</a></li>
+
+<li><a href="StructureDefinition-RadiotherapyTreatmentPlan.html" title="ServiceRequest-RadiotherapyTreatmentPlan">ServiceRequest-RadiotherapyTreatmentPlan</a></li>
+
+
+  </ul></td>
+   <td class="frm-set"><ul class="frm-set">
+  <!--Request &amp; Response -->
+    
+
+
+
+  </ul></td>
+ </tr>
+ <tr class="frm-break"><td colspan="6"></td></tr>
+ <tr class="frm-group">
+  <td class="frm-group rotate" rowspan="2"><div>Financial</div></td>
+  <td class="frm-category">Support</td>
+  <td class="frm-category">Billing</td>
+  <td class="frm-category">Payment</td>
+  <td class="frm-category">General</td>
+  <td class="frm-null"></td>
+ </tr>
+ <tr class="frm-contents" style="height:80px;">
+  <td class="frm-set"><ul class="frm-set">
+  <!-- Support -->  
+    
+
+
+    
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!--Billing -->  
+    
+
+
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!-- Payment -->  
+  
+
+
+</ul></td>
+ <td class="frm-set"><ul class="frm-set">
+  <!-- General -->  
+    
+
+
+<li><a href="StructureDefinition-ChargeItem.html" title="ChargeItem">ChargeItem</a></li>
+
+  </ul></td>
+  <td class="frm-null"></td>
+ </tr>
+ <tr class="frm-break"><td colspan="6"></td></tr>
+ <tr class="frm-group">
+  <td class="frm-group rotate" rowspan="2"><div>Specialized</div></td>
+  <td class="frm-category">Public Health &amp; Research</td>
+  <td class="frm-category">Definitional Artifacts</td>
+  <td class="frm-category">Evidence-Based Medicine</td>
+  <td class="frm-category">Quality Reporting &amp; Testing</td>
+  <td class="frm-category">Medication Definition</td>
+ </tr>
+ <tr class="frm-contents" style="height:80px;">
+  <td class="frm-set"><ul class="frm-set">
+  <!--Public Health &amp; Research -->  
+      
+
+
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+ <!-- Definitional Artifacts-->
+      
+
+
+
+  </ul></td>
+  
+  <td class="frm-set"><ul class="frm-set">
+  
+
+
+
+    
+    
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  
+
+
+
+    
+    
+  </ul></td>
+  <td class="frm-set"><ul class="frm-set">
+  <!--Medication Definition -->  
+    
+
+
+
+  </ul></td>
+ </tr>
+ <tr class="frm-break"><td colspan="6"></td></tr>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

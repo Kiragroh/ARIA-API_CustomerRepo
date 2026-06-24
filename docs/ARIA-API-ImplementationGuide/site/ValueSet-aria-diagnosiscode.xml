@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="aria-diagnosiscode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://varian.com/fhir/ValueSet/condition-code"/>
+  <version value="1.0.0"/>
+  <name value="DiagnosisCode"/>
+  <title value="Diagnosis Code"/>
+  <status value="active"/>
+  <date value="2024-07-26T13:25:01+05:30"/>
+  <publisher value="Varian Medical Systems, Inc."/>
+  <contact>
+    <name value="Varian Medical Systems, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.varian.com/"/>
+    </telecom>
+  </contact>
+  <description value="List of available codes are accessible using valueset 'aria-diagnosiscode'. All values can be accessed using ValueSet $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code. Codes can be filtered on schemas using context filter i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code&amp;context=http://hl7.org/fhir/sid/icd-9-cm|icd-9-cm"/>
+  <copyright value="Varian Medical Systems, Inc."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-9-cm"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+    </include>
+    <include>
+      <system value="https://www.e-imo.com"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/ICD-O-3"/>
+    </include>
+  </compose>
+</ValueSet>

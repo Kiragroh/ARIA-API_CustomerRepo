@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Practitioner/Practitioner-1258> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Practitioner-1258"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Practitioner Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Practitioner example for the *Varian ARIA API Practitioner Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "397552" ] ;
+     fhir:lastUpdated [ fhir:v "2023-10-09T03:40:13.247+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/Practitioner"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/Practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Practitioner-1258\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Practitioner-1258&quot; Version &quot;397552&quot; Updated &quot;2023-10-09 03:40:13+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Practitioner.html\">Practitioner</a></p></div><p><b>serviceOrganization</b>: <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>serviceOrganization</b>: <a href=\"Organization-Organization-Dept-10002.html\">Organization/Organization-Dept-10002: OCS1</a> &quot;OCS1&quot;</p><p><b>person-gender</b>: Male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (person-gender#male)</span></p><p><b>practitioner-role</b>: Oncologist <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (practitioner-role#oncologist)</span></p><p><b>identifier</b>: id: ID_1696803013038 (use: USUAL), id: F95281821</p><p><b>active</b>: true</p><p><b>name</b>: DSPName_1696803012978 , ,àkilomètresdeGroß トは最高でした,yīèr (OFFICIAL)</p><p><b>telecom</b>: ph: 97466165465(HOME), <a href=\"mailto:email@email.com\">email@email.com</a>, 00004698865(WORK), fax: 000090065(WORK)</p><p><b>address</b>: ढणतथदधनपफबυΦφΧě末 Maharashtra 411017 IND (WORK)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1985-03-11</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>BS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (qualification#BS)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/serviceOrganization"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-1> ;
+       fhir:reference [ fhir:v "Organization/Organization-Dept-1" ] ;
+       fhir:display [ fhir:v "Radiation Therapy" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/serviceOrganization"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-10002> ;
+       fhir:reference [ fhir:v "Organization/Organization-Dept-10002" ] ;
+       fhir:display [ fhir:v "OCS1" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/person-gender"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/person-gender"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "male" ] ;
+         fhir:display [ fhir:v "Male" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/practitioner-role"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Practitioner/practitioner-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "oncologist" ] ;
+         fhir:display [ fhir:v "Oncologist" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Practitioner/Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ID_1696803013038" ]
+  ] [
+     fhir:id [ fhir:v "20" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Practitioner/14/Doct_DEA_ID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "F95281821" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:given ( [ fhir:v "DSPName_1696803012978" ] )
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "トは最高でした,yīèr" ] ;
+     fhir:given ( [ fhir:v ",àkilomètresdeGroß" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr" ] ) ;
+     fhir:suffix ( [ fhir:v "MD" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "97466165465" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "email@email.com" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "pager" ] ;
+     fhir:value [ fhir:v "00004698865" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "000090065" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:id [ fhir:v "709" ] ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:type [ fhir:v "both" ] ;
+     fhir:city [ fhir:v "ढणतथदधनपफबυΦφΧě末" ] ;
+     fhir:state [ fhir:v "Maharashtra" ] ;
+     fhir:postalCode [ fhir:v "411017" ] ;
+     fhir:country [ fhir:v "IND" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1985-03-11"^^xsd:date] ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Practitioner/qualification"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BS" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

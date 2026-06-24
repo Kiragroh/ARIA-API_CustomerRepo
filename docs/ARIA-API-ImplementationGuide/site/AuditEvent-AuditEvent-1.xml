@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AuditEvent xmlns="http://hl7.org/fhir">
+  <id value="AuditEvent-1"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="AuditEvent Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="AuditEvent example for the *Varian ARIA API AuditEvent Profile.*"/>
+    </extension>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/AuditEvent"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AuditEvent</b><a name="AuditEvent-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AuditEvent &quot;AuditEvent-1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AuditEvent.html">Audit Event</a></p></div><p><b>type</b>: 110112 (Details: [not stated] code 110112 = '110112', stated as '110112')</p><p><b>action</b>: R</p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Requestor</b></td></tr><tr><td style="display: none">*</td><td>FHIR_ac229c50-d5a9-47f8-8b06-bbbf60284ce3</td><td>true</td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Observer</b></td></tr><tr><td style="display: none">*</td><td><span>: Verification\JohnWilsonFhir</span></td></tr></table><blockquote><p><b>entity</b></p><p><b>what</b>: <a href="Condition-DX-01000000000000000010-2">Condition-DX-01000000000000000010-2</a></p><p><b>type</b>: Condition (Details: [not stated] code Condition = 'Condition', stated as 'null')</p><p><b>description</b>: Diagnosis accessed.</p><blockquote><p><b>detail</b></p><p><b>type</b>: PatientId</p><p><b>value</b>: 00IGRT66</p></blockquote><blockquote><p><b>detail</b></p><p><b>type</b>: PatientName</p><p><b>value</b>: Jones Harold</p></blockquote></blockquote></div>
+  </text>
+  <type>
+    <code value="110112"/>
+    <display value="110112"/>
+  </type>
+  <action value="R"/>
+  <agent>
+    <name value="FHIR_ac229c50-d5a9-47f8-8b06-bbbf60284ce3"/>
+    <requestor value="true"/>
+  </agent>
+  <source>
+    <observer>
+      <display value="Verification\JohnWilsonFhir"/>
+    </observer>
+  </source>
+  <entity>
+    <what>
+      <reference value="Condition-DX-01000000000000000010-2"/>
+      <type value="Condition"/>
+    </what>
+    <type>
+      <code value="Condition"/>
+    </type>
+    <description value="Diagnosis accessed."/>
+    <detail>
+      <type value="PatientId"/>
+      <valueString value="00IGRT66"/>
+    </detail>
+    <detail>
+      <type value="PatientName"/>
+      <valueString value="Jones Harold"/>
+    </detail>
+  </entity>
+</AuditEvent>

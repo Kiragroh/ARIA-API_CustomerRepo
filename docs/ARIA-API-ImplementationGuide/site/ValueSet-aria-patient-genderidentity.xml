@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="aria-patient-genderidentity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://varian.com/fhir/ValueSet/patient-genderIdentity"/>
+  <version value="1.0.0"/>
+  <name value="ARIAPatientGenderIdentity"/>
+  <title value="Patient Gender Identity"/>
+  <status value="active"/>
+  <date value="2024-07-26T13:25:01+05:30"/>
+  <publisher value="Varian Medical Systems, Inc."/>
+  <contact>
+    <name value="Varian Medical Systems, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.varian.com/"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes supported gender identity configured in aria. &#xA;The list of configured gender identity are available under ValueSet 'aria-patient-genderidentity'. &#xA;All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-genderIdentity"/>
+  <copyright value="Varian Medical Systems, Inc."/>
+  <compose>
+    <include>
+      <system value="http://varian.com/fhir/CodeSystem/AriaSystem"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/gender-identity"/>
+    </include>
+  </compose>
+</ValueSet>
