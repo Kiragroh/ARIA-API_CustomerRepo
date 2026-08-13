@@ -1,0 +1,83 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Observation-DX-Stg-39500000002000000593-200002-200002",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Stage Group Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Stage Group example for the *Varian ARIA API Stage Group Profile.*"
+    }],
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageGroup",
+    "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-DX-Stg-39500000002000000593-200002-200002\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-DX-Stg-39500000002000000593-200002-200002&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-StageGroup.html\">Observation-StageGroup</a>, <code>http://varian.com/fhir/v1/StructureDefinition/Observation</code></p></div><p><b>Condition-Stage-isWorkingStage</b>: false</p><p><b>identifier</b>: id:\u00a011</p><p><b>status</b>: preliminary</p><p><b>code</b>: Diagnosis Stage Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#diagnosis-stage-group)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Stage IVB <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#Stage IVB)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"#Observation-Stg-Category-12-11-G\">#Observation-Stg-Category-12-11-G: G1</a></li><li><a href=\"#Observation-Stg-Category-12-11-M\">#Observation-Stg-Category-12-11-M: M1</a></li><li><a href=\"#Observation-Stg-Category-12-11-N\">#Observation-Stg-Category-12-11-N: N1</a></li><li><a href=\"#Observation-Stg-Category-12-11-T\">#Observation-Stg-Category-12-11-T: T1</a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Condition-Stage-isWorkingStage",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "system" : "http://varian.com/fhir/identifier/Condition/cancer-stage-id",
+    "value" : "11"
+  }],
+  "status" : "preliminary",
+  "code" : {
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+      "code" : "diagnosis-stage-group",
+      "display" : "Diagnosis Stage Group"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-152",
+    "display" : "Wilson, Johnathan"
+  },
+  "effectiveTiming" : {
+    "event" : ["2023-10-11T03:47:05+05:30"],
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+        "code" : "Pre-chemotherapy"
+      }]
+    }
+  },
+  "issued" : "2023-10-11T03:47:08.720+05:30",
+  "performer" : [{
+    "reference" : "Practitioner/Practitioner-1002",
+    "display" : "JohnWilsonFhir"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+      "code" : "Stage IVB",
+      "display" : "Stage IVB"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+      "code" : "AJCC 5th Ed."
+    }]
+  },
+  "hasMember" : [{
+    "reference" : "#Observation-Stg-Category-12-11-G",
+    "display" : "G1"
+  },
+  {
+    "reference" : "#Observation-Stg-Category-12-11-M",
+    "display" : "M1"
+  },
+  {
+    "reference" : "#Observation-Stg-Category-12-11-N",
+    "display" : "N1"
+  },
+  {
+    "reference" : "#Observation-Stg-Category-12-11-T",
+    "display" : "T1"
+  }]
+}

@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/AuditEvent/AuditEvent-1> a fhir:AuditEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AuditEvent-1"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "AuditEvent Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "AuditEvent example for the *Varian ARIA API AuditEvent Profile.*" ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/AuditEvent"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/AuditEvent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AuditEvent</b><a name=\"AuditEvent-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AuditEvent &quot;AuditEvent-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AuditEvent.html\">Audit Event</a></p></div><p><b>type</b>: 110112 (Details: [not stated] code 110112 = '110112', stated as '110112')</p><p><b>action</b>: R</p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Requestor</b></td></tr><tr><td style=\"display: none\">*</td><td>FHIR_ac229c50-d5a9-47f8-8b06-bbbf60284ce3</td><td>true</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Observer</b></td></tr><tr><td style=\"display: none\">*</td><td><span>: Verification\\JohnWilsonFhir</span></td></tr></table><blockquote><p><b>entity</b></p><p><b>what</b>: <a href=\"Condition-DX-01000000000000000010-2\">Condition-DX-01000000000000000010-2</a></p><p><b>type</b>: Condition (Details: [not stated] code Condition = 'Condition', stated as 'null')</p><p><b>description</b>: Diagnosis accessed.</p><blockquote><p><b>detail</b></p><p><b>type</b>: PatientId</p><p><b>value</b>: 00IGRT66</p></blockquote><blockquote><p><b>detail</b></p><p><b>type</b>: PatientName</p><p><b>value</b>: Jones Harold</p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:type [
+     fhir:code [ fhir:v "110112" ] ;
+     fhir:display [ fhir:v "110112" ]
+  ] ; # 
+  fhir:action [ fhir:v "R"] ; # 
+  fhir:agent ( [
+     fhir:name [ fhir:v "FHIR_ac229c50-d5a9-47f8-8b06-bbbf60284ce3" ] ;
+     fhir:requestor [ fhir:v "true"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:source [
+     fhir:observer [
+       fhir:display [ fhir:v "Verification\\JohnWilsonFhir" ]
+     ]
+  ] ; # 
+  fhir:entity ( [
+     fhir:what [
+       fhir:reference [ fhir:v "Condition-DX-01000000000000000010-2" ] ;
+       fhir:type [ fhir:v "Condition"^^xsd:anyURI ]
+     ] ;
+     fhir:type [
+       fhir:code [ fhir:v "Condition" ]
+     ] ;
+     fhir:description [ fhir:v "Diagnosis accessed." ] ;
+     fhir:detail ( [
+       fhir:type [ fhir:v "PatientId" ] ;
+       fhir:value [ fhir:v "00IGRT66" ]
+     ] [
+       fhir:type [ fhir:v "PatientName" ] ;
+       fhir:value [ fhir:v "Jones Harold" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

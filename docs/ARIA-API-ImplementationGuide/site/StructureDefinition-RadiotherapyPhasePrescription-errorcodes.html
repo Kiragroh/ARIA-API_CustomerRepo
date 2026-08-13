@@ -1,0 +1,672 @@
+<!-- get modelType -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\Radiotherapy Phase Prescription - Error Codes - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"10.24"}
+    h3,h4,h5,h6{--heading-prefix:"10.24"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Radiotherapy Phase Prescription</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 6" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-RadiotherapyPhasePrescription.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-RadiotherapyPhasePrescription-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+
+
+
+
+
+  
+    
+      <li>
+        <a href="StructureDefinition-RadiotherapyPhasePrescription-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
+
+
+
+ 
+
+  <li>
+    <a href="StructureDefinition-RadiotherapyPhasePrescription-operations.html">Operations</a>
+  </li>
+
+ 
+
+
+
+
+ 
+
+  <li>
+    <a href="StructureDefinition-RadiotherapyPhasePrescription-sp.html">Search Params</a>
+  </li>
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-RadiotherapyPhasePrescription.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-RadiotherapyPhasePrescription.profile.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+
+
+
+
+
+
+  <li class="active">
+    <a href="#">Error Codes</a>
+  </li>
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+  <h2 id="root">Resource Profile: RadiotherapyPhasePrescription - Error Codes</h2>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  
+  
+
+
+  
+ 
+  
+
+  <p>Following are the Search Parameters for the RadiotherapyPhasePrescription Profile:</p>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th scope="row">#</th>
+        <th scope="row">Name</th>
+        <th scope="row">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td scope="col">1</td>
+        <td>PATIENT_NOT_PRESENT</td>
+        <td>Patient not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">2</td>
+        <td>CODE_NOT_PRESENT</td>
+        <td>Code not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">3</td>
+        <td>CATEGORY_NOT_PRESENT</td>
+        <td>Category not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">4</td>
+        <td>CATEGORY_INVALID</td>
+        <td>Category not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">5</td>
+        <td>CODE_INVALID</td>
+        <td>Code not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">6</td>
+        <td>RESOURCE_UPDATE_STATUS_INVALID</td>
+        <td>Given status in resource invalid to update in current state of resource.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">7</td>
+        <td>RESOURCE_VERSION_NOT_PRESENT</td>
+        <td>Resource version not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">8</td>
+        <td>RESOURCE_STATUS_INVALID</td>
+        <td>Resource status is not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">9</td>
+        <td>RESOURCE_STATUS_NOT_PRESENT</td>
+        <td>Resource status not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">10</td>
+        <td>OLD_PHYSICIAN_ORDER_RECORD_NOT_DELETED</td>
+        <td>Old Physician Order record not deleted</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">11</td>
+        <td>TIME_FRAME_NOT_PRESENT</td>
+        <td>Time frame not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">12</td>
+        <td>DIAGNOSIS_NOT_PRESENT</td>
+        <td>Diagnosis can not be empty.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">13</td>
+        <td>MANDATORY_FIELD</td>
+        <td>Field is mandatory</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">14</td>
+        <td>FIELD_LENGTH_EXCEEDED</td>
+        <td>Field length has exceeded than expected</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">15</td>
+        <td>COURSE_NOT_PRESENT</td>
+        <td>Course not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">16</td>
+        <td>COURSE_ID_NOT_PRESENT</td>
+        <td>Course Id not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">17</td>
+        <td>COURSE_INTENT_NOT_PRESENT</td>
+        <td>Course Intent Type not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">18</td>
+        <td>COURSE_DOES_NOT_BELONG_TO_PATIENT</td>
+        <td>Course does not belong to Patient.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">19</td>
+        <td>DUPLICATE_COURSE</td>
+        <td>Duplicate Course ID.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">20</td>
+        <td>MULTIPLE_TEMPLATE</td>
+        <td>Multiple Template for same name.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">21</td>
+        <td>TEMPLATE_DOES_NOT_EXIST</td>
+        <td>Template does not exist.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">22</td>
+        <td>TEMPLATE_ID_OR_NAME_MANDATORY</td>
+        <td>Template Name or Id mandatory.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">23</td>
+        <td>PRESCRIPTION_DOES_NOT_EXIST</td>
+        <td>Prescription does not exist.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">24</td>
+        <td>INVALID_TEMPLATE_STATUS</td>
+        <td>Template not in Available status.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">25</td>
+        <td>PHASE_TYPE_INVALID</td>
+        <td>PhaseType is Invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">26</td>
+        <td>DUPLICATE_PRESCRIPTION</td>
+        <td>Duplicate Prescription name for given patient.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">27</td>
+        <td>INVALID_REQUEST_SCOPE</td>
+        <td>Invalid request scope.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">28</td>
+        <td>REQUEST_SCOPE_NOT_PRESENT</td>
+        <td>Request scope not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">29</td>
+        <td>LAB_ORDER_MANDATORY</td>
+        <td>LabOrder Id is required</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">30</td>
+        <td>INVALID_CONFIG_VALUE</td>
+        <td>Configuration value is not valid</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">31</td>
+        <td>USER_DEFINED_CONFIG_MANDATORY</td>
+        <td>User defined configuration is mandatory</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">32</td>
+        <td>PLACER_ORDER_NUMBERS_POPULATED</td>
+        <td>Placer order number values are populated</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">33</td>
+        <td>GROUP_ID_NOT_FOUND</td>
+        <td>Test result group id not found</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">34</td>
+        <td>PRESCRIPTION_CREATE_WITH_TEMPLATE_FAILED</td>
+        <td>Prescription create with template failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">35</td>
+        <td>INTENT_NOT_ACCEPTED</td>
+        <td>Intent not accepted.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">36</td>
+        <td>DOSE_PRESCRIBED_TO_VOLUME_INVALID</td>
+        <td>Dose Prescribed to Volume Invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">37</td>
+        <td>FIELD_NOT_ALLOWED</td>
+        <td>Field is not allowed for this operation</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">38</td>
+        <td>DUPLICATE_VOLUME_PRESENT</td>
+        <td>Duplicate Prescription Volume is not allowed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">39</td>
+        <td>RESOURCE_ID_INVALID</td>
+        <td>Resource id not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">40</td>
+        <td>INVALID_SEARCH_PARAM_VALUE</td>
+        <td>Invalid Search Parameter Value.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">41</td>
+        <td>INVALID_SEARCH_REFERENCE_PARAM_VALUE</td>
+        <td>Invalid Reference Resource Type in Search Parameter Value.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">42</td>
+        <td>CREATE_FAILED</td>
+        <td>Create request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">43</td>
+        <td>UPDATE_FAILED</td>
+        <td>Update request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">44</td>
+        <td>SEARCH_FAILED</td>
+        <td>Search request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">45</td>
+        <td>READ_FAILED</td>
+        <td>Read request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">46</td>
+        <td>Delete_FAILED</td>
+        <td>Delete request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">47</td>
+        <td>OPERATION_FAILED</td>
+        <td>Custom Operation request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">48</td>
+        <td>UNKNOWN</td>
+        <td>Reason Unknown.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">49</td>
+        <td>RESOURCE_NOT_FOUND</td>
+        <td>Resource is not known.</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  
+
+
+  <!-- insert notes if present -->
+
+
+
+
+</div>
+
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

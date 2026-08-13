@@ -1,0 +1,1714 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/CarePlan/CarePlan-237> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CarePlan-237"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "CarePlan Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "CarePlan example for the *Varian ARIA API CarePlan Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "0" ] ;
+     fhir:lastUpdated [ fhir:v "2023-10-10T14:18:53.243+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/CarePlan"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/CarePlan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"CarePlan-237\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;CarePlan-237&quot; Version &quot;0&quot; Updated &quot;2023-10-10 14:18:53+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CarePlan.html\">CarePlan</a></p></div><p><b>default</b>: true</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>category</b>: Added Activities <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span>, On Treatment Activities <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span>, Immobilization &amp; CT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span>, Treatment Planning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span>, Treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>title</b>: Qin UI Carepath</p><p><b>subject</b>: <a href=\"Patient/Patient-244\">Patient/Patient-244</a></p><p><b>created</b>: 2023-10-10 14:18:53+0530</p><p><b>author</b>: <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></p><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4070</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-348\">ActivityDefinition/ActivityDefinition-348: Place Immobilization/CT Order</a></p><p><b>outcomeReference</b>: </p><ul><li><a href=\"ServiceRequest/ActivityInstance-4071\">ServiceRequest/ActivityInstance-4071: Schedule Immobiliization</a></li><li><a href=\"ServiceRequest/ActivityInstance-4074\">ServiceRequest/ActivityInstance-4074: CT Simulation</a></li><li><a href=\"Task/Task-375\">Task/Task-375: Place Immobilization/CT Order</a></li></ul><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Place Immobilization/CT Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Place Immobilization/CT Order)</span></td><td><span>: Immobilization &amp; CT</span></td><td>completed</td><td>?? --&gt; 2023-10-10 14:23:00+0530</td><td><a href=\"Practitioner/Practitioner-1006\">Practitioner/Practitioner-1006: JillDaneFhir</a>, <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4074</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-352\">ActivityDefinition/ActivityDefinition-352: CT Simulation</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4075\">ServiceRequest/ActivityInstance-4075: Import CT/MR Images</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Appointment</td><td>CT Simulation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#CT Simulation)</span></td><td><span>: Immobilization &amp; CT</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 30?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4071</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-349\">ActivityDefinition/ActivityDefinition-349: Schedule Immobiliization</a></p><p><b>outcomeReference</b>: </p><ul><li><a href=\"ServiceRequest/ActivityInstance-4073\">ServiceRequest/ActivityInstance-4073: Immobilzation</a></li><li><a href=\"ServiceRequest/ActivityInstance-4108\">ServiceRequest/ActivityInstance-4108: new Actiity</a></li><li><a href=\"Appointment/Appointment-133\">Appointment/Appointment-133: Schedule Immobiliization</a></li></ul><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Appointment</td><td>Schedule Immobiliization <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Schedule Immobiliization)</span></td><td><span>: Immobilization &amp; CT</span></td><td>completed</td><td>2023-10-10 15:23:00+0530 --&gt; 2023-10-10 15:38:00+0530</td><td><a href=\"Practitioner/Practitioner-1103\">Practitioner/Practitioner-1103: DSPName_1554503008383 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1091\">Practitioner/Practitioner-1091: DSPName_1554503006580 (Profile Not Attached)</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4075</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-353\">ActivityDefinition/ActivityDefinition-353: Import CT/MR Images</a></p><p><b>outcomeReference</b>: </p><ul><li><a href=\"ServiceRequest/ActivityInstance-4076\">ServiceRequest/ActivityInstance-4076: Contour Target</a></li><li><a href=\"ServiceRequest/ActivityInstance-4077\">ServiceRequest/ActivityInstance-4077: Contour Structures/OAR</a></li><li><a href=\"Task/Task-381\">Task/Task-381: Import CT/MR Images</a></li></ul><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Import CT/MR Images <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Import CT/MR Images)</span></td><td><span>: Treatment Planning</span></td><td>cancelled</td><td>?? --&gt; 2023-10-13 15:23:00+0530</td><td><a href=\"Practitioner/Practitioner-1103\">Practitioner/Practitioner-1103: DSPName_1554503008383 (Profile Not Attached)</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4073</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-351\">ActivityDefinition/ActivityDefinition-351: Immobilzation</a></p><p><b>outcomeReference</b>: </p><ul><li><a href=\"ServiceRequest/ActivityInstance-4074\">ServiceRequest/ActivityInstance-4074: CT Simulation</a></li><li><a href=\"Appointment/Appointment-135\">Appointment/Appointment-135: Immobilzation</a></li></ul><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Appointment</td><td>Immobilzation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Immobilzation)</span></td><td><span>: Immobilization &amp; CT</span></td><td>in-progress</td><td>2023-10-11 15:23:00+0530 --&gt; 2023-10-11 15:33:00+0530</td><td><a href=\"Practitioner/Practitioner-1103\">Practitioner/Practitioner-1103: DSPName_1554503008383 (Profile Not Attached)</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4108</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-848\">ActivityDefinition/ActivityDefinition-848: new Actiity</a></p><p><b>outcomeReference</b>: <a href=\"Task/Task-383\">Task/Task-383: new Actiity</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>new Actiity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#new Actiity)</span></td><td><span>: On Treatment Activities</span></td><td>completed</td><td>?? --&gt; 2023-10-10 16:03:00+0530</td><td><a href=\"Practitioner/Practitioner-1004\">Practitioner/Practitioner-1004: RobertChaseFhir</a>, <a href=\"Practitioner/Practitioner-1103\">Practitioner/Practitioner-1103: DSPName_1554503008383 (Profile Not Attached)</a>, <a href=\"Device/Device-1000\">Device/Device-1000: Def_CTScanner</a>, <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4076</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-354\">ActivityDefinition/ActivityDefinition-354: Contour Target</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4078\">ServiceRequest/ActivityInstance-4078: Approve Contours</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Contour Target <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Contour Target)</span></td><td><span>: Treatment Planning</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 60?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4077</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-355\">ActivityDefinition/ActivityDefinition-355: Contour Structures/OAR</a></p><p><b>outcomeReference</b>: </p><ul><li><a href=\"ServiceRequest/ActivityInstance-4078\">ServiceRequest/ActivityInstance-4078: Approve Contours</a></li><li><a href=\"Appointment/Appointment-134\">Appointment/Appointment-134: Contour Structures/OAR</a></li></ul><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Appointment</td><td>Contour Structures/OAR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Contour Structures/OAR)</span></td><td><span>: Treatment Planning</span></td><td>cancelled</td><td>Cancelled - Patient No-Show <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#Cancelled - Patient No-Show)</span></td><td>2023-10-16 15:23:00+0530 --&gt; 2023-10-16 15:33:00+0530</td><td><a href=\"Device/Device-1024\">Device/Device-1024: CTScannerName1</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4078</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-356\">ActivityDefinition/ActivityDefinition-356: Approve Contours</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4079\">ServiceRequest/ActivityInstance-4079: Place Planning Order</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Approve Contours <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Approve Contours)</span></td><td><span>: Treatment Planning</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 10?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4079</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-357\">ActivityDefinition/ActivityDefinition-357: Place Planning Order</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4080\">ServiceRequest/ActivityInstance-4080: Treatment Planning</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Place Planning Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Place Planning Order)</span></td><td><span>: Treatment Planning</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 10?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4080</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-358\">ActivityDefinition/ActivityDefinition-358: Treatment Planning</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4081\">ServiceRequest/ActivityInstance-4081: Planning Approve TxPlan</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Treatment Planning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Treatment Planning)</span></td><td><span>: Treatment Planning</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 60?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4081</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-359\">ActivityDefinition/ActivityDefinition-359: Planning Approve TxPlan</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4082\">ServiceRequest/ActivityInstance-4082: Confirm TxPlan</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Planning Approve TxPlan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Planning Approve TxPlan)</span></td><td><span>: Treatment Planning</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 15?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4082</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-360\">ActivityDefinition/ActivityDefinition-360: Confirm TxPlan</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4083\">ServiceRequest/ActivityInstance-4083: Schedule Tx Simulation/Repositioning</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Confirm TxPlan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Confirm TxPlan)</span></td><td><span>: Treatment Planning</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 10?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4083</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-361\">ActivityDefinition/ActivityDefinition-361: Schedule Tx Simulation/Repositioning</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4084\">ServiceRequest/ActivityInstance-4084: Tx Simulation/Tx Approve</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Schedule Tx Simulation/Repositioning <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Schedule Tx Simulation/Repositioning)</span></td><td><span>: Treatment</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 10?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4084</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-362\">ActivityDefinition/ActivityDefinition-362: Tx Simulation/Tx Approve</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4085\">ServiceRequest/ActivityInstance-4085: Schedule Treatment</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Appointment</td><td>Tx Simulation/Tx Approve <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Tx Simulation/Tx Approve)</span></td><td><span>: Treatment</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 10?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4085</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-363\">ActivityDefinition/ActivityDefinition-363: Schedule Treatment</a></p><p><b>outcomeReference</b>: <a href=\"ServiceRequest/ActivityInstance-4086\">ServiceRequest/ActivityInstance-4086: First Treatment</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Schedule Treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Schedule Treatment)</span></td><td><span>: Treatment</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 10?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4086</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-364\">ActivityDefinition/ActivityDefinition-364: First Treatment</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Appointment</td><td>First Treatment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#First Treatment)</span></td><td><span>: Treatment</span></td><td>not-started</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td>Duration 10?ngen-7?, Once</td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4089</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-228\">ActivityDefinition/ActivityDefinition-228: Implant</a></p><p><b>outcomeReference</b>: <a href=\"Appointment/Appointment-130\">Appointment/Appointment-130: Implant</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Appointment</td><td>Implant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Implant)</span></td><td><span>: Added Activities</span></td><td>scheduled</td><td>2023-10-10 14:23:00+0530 --&gt; 2023-10-10 15:43:00+0530</td><td><a href=\"Practitioner/Practitioner-1120\">Practitioner/Practitioner-1120: DSPName_1597106811280 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1103\">Practitioner/Practitioner-1103: DSPName_1554503008383 (Profile Not Attached)</a>, <a href=\"Device/Device-1025\">Device/Device-1025: CTScannerId2</a>, <a href=\"Device/Device-1036\">Device/Device-1036: SimulatorName1</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4072</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-350\">ActivityDefinition/ActivityDefinition-350: Schedule CT</a></p><p><b>outcomeReference</b>: <a href=\"Appointment/Appointment-131\">Appointment/Appointment-131: Schedule CT</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>StatusReason</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Appointment</td><td>Schedule CT <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Schedule CT)</span></td><td><span>: Immobilization &amp; CT</span></td><td>scheduled</td><td>not-available <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (aria-careplanactivityStatusReason#not-available)</span></td><td><a href=\"Practitioner/Practitioner-1120\">Practitioner/Practitioner-1120: DSPName_1597106811280 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1132\">Practitioner/Practitioner-1132: DSPName_1597106825947 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1104\">Practitioner/Practitioner-1104: DSPName_1554503008578 (Profile Not Attached)</a>, <a href=\"Device/Device-1022\">Device/Device-1022: BrachyName1</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4090</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-346\">ActivityDefinition/ActivityDefinition-346: Review Simulation Images</a></p><p><b>outcomeReference</b>: <a href=\"Task/Task-377\">Task/Task-377: Review Simulation Images</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Review Simulation Images <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Review Simulation Images)</span></td><td><span>: On Treatment Activities</span></td><td>completed</td><td>?? --&gt; 2023-10-10 14:24:00+0530</td><td><a href=\"Practitioner/Practitioner-1182\">Practitioner/Practitioner-1182: ARIA_API_CLIENT</a>, <a href=\"Practitioner/Practitioner-1091\">Practitioner/Practitioner-1091: DSPName_1554503006580 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1104\">Practitioner/Practitioner-1104: DSPName_1554503008578 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4087</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-356\">ActivityDefinition/ActivityDefinition-356: Approve Contours</a></p><p><b>outcomeReference</b>: <a href=\"Appointment/Appointment-129\">Appointment/Appointment-129: Approve Contours</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Appointment</td><td>Approve Contours <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Approve Contours)</span></td><td><span>: Treatment Planning</span></td><td>scheduled</td><td>2023-10-10 14:22:00+0530 --&gt; 2023-10-10 14:32:00+0530</td><td><a href=\"Device/Device-1000\">Device/Device-1000: Def_CTScanner</a>, <a href=\"Location/Location-1007\">Location/Location-1007: Treatment Aux 1</a>, <a href=\"Location-Location-1009.html\">Location/Location-1009: Treatment Room 1</a> &quot;API_machine&quot;, <a href=\"Practitioner/Practitioner-1120\">Practitioner/Practitioner-1120: DSPName_1597106811280 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1078\">Practitioner/Practitioner-1078: DSPName_1554502999429 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1182\">Practitioner/Practitioner-1182: ARIA_API_CLIENT</a></td></tr></table></blockquote><blockquote><p><b>activity</b></p><blockquote><p><b>id</b></p>ActivityInstance-4088</blockquote><p><b>careplan-activity-definition</b>: <a href=\"ActivityDefinition/ActivityDefinition-235\">ActivityDefinition/ActivityDefinition-235: Offsite Meeting</a></p><p><b>outcomeReference</b>: <a href=\"Task/Task-376\">Task/Task-376: Offsite Meeting</a></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Goal</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Performer</b></td></tr><tr><td style=\"display: none\">*</td><td/><td>Task</td><td>Offsite Meeting <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Offsite Meeting)</span></td><td><span>: Added Activities</span></td><td>completed</td><td>?? --&gt; 2023-10-10 14:22:00+0530</td><td><a href=\"Device/Device-1000\">Device/Device-1000: Def_CTScanner</a>, <a href=\"Location/Location-1007\">Location/Location-1007: Treatment Aux 1</a>, <a href=\"Location-Location-1009.html\">Location/Location-1009: Treatment Room 1</a> &quot;API_machine&quot;, <a href=\"Practitioner/Practitioner-1120\">Practitioner/Practitioner-1120: DSPName_1597106811280 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1078\">Practitioner/Practitioner-1078: DSPName_1554502999429 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1182\">Practitioner/Practitioner-1182: ARIA_API_CLIENT</a>, <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/default"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:text [ fhir:v "Added Activities" ]
+  ] [
+     fhir:text [ fhir:v "On Treatment Activities" ]
+  ] [
+     fhir:text [ fhir:v "Immobilization & CT" ]
+  ] [
+     fhir:text [ fhir:v "Treatment Planning" ]
+  ] [
+     fhir:text [ fhir:v "Treatment" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Qin UI Carepath"] ; # 
+  fhir:subject [
+     fhir:link <http://varian.com/fhir/v1/Patient/Patient-244> ;
+     fhir:reference [ fhir:v "Patient/Patient-244" ]
+  ] ; # 
+  fhir:created [ fhir:v "2023-10-10T14:18:53+05:30"^^xsd:dateTime] ; # 
+  fhir:author [
+     fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-1> ;
+     fhir:reference [ fhir:v "Organization/Organization-Dept-1" ] ;
+     fhir:display [ fhir:v "Radiation Therapy" ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:id [ fhir:v "ActivityInstance-4070" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:28:36+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-348> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-348" ] ;
+         fhir:display [ fhir:v "Place Immobilization/CT Order" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4071> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4071" ] ;
+       fhir:display [ fhir:v "Schedule Immobiliization" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4074> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4074" ] ;
+       fhir:display [ fhir:v "CT Simulation" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/Task/Task-375> ;
+       fhir:reference [ fhir:v "Task/Task-375" ] ;
+       fhir:display [ fhir:v "Place Immobilization/CT Order" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Place Immobilization/CT Order" ] ;
+           fhir:display [ fhir:v "Place Immobilization/CT Order" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Immobilization & CT" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "completed" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Task/task-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Completed" ] ;
+               fhir:display [ fhir:v "Completed" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:end [ fhir:v "2023-10-10T14:23:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1006> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1006" ] ;
+         fhir:display [ fhir:v "JillDaneFhir" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+         fhir:display [ fhir:v "JohnWilsonFhir" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4074" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-352> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-352" ] ;
+         fhir:display [ fhir:v "CT Simulation" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4073> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4073" ] ;
+         fhir:display [ fhir:v "Immobilzation" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4070> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4070" ] ;
+         fhir:display [ fhir:v "Place Immobilization/CT Order" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4075> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4075" ] ;
+       fhir:display [ fhir:v "Import CT/MR Images" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CT Simulation" ] ;
+           fhir:display [ fhir:v "CT Simulation" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Immobilization & CT" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "30"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4071" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:36:50+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-349> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-349" ] ;
+         fhir:display [ fhir:v "Schedule Immobiliization" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4070> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4070" ] ;
+         fhir:display [ fhir:v "Place Immobilization/CT Order" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4073> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4073" ] ;
+       fhir:display [ fhir:v "Immobilzation" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4108> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4108" ] ;
+       fhir:display [ fhir:v "new Actiity" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/Appointment/Appointment-133> ;
+       fhir:reference [ fhir:v "Appointment/Appointment-133" ] ;
+       fhir:display [ fhir:v "Schedule Immobiliization" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "60"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Schedule Immobiliization" ] ;
+           fhir:display [ fhir:v "Schedule Immobiliization" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Immobilization & CT" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "completed" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Appointment/appointment-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Manually Completed" ] ;
+               fhir:display [ fhir:v "Manually Completed" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:start [ fhir:v "2023-10-10T15:23:00+05:30"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2023-10-10T15:38:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1103> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1103" ] ;
+         fhir:display [ fhir:v "DSPName_1554503008383 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1091> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1091" ] ;
+         fhir:display [ fhir:v "DSPName_1554503006580 (Profile Not Attached)" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4075" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:35:55+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-353> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-353" ] ;
+         fhir:display [ fhir:v "Import CT/MR Images" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4074> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4074" ] ;
+         fhir:display [ fhir:v "CT Simulation" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4076> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4076" ] ;
+       fhir:display [ fhir:v "Contour Target" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4077> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4077" ] ;
+       fhir:display [ fhir:v "Contour Structures/OAR" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/Task/Task-381> ;
+       fhir:reference [ fhir:v "Task/Task-381" ] ;
+       fhir:display [ fhir:v "Import CT/MR Images" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Import CT/MR Images" ] ;
+           fhir:display [ fhir:v "Import CT/MR Images" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "cancelled" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Task/task-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Cancelled" ] ;
+               fhir:display [ fhir:v "Cancelled" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:end [ fhir:v "2023-10-13T15:23:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1103> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1103" ] ;
+         fhir:display [ fhir:v "DSPName_1554503008383 (Profile Not Attached)" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4073" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:38:03+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-351> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-351" ] ;
+         fhir:display [ fhir:v "Immobilzation" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4071> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4071" ] ;
+         fhir:display [ fhir:v "Schedule Immobiliization" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4074> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4074" ] ;
+       fhir:display [ fhir:v "CT Simulation" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/Appointment/Appointment-135> ;
+       fhir:reference [ fhir:v "Appointment/Appointment-135" ] ;
+       fhir:display [ fhir:v "Immobilzation" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Immobilzation" ] ;
+           fhir:display [ fhir:v "Immobilzation" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Immobilization & CT" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "in-progress" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Appointment/appointment-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "In Progress (Manually Set)" ] ;
+               fhir:display [ fhir:v "In Progress" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:start [ fhir:v "2023-10-11T15:23:00+05:30"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2023-10-11T15:33:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1103> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1103" ] ;
+         fhir:display [ fhir:v "DSPName_1554503008383 (Profile Not Attached)" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4108" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T16:04:32+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-848> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-848" ] ;
+         fhir:display [ fhir:v "new Actiity" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4071> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4071" ] ;
+         fhir:display [ fhir:v "Schedule Immobiliization" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activityAdditionalPerformer"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/Group/Group-10003> ;
+         fhir:reference [ fhir:v "Group/Group-10003" ]
+       ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/Task/Task-383> ;
+       fhir:reference [ fhir:v "Task/Task-383" ] ;
+       fhir:display [ fhir:v "new Actiity" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "new Actiity" ] ;
+           fhir:display [ fhir:v "new Actiity" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "On Treatment Activities" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "completed" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Task/task-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Completed" ] ;
+               fhir:display [ fhir:v "Completed" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:end [ fhir:v "2023-10-10T16:03:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1004> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1004" ] ;
+         fhir:display [ fhir:v "RobertChaseFhir" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1103> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1103" ] ;
+         fhir:display [ fhir:v "DSPName_1554503008383 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Device/Device-1000> ;
+         fhir:reference [ fhir:v "Device/Device-1000" ] ;
+         fhir:display [ fhir:v "Def_CTScanner" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+         fhir:display [ fhir:v "JohnWilsonFhir" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4076" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-354> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-354" ] ;
+         fhir:display [ fhir:v "Contour Target" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4075> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4075" ] ;
+         fhir:display [ fhir:v "Import CT/MR Images" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4078> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4078" ] ;
+       fhir:display [ fhir:v "Approve Contours" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "120"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Contour Target" ] ;
+           fhir:display [ fhir:v "Contour Target" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "60"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4077" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:37:35+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-355> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-355" ] ;
+         fhir:display [ fhir:v "Contour Structures/OAR" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4075> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4075" ] ;
+         fhir:display [ fhir:v "Import CT/MR Images" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4078> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4078" ] ;
+       fhir:display [ fhir:v "Approve Contours" ]
+     ] [
+       fhir:link <http://varian.com/fhir/v1/Appointment/Appointment-134> ;
+       fhir:reference [ fhir:v "Appointment/Appointment-134" ] ;
+       fhir:display [ fhir:v "Contour Structures/OAR" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Contour Structures/OAR" ] ;
+           fhir:display [ fhir:v "Contour Structures/OAR" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "cancelled" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Appointment/appointment-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Cancelled - Patient No-Show" ] ;
+               fhir:display [ fhir:v "Cancelled - Patient No-Show" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Cancelled - Patient No-Show" ] ;
+           fhir:display [ fhir:v "Cancelled - Patient No-Show" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:start [ fhir:v "2023-10-16T15:23:00+05:30"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2023-10-16T15:33:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Device/Device-1024> ;
+         fhir:reference [ fhir:v "Device/Device-1024" ] ;
+         fhir:display [ fhir:v "CTScannerName1" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4078" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-356> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-356" ] ;
+         fhir:display [ fhir:v "Approve Contours" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4077> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4077" ] ;
+         fhir:display [ fhir:v "Contour Structures/OAR" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4076> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4076" ] ;
+         fhir:display [ fhir:v "Contour Target" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4079> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4079" ] ;
+       fhir:display [ fhir:v "Place Planning Order" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Approve Contours" ] ;
+           fhir:display [ fhir:v "Approve Contours" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4079" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-357> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-357" ] ;
+         fhir:display [ fhir:v "Place Planning Order" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4078> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4078" ] ;
+         fhir:display [ fhir:v "Approve Contours" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4080> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4080" ] ;
+       fhir:display [ fhir:v "Treatment Planning" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Place Planning Order" ] ;
+           fhir:display [ fhir:v "Place Planning Order" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4080" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-358> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-358" ] ;
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4079> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4079" ] ;
+         fhir:display [ fhir:v "Place Planning Order" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4081> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4081" ] ;
+       fhir:display [ fhir:v "Planning Approve TxPlan" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Treatment Planning" ] ;
+           fhir:display [ fhir:v "Treatment Planning" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "60"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4081" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-359> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-359" ] ;
+         fhir:display [ fhir:v "Planning Approve TxPlan" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4080> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4080" ] ;
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4082> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4082" ] ;
+       fhir:display [ fhir:v "Confirm TxPlan" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Planning Approve TxPlan" ] ;
+           fhir:display [ fhir:v "Planning Approve TxPlan" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "15"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4082" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-360> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-360" ] ;
+         fhir:display [ fhir:v "Confirm TxPlan" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4081> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4081" ] ;
+         fhir:display [ fhir:v "Planning Approve TxPlan" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4083> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4083" ] ;
+       fhir:display [ fhir:v "Schedule Tx Simulation/Repositioning" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Confirm TxPlan" ] ;
+           fhir:display [ fhir:v "Confirm TxPlan" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4083" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-361> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-361" ] ;
+         fhir:display [ fhir:v "Schedule Tx Simulation/Repositioning" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4082> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4082" ] ;
+         fhir:display [ fhir:v "Confirm TxPlan" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4084> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4084" ] ;
+       fhir:display [ fhir:v "Tx Simulation/Tx Approve" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Schedule Tx Simulation/Repositioning" ] ;
+           fhir:display [ fhir:v "Schedule Tx Simulation/Repositioning" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4084" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-362> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-362" ] ;
+         fhir:display [ fhir:v "Tx Simulation/Tx Approve" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4083> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4083" ] ;
+         fhir:display [ fhir:v "Schedule Tx Simulation/Repositioning" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4085> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4085" ] ;
+       fhir:display [ fhir:v "Schedule Treatment" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Tx Simulation/Tx Approve" ] ;
+           fhir:display [ fhir:v "Tx Simulation/Tx Approve" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4085" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-363> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-363" ] ;
+         fhir:display [ fhir:v "Schedule Treatment" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4084> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4084" ] ;
+         fhir:display [ fhir:v "Tx Simulation/Tx Approve" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4086> ;
+       fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4086" ] ;
+       fhir:display [ fhir:v "First Treatment" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Schedule Treatment" ] ;
+           fhir:display [ fhir:v "Schedule Treatment" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4086" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-364> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-364" ] ;
+         fhir:display [ fhir:v "First Treatment" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activitybasedOn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ServiceRequest/ActivityInstance-4085> ;
+         fhir:reference [ fhir:v "ServiceRequest/ActivityInstance-4085" ] ;
+         fhir:display [ fhir:v "Schedule Treatment" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "First Treatment" ] ;
+           fhir:display [ fhir:v "First Treatment" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment" ]
+       ] ) ;
+       fhir:status [ fhir:v "not-started" ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:duration [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:durationUnit [ fhir:v "min" ]
+         ]
+       ]
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4089" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:24:04+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-228> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-228" ] ;
+         fhir:display [ fhir:v "Implant" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/Appointment/Appointment-130> ;
+       fhir:reference [ fhir:v "Appointment/Appointment-130" ] ;
+       fhir:display [ fhir:v "Implant" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Implant" ] ;
+           fhir:display [ fhir:v "Implant" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Added Activities" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "scheduled" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Appointment/appointment-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Open" ] ;
+               fhir:display [ fhir:v "Open" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:start [ fhir:v "2023-10-10T14:23:00+05:30"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2023-10-10T15:43:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1120> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1120" ] ;
+         fhir:display [ fhir:v "DSPName_1597106811280 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1103> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1103" ] ;
+         fhir:display [ fhir:v "DSPName_1554503008383 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Device/Device-1025> ;
+         fhir:reference [ fhir:v "Device/Device-1025" ] ;
+         fhir:display [ fhir:v "CTScannerId2" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Device/Device-1036> ;
+         fhir:reference [ fhir:v "Device/Device-1036" ] ;
+         fhir:display [ fhir:v "SimulatorName1" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4072" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:34:22+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-350> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-350" ] ;
+         fhir:display [ fhir:v "Schedule CT" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/Appointment/Appointment-131> ;
+       fhir:reference [ fhir:v "Appointment/Appointment-131" ] ;
+       fhir:display [ fhir:v "Schedule CT" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "60"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Schedule CT" ] ;
+           fhir:display [ fhir:v "Schedule CT" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Immobilization & CT" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "scheduled" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Appointment/appointment-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Open" ] ;
+               fhir:display [ fhir:v "Open" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:statusReason [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/aria-careplanactivityStatusReason"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "not-available" ] ;
+           fhir:display [ fhir:v "not-available" ]
+         ] )
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1120> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1120" ] ;
+         fhir:display [ fhir:v "DSPName_1597106811280 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1132> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1132" ] ;
+         fhir:display [ fhir:v "DSPName_1597106825947 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1104> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1104" ] ;
+         fhir:display [ fhir:v "DSPName_1554503008578 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Device/Device-1022> ;
+         fhir:reference [ fhir:v "Device/Device-1022" ] ;
+         fhir:display [ fhir:v "BrachyName1" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4090" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:28:40+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-346> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-346" ] ;
+         fhir:display [ fhir:v "Review Simulation Images" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/carePlan-activityAdditionalPerformer"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/Group/Group-10003> ;
+         fhir:reference [ fhir:v "Group/Group-10003" ]
+       ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/Task/Task-377> ;
+       fhir:reference [ fhir:v "Task/Task-377" ] ;
+       fhir:display [ fhir:v "Review Simulation Images" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Review Simulation Images" ] ;
+           fhir:display [ fhir:v "Review Simulation Images" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "On Treatment Activities" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "completed" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Task/task-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Completed" ] ;
+               fhir:display [ fhir:v "Completed" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:end [ fhir:v "2023-10-10T14:24:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1182> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1182" ] ;
+         fhir:display [ fhir:v "ARIA_API_CLIENT" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1091> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1091" ] ;
+         fhir:display [ fhir:v "DSPName_1554503006580 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1104> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1104" ] ;
+         fhir:display [ fhir:v "DSPName_1554503008578 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+         fhir:display [ fhir:v "JohnWilsonFhir" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4087" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:23:34+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-356> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-356" ] ;
+         fhir:display [ fhir:v "Approve Contours" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/Appointment/Appointment-129> ;
+       fhir:reference [ fhir:v "Appointment/Appointment-129" ] ;
+       fhir:display [ fhir:v "Approve Contours" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "1440"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Appointment" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Approve Contours" ] ;
+           fhir:display [ fhir:v "Approve Contours" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Treatment Planning" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "scheduled" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Appointment/appointment-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Open" ] ;
+               fhir:display [ fhir:v "Open" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:start [ fhir:v "2023-10-10T14:22:00+05:30"^^xsd:dateTime ] ;
+         fhir:end [ fhir:v "2023-10-10T14:32:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Device/Device-1000> ;
+         fhir:reference [ fhir:v "Device/Device-1000" ] ;
+         fhir:display [ fhir:v "Def_CTScanner" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Location/Location-1007> ;
+         fhir:reference [ fhir:v "Location/Location-1007" ] ;
+         fhir:display [ fhir:v "Treatment Aux 1" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Location/Location-1009> ;
+         fhir:reference [ fhir:v "Location/Location-1009" ] ;
+         fhir:display [ fhir:v "Treatment Room 1" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1120> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1120" ] ;
+         fhir:display [ fhir:v "DSPName_1597106811280 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1078> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1078" ] ;
+         fhir:display [ fhir:v "DSPName_1554502999429 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1182> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1182" ] ;
+         fhir:display [ fhir:v "ARIA_API_CLIENT" ]
+       ] )
+     ]
+  ] [
+     fhir:id [ fhir:v "ActivityInstance-4088" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/lastUpdatedOn"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-10T14:24:45+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-235> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ActivityDefinition-235" ] ;
+         fhir:display [ fhir:v "Offsite Meeting" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityAutoAssignOncologist"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://varian.com/fhir/v1/Task/Task-376> ;
+       fhir:reference [ fhir:v "Task/Task-376" ] ;
+       fhir:display [ fhir:v "Offsite Meeting" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/activityduration-lag-from-predecessor"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "min" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+         ]
+       ] ) ;
+       fhir:kind [ fhir:v "Task" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/activity-service-type"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Offsite Meeting" ] ;
+           fhir:display [ fhir:v "Offsite Meeting" ]
+         ] )
+       ] ;
+       fhir:goal ( [
+         fhir:display [ fhir:v "Added Activities" ]
+       ] ) ;
+       fhir:status [
+         fhir:v "completed" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Task/task-status"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "Completed" ] ;
+               fhir:display [ fhir:v "Completed" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:end [ fhir:v "2023-10-10T14:22:00+05:30"^^xsd:dateTime ]
+       ] ;
+       fhir:performer ( [
+         fhir:link <http://varian.com/fhir/v1/Device/Device-1000> ;
+         fhir:reference [ fhir:v "Device/Device-1000" ] ;
+         fhir:display [ fhir:v "Def_CTScanner" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Location/Location-1007> ;
+         fhir:reference [ fhir:v "Location/Location-1007" ] ;
+         fhir:display [ fhir:v "Treatment Aux 1" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Location/Location-1009> ;
+         fhir:reference [ fhir:v "Location/Location-1009" ] ;
+         fhir:display [ fhir:v "Treatment Room 1" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1120> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1120" ] ;
+         fhir:display [ fhir:v "DSPName_1597106811280 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1078> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1078" ] ;
+         fhir:display [ fhir:v "DSPName_1554502999429 (Profile Not Attached)" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1182> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1182" ] ;
+         fhir:display [ fhir:v "ARIA_API_CLIENT" ]
+       ] [
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+         fhir:display [ fhir:v "JohnWilsonFhir" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

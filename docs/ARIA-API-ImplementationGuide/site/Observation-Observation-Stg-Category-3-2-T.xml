@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Observation-Stg-Category-3-2-T"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Observation Stage Category Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Observation Stage Category example with all attributes specified."/>
+    </extension>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/StageCategory"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Observation-Stg-Category-3-2-T"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Observation-Stg-Category-3-2-T&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-StageCategory.html">Observation-StageCategory</a>, <code>http://varian.com/fhir/v1/StructureDefinition/Observation</code></p></div><p><b>observation-stageClassification</b>: Pathological <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (AriaSystem#P)</span></p><p><b>status</b>: final</p><p><b>code</b>: T <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (diagnosis-stage-group#T)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-10 00:00:00+0530</p><p><b>issued</b>: Oct 10, 2023, 2:25:30 PM</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: No evidence of primary tumor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (diagnosis-stage-type#cT0)</span></p><p><b>method</b>: AJCC 8th Ed. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (diagnosis-stage-scheme#AJCC 8th Ed.)</span></p></div>
+  </text>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/observation-stageClassification">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/AriaSystem"/>
+        <code value="P"/>
+        <display value="Pathological"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group"/>
+      <code value="T"/>
+      <display value="T"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient-244"/>
+    <display value="Implementation, Guide"/>
+  </subject>
+  <effectiveTiming>
+    <event value="2023-10-10T00:00:00+05:30"/>
+    <code>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing"/>
+        <code value="Pre-chemotherapy"/>
+      </coding>
+    </code>
+  </effectiveTiming>
+  <issued value="2023-10-10T14:25:30.360+05:30"/>
+  <performer>
+    <reference value="Practitioner/Practitioner-1002"/>
+    <display value="JohnWilsonFhir"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type"/>
+      <code value="cT0"/>
+      <display value="No evidence of primary tumor"/>
+    </coding>
+  </valueCodeableConcept>
+  <method>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme"/>
+      <code value="AJCC 8th Ed."/>
+    </coding>
+  </method>
+</Observation>

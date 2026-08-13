@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="ActivityDefinition-844"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="ActivityDefinition Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="ActivityDefinition example for the *Varian ARIA API ActivityDefinition Profile.*"/>
+    </extension>
+    <versionId value="394588"/>
+    <lastUpdated value="2023-10-10T15:27:49.330+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ActivityDefinition</b><a name="ActivityDefinition-844"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ActivityDefinition &quot;ActivityDefinition-844&quot; Version &quot;394588&quot; Updated &quot;2023-10-10 15:27:49+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ActivityDefinition.html">ActivityDefinition</a></p></div><p><b>activityDefinition-category</b>: C-Port Film <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (activityDefinition-category#C-Port Film)</span></p><p><b>url</b>: <code>http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: new Actiity</p><p><b>status</b>: active</p><p><b>date</b>: 2023-10-10 15:27:49+0530</p><p><b>publisher</b>: Varian Medical Systems, Inc.</p><p><b>contact</b>: Varian Medical Systems, Inc.: <a href="https://www.varian.com/">https://www.varian.com/</a></p><p><b>description</b>: Desc</p><h3>UseContexts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>service-organization (Details: http://varian.com/fhir/CodeSystem/activityDefinition-usage-context-type code service-organization = 'service-organization', stated as 'service-organization')</td><td><a href="Organization/Organization-Dept-10015">Organization/Organization-Dept-10015: Ortho</a></td></tr></table><p><b>copyright</b>: Varian Medical Systems, Inc.</p><p><b>kind</b>: Appointment</p><p><b>timing</b>: 10 min<span style="background: LightGoldenRodYellow"> (Details: UCUM code 10 = '10')</span></p></div>
+  </text>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/activityDefinition-category">
+    <valueCodeableConcept>
+      <coding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-reference">
+          <valueReference>
+            <reference value="/fhir/ValueSet?url=http://varian.com/fhir/ValueSet/activity-category&amp;publisher=Organization-Dept-10015"/>
+          </valueReference>
+        </extension>
+        <system value="http://varian.com/fhir/CodeSystem/activityDefinition-category"/>
+        <code value="C-Port Film"/>
+        <display value="C-Port Film"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844"/>
+  <version value="1.0.0"/>
+  <name value="new Actiity">
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/activity-name"/>
+          <code value="new Actiity"/>
+          <display value="new Actiity"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </name>
+  <status value="active">
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/ActivityDefinition/status"/>
+          <code value="Active"/>
+          <display value="Active"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </status>
+  <date value="2023-10-10T15:27:49+05:30"/>
+  <publisher value="Varian Medical Systems, Inc."/>
+  <contact>
+    <name value="Varian Medical Systems, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.varian.com/"/>
+    </telecom>
+  </contact>
+  <description value="Desc"/>
+  <useContext>
+    <code>
+      <system value="http://varian.com/fhir/CodeSystem/activityDefinition-usage-context-type"/>
+      <code value="service-organization"/>
+      <display value="service-organization"/>
+    </code>
+    <valueReference>
+      <reference value="Organization/Organization-Dept-10015"/>
+      <display value="Ortho"/>
+    </valueReference>
+  </useContext>
+  <copyright value="Varian Medical Systems, Inc."/>
+  <kind value="Appointment">
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/ActivityDefinition/activity-definition-kind"/>
+          <code value="Appointment"/>
+          <display value="Appointment"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </kind>
+  <timingDuration>
+    <value value="10"/>
+    <unit value="min"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="10"/>
+  </timingDuration>
+</ActivityDefinition>

@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aria-mobilephoneprovider",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://varian.com/fhir/ValueSet/patient-mobilephoneprovider",
+  "version" : "1.0.0",
+  "name" : "PatientMobilePhoneProvider",
+  "title" : "Mobile Phone Provider",
+  "status" : "active",
+  "date" : "2024-07-26T13:25:01+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "description" : "This value set includes various mobile phone providers configured in aria. \nThe list of configured mobile phone providers are available under ValueSet 'aria-mobilephoneprovider'. \nAll values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-mobilephoneprovider",
+  "copyright" : "Varian Medical Systems, Inc.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Patient/mobilephoneprovider"
+    }]
+  }
+}

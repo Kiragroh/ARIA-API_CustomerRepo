@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/ChargeItem/ChargeItem-32-830> a fhir:ChargeItem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ChargeItem-32-830"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "ChargeItem Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "ChargeItem example for the *Varian ARIA API ChargeItem Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "194162602666556" ] ;
+     fhir:lastUpdated [ fhir:v "2023-10-10T14:55:20.947+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/ChargeItem"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/ChargeItem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ChargeItem</b><a name=\"ChargeItem-32-830\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ChargeItem &quot;ChargeItem-32-830&quot; Version &quot;194162602666556&quot; Updated &quot;2023-10-10 14:55:20+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ChargeItem.html\">ChargeItem</a></p></div><p><b>chargeItem-associateCharge</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/chargeItem-code-modifier"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "32" ] ;
+         fhir:display [ fhir:v "62" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/chargeItem-code-modifier"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "35" ] ;
+         fhir:display [ fhir:v "77" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/chargeItem-code-modifier"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "20" ] ;
+         fhir:display [ fhir:v "BB" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/chargeItem-associateCharge"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Money ;
+       fhir:value [ fhir:v "0.0"^^xsd:decimal ] ;
+       fhir:currency [ fhir:v "$" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/chargeItem-category"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/chargeitem-category"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Technical" ] ;
+         fhir:display [ fhir:v "Technical" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/completedOn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-10-10T14:29:27+05:30"^^xsd:dateTime ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/ChargeItem/RadOnc-Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "807" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "billed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "ARIA Code"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "77413" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://varian.com/fhir/v1/Patient/Patient-244> ;
+     fhir:reference [ fhir:v "Patient/Patient-244" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2023-10-10T14:24:00+05:30"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-10-10T14:24:00+05:30"^^xsd:dateTime ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:function [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://ncit.nci.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C170895" ] ;
+         fhir:display [ fhir:v "Primary Oncologist" ]
+       ] [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/careteam-participant-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "primary-oncologist" ] ;
+         fhir:display [ fhir:v "Primary Oncologist" ]
+       ] )
+     ] ;
+     fhir:actor [
+       fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1077> ;
+       fhir:reference [ fhir:v "Practitioner/Practitioner-1077" ] ;
+       fhir:display [ fhir:v "DSPName_1554502999130 (Profile Not Attached)" ]
+     ]
+  ] [
+     fhir:function [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/careteam-participant-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "covering-oncologist" ] ;
+         fhir:display [ fhir:v "Covering Oncologist" ]
+       ] )
+     ] ;
+     fhir:actor [
+       fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1078> ;
+       fhir:reference [ fhir:v "Practitioner/Practitioner-1078" ] ;
+       fhir:display [ fhir:v "DSPName_1554502999429 (Profile Not Attached)" ]
+     ]
+  ] ) ; # 
+  fhir:performingOrganization [
+     fhir:link <http://varian.com/fhir/v1/Organization-Dept/Organization-Dept-1> ;
+     fhir:reference [ fhir:v "Organization-Dept/Organization-Dept-1" ] ;
+     fhir:display [ fhir:v "Radiation Therapy" ]
+  ] ; # 
+  fhir:costCenter [
+     fhir:link <http://varian.com/fhir/v1/Organization/Organization-Prov-1> ;
+     fhir:reference [ fhir:v "Organization/Organization-Prov-1" ] ;
+     fhir:display [ fhir:v "Las Vegas General" ]
+  ] ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "1"^^xsd:decimal ]
+  ] ; # 
+  fhir:priceOverride [
+     fhir:value [ fhir:v "0.0000"^^xsd:decimal ] ;
+     fhir:currency [ fhir:v "$" ]
+  ] ; # 
+  fhir:enterer [
+     fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1077> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner-1077" ] ;
+     fhir:display [ fhir:v "DSPName_1554502999130 (Profile Not Attached)" ]
+  ] ; # 
+  fhir:enteredDate [ fhir:v "2023-10-10T14:24:00+05:30"^^xsd:dateTime] ; # 
+  fhir:reason ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "IcdCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "D00.0" ] ;
+       fhir:display [ fhir:v "1" ]
+     ] )
+  ] ) ; # 
+  fhir:account ( [
+     fhir:reference [ fhir:v "Account-7" ] ;
+     fhir:identifier [
+       fhir:system [ fhir:v "http://varian.com/fhir/identifier/Account/Id"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Acc1" ]
+     ]
+  ] ) ; # 
+  fhir:supportingInformation ( [
+     fhir:link <http://varian.com/fhir/v1/Condition-DX/Condition-DX-14200000000000000241-2> ;
+     fhir:reference [ fhir:v "Condition-DX/Condition-DX-14200000000000000241-2" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

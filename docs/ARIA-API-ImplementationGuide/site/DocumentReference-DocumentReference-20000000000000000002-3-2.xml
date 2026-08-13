@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="DocumentReference-20000000000000000002-3-2"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="DocumentReference Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="DocumentReference example for the *Varian ARIA API DocumentReference Profile.*"/>
+    </extension>
+    <versionId value="1"/>
+    <lastUpdated value="2023-10-09T03:38:15.077+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/DocumentReference"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DocumentReference</b><a name="DocumentReference-20000000000000000002-3-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DocumentReference &quot;DocumentReference-20000000000000000002-3-2&quot; Version &quot;1&quot; Updated &quot;2023-10-09 03:38:15+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DocumentReference.html">A reference to a document</a></p></div><p><b>documentreference-supervisor</b>: <a href="Practitioner/Practitioner-1064">Practitioner/Practitioner-1064: FhirTestDoc1</a></p><p><b>documentreference-templateName</b>: Test Template</p><blockquote><p><b>documentreference-signature</b></p><blockquote><p><b>url</b></p><a href="StructureDefinition-documentreference-signature.html">documentreference-signature</a></blockquote><p><b>value</b>: 2023-10-09 03:38:14+0530</p><blockquote><p><b>url</b></p><a href="StructureDefinition-documentreference-signature.html">documentreference-signature</a></blockquote><p><b>value</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><blockquote><p><b>url</b></p><a href="StructureDefinition-documentreference-signature.html">documentreference-signature</a></blockquote><p><b>value</b>: true</p></blockquote><p><b>login-institution</b>: <a href="Organization/Organization-Dept-10008">Organization/Organization-Dept-10008: Oncology Department</a></p><p><b>documentreference-documentLocation</b>: file-server</p><p><b>masterIdentifier</b>: id: 231009ITRKML</p><p><b>status</b>: current</p><p><b>docStatus</b>: preliminary</p><p><b>type</b>: Physician Note <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (documentreference-type#572)</span></p><p><b>category</b>: Patient Document <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (documentreference-class#Patient Document)</span></p><p><b>subject</b>: <a href="Patient/Patient-11">Patient/Patient-11: TreatSummary, Pat1</a></p><p><b>date</b>: Oct 9, 2023, 3:38:14 AM</p><p><b>author</b>: <a href="Practitioner/Practitioner-1065">Practitioner/Practitioner-1065: FhirTestDoc2</a></p><p><b>custodian</b>: <a href="Organization/Organization-Prov-1">Organization/Organization-Prov-1: ACHospital</a></p><p><b>description</b>: New Hi...This is a test document</p><blockquote><p><b>content</b></p><blockquote><p><b>attachment</b></p><blockquote><p><b>id</b></p>394.doc</blockquote><p><b>contentType</b>: application/msword</p><p><b>url</b>: <code>\\TESTCONSOLE1\VA_DATA$\FILEDATA\DOCUMENTS\2023Q4\394.doc</code></p></blockquote></blockquote></div>
+  </text>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/documentreference-supervisor">
+    <valueReference>
+      <reference value="Practitioner/Practitioner-1064"/>
+      <display value="FhirTestDoc1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/documentreference-templateName">
+    <valueString value="Test Template"/>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/documentreference-signature">
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/documentreference-signature#signed">
+      <valueDateTime value="2023-10-09T03:38:14+05:30"/>
+    </extension>
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/documentreference-signature#signer">
+      <valueReference>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </valueReference>
+    </extension>
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/documentreference-signature#isSigned">
+      <valueBoolean value="true"/>
+    </extension>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/login-institution">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-10008"/>
+      <display value="Oncology Department"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/documentreference-documentLocation">
+    <valueString value="file-server"/>
+  </extension>
+  <masterIdentifier>
+    <system value="http://varian.com/fhir/identifier/DocumentReference/Id"/>
+    <value value="231009ITRKML"/>
+  </masterIdentifier>
+  <status value="current"/>
+  <docStatus value="preliminary">
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/DocumentReference/status"/>
+          <code value="Pending"/>
+          <display value="Pending"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </docStatus>
+  <type>
+    <coding>
+      <extension url="http://hl7.org/fhir/StructureDefinition/valueset-reference">
+        <valueReference>
+          <reference value="/fhir/ValueSet?url=http://varian.com/fhir/ValueSet/documentreference-type&amp;publisher=Organization-Prov-1"/>
+        </valueReference>
+      </extension>
+      <system value="http://varian.com/fhir/CodeSystem/DocumentReference/documentreference-type"/>
+      <code value="572"/>
+      <display value="Physician Note"/>
+    </coding>
+    <text value="Physician Note"/>
+  </type>
+  <category>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/DocumentReference/documentreference-class"/>
+      <code value="Patient Document"/>
+      <display value="Patient Document"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/Patient-11"/>
+    <display value="TreatSummary, Pat1"/>
+  </subject>
+  <date value="2023-10-09T03:38:14.873+05:30"/>
+  <author>
+    <reference value="Practitioner/Practitioner-1065"/>
+    <display value="FhirTestDoc2"/>
+  </author>
+  <custodian>
+    <reference value="Organization/Organization-Prov-1"/>
+    <display value="ACHospital"/>
+  </custodian>
+  <description value="New Hi...This is a test document"/>
+  <content>
+    <attachment id="394.doc">
+      <contentType value="application/msword"/>
+      <url value="\\TESTCONSOLE1\VA_DATA$\FILEDATA\DOCUMENTS\2023Q4\394.doc"/>
+    </attachment>
+  </content>
+</DocumentReference>

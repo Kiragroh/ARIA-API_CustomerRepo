@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="HealthcareService-1"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="HealthcareService Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="HealthcareService example for the *Varian ARIA API HealthcareService Profile.*"/>
+    </extension>
+    <versionId value="7136"/>
+    <lastUpdated value="2015-09-01T17:08:58.673+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/HealthcareService"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: HealthcareService</b><a name="HealthcareService-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource HealthcareService &quot;HealthcareService-1&quot; Version &quot;7136&quot; Updated &quot;2015-09-01 17:08:58+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-HealthcareService.html">HealthcareService</a></p></div><p><b>identifier</b>: id: OIS_ID1</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href="Organization/Organization-Dept-1">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>name</b>: Radiation Therapy</p><p><b>appointmentRequired</b>: true</p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu, fri</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 14:00:00</p></blockquote><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu, fri</p><p><b>availableStartTime</b>: 15:00:00</p><p><b>availableEndTime</b>: 18:00:00</p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/HealthcareService/Id"/>
+    <value value="OIS_ID1"/>
+  </identifier>
+  <active value="true"/>
+  <providedBy>
+    <reference value="Organization/Organization-Dept-1"/>
+    <display value="Radiation Therapy"/>
+  </providedBy>
+  <name value="Radiation Therapy"/>
+  <appointmentRequired value="true"/>
+  <availableTime>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <availableStartTime value="09:00:00"/>
+    <availableEndTime value="14:00:00"/>
+  </availableTime>
+  <availableTime>
+    <daysOfWeek value="mon"/>
+    <daysOfWeek value="tue"/>
+    <daysOfWeek value="wed"/>
+    <daysOfWeek value="thu"/>
+    <daysOfWeek value="fri"/>
+    <availableStartTime value="15:00:00"/>
+    <availableEndTime value="18:00:00"/>
+  </availableTime>
+</HealthcareService>

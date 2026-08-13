@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\Radiotherapy Prescription Site Example - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"10.141"}
+    h3,h4,h5,h6{--heading-prefix:"10.141"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Radiotherapy Prescription Site Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-radiotherapy-prescription-site-example.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-radiotherapy-prescription-site-example.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Radiotherapy Prescription Site Example
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-07-26
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">RadiotherapyPrescriptionSiteExample</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Varian Medical Systems, Inc.</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Radiotherapy Prescription Site</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-RadiotherapyPrescriptionSiteExample.html">RadiotherapyPrescriptionSiteExample</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Abdomen<a name="radiotherapy-prescription-site-example-Abdomen"> </a></td></tr><tr><td style="white-space:nowrap">Adrenal Gland, Left<a name="radiotherapy-prescription-site-example-AdrenalGland.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Adrenal Gland, Right<a name="radiotherapy-prescription-site-example-AdrenalGland.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Anus<a name="radiotherapy-prescription-site-example-Anus"> </a></td></tr><tr><td style="white-space:nowrap">Arm, Left<a name="radiotherapy-prescription-site-example-Arm.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Arm, Right<a name="radiotherapy-prescription-site-example-Arm.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Axilla, Left<a name="radiotherapy-prescription-site-example-Axilla.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Axilla, Right<a name="radiotherapy-prescription-site-example-Axilla.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Back<a name="radiotherapy-prescription-site-example-Back"> </a></td></tr><tr><td style="white-space:nowrap">Bile Duct<a name="radiotherapy-prescription-site-example-BileDuct"> </a></td></tr><tr><td style="white-space:nowrap">Bladder<a name="radiotherapy-prescription-site-example-Bladder"> </a></td></tr><tr><td style="white-space:nowrap">Bone Marrow (Diffuse)<a name="radiotherapy-prescription-site-example-BoneMarrow.40Diffuse.41"> </a></td></tr><tr><td style="white-space:nowrap">Brain<a name="radiotherapy-prescription-site-example-Brain"> </a></td></tr><tr><td style="white-space:nowrap">Breast, Left<a name="radiotherapy-prescription-site-example-Breast.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Breast, Right<a name="radiotherapy-prescription-site-example-Breast.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Bronchus, Left<a name="radiotherapy-prescription-site-example-Bronchus.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Bronchus, Right<a name="radiotherapy-prescription-site-example-Bronchus.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Buccal Mucosa<a name="radiotherapy-prescription-site-example-BuccalMucosa"> </a></td></tr><tr><td style="white-space:nowrap">Caecum<a name="radiotherapy-prescription-site-example-Caecum"> </a></td></tr><tr><td style="white-space:nowrap">Canthus, Left Inner<a name="radiotherapy-prescription-site-example-Canthus.44LeftInner"> </a></td></tr><tr><td style="white-space:nowrap">Canthus, Left Outer<a name="radiotherapy-prescription-site-example-Canthus.44LeftOuter"> </a></td></tr><tr><td style="white-space:nowrap">Canthus, Right Inner<a name="radiotherapy-prescription-site-example-Canthus.44RightInner"> </a></td></tr><tr><td style="white-space:nowrap">Canthus, Right Outer<a name="radiotherapy-prescription-site-example-Canthus.44RightOuter"> </a></td></tr><tr><td style="white-space:nowrap">Cervical Spine<a name="radiotherapy-prescription-site-example-CervicalSpine"> </a></td></tr><tr><td style="white-space:nowrap">Cervix<a name="radiotherapy-prescription-site-example-Cervix"> </a></td></tr><tr><td style="white-space:nowrap">Cheek, Left<a name="radiotherapy-prescription-site-example-Cheek.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Cheek, Right<a name="radiotherapy-prescription-site-example-Cheek.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Chest Wall, Left<a name="radiotherapy-prescription-site-example-ChestWall.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Chest Wall, Right<a name="radiotherapy-prescription-site-example-ChestWall.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Coccyx<a name="radiotherapy-prescription-site-example-Coccyx"> </a></td></tr><tr><td style="white-space:nowrap">Cochlea<a name="radiotherapy-prescription-site-example-Cochlea"> </a></td></tr><tr><td style="white-space:nowrap">Colon<a name="radiotherapy-prescription-site-example-Colon"> </a></td></tr><tr><td style="white-space:nowrap">Cranium<a name="radiotherapy-prescription-site-example-Cranium"> </a></td></tr><tr><td style="white-space:nowrap">Deep Cervical Chain Nodes<a name="radiotherapy-prescription-site-example-DeepCervicalChainNodes"> </a></td></tr><tr><td style="white-space:nowrap">Deep Inguinal Nodes<a name="radiotherapy-prescription-site-example-DeepInguinalNodes"> </a></td></tr><tr><td style="white-space:nowrap">Duodenum<a name="radiotherapy-prescription-site-example-Duodenum"> </a></td></tr><tr><td style="white-space:nowrap">Ethmoid Sinus<a name="radiotherapy-prescription-site-example-EthmoidSinus"> </a></td></tr><tr><td style="white-space:nowrap">Eye, Left<a name="radiotherapy-prescription-site-example-Eye.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Eye, Right<a name="radiotherapy-prescription-site-example-Eye.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Face<a name="radiotherapy-prescription-site-example-Face"> </a></td></tr><tr><td style="white-space:nowrap">Fallopian Tube, Left<a name="radiotherapy-prescription-site-example-FallopianTube.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Fallopian Tube, Right<a name="radiotherapy-prescription-site-example-FallopianTube.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Femur Left<a name="radiotherapy-prescription-site-example-FemurLeft"> </a></td></tr><tr><td style="white-space:nowrap">Femur Right<a name="radiotherapy-prescription-site-example-FemurRight"> </a></td></tr><tr><td style="white-space:nowrap">Fibula, Left<a name="radiotherapy-prescription-site-example-Fibula.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Fibula, Right<a name="radiotherapy-prescription-site-example-Fibula.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Foot, Left<a name="radiotherapy-prescription-site-example-Foot.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Foot, Right<a name="radiotherapy-prescription-site-example-Foot.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Forearm, Left<a name="radiotherapy-prescription-site-example-Forearm.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Forearm, Right<a name="radiotherapy-prescription-site-example-Forearm.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Frontal Lobe<a name="radiotherapy-prescription-site-example-FrontalLobe"> </a></td></tr><tr><td style="white-space:nowrap">Gall Bladder<a name="radiotherapy-prescription-site-example-GallBladder"> </a></td></tr><tr><td style="white-space:nowrap">Groin, Left<a name="radiotherapy-prescription-site-example-Groin.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Groin, Right<a name="radiotherapy-prescription-site-example-Groin.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Hand, Left<a name="radiotherapy-prescription-site-example-Hand.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Hand, Right<a name="radiotherapy-prescription-site-example-Hand.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Hard Palate<a name="radiotherapy-prescription-site-example-HardPalate"> </a></td></tr><tr><td style="white-space:nowrap">Head and Neck<a name="radiotherapy-prescription-site-example-HeadandNeck"> </a></td></tr><tr><td style="white-space:nowrap">Heart<a name="radiotherapy-prescription-site-example-Heart"> </a></td></tr><tr><td style="white-space:nowrap">Hemi-Body, Lower<a name="radiotherapy-prescription-site-example-Hemi-Body.44Lower"> </a></td></tr><tr><td style="white-space:nowrap">Hemi-Body, Upper<a name="radiotherapy-prescription-site-example-Hemi-Body.44Upper"> </a></td></tr><tr><td style="white-space:nowrap">Hip, Left<a name="radiotherapy-prescription-site-example-Hip.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Hip, Right<a name="radiotherapy-prescription-site-example-Hip.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Humerus, Left<a name="radiotherapy-prescription-site-example-Humerus.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Humerus, Right<a name="radiotherapy-prescription-site-example-Humerus.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Ileum<a name="radiotherapy-prescription-site-example-Ileum"> </a></td></tr><tr><td style="white-space:nowrap">Ilium, Left<a name="radiotherapy-prescription-site-example-Ilium.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Ilium, Right<a name="radiotherapy-prescription-site-example-Ilium.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Infraclavicular Nodes<a name="radiotherapy-prescription-site-example-InfraclavicularNodes"> </a></td></tr><tr><td style="white-space:nowrap">Internal Iliac Nodes<a name="radiotherapy-prescription-site-example-InternalIliacNodes"> </a></td></tr><tr><td style="white-space:nowrap">Ischium<a name="radiotherapy-prescription-site-example-Ischium"> </a></td></tr><tr><td style="white-space:nowrap">Jejunum<a name="radiotherapy-prescription-site-example-Jejunum"> </a></td></tr><tr><td style="white-space:nowrap">Kidney, Left<a name="radiotherapy-prescription-site-example-Kidney.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Kidney, Right<a name="radiotherapy-prescription-site-example-Kidney.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Knee, Left<a name="radiotherapy-prescription-site-example-Knee.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Knee, Right<a name="radiotherapy-prescription-site-example-Knee.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Laryngopharynx<a name="radiotherapy-prescription-site-example-Laryngopharynx"> </a></td></tr><tr><td style="white-space:nowrap">Larynx<a name="radiotherapy-prescription-site-example-Larynx"> </a></td></tr><tr><td style="white-space:nowrap">Leg, Left<a name="radiotherapy-prescription-site-example-Leg.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Leg, Right<a name="radiotherapy-prescription-site-example-Leg.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Lip, Lower<a name="radiotherapy-prescription-site-example-Lip.44Lower"> </a></td></tr><tr><td style="white-space:nowrap">Lip, Upper<a name="radiotherapy-prescription-site-example-Lip.44Upper"> </a></td></tr><tr><td style="white-space:nowrap">Liver<a name="radiotherapy-prescription-site-example-Liver"> </a></td></tr><tr><td style="white-space:nowrap">Lumbar Spine<a name="radiotherapy-prescription-site-example-LumbarSpine"> </a></td></tr><tr><td style="white-space:nowrap">Lung, Left<a name="radiotherapy-prescription-site-example-Lung.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Lung, Right<a name="radiotherapy-prescription-site-example-Lung.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Mandible<a name="radiotherapy-prescription-site-example-Mandible"> </a></td></tr><tr><td style="white-space:nowrap">Maxilla<a name="radiotherapy-prescription-site-example-Maxilla"> </a></td></tr><tr><td style="white-space:nowrap">Maxillary Antrum<a name="radiotherapy-prescription-site-example-MaxillaryAntrum"> </a></td></tr><tr><td style="white-space:nowrap">Meninges<a name="radiotherapy-prescription-site-example-Meninges"> </a></td></tr><tr><td style="white-space:nowrap">Middle Ear<a name="radiotherapy-prescription-site-example-MiddleEar"> </a></td></tr><tr><td style="white-space:nowrap">Nasopharynx<a name="radiotherapy-prescription-site-example-Nasopharynx"> </a></td></tr><tr><td style="white-space:nowrap">Neck<a name="radiotherapy-prescription-site-example-Neck"> </a></td></tr><tr><td style="white-space:nowrap">Neck Left<a name="radiotherapy-prescription-site-example-NeckLeft"> </a></td></tr><tr><td style="white-space:nowrap">Neck Right<a name="radiotherapy-prescription-site-example-NeckRight"> </a></td></tr><tr><td style="white-space:nowrap">Nipple, Left<a name="radiotherapy-prescription-site-example-Nipple.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Nipple, Right<a name="radiotherapy-prescription-site-example-Nipple.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Nose<a name="radiotherapy-prescription-site-example-Nose"> </a></td></tr><tr><td style="white-space:nowrap">Occipital Lobe<a name="radiotherapy-prescription-site-example-OccipitalLobe"> </a></td></tr><tr><td style="white-space:nowrap">Oesophagus<a name="radiotherapy-prescription-site-example-Oesophagus"> </a></td></tr><tr><td style="white-space:nowrap">Orbit Left<a name="radiotherapy-prescription-site-example-OrbitLeft"> </a></td></tr><tr><td style="white-space:nowrap">Orbit Right<a name="radiotherapy-prescription-site-example-OrbitRight"> </a></td></tr><tr><td style="white-space:nowrap">Oropharynx<a name="radiotherapy-prescription-site-example-Oropharynx"> </a></td></tr><tr><td style="white-space:nowrap">Ovary, Left<a name="radiotherapy-prescription-site-example-Ovary.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Ovary, Right<a name="radiotherapy-prescription-site-example-Ovary.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Pancreas<a name="radiotherapy-prescription-site-example-Pancreas"> </a></td></tr><tr><td style="white-space:nowrap">Paranasal Sinus<a name="radiotherapy-prescription-site-example-ParanasalSinus"> </a></td></tr><tr><td style="white-space:nowrap">Para-Sternal Nodes<a name="radiotherapy-prescription-site-example-Para-SternalNodes"> </a></td></tr><tr><td style="white-space:nowrap">ParaThyroid<a name="radiotherapy-prescription-site-example-ParaThyroid"> </a></td></tr><tr><td style="white-space:nowrap">Parietal Lobe<a name="radiotherapy-prescription-site-example-ParietalLobe"> </a></td></tr><tr><td style="white-space:nowrap">Parotid, Left<a name="radiotherapy-prescription-site-example-Parotid.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Parotid, Right<a name="radiotherapy-prescription-site-example-Parotid.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Pelvis<a name="radiotherapy-prescription-site-example-Pelvis"> </a></td></tr><tr><td style="white-space:nowrap">Penis<a name="radiotherapy-prescription-site-example-Penis"> </a></td></tr><tr><td style="white-space:nowrap">Penis, Glans<a name="radiotherapy-prescription-site-example-Penis.44Glans"> </a></td></tr><tr><td style="white-space:nowrap">Perineum<a name="radiotherapy-prescription-site-example-Perineum"> </a></td></tr><tr><td style="white-space:nowrap">Pharynx<a name="radiotherapy-prescription-site-example-Pharynx"> </a></td></tr><tr><td style="white-space:nowrap">Pineal Gland<a name="radiotherapy-prescription-site-example-PinealGland"> </a></td></tr><tr><td style="white-space:nowrap">Pinna, Left<a name="radiotherapy-prescription-site-example-Pinna.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Pinna, Right<a name="radiotherapy-prescription-site-example-Pinna.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Pituitary<a name="radiotherapy-prescription-site-example-Pituitary"> </a></td></tr><tr><td style="white-space:nowrap">Post-Cricoid<a name="radiotherapy-prescription-site-example-Post-Cricoid"> </a></td></tr><tr><td style="white-space:nowrap">Pre-Sacral Nodes<a name="radiotherapy-prescription-site-example-Pre-SacralNodes"> </a></td></tr><tr><td style="white-space:nowrap">Prostate<a name="radiotherapy-prescription-site-example-Prostate"> </a></td></tr><tr><td style="white-space:nowrap">Prostate and Seminal Vesicles<a name="radiotherapy-prescription-site-example-ProstateandSeminalVesicles"> </a></td></tr><tr><td style="white-space:nowrap">Pubis, Left<a name="radiotherapy-prescription-site-example-Pubis.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Pubis, Right<a name="radiotherapy-prescription-site-example-Pubis.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Radius, Left<a name="radiotherapy-prescription-site-example-Radius.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Radius, Right<a name="radiotherapy-prescription-site-example-Radius.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Rectum<a name="radiotherapy-prescription-site-example-Rectum"> </a></td></tr><tr><td style="white-space:nowrap">Retina, Left<a name="radiotherapy-prescription-site-example-Retina.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Retina, Right<a name="radiotherapy-prescription-site-example-Retina.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Ribs, Left<a name="radiotherapy-prescription-site-example-Ribs.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Ribs, Right<a name="radiotherapy-prescription-site-example-Ribs.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Sacro-Iliac Joints<a name="radiotherapy-prescription-site-example-Sacro-IliacJoints"> </a></td></tr><tr><td style="white-space:nowrap">Sacro-Iliac, Left<a name="radiotherapy-prescription-site-example-Sacro-Iliac.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Sacro-Iliac, Right<a name="radiotherapy-prescription-site-example-Sacro-Iliac.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Sacrum<a name="radiotherapy-prescription-site-example-Sacrum"> </a></td></tr><tr><td style="white-space:nowrap">Scalp<a name="radiotherapy-prescription-site-example-Scalp"> </a></td></tr><tr><td style="white-space:nowrap">Scapula, Left<a name="radiotherapy-prescription-site-example-Scapula.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Scapula, Right<a name="radiotherapy-prescription-site-example-Scapula.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Scrotum<a name="radiotherapy-prescription-site-example-Scrotum"> </a></td></tr><tr><td style="white-space:nowrap">Seminal Vesicles<a name="radiotherapy-prescription-site-example-SeminalVesicles"> </a></td></tr><tr><td style="white-space:nowrap">Soft Palate<a name="radiotherapy-prescription-site-example-SoftPalate"> </a></td></tr><tr><td style="white-space:nowrap">Spinal Cord<a name="radiotherapy-prescription-site-example-SpinalCord"> </a></td></tr><tr><td style="white-space:nowrap">Spinal Cord, Cervical<a name="radiotherapy-prescription-site-example-SpinalCord.44Cervical"> </a></td></tr><tr><td style="white-space:nowrap">Spinal Cord, Lumbar<a name="radiotherapy-prescription-site-example-SpinalCord.44Lumbar"> </a></td></tr><tr><td style="white-space:nowrap">Spinal Cord, Thoracic<a name="radiotherapy-prescription-site-example-SpinalCord.44Thoracic"> </a></td></tr><tr><td style="white-space:nowrap">Spleen<a name="radiotherapy-prescription-site-example-Spleen"> </a></td></tr><tr><td style="white-space:nowrap">Stomach<a name="radiotherapy-prescription-site-example-Stomach"> </a></td></tr><tr><td style="white-space:nowrap">Sublingual Glands<a name="radiotherapy-prescription-site-example-SublingualGlands"> </a></td></tr><tr><td style="white-space:nowrap">Submandibular Glands<a name="radiotherapy-prescription-site-example-SubmandibularGlands"> </a></td></tr><tr><td style="white-space:nowrap">Submandibular Nodes<a name="radiotherapy-prescription-site-example-SubmandibularNodes"> </a></td></tr><tr><td style="white-space:nowrap">Superficial Inguinal Nodes<a name="radiotherapy-prescription-site-example-SuperficialInguinalNodes"> </a></td></tr><tr><td style="white-space:nowrap">Temporal Lobe<a name="radiotherapy-prescription-site-example-TemporalLobe"> </a></td></tr><tr><td style="white-space:nowrap">Testis<a name="radiotherapy-prescription-site-example-Testis"> </a></td></tr><tr><td style="white-space:nowrap">Thigh<a name="radiotherapy-prescription-site-example-Thigh"> </a></td></tr><tr><td style="white-space:nowrap">Thorax<a name="radiotherapy-prescription-site-example-Thorax"> </a></td></tr><tr><td style="white-space:nowrap">Thymus<a name="radiotherapy-prescription-site-example-Thymus"> </a></td></tr><tr><td style="white-space:nowrap">Thyroid<a name="radiotherapy-prescription-site-example-Thyroid"> </a></td></tr><tr><td style="white-space:nowrap">Tibia, Left<a name="radiotherapy-prescription-site-example-Tibia.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Tibia, Right<a name="radiotherapy-prescription-site-example-Tibia.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Tongue<a name="radiotherapy-prescription-site-example-Tongue"> </a></td></tr><tr><td style="white-space:nowrap">Tonsil, Left<a name="radiotherapy-prescription-site-example-Tonsil.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Tonsil, Right<a name="radiotherapy-prescription-site-example-Tonsil.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Total Body<a name="radiotherapy-prescription-site-example-TotalBody"> </a></td></tr><tr><td style="white-space:nowrap">Total Skin<a name="radiotherapy-prescription-site-example-TotalSkin"> </a></td></tr><tr><td style="white-space:nowrap">Trachea<a name="radiotherapy-prescription-site-example-Trachea"> </a></td></tr><tr><td style="white-space:nowrap">Ulna, Left<a name="radiotherapy-prescription-site-example-Ulna.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Ulna, Right<a name="radiotherapy-prescription-site-example-Ulna.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Ureter, Left<a name="radiotherapy-prescription-site-example-Ureter.44Left"> </a></td></tr><tr><td style="white-space:nowrap">Ureter, Right<a name="radiotherapy-prescription-site-example-Ureter.44Right"> </a></td></tr><tr><td style="white-space:nowrap">Urethra<a name="radiotherapy-prescription-site-example-Urethra"> </a></td></tr><tr><td style="white-space:nowrap">Uterus<a name="radiotherapy-prescription-site-example-Uterus"> </a></td></tr><tr><td style="white-space:nowrap">Vagina<a name="radiotherapy-prescription-site-example-Vagina"> </a></td></tr><tr><td style="white-space:nowrap">Vertebrae, Cervical<a name="radiotherapy-prescription-site-example-Vertebrae.44Cervical"> </a></td></tr><tr><td style="white-space:nowrap">Vertebrae, Lumbar<a name="radiotherapy-prescription-site-example-Vertebrae.44Lumbar"> </a></td></tr><tr><td style="white-space:nowrap">Vertebrae, Sacral<a name="radiotherapy-prescription-site-example-Vertebrae.44Sacral"> </a></td></tr><tr><td style="white-space:nowrap">Vertebrae, Thoracic<a name="radiotherapy-prescription-site-example-Vertebrae.44Thoracic"> </a></td></tr><tr><td style="white-space:nowrap">Vulva<a name="radiotherapy-prescription-site-example-Vulva"> </a></td></tr><tr><td style="white-space:nowrap">Tumor bed<a name="radiotherapy-prescription-site-example-Tumorbed"> </a></td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

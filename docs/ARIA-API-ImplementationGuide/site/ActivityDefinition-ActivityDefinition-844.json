@@ -1,0 +1,106 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "ActivityDefinition-844",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "ActivityDefinition Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "ActivityDefinition example for the *Varian ARIA API ActivityDefinition Profile.*"
+    }],
+    "versionId" : "394588",
+    "lastUpdated" : "2023-10-10T15:27:49.330+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ActivityDefinition</b><a name=\"ActivityDefinition-844\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ActivityDefinition &quot;ActivityDefinition-844&quot; Version &quot;394588&quot; Updated &quot;2023-10-10 15:27:49+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ActivityDefinition.html\">ActivityDefinition</a></p></div><p><b>activityDefinition-category</b>: C-Port Film <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activityDefinition-category#C-Port Film)</span></p><p><b>url</b>: <code>http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: new Actiity</p><p><b>status</b>: active</p><p><b>date</b>: 2023-10-10 15:27:49+0530</p><p><b>publisher</b>: Varian Medical Systems, Inc.</p><p><b>contact</b>: Varian Medical Systems, Inc.: <a href=\"https://www.varian.com/\">https://www.varian.com/</a></p><p><b>description</b>: Desc</p><h3>UseContexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>service-organization (Details: http://varian.com/fhir/CodeSystem/activityDefinition-usage-context-type code service-organization = 'service-organization', stated as 'service-organization')</td><td><a href=\"Organization/Organization-Dept-10015\">Organization/Organization-Dept-10015: Ortho</a></td></tr></table><p><b>copyright</b>: Varian Medical Systems, Inc.</p><p><b>kind</b>: Appointment</p><p><b>timing</b>: 10 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 10 = '10')</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/activityDefinition-category",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-reference",
+          "valueReference" : {
+            "reference" : "/fhir/ValueSet?url=http://varian.com/fhir/ValueSet/activity-category&publisher=Organization-Dept-10015"
+          }
+        }],
+        "system" : "http://varian.com/fhir/CodeSystem/activityDefinition-category",
+        "code" : "C-Port Film",
+        "display" : "C-Port Film"
+      }]
+    }
+  }],
+  "url" : "http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844",
+  "version" : "1.0.0",
+  "name" : "new Actiity",
+  "_name" : {
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/activity-name",
+          "code" : "new Actiity",
+          "display" : "new Actiity"
+        }]
+      }
+    }]
+  },
+  "status" : "active",
+  "_status" : {
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/ActivityDefinition/status",
+          "code" : "Active",
+          "display" : "Active"
+        }]
+      }
+    }]
+  },
+  "date" : "2023-10-10T15:27:49+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "description" : "Desc",
+  "useContext" : [{
+    "code" : {
+      "system" : "http://varian.com/fhir/CodeSystem/activityDefinition-usage-context-type",
+      "code" : "service-organization",
+      "display" : "service-organization"
+    },
+    "valueReference" : {
+      "reference" : "Organization/Organization-Dept-10015",
+      "display" : "Ortho"
+    }
+  }],
+  "copyright" : "Varian Medical Systems, Inc.",
+  "kind" : "Appointment",
+  "_kind" : {
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/ActivityDefinition/activity-definition-kind",
+          "code" : "Appointment",
+          "display" : "Appointment"
+        }]
+      }
+    }]
+  },
+  "timingDuration" : {
+    "value" : 10,
+    "unit" : "min",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "10"
+  }
+}

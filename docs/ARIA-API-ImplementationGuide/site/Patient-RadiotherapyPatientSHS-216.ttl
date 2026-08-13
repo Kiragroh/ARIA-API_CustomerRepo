@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Patient/RadiotherapyPatientSHS-216> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadiotherapyPatientSHS-216"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "2179360" ] ;
+     fhir:lastUpdated [ fhir:v "2021-11-24T20:41:07.997+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://fhir.siemens-healthineers.com/fhir/R4/StructureDefinition/shs-patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.siemens-healthineers.com/fhir/R4/StructureDefinition/shs-patient>
+     ] [
+       fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient>
+     ] [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+     ] [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/Patient"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/Patient>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HTEST" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Sister (OFFICIAL)</b> female, DoB: 1980-03-04 ( DICOM PatientID: XRTS-04-VA (use: USUAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>id: 71100000000000000117</li><li>id: 216</li><li>id: urn:oid:1.2.246.352.76.12.570635949378.216.2132872709507 (use: OFFICIAL)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 555-555-5555(HOME)</li><li>49 Meadow St Mounds OK 74047 US </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient's status with provider - New Patient | Previous Patient.\"><a href=\"StructureDefinition-patient-status.html\">patient-status:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://varian.com/fhir/CodeSystem/patient-status New Patient (NP)}\">New Patient (NP)</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient's class - In Patient | Out Patient.\"><a href=\"StructureDefinition-patient-class.html\">patient-class:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://varian.com/fhir/CodeSystem/patient-class Out Patient}\">Out Patient</span></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/patient-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/patient-status"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "New Patient (NP)" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/patient-class"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/patient-class"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Out Patient" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Patient/MedOnc-Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "71100000000000000117" ]
+  ] [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Patient/RadOnc-Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "216" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Patient/patient-uid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.2.246.352.76.12.570635949378.216.2132872709507" ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.siemens-healthineers.com/fhir/R4/CodeSystem/shs-code-system"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DCM00100020" ] ;
+         fhir:display [ fhir:v "DICOM PatientID" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Patient/ARIAID1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "XRTS-04-VA" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Sister" ] ;
+     fhir:given ( [ fhir:v "Jane" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "555-555-5555" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1980-03-04"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "49 Meadow St" ] ) ;
+     fhir:city [ fhir:v "Mounds" ] ;
+     fhir:state [ fhir:v "OK" ] ;
+     fhir:postalCode [ fhir:v "74047" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

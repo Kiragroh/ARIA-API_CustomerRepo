@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang"/>
+  <meta>
+    <versionId value="2271210"/>
+    <lastUpdated value="2021-12-20T20:29:05.097+01:00"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPhasePrescription"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+    </security>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang&quot; Version &quot;2271210&quot; Updated &quot;2021-12-20 20:29:05+0100&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RadiotherapyPhasePrescription.html">Radiotherapy Phase Prescription</a></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActReason http://terminology.hl7.org/CodeSystem/v3-ActReason}">http://terminology.hl7.org/CodeSystem/v3-ActReason</span></p></div><p><b>Number of Prescribed Fractions</b>: 25</p><p><b>Procedure Intent Extension</b>: Curative <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#373808002 &quot;Curative - procedure intent&quot;)</span></p><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using photons (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1156506007)</span></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Three dimensional external beam radiation therapy (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1162782007)</span></p></blockquote><blockquote><p><b>Dose Prescribed to Volume</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <span>: Left Breast</span></p><blockquote><p><b>url</b></p><code>fractionDose</code></blockquote><p><b>value</b>: 200 cGy<span style="background: LightGoldenRodYellow"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 5000 cGy<span style="background: LightGoldenRodYellow"> (Details: UCUM code cGy = 'cGy')</span></p></blockquote><p><b>Respiratory Motion Management</b>: Radiotherapy without respiratory motion management (regime/therapy) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/CodeSystem-snomed-requested-cs.html">Requested SNOMED Codes Code System</a>#721031000124102)</span></p><p><b>identifier</b>: id: Left Breast Tangents (use: USUAL), id: 22 (use: OFFICIAL)</p><p><b>basedOn</b>: <a href="ServiceRequest-RadiotherapyCoursePrescriptionSHS-101-LeftBreast.html">ServiceRequest/RadiotherapyCoursePrescriptionSHS-101-LeftBreast: C1</a></p><p><b>status</b>: active</p><p><b>intent</b>: original-order</p><p><b>category</b>: Radiation oncology AND/OR radiotherapy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#108290001)</span></p><p><b>code</b>: Radiotherapy treatment phase (regime/therapy) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1222565005)</span></p><p><b>subject</b>: <a href="Patient-RadiotherapyPatientSHS-216.html">Patient/RadiotherapyPatientSHS-216</a> &quot; SISTER&quot;</p><p><b>reasonCode</b>: Primary malignant neoplasm of female left breast (disorder) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#353431000119107)</span></p><p><b>reasonReference</b>: <a href="Condition-RadiotherapyConditionSHS-1.html">Condition/RadiotherapyConditionSHS-1: 353431000119107:Primary malignant neoplasm of female left breast (disorder)</a></p><p><b>bodySite</b>: Breast structure (body structure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#76752008)</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-fractions-prescribed">
+    <valuePositiveInt value="25"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="373808002"/>
+        <display value="Curative - procedure intent"/>
+      </coding>
+      <text value="Curative"/>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique">
+    <extension url="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="1156506007"/>
+          <display value="External beam radiation therapy using photons (procedure)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="1162782007"/>
+          <display value="Three dimensional external beam radiation therapy (procedure)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-dose-prescribed-to-volume">
+    <extension url="volume">
+      <valueReference>
+        <identifier>
+          <use value="official"/>
+          <system value="http://varian.com/fhir/identifier/radiotherapyDoseReferenceId"/>
+          <value value="RadiotherapyPhasePrescription-47-Prostate"/>
+        </identifier>
+        <display value="Left Breast"/>
+      </valueReference>
+    </extension>
+    <extension url="fractionDose">
+      <valueQuantity>
+        <value value="200"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="cGy"/>
+      </valueQuantity>
+    </extension>
+    <extension url="totalDose">
+      <valueQuantity>
+        <value value="5000"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="cGy"/>
+      </valueQuantity>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-respiratory-motion-management">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs"/>
+        <code value="721031000124102"/>
+        <display value="Radiotherapy without respiratory motion management (regime/therapy)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://varian.com/fhir/identifier/radiotherapyPrescriptionId"/>
+    <value value="Left Breast Tangents"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://varian.com/fhir/identifier/RadiotherapyPhase/RadOnc-Id"/>
+    <value value="22"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/RadiotherapyCoursePrescriptionSHS-101-LeftBreast"/>
+    <display value="C1"/>
+  </basedOn>
+  <status value="active"/>
+  <intent value="original-order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="108290001"/>
+      <display value="Radiation oncology AND/OR radiotherapy"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1222565005"/>
+      <display value="Radiotherapy treatment phase (regime/therapy)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/RadiotherapyPatientSHS-216"/>
+  </subject>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="353431000119107"/>
+      <display value="Primary malignant neoplasm of female left breast (disorder)"/>
+    </coding>
+  </reasonCode>
+  <reasonReference>
+    <reference value="Condition/RadiotherapyConditionSHS-1"/>
+    <display value="353431000119107:Primary malignant neoplasm of female left breast (disorder)"/>
+  </reasonReference>
+  <bodySite>
+    <extension url="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="7771000"/>
+          <display value="Left (qualifier value)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="76752008"/>
+      <display value="Breast structure (body structure)"/>
+    </coding>
+  </bodySite>
+</ServiceRequest>

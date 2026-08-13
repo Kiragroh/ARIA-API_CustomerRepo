@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Organization",
+  "id" : "Organization-Dept-10002",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Organization Department Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Organization Department example for the *Varian ARIA API Organization Department Profile.*"
+    }],
+    "versionId" : "7137",
+    "lastUpdated" : "2017-05-04T11:19:18.720+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/Organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Organization-Dept-10002\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Organization-Dept-10002&quot; Version &quot;7137&quot; Updated &quot;2017-05-04 11:19:18+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Organization.html\">Organization</a></p></div><p><b>identifier</b>: id:\u00a0OCS1</p><p><b>active</b>: true</p><p><b>type</b>: Hospital Department <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-organization-type.html\">Organization type</a>#dept)</span></p><p><b>name</b>: OCS1</p><p><b>partOf</b>: <a href=\"Organization/Organization-Prov-1\">Organization/Organization-Prov-1: Las Vegas General</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://varian.com/fhir/identifier/Organization/dept/Id",
+    "value" : "OCS1"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code" : "dept",
+      "display" : "Hospital Department"
+    }]
+  }],
+  "name" : "OCS1",
+  "partOf" : {
+    "reference" : "Organization/Organization-Prov-1",
+    "display" : "Las Vegas General"
+  }
+}

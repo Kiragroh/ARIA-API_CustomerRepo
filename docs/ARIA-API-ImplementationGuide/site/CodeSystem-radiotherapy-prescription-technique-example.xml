@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="radiotherapy-prescription-technique-example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example"/>
+  <version value="1.0.0"/>
+  <name value="RadiotherapyPrescriptionTechniqueExample"/>
+  <title value="Radiotherapy Prescription Technique Example"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-26T13:25:01+05:30"/>
+  <publisher value="Varian Medical Systems, Inc."/>
+  <contact>
+    <name value="Varian Medical Systems, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.varian.com/"/>
+    </telecom>
+  </contact>
+  <description value="Radiotherapy Prescription Technique."/>
+  <copyright value="Varian Medical Systems, Inc."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="25"/>
+  <concept>
+    <code value="3 Field Plan"/>
+    <display value="3 Field Plan"/>
+  </concept>
+  <concept>
+    <code value="4 Field Box"/>
+    <display value="4 Field Box"/>
+  </concept>
+  <concept>
+    <code value="Arc"/>
+    <display value="Arc"/>
+  </concept>
+  <concept>
+    <code value="CHART"/>
+    <display value="CHART"/>
+  </concept>
+  <concept>
+    <code value="Conformal"/>
+    <display value="Conformal"/>
+  </concept>
+  <concept>
+    <code value="Dogleg / Hockey-Stick"/>
+    <display value="Dogleg / Hockey-Stick"/>
+  </concept>
+  <concept>
+    <code value="Dual Isocentre"/>
+    <display value="Dual Isocentre"/>
+  </concept>
+  <concept>
+    <code value="Hemi-Body"/>
+    <display value="Hemi-Body"/>
+  </concept>
+  <concept>
+    <code value="IMRT"/>
+    <display value="IMRT"/>
+  </concept>
+  <concept>
+    <code value="Inverted-Y"/>
+    <display value="Inverted-Y"/>
+  </concept>
+  <concept>
+    <code value="Mantle"/>
+    <display value="Mantle"/>
+  </concept>
+  <concept>
+    <code value="Moving Gap"/>
+    <display value="Moving Gap"/>
+  </concept>
+  <concept>
+    <code value="Parallel Opposed Pair"/>
+    <display value="Parallel Opposed Pair"/>
+  </concept>
+  <concept>
+    <code value="Single"/>
+    <display value="Single"/>
+  </concept>
+  <concept>
+    <code value="Stereotactic"/>
+    <display value="Stereotactic"/>
+  </concept>
+  <concept>
+    <code value="ARC THERAPY"/>
+    <display value="Arc Therapy"/>
+  </concept>
+  <concept>
+    <code value="DOUBLE SCATTERING"/>
+    <display value="Double Scattering"/>
+  </concept>
+  <concept>
+    <code value="HIGH DOSE TREATMENT"/>
+    <display value="High Dose Treatment"/>
+  </concept>
+  <concept>
+    <code value="MODULATED SCANNING"/>
+    <display value="Modulated Scanning"/>
+  </concept>
+  <concept>
+    <code value="SINGLE SCATTERING"/>
+    <display value="Single Scattering"/>
+  </concept>
+  <concept>
+    <code value="SRS ARC THERAPY"/>
+    <display value="SRS Arc Therapy"/>
+  </concept>
+  <concept>
+    <code value="SRS STATIC"/>
+    <display value="SRS Static"/>
+  </concept>
+  <concept>
+    <code value="TOTAL BODY IRRADIATION"/>
+    <display value="Total Body Irradiation"/>
+  </concept>
+  <concept>
+    <code value="WOBBLING"/>
+    <display value="Wobbling"/>
+  </concept>
+  <concept>
+    <code value="Electron Applicator"/>
+    <display value="Electron Applicator"/>
+  </concept>
+</CodeSystem>

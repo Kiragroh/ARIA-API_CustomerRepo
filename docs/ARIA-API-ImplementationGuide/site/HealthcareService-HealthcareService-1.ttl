@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/HealthcareService/HealthcareService-1> a fhir:HealthcareService ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HealthcareService-1"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "HealthcareService Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "HealthcareService example for the *Varian ARIA API HealthcareService Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "7136" ] ;
+     fhir:lastUpdated [ fhir:v "2015-09-01T17:08:58.673+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/HealthcareService"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/HealthcareService>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: HealthcareService</b><a name=\"HealthcareService-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource HealthcareService &quot;HealthcareService-1&quot; Version &quot;7136&quot; Updated &quot;2015-09-01 17:08:58+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-HealthcareService.html\">HealthcareService</a></p></div><p><b>identifier</b>: id: OIS_ID1</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>name</b>: Radiation Therapy</p><p><b>appointmentRequired</b>: true</p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu, fri</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 14:00:00</p></blockquote><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu, fri</p><p><b>availableStartTime</b>: 15:00:00</p><p><b>availableEndTime</b>: 18:00:00</p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/HealthcareService/Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "OIS_ID1" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:providedBy [
+     fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-1> ;
+     fhir:reference [ fhir:v "Organization/Organization-Dept-1" ] ;
+     fhir:display [ fhir:v "Radiation Therapy" ]
+  ] ; # 
+  fhir:name [ fhir:v "Radiation Therapy"] ; # 
+  fhir:appointmentRequired [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:availableTime ( [
+     fhir:daysOfWeek ( [ fhir:v "mon" ] [ fhir:v "tue" ] [ fhir:v "wed" ] [ fhir:v "thu" ] [ fhir:v "fri" ] ) ;
+     fhir:availableStartTime [ fhir:v "09:00:00"^^xsd:time ] ;
+     fhir:availableEndTime [ fhir:v "14:00:00"^^xsd:time ]
+  ] [
+     fhir:daysOfWeek ( [ fhir:v "mon" ] [ fhir:v "tue" ] [ fhir:v "wed" ] [ fhir:v "thu" ] [ fhir:v "fri" ] ) ;
+     fhir:availableStartTime [ fhir:v "15:00:00"^^xsd:time ] ;
+     fhir:availableEndTime [ fhir:v "18:00:00"^^xsd:time ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

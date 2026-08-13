@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/Practitioner/RadiotherapyPractitionerSHS-1005> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadiotherapyPractitionerSHS-1005"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "154120" ] ;
+     fhir:lastUpdated [ fhir:v "2019-12-12T10:45:56.237+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/Practitioner"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/Practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"RadiotherapyPractitionerSHS-1005\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;RadiotherapyPractitionerSHS-1005&quot; Version &quot;154120&quot; Updated &quot;2019-12-12 10:45:56+0100&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Practitioner.html\">Practitioner</a></p></div><p><b>identifier</b>: id: 8, id: 1005, id: c1eedc28-0d18-41e7-acb5-e29a3198cad8 (use: OFFICIAL), id: VarianInstaller (use: USUAL), id: aria\\varianinstaller (use: USUAL)</p><p><b>name</b>: John Wilson , John Wilson (OFFICIAL)</p><p><b>address</b>: (WORK)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>VarianInstaller <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (qualification#VarianInstaller)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Practitioner/Stakeholder-Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "8" ]
+  ] [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/RadOnc-Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1005" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Practitioner/user-cuid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "c1eedc28-0d18-41e7-acb5-e29a3198cad8" ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Practitioner/Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "VarianInstaller" ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/Practitioner/UserName"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "aria\\varianinstaller" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:family [ fhir:v "Wilson" ] ;
+     fhir:given ( [ fhir:v "John" ] )
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Wilson" ] ;
+     fhir:given ( [ fhir:v "John" ] )
+  ] ) ; # 
+  fhir:address ( [
+     fhir:id [ fhir:v "4" ] ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:type [ fhir:v "both" ]
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/Practitioner/qualification"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "VarianInstaller" ] ;
+         fhir:display [ fhir:v "VarianInstaller" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/CodeSystem/radiotherapy-prescription-energy-example> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "radiotherapy-prescription-energy-example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "RadiotherapyPrescriptionEnergyExample"] ; # 
+  fhir:title [ fhir:v "Radiotherapy Prescription Energy Example"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-26T13:25:01+05:30"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Varian Medical Systems, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.varian.com/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Radiotherapy Prescription Energy"] ; # 
+  fhir:copyright [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "6X" ] ;
+     fhir:display [ fhir:v "6X" ]
+  ] [
+     fhir:code [ fhir:v "8X" ] ;
+     fhir:display [ fhir:v "8X" ]
+  ] [
+     fhir:code [ fhir:v "20X" ] ;
+     fhir:display [ fhir:v "20X" ]
+  ] [
+     fhir:code [ fhir:v "20E" ] ;
+     fhir:display [ fhir:v "20E" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/CareTeam/CareTeam-8> a fhir:CareTeam ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CareTeam-8"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "CareTeam Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "CareTeam example for the *Varian ARIA API CareTeam Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "390045" ] ;
+     fhir:lastUpdated [ fhir:v "2023-10-10T14:18:52.883+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/CareTeam"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/CareTeam>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CareTeam</b><a name=\"CareTeam-8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CareTeam &quot;CareTeam-8&quot; Version &quot;390045&quot; Updated &quot;2023-10-10 14:18:52+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CareTeam.html\">CareTeam</a></p></div><p><b>status</b>: active</p><p><b>subject</b>: <a href=\"Patient/Patient-8\">Patient/Patient-8: Implementation, Guide</a></p><blockquote><p><b>participant</b></p><p><b>role</b>: Default Hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (careteam-participant-role#default-hospital)</span></p><p><b>member</b>: <a href=\"Organization/Organization-Prov-1\">Organization/Organization-Prov-1: Las Vegas General</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: Primary Health Care Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ncit.nci.nih.gov#C93060; careteam-participant-role#default-service-organization &quot;Default Service Organization&quot;)</span></p><p><b>member</b>: <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>onBehalfOf</b>: <a href=\"Organization/Organization-Prov-1\">Organization/Organization-Prov-1: Las Vegas General</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ncit.nci.nih.gov#C16666; careteam-participant-role#service-organization &quot;Service Organization&quot;)</span></p><p><b>member</b>: <a href=\"Organization-Organization-Dept-10002.html\">Organization/Organization-Dept-10002: OCS1</a> &quot;OCS1&quot;</p><p><b>onBehalfOf</b>: <a href=\"Organization/Organization-Prov-1\">Organization/Organization-Prov-1: Las Vegas General</a></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:link <http://varian.com/fhir/v1/Patient/Patient-8> ;
+     fhir:reference [ fhir:v "Patient/Patient-8" ] ;
+     fhir:display [ fhir:v "Implementation, Guide" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:role ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/careteam-participant-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "default-hospital" ] ;
+         fhir:display [ fhir:v "Default Hospital" ]
+       ] )
+     ] ) ;
+     fhir:member [
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Prov-1> ;
+       fhir:reference [ fhir:v "Organization/Organization-Prov-1" ] ;
+       fhir:display [ fhir:v "Las Vegas General" ]
+     ]
+  ] [
+     fhir:role ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://ncit.nci.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C93060" ] ;
+         fhir:display [ fhir:v "Primary Health Care Provider" ]
+       ] [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/careteam-participant-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "default-service-organization" ] ;
+         fhir:display [ fhir:v "Default Service Organization" ]
+       ] )
+     ] ) ;
+     fhir:member [
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-1> ;
+       fhir:reference [ fhir:v "Organization/Organization-Dept-1" ] ;
+       fhir:display [ fhir:v "Radiation Therapy" ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Prov-1> ;
+       fhir:reference [ fhir:v "Organization/Organization-Prov-1" ] ;
+       fhir:display [ fhir:v "Las Vegas General" ]
+     ]
+  ] [
+     fhir:role ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://ncit.nci.nih.gov"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C16666" ] ;
+         fhir:display [ fhir:v "Healthcare Provider" ]
+       ] [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/careteam-participant-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "service-organization" ] ;
+         fhir:display [ fhir:v "Service Organization" ]
+       ] )
+     ] ) ;
+     fhir:member [
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-10002> ;
+       fhir:reference [ fhir:v "Organization/Organization-Dept-10002" ] ;
+       fhir:display [ fhir:v "OCS1" ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Prov-1> ;
+       fhir:reference [ fhir:v "Organization/Organization-Prov-1" ] ;
+       fhir:display [ fhir:v "Las Vegas General" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

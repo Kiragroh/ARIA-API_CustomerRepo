@@ -1,0 +1,398 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\Appointment Example - XML Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"10.145"}
+    h3,h4,h5,h6{--heading-prefix:"10.145"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Appointment Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Appointment-Appointment-162.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Appointment-Appointment-162.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Appointment Example - XML Representation</h2>
+
+
+<p><a href="Appointment-Appointment-162.xml" no-download="true">Raw xml</a> | <a href="Appointment-Appointment-162.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
+
+&lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment">Appointment</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Appointment-162&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/instance-name&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Appointment Example&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/instance-description&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Appointment example for the *Varian ARIA API Appointment Profile.*&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;390183&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2023-10-09T03:37:01.580+05:30&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://varian.com/fhir/v1/StructureDefinition/Appointment&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Appointment&lt;/b&gt;&lt;a name=&quot;Appointment-162&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource Appointment &amp;quot;Appointment-162&amp;quot; Version &amp;quot;390183&amp;quot; Updated &amp;quot;2023-10-09 03:37:01+0530&amp;quot; &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-Appointment.html&quot;&gt;Appointment&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;remindTime&lt;/b&gt;: 30 Minutes&lt;/p&gt;&lt;p&gt;&lt;b&gt;appointment-actualTime&lt;/b&gt;: 1970-01-01 05:30:00+0530 --&amp;gt; 1970-01-01 05:30:00+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;appointment-ariaStatus&lt;/b&gt;: Open &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (appointment-status#Open)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;modifierExtension[http://varian.com/fhir/v1/StructureDefinition/readOnly]&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: FHIR_e626a554-3645-4a87-8d52-2c8c2a34a45a&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: booked&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceCategory&lt;/b&gt;: Qin &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (activityDefinition-category#Qin)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceType&lt;/b&gt;: Place Planning Order &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (activity-service-type#Place Planning Order)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: Oct 9, 2023, 8:26:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;end&lt;/b&gt;: Oct 9, 2023, 8:40:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;minutesDuration&lt;/b&gt;: 14&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: 2023-10-09 03:37:01+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;comment&lt;/b&gt;: Created By ARIA_API&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=&quot;ServiceRequest/ActivityInstance-4071&quot;&gt;ServiceRequest/ActivityInstance-4071&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: HealthcareService &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html&quot;&gt;ParticipationType&lt;/a&gt;#PART)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=&quot;HealthcareService-HealthcareService-1.html&quot;&gt;HealthcareService/HealthcareService-1: Radiation Therapy&lt;/a&gt; &amp;quot;Radiation Therapy&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Patient &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html&quot;&gt;ParticipationType&lt;/a&gt;#PART)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=&quot;Patient/Patient-48&quot;&gt;Patient/Patient-48: Wilson&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;&lt;/p&gt;929&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Device &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html&quot;&gt;ParticipationType&lt;/a&gt;#PART)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;actor&lt;/b&gt;: &lt;a href=&quot;Device/Device-1035&quot;&gt;Device/Device-1035: SupportDevId2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: accepted&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://varian.com/fhir/v1/StructureDefinition/reminderTime&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueQuantity</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;30&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Minutes&quot;/&gt;
+    &lt;/valueQuantity&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://varian.com/fhir/v1/StructureDefinition/appointment-actualTime&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePeriod</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;1970-01-01T05:30:00+05:30&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;1970-01-01T05:30:00+05:30&quot;/&gt;
+    &lt;/valuePeriod&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://varian.com/fhir/v1/StructureDefinition/appointment-ariaStatus&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/CodeSystem/Appointment/appointment-status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Open&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Open&quot;/&gt;
+      &lt;/coding&gt;
+    &lt;/valueCodeableConcept&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.modifierExtension">modifierExtension</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://varian.com/fhir/v1/StructureDefinition/readOnly&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;/modifierExtension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/identifier/UID&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;FHIR_e626a554-3645-4a87-8d52-2c8c2a34a45a&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;booked&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.serviceCategory">serviceCategory</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/CodeSystem/activityDefinition-category&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Qin&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Qin&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/serviceCategory&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.serviceType">serviceType</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/CodeSystem/activity-service-type&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Place Planning Order&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Place Planning Order&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/serviceType&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.priority">priority</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2023-10-09T08:26:00.507+05:30&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.end">end</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2023-10-09T08:40:00.507+05:30&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.minutesDuration">minutesDuration</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;14&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.created">created</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-10-09T03:37:01+05:30&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.comment">comment</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Created By ARIA_API&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.basedOn">basedOn</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ServiceRequest/ActivityInstance-4071&quot;/&gt;
+  &lt;/basedOn&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant">participant</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PART&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HealthcareService&quot;/&gt;
+      &lt;/coding&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HealthcareService/HealthcareService-1&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Radiation Therapy&quot;/&gt;
+    &lt;/actor&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;accepted&quot;/&gt;
+  &lt;/participant&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant">participant</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PART&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
+      &lt;/coding&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/Patient-48&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Wilson&quot;/&gt;
+    &lt;/actor&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;accepted&quot;/&gt;
+  &lt;/participant&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant">participant</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>=&quot;929&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PART&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Device&quot;/&gt;
+      &lt;/coding&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.actor">actor</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Device/Device-1035&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;SupportDevId2&quot;/&gt;
+    &lt;/actor&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/appointment.html#Appointment.participant.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;accepted&quot;/&gt;
+  &lt;/participant&gt;
+&lt;/Appointment&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

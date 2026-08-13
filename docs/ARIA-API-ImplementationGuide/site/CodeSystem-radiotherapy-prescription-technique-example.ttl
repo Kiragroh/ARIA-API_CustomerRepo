@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/CodeSystem/radiotherapy-prescription-technique-example> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "radiotherapy-prescription-technique-example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "RadiotherapyPrescriptionTechniqueExample"] ; # 
+  fhir:title [ fhir:v "Radiotherapy Prescription Technique Example"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-26T13:25:01+05:30"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Varian Medical Systems, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.varian.com/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Radiotherapy Prescription Technique."] ; # 
+  fhir:copyright [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "25"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "3 Field Plan" ] ;
+     fhir:display [ fhir:v "3 Field Plan" ]
+  ] [
+     fhir:code [ fhir:v "4 Field Box" ] ;
+     fhir:display [ fhir:v "4 Field Box" ]
+  ] [
+     fhir:code [ fhir:v "Arc" ] ;
+     fhir:display [ fhir:v "Arc" ]
+  ] [
+     fhir:code [ fhir:v "CHART" ] ;
+     fhir:display [ fhir:v "CHART" ]
+  ] [
+     fhir:code [ fhir:v "Conformal" ] ;
+     fhir:display [ fhir:v "Conformal" ]
+  ] [
+     fhir:code [ fhir:v "Dogleg / Hockey-Stick" ] ;
+     fhir:display [ fhir:v "Dogleg / Hockey-Stick" ]
+  ] [
+     fhir:code [ fhir:v "Dual Isocentre" ] ;
+     fhir:display [ fhir:v "Dual Isocentre" ]
+  ] [
+     fhir:code [ fhir:v "Hemi-Body" ] ;
+     fhir:display [ fhir:v "Hemi-Body" ]
+  ] [
+     fhir:code [ fhir:v "IMRT" ] ;
+     fhir:display [ fhir:v "IMRT" ]
+  ] [
+     fhir:code [ fhir:v "Inverted-Y" ] ;
+     fhir:display [ fhir:v "Inverted-Y" ]
+  ] [
+     fhir:code [ fhir:v "Mantle" ] ;
+     fhir:display [ fhir:v "Mantle" ]
+  ] [
+     fhir:code [ fhir:v "Moving Gap" ] ;
+     fhir:display [ fhir:v "Moving Gap" ]
+  ] [
+     fhir:code [ fhir:v "Parallel Opposed Pair" ] ;
+     fhir:display [ fhir:v "Parallel Opposed Pair" ]
+  ] [
+     fhir:code [ fhir:v "Single" ] ;
+     fhir:display [ fhir:v "Single" ]
+  ] [
+     fhir:code [ fhir:v "Stereotactic" ] ;
+     fhir:display [ fhir:v "Stereotactic" ]
+  ] [
+     fhir:code [ fhir:v "ARC THERAPY" ] ;
+     fhir:display [ fhir:v "Arc Therapy" ]
+  ] [
+     fhir:code [ fhir:v "DOUBLE SCATTERING" ] ;
+     fhir:display [ fhir:v "Double Scattering" ]
+  ] [
+     fhir:code [ fhir:v "HIGH DOSE TREATMENT" ] ;
+     fhir:display [ fhir:v "High Dose Treatment" ]
+  ] [
+     fhir:code [ fhir:v "MODULATED SCANNING" ] ;
+     fhir:display [ fhir:v "Modulated Scanning" ]
+  ] [
+     fhir:code [ fhir:v "SINGLE SCATTERING" ] ;
+     fhir:display [ fhir:v "Single Scattering" ]
+  ] [
+     fhir:code [ fhir:v "SRS ARC THERAPY" ] ;
+     fhir:display [ fhir:v "SRS Arc Therapy" ]
+  ] [
+     fhir:code [ fhir:v "SRS STATIC" ] ;
+     fhir:display [ fhir:v "SRS Static" ]
+  ] [
+     fhir:code [ fhir:v "TOTAL BODY IRRADIATION" ] ;
+     fhir:display [ fhir:v "Total Body Irradiation" ]
+  ] [
+     fhir:code [ fhir:v "WOBBLING" ] ;
+     fhir:display [ fhir:v "Wobbling" ]
+  ] [
+     fhir:code [ fhir:v "Electron Applicator" ] ;
+     fhir:display [ fhir:v "Electron Applicator" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

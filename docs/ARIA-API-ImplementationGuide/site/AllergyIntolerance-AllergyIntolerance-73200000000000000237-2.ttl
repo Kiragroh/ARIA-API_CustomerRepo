@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/AllergyIntolerance/AllergyIntolerance-73200000000000000237-2> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AllergyIntolerance-73200000000000000237-2"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "AllergyIntolerance Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "AllergyIntolerance example for the *Varian AllergyIntolerance API Group Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-10-10T14:53:04.413+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/AllergyIntolerance"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/AllergyIntolerance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AllergyIntolerance</b><a name=\"AllergyIntolerance-73200000000000000237-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AllergyIntolerance &quot;AllergyIntolerance-73200000000000000237-2&quot; Version &quot;1&quot; Updated &quot;2023-10-10 14:53:04+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AllergyIntolerance.html\">AllergyIntolerance</a></p></div><p><b>allergyIntolerance-allergyCategoryInAria</b>: Drug <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (allergy-category#1)</span></p><p><b>identifier</b>: id: ARIA_ff69296c-909d-4c9c-bf2b-9a1831736bd0</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-allergyintolerance-verification.html\">AllergyIntolerance Verification Status</a>#confirmed)</span></p><p><b>type</b>: allergy</p><p><b>category</b>: medication</p><p><b>code</b>: Bilberry (Vaccinium myrtillus) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html\">RxNorm</a>#252677)</span></p><p><b>patient</b>: <a href=\"Patient/Patient-244\">Patient/Patient-244: Implementation, Guide</a></p><p><b>onset</b>: 2023-10-10</p><p><b>recordedDate</b>: 2023-10-10 14:53:04+0530</p><p><b>recorder</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>note</b>: cmnt</p><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Nausea/Vomiting/Diarrhea <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (manifestation-code#4)</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Anemia/Blood Disorders <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (manifestation-code#5)</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Photosensitivity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (manifestation-code#7)</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: temp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/creator"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+       fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+       fhir:display [ fhir:v "JohnWilsonFhir" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/allergyIntolerance-allergyCategoryInAria"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/AllergyIntolerance/allergy-category"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Drug" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/AllergyIntolerance/UID"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ARIA_ff69296c-909d-4c9c-bf2b-9a1831736bd0" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "medication"] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "252677" ] ;
+       fhir:display [ fhir:v "Bilberry (Vaccinium myrtillus)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Bilberry (Vaccinium myrtillus)" ]
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://varian.com/fhir/v1/Patient/Patient-244> ;
+     fhir:reference [ fhir:v "Patient/Patient-244" ] ;
+     fhir:display [ fhir:v "Implementation, Guide" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2023-10-10"^^xsd:date] ; # 
+  fhir:recordedDate [ fhir:v "2023-10-10T14:53:04+05:30"^^xsd:dateTime] ; # 
+  fhir:recorder [
+     fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+     fhir:display [ fhir:v "JohnWilsonFhir" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "cmnt" ]
+  ] ) ; # 
+  fhir:reaction ( [
+     fhir:manifestation ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/AllergyIntolerance/manifestation-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "Nausea/Vomiting/Diarrhea" ]
+       ] )
+     ] )
+  ] [
+     fhir:manifestation ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/AllergyIntolerance/manifestation-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "Anemia/Blood Disorders" ]
+       ] )
+     ] )
+  ] [
+     fhir:manifestation ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/AllergyIntolerance/manifestation-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "7" ] ;
+         fhir:display [ fhir:v "Photosensitivity" ]
+       ] )
+     ] )
+  ] [
+     fhir:manifestation ( [
+       fhir:text [ fhir:v "temp" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

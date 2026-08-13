@@ -1,0 +1,581 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/CodeSystem/radiotherapy-prescription-site-example> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "radiotherapy-prescription-site-example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "RadiotherapyPrescriptionSiteExample"] ; # 
+  fhir:title [ fhir:v "Radiotherapy Prescription Site Example"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-26T13:25:01+05:30"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Varian Medical Systems, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.varian.com/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Radiotherapy Prescription Site"] ; # 
+  fhir:copyright [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "181"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Abdomen" ] ;
+     fhir:display [ fhir:v "Abdomen" ]
+  ] [
+     fhir:code [ fhir:v "Adrenal Gland, Left" ] ;
+     fhir:display [ fhir:v "Adrenal Gland, Left" ]
+  ] [
+     fhir:code [ fhir:v "Adrenal Gland, Right" ] ;
+     fhir:display [ fhir:v "Adrenal Gland, Right" ]
+  ] [
+     fhir:code [ fhir:v "Anus" ] ;
+     fhir:display [ fhir:v "Anus" ]
+  ] [
+     fhir:code [ fhir:v "Arm, Left" ] ;
+     fhir:display [ fhir:v "Arm, Left" ]
+  ] [
+     fhir:code [ fhir:v "Arm, Right" ] ;
+     fhir:display [ fhir:v "Arm, Right" ]
+  ] [
+     fhir:code [ fhir:v "Axilla, Left" ] ;
+     fhir:display [ fhir:v "Axilla, Left" ]
+  ] [
+     fhir:code [ fhir:v "Axilla, Right" ] ;
+     fhir:display [ fhir:v "Axilla, Right" ]
+  ] [
+     fhir:code [ fhir:v "Back" ] ;
+     fhir:display [ fhir:v "Back" ]
+  ] [
+     fhir:code [ fhir:v "Bile Duct" ] ;
+     fhir:display [ fhir:v "Bile Duct" ]
+  ] [
+     fhir:code [ fhir:v "Bladder" ] ;
+     fhir:display [ fhir:v "Bladder" ]
+  ] [
+     fhir:code [ fhir:v "Bone Marrow (Diffuse)" ] ;
+     fhir:display [ fhir:v "Bone Marrow (Diffuse)" ]
+  ] [
+     fhir:code [ fhir:v "Brain" ] ;
+     fhir:display [ fhir:v "Brain" ]
+  ] [
+     fhir:code [ fhir:v "Breast, Left" ] ;
+     fhir:display [ fhir:v "Breast, Left" ]
+  ] [
+     fhir:code [ fhir:v "Breast, Right" ] ;
+     fhir:display [ fhir:v "Breast, Right" ]
+  ] [
+     fhir:code [ fhir:v "Bronchus, Left" ] ;
+     fhir:display [ fhir:v "Bronchus, Left" ]
+  ] [
+     fhir:code [ fhir:v "Bronchus, Right" ] ;
+     fhir:display [ fhir:v "Bronchus, Right" ]
+  ] [
+     fhir:code [ fhir:v "Buccal Mucosa" ] ;
+     fhir:display [ fhir:v "Buccal Mucosa" ]
+  ] [
+     fhir:code [ fhir:v "Caecum" ] ;
+     fhir:display [ fhir:v "Caecum" ]
+  ] [
+     fhir:code [ fhir:v "Canthus, Left Inner" ] ;
+     fhir:display [ fhir:v "Canthus, Left Inner" ]
+  ] [
+     fhir:code [ fhir:v "Canthus, Left Outer" ] ;
+     fhir:display [ fhir:v "Canthus, Left Outer" ]
+  ] [
+     fhir:code [ fhir:v "Canthus, Right Inner" ] ;
+     fhir:display [ fhir:v "Canthus, Right Inner" ]
+  ] [
+     fhir:code [ fhir:v "Canthus, Right Outer" ] ;
+     fhir:display [ fhir:v "Canthus, Right Outer" ]
+  ] [
+     fhir:code [ fhir:v "Cervical Spine" ] ;
+     fhir:display [ fhir:v "Cervical Spine" ]
+  ] [
+     fhir:code [ fhir:v "Cervix" ] ;
+     fhir:display [ fhir:v "Cervix" ]
+  ] [
+     fhir:code [ fhir:v "Cheek, Left" ] ;
+     fhir:display [ fhir:v "Cheek, Left" ]
+  ] [
+     fhir:code [ fhir:v "Cheek, Right" ] ;
+     fhir:display [ fhir:v "Cheek, Right" ]
+  ] [
+     fhir:code [ fhir:v "Chest Wall, Left" ] ;
+     fhir:display [ fhir:v "Chest Wall, Left" ]
+  ] [
+     fhir:code [ fhir:v "Chest Wall, Right" ] ;
+     fhir:display [ fhir:v "Chest Wall, Right" ]
+  ] [
+     fhir:code [ fhir:v "Coccyx" ] ;
+     fhir:display [ fhir:v "Coccyx" ]
+  ] [
+     fhir:code [ fhir:v "Cochlea" ] ;
+     fhir:display [ fhir:v "Cochlea" ]
+  ] [
+     fhir:code [ fhir:v "Colon" ] ;
+     fhir:display [ fhir:v "Colon" ]
+  ] [
+     fhir:code [ fhir:v "Cranium" ] ;
+     fhir:display [ fhir:v "Cranium" ]
+  ] [
+     fhir:code [ fhir:v "Deep Cervical Chain Nodes" ] ;
+     fhir:display [ fhir:v "Deep Cervical Chain Nodes" ]
+  ] [
+     fhir:code [ fhir:v "Deep Inguinal Nodes" ] ;
+     fhir:display [ fhir:v "Deep Inguinal Nodes" ]
+  ] [
+     fhir:code [ fhir:v "Duodenum" ] ;
+     fhir:display [ fhir:v "Duodenum" ]
+  ] [
+     fhir:code [ fhir:v "Ethmoid Sinus" ] ;
+     fhir:display [ fhir:v "Ethmoid Sinus" ]
+  ] [
+     fhir:code [ fhir:v "Eye, Left" ] ;
+     fhir:display [ fhir:v "Eye, Left" ]
+  ] [
+     fhir:code [ fhir:v "Eye, Right" ] ;
+     fhir:display [ fhir:v "Eye, Right" ]
+  ] [
+     fhir:code [ fhir:v "Face" ] ;
+     fhir:display [ fhir:v "Face" ]
+  ] [
+     fhir:code [ fhir:v "Fallopian Tube, Left" ] ;
+     fhir:display [ fhir:v "Fallopian Tube, Left" ]
+  ] [
+     fhir:code [ fhir:v "Fallopian Tube, Right" ] ;
+     fhir:display [ fhir:v "Fallopian Tube, Right" ]
+  ] [
+     fhir:code [ fhir:v "Femur Left" ] ;
+     fhir:display [ fhir:v "Femur Left" ]
+  ] [
+     fhir:code [ fhir:v "Femur Right" ] ;
+     fhir:display [ fhir:v "Femur Right" ]
+  ] [
+     fhir:code [ fhir:v "Fibula, Left" ] ;
+     fhir:display [ fhir:v "Fibula, Left" ]
+  ] [
+     fhir:code [ fhir:v "Fibula, Right" ] ;
+     fhir:display [ fhir:v "Fibula, Right" ]
+  ] [
+     fhir:code [ fhir:v "Foot, Left" ] ;
+     fhir:display [ fhir:v "Foot, Left" ]
+  ] [
+     fhir:code [ fhir:v "Foot, Right" ] ;
+     fhir:display [ fhir:v "Foot, Right" ]
+  ] [
+     fhir:code [ fhir:v "Forearm, Left" ] ;
+     fhir:display [ fhir:v "Forearm, Left" ]
+  ] [
+     fhir:code [ fhir:v "Forearm, Right" ] ;
+     fhir:display [ fhir:v "Forearm, Right" ]
+  ] [
+     fhir:code [ fhir:v "Frontal Lobe" ] ;
+     fhir:display [ fhir:v "Frontal Lobe" ]
+  ] [
+     fhir:code [ fhir:v "Gall Bladder" ] ;
+     fhir:display [ fhir:v "Gall Bladder" ]
+  ] [
+     fhir:code [ fhir:v "Groin, Left" ] ;
+     fhir:display [ fhir:v "Groin, Left" ]
+  ] [
+     fhir:code [ fhir:v "Groin, Right" ] ;
+     fhir:display [ fhir:v "Groin, Right" ]
+  ] [
+     fhir:code [ fhir:v "Hand, Left" ] ;
+     fhir:display [ fhir:v "Hand, Left" ]
+  ] [
+     fhir:code [ fhir:v "Hand, Right" ] ;
+     fhir:display [ fhir:v "Hand, Right" ]
+  ] [
+     fhir:code [ fhir:v "Hard Palate" ] ;
+     fhir:display [ fhir:v "Hard Palate" ]
+  ] [
+     fhir:code [ fhir:v "Head and Neck" ] ;
+     fhir:display [ fhir:v "Head and Neck" ]
+  ] [
+     fhir:code [ fhir:v "Heart" ] ;
+     fhir:display [ fhir:v "Heart" ]
+  ] [
+     fhir:code [ fhir:v "Hemi-Body, Lower" ] ;
+     fhir:display [ fhir:v "Hemi-Body, Lower" ]
+  ] [
+     fhir:code [ fhir:v "Hemi-Body, Upper" ] ;
+     fhir:display [ fhir:v "Hemi-Body, Upper" ]
+  ] [
+     fhir:code [ fhir:v "Hip, Left" ] ;
+     fhir:display [ fhir:v "Hip, Left" ]
+  ] [
+     fhir:code [ fhir:v "Hip, Right" ] ;
+     fhir:display [ fhir:v "Hip, Right" ]
+  ] [
+     fhir:code [ fhir:v "Humerus, Left" ] ;
+     fhir:display [ fhir:v "Humerus, Left" ]
+  ] [
+     fhir:code [ fhir:v "Humerus, Right" ] ;
+     fhir:display [ fhir:v "Humerus, Right" ]
+  ] [
+     fhir:code [ fhir:v "Ileum" ] ;
+     fhir:display [ fhir:v "Ileum" ]
+  ] [
+     fhir:code [ fhir:v "Ilium, Left" ] ;
+     fhir:display [ fhir:v "Ilium, Left" ]
+  ] [
+     fhir:code [ fhir:v "Ilium, Right" ] ;
+     fhir:display [ fhir:v "Ilium, Right" ]
+  ] [
+     fhir:code [ fhir:v "Infraclavicular Nodes" ] ;
+     fhir:display [ fhir:v "Infraclavicular Nodes" ]
+  ] [
+     fhir:code [ fhir:v "Internal Iliac Nodes" ] ;
+     fhir:display [ fhir:v "Internal Iliac Nodes" ]
+  ] [
+     fhir:code [ fhir:v "Ischium" ] ;
+     fhir:display [ fhir:v "Ischium" ]
+  ] [
+     fhir:code [ fhir:v "Jejunum" ] ;
+     fhir:display [ fhir:v "Jejunum" ]
+  ] [
+     fhir:code [ fhir:v "Kidney, Left" ] ;
+     fhir:display [ fhir:v "Kidney, Left" ]
+  ] [
+     fhir:code [ fhir:v "Kidney, Right" ] ;
+     fhir:display [ fhir:v "Kidney, Right" ]
+  ] [
+     fhir:code [ fhir:v "Knee, Left" ] ;
+     fhir:display [ fhir:v "Knee, Left" ]
+  ] [
+     fhir:code [ fhir:v "Knee, Right" ] ;
+     fhir:display [ fhir:v "Knee, Right" ]
+  ] [
+     fhir:code [ fhir:v "Laryngopharynx" ] ;
+     fhir:display [ fhir:v "Laryngopharynx" ]
+  ] [
+     fhir:code [ fhir:v "Larynx" ] ;
+     fhir:display [ fhir:v "Larynx" ]
+  ] [
+     fhir:code [ fhir:v "Leg, Left" ] ;
+     fhir:display [ fhir:v "Leg, Left" ]
+  ] [
+     fhir:code [ fhir:v "Leg, Right" ] ;
+     fhir:display [ fhir:v "Leg, Right" ]
+  ] [
+     fhir:code [ fhir:v "Lip, Lower" ] ;
+     fhir:display [ fhir:v "Lip, Lower" ]
+  ] [
+     fhir:code [ fhir:v "Lip, Upper" ] ;
+     fhir:display [ fhir:v "Lip, Upper" ]
+  ] [
+     fhir:code [ fhir:v "Liver" ] ;
+     fhir:display [ fhir:v "Liver" ]
+  ] [
+     fhir:code [ fhir:v "Lumbar Spine" ] ;
+     fhir:display [ fhir:v "Lumbar Spine" ]
+  ] [
+     fhir:code [ fhir:v "Lung, Left" ] ;
+     fhir:display [ fhir:v "Lung, Left" ]
+  ] [
+     fhir:code [ fhir:v "Lung, Right" ] ;
+     fhir:display [ fhir:v "Lung, Right" ]
+  ] [
+     fhir:code [ fhir:v "Mandible" ] ;
+     fhir:display [ fhir:v "Mandible" ]
+  ] [
+     fhir:code [ fhir:v "Maxilla" ] ;
+     fhir:display [ fhir:v "Maxilla" ]
+  ] [
+     fhir:code [ fhir:v "Maxillary Antrum" ] ;
+     fhir:display [ fhir:v "Maxillary Antrum" ]
+  ] [
+     fhir:code [ fhir:v "Meninges" ] ;
+     fhir:display [ fhir:v "Meninges" ]
+  ] [
+     fhir:code [ fhir:v "Middle Ear" ] ;
+     fhir:display [ fhir:v "Middle Ear" ]
+  ] [
+     fhir:code [ fhir:v "Nasopharynx" ] ;
+     fhir:display [ fhir:v "Nasopharynx" ]
+  ] [
+     fhir:code [ fhir:v "Neck" ] ;
+     fhir:display [ fhir:v "Neck" ]
+  ] [
+     fhir:code [ fhir:v "Neck Left" ] ;
+     fhir:display [ fhir:v "Neck Left" ]
+  ] [
+     fhir:code [ fhir:v "Neck Right" ] ;
+     fhir:display [ fhir:v "Neck Right" ]
+  ] [
+     fhir:code [ fhir:v "Nipple, Left" ] ;
+     fhir:display [ fhir:v "Nipple, Left" ]
+  ] [
+     fhir:code [ fhir:v "Nipple, Right" ] ;
+     fhir:display [ fhir:v "Nipple, Right" ]
+  ] [
+     fhir:code [ fhir:v "Nose" ] ;
+     fhir:display [ fhir:v "Nose" ]
+  ] [
+     fhir:code [ fhir:v "Occipital Lobe" ] ;
+     fhir:display [ fhir:v "Occipital Lobe" ]
+  ] [
+     fhir:code [ fhir:v "Oesophagus" ] ;
+     fhir:display [ fhir:v "Oesophagus" ]
+  ] [
+     fhir:code [ fhir:v "Orbit Left" ] ;
+     fhir:display [ fhir:v "Orbit Left" ]
+  ] [
+     fhir:code [ fhir:v "Orbit Right" ] ;
+     fhir:display [ fhir:v "Orbit Right" ]
+  ] [
+     fhir:code [ fhir:v "Oropharynx" ] ;
+     fhir:display [ fhir:v "Oropharynx" ]
+  ] [
+     fhir:code [ fhir:v "Ovary, Left" ] ;
+     fhir:display [ fhir:v "Ovary, Left" ]
+  ] [
+     fhir:code [ fhir:v "Ovary, Right" ] ;
+     fhir:display [ fhir:v "Ovary, Right" ]
+  ] [
+     fhir:code [ fhir:v "Pancreas" ] ;
+     fhir:display [ fhir:v "Pancreas" ]
+  ] [
+     fhir:code [ fhir:v "Paranasal Sinus" ] ;
+     fhir:display [ fhir:v "Paranasal Sinus" ]
+  ] [
+     fhir:code [ fhir:v "Para-Sternal Nodes" ] ;
+     fhir:display [ fhir:v "Para-Sternal Nodes" ]
+  ] [
+     fhir:code [ fhir:v "ParaThyroid" ] ;
+     fhir:display [ fhir:v "ParaThyroid" ]
+  ] [
+     fhir:code [ fhir:v "Parietal Lobe" ] ;
+     fhir:display [ fhir:v "Parietal Lobe" ]
+  ] [
+     fhir:code [ fhir:v "Parotid, Left" ] ;
+     fhir:display [ fhir:v "Parotid, Left" ]
+  ] [
+     fhir:code [ fhir:v "Parotid, Right" ] ;
+     fhir:display [ fhir:v "Parotid, Right" ]
+  ] [
+     fhir:code [ fhir:v "Pelvis" ] ;
+     fhir:display [ fhir:v "Pelvis" ]
+  ] [
+     fhir:code [ fhir:v "Penis" ] ;
+     fhir:display [ fhir:v "Penis" ]
+  ] [
+     fhir:code [ fhir:v "Penis, Glans" ] ;
+     fhir:display [ fhir:v "Penis, Glans" ]
+  ] [
+     fhir:code [ fhir:v "Perineum" ] ;
+     fhir:display [ fhir:v "Perineum" ]
+  ] [
+     fhir:code [ fhir:v "Pharynx" ] ;
+     fhir:display [ fhir:v "Pharynx" ]
+  ] [
+     fhir:code [ fhir:v "Pineal Gland" ] ;
+     fhir:display [ fhir:v "Pineal Gland" ]
+  ] [
+     fhir:code [ fhir:v "Pinna, Left" ] ;
+     fhir:display [ fhir:v "Pinna, Left" ]
+  ] [
+     fhir:code [ fhir:v "Pinna, Right" ] ;
+     fhir:display [ fhir:v "Pinna, Right" ]
+  ] [
+     fhir:code [ fhir:v "Pituitary" ] ;
+     fhir:display [ fhir:v "Pituitary" ]
+  ] [
+     fhir:code [ fhir:v "Post-Cricoid" ] ;
+     fhir:display [ fhir:v "Post-Cricoid" ]
+  ] [
+     fhir:code [ fhir:v "Pre-Sacral Nodes" ] ;
+     fhir:display [ fhir:v "Pre-Sacral Nodes" ]
+  ] [
+     fhir:code [ fhir:v "Prostate" ] ;
+     fhir:display [ fhir:v "Prostate" ]
+  ] [
+     fhir:code [ fhir:v "Prostate and Seminal Vesicles" ] ;
+     fhir:display [ fhir:v "Prostate and Seminal Vesicles" ]
+  ] [
+     fhir:code [ fhir:v "Pubis, Left" ] ;
+     fhir:display [ fhir:v "Pubis, Left" ]
+  ] [
+     fhir:code [ fhir:v "Pubis, Right" ] ;
+     fhir:display [ fhir:v "Pubis, Right" ]
+  ] [
+     fhir:code [ fhir:v "Radius, Left" ] ;
+     fhir:display [ fhir:v "Radius, Left" ]
+  ] [
+     fhir:code [ fhir:v "Radius, Right" ] ;
+     fhir:display [ fhir:v "Radius, Right" ]
+  ] [
+     fhir:code [ fhir:v "Rectum" ] ;
+     fhir:display [ fhir:v "Rectum" ]
+  ] [
+     fhir:code [ fhir:v "Retina, Left" ] ;
+     fhir:display [ fhir:v "Retina, Left" ]
+  ] [
+     fhir:code [ fhir:v "Retina, Right" ] ;
+     fhir:display [ fhir:v "Retina, Right" ]
+  ] [
+     fhir:code [ fhir:v "Ribs, Left" ] ;
+     fhir:display [ fhir:v "Ribs, Left" ]
+  ] [
+     fhir:code [ fhir:v "Ribs, Right" ] ;
+     fhir:display [ fhir:v "Ribs, Right" ]
+  ] [
+     fhir:code [ fhir:v "Sacro-Iliac Joints" ] ;
+     fhir:display [ fhir:v "Sacro-Iliac Joints" ]
+  ] [
+     fhir:code [ fhir:v "Sacro-Iliac, Left" ] ;
+     fhir:display [ fhir:v "Sacro-Iliac, Left" ]
+  ] [
+     fhir:code [ fhir:v "Sacro-Iliac, Right" ] ;
+     fhir:display [ fhir:v "Sacro-Iliac, Right" ]
+  ] [
+     fhir:code [ fhir:v "Sacrum" ] ;
+     fhir:display [ fhir:v "Sacrum" ]
+  ] [
+     fhir:code [ fhir:v "Scalp" ] ;
+     fhir:display [ fhir:v "Scalp" ]
+  ] [
+     fhir:code [ fhir:v "Scapula, Left" ] ;
+     fhir:display [ fhir:v "Scapula, Left" ]
+  ] [
+     fhir:code [ fhir:v "Scapula, Right" ] ;
+     fhir:display [ fhir:v "Scapula, Right" ]
+  ] [
+     fhir:code [ fhir:v "Scrotum" ] ;
+     fhir:display [ fhir:v "Scrotum" ]
+  ] [
+     fhir:code [ fhir:v "Seminal Vesicles" ] ;
+     fhir:display [ fhir:v "Seminal Vesicles" ]
+  ] [
+     fhir:code [ fhir:v "Soft Palate" ] ;
+     fhir:display [ fhir:v "Soft Palate" ]
+  ] [
+     fhir:code [ fhir:v "Spinal Cord" ] ;
+     fhir:display [ fhir:v "Spinal Cord" ]
+  ] [
+     fhir:code [ fhir:v "Spinal Cord, Cervical" ] ;
+     fhir:display [ fhir:v "Spinal Cord, Cervical" ]
+  ] [
+     fhir:code [ fhir:v "Spinal Cord, Lumbar" ] ;
+     fhir:display [ fhir:v "Spinal Cord, Lumbar" ]
+  ] [
+     fhir:code [ fhir:v "Spinal Cord, Thoracic" ] ;
+     fhir:display [ fhir:v "Spinal Cord, Thoracic" ]
+  ] [
+     fhir:code [ fhir:v "Spleen" ] ;
+     fhir:display [ fhir:v "Spleen" ]
+  ] [
+     fhir:code [ fhir:v "Stomach" ] ;
+     fhir:display [ fhir:v "Stomach" ]
+  ] [
+     fhir:code [ fhir:v "Sublingual Glands" ] ;
+     fhir:display [ fhir:v "Sublingual Glands" ]
+  ] [
+     fhir:code [ fhir:v "Submandibular Glands" ] ;
+     fhir:display [ fhir:v "Submandibular Glands" ]
+  ] [
+     fhir:code [ fhir:v "Submandibular Nodes" ] ;
+     fhir:display [ fhir:v "Submandibular Nodes" ]
+  ] [
+     fhir:code [ fhir:v "Superficial Inguinal Nodes" ] ;
+     fhir:display [ fhir:v "Superficial Inguinal Nodes" ]
+  ] [
+     fhir:code [ fhir:v "Temporal Lobe" ] ;
+     fhir:display [ fhir:v "Temporal Lobe" ]
+  ] [
+     fhir:code [ fhir:v "Testis" ] ;
+     fhir:display [ fhir:v "Testis" ]
+  ] [
+     fhir:code [ fhir:v "Thigh" ] ;
+     fhir:display [ fhir:v "Thigh" ]
+  ] [
+     fhir:code [ fhir:v "Thorax" ] ;
+     fhir:display [ fhir:v "Thorax" ]
+  ] [
+     fhir:code [ fhir:v "Thymus" ] ;
+     fhir:display [ fhir:v "Thymus" ]
+  ] [
+     fhir:code [ fhir:v "Thyroid" ] ;
+     fhir:display [ fhir:v "Thyroid" ]
+  ] [
+     fhir:code [ fhir:v "Tibia, Left" ] ;
+     fhir:display [ fhir:v "Tibia, Left" ]
+  ] [
+     fhir:code [ fhir:v "Tibia, Right" ] ;
+     fhir:display [ fhir:v "Tibia, Right" ]
+  ] [
+     fhir:code [ fhir:v "Tongue" ] ;
+     fhir:display [ fhir:v "Tongue" ]
+  ] [
+     fhir:code [ fhir:v "Tonsil, Left" ] ;
+     fhir:display [ fhir:v "Tonsil, Left" ]
+  ] [
+     fhir:code [ fhir:v "Tonsil, Right" ] ;
+     fhir:display [ fhir:v "Tonsil, Right" ]
+  ] [
+     fhir:code [ fhir:v "Total Body" ] ;
+     fhir:display [ fhir:v "Total Body" ]
+  ] [
+     fhir:code [ fhir:v "Total Skin" ] ;
+     fhir:display [ fhir:v "Total Skin" ]
+  ] [
+     fhir:code [ fhir:v "Trachea" ] ;
+     fhir:display [ fhir:v "Trachea" ]
+  ] [
+     fhir:code [ fhir:v "Ulna, Left" ] ;
+     fhir:display [ fhir:v "Ulna, Left" ]
+  ] [
+     fhir:code [ fhir:v "Ulna, Right" ] ;
+     fhir:display [ fhir:v "Ulna, Right" ]
+  ] [
+     fhir:code [ fhir:v "Ureter, Left" ] ;
+     fhir:display [ fhir:v "Ureter, Left" ]
+  ] [
+     fhir:code [ fhir:v "Ureter, Right" ] ;
+     fhir:display [ fhir:v "Ureter, Right" ]
+  ] [
+     fhir:code [ fhir:v "Urethra" ] ;
+     fhir:display [ fhir:v "Urethra" ]
+  ] [
+     fhir:code [ fhir:v "Uterus" ] ;
+     fhir:display [ fhir:v "Uterus" ]
+  ] [
+     fhir:code [ fhir:v "Vagina" ] ;
+     fhir:display [ fhir:v "Vagina" ]
+  ] [
+     fhir:code [ fhir:v "Vertebrae, Cervical" ] ;
+     fhir:display [ fhir:v "Vertebrae, Cervical" ]
+  ] [
+     fhir:code [ fhir:v "Vertebrae, Lumbar" ] ;
+     fhir:display [ fhir:v "Vertebrae, Lumbar" ]
+  ] [
+     fhir:code [ fhir:v "Vertebrae, Sacral" ] ;
+     fhir:display [ fhir:v "Vertebrae, Sacral" ]
+  ] [
+     fhir:code [ fhir:v "Vertebrae, Thoracic" ] ;
+     fhir:display [ fhir:v "Vertebrae, Thoracic" ]
+  ] [
+     fhir:code [ fhir:v "Vulva" ] ;
+     fhir:display [ fhir:v "Vulva" ]
+  ] [
+     fhir:code [ fhir:v "Tumor bed" ] ;
+     fhir:display [ fhir:v "Tumor bed" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

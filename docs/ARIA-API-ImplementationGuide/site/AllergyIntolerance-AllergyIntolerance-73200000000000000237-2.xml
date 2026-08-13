@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="AllergyIntolerance-73200000000000000237-2"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="AllergyIntolerance Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="AllergyIntolerance example for the *Varian AllergyIntolerance API Group Profile.*"/>
+    </extension>
+    <versionId value="1"/>
+    <lastUpdated value="2023-10-10T14:53:04.413+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/AllergyIntolerance"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AllergyIntolerance</b><a name="AllergyIntolerance-73200000000000000237-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AllergyIntolerance &quot;AllergyIntolerance-73200000000000000237-2&quot; Version &quot;1&quot; Updated &quot;2023-10-10 14:53:04+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AllergyIntolerance.html">AllergyIntolerance</a></p></div><p><b>allergyIntolerance-allergyCategoryInAria</b>: Drug <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (allergy-category#1)</span></p><p><b>identifier</b>: id: ARIA_ff69296c-909d-4c9c-bf2b-9a1831736bd0</p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-allergyintolerance-verification.html">AllergyIntolerance Verification Status</a>#confirmed)</span></p><p><b>type</b>: allergy</p><p><b>category</b>: medication</p><p><b>code</b>: Bilberry (Vaccinium myrtillus) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-rxNorm.html">RxNorm</a>#252677)</span></p><p><b>patient</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>onset</b>: 2023-10-10</p><p><b>recordedDate</b>: 2023-10-10 14:53:04+0530</p><p><b>recorder</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>note</b>: cmnt</p><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Nausea/Vomiting/Diarrhea <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (manifestation-code#4)</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Anemia/Blood Disorders <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (manifestation-code#5)</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: Photosensitivity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (manifestation-code#7)</span></p></blockquote><blockquote><p><b>reaction</b></p><p><b>manifestation</b>: temp <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote></div>
+  </text>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/creator">
+    <valueReference>
+      <reference value="Practitioner/Practitioner-1002"/>
+      <display value="JohnWilsonFhir"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/allergyIntolerance-allergyCategoryInAria">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/AllergyIntolerance/allergy-category"/>
+        <code value="1"/>
+        <display value="Drug"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/AllergyIntolerance/UID"/>
+    <value value="ARIA_ff69296c-909d-4c9c-bf2b-9a1831736bd0"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="medication"/>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="252677"/>
+      <display value="Bilberry (Vaccinium myrtillus)"/>
+    </coding>
+    <text value="Bilberry (Vaccinium myrtillus)"/>
+  </code>
+  <patient>
+    <reference value="Patient/Patient-244"/>
+    <display value="Implementation, Guide"/>
+  </patient>
+  <onsetDateTime value="2023-10-10"/>
+  <recordedDate value="2023-10-10T14:53:04+05:30"/>
+  <recorder>
+    <reference value="Practitioner/Practitioner-1002"/>
+    <display value="JohnWilsonFhir"/>
+  </recorder>
+  <note>
+    <text value="cmnt"/>
+  </note>
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/AllergyIntolerance/manifestation-code"/>
+        <code value="4"/>
+        <display value="Nausea/Vomiting/Diarrhea"/>
+      </coding>
+    </manifestation>
+  </reaction>
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/AllergyIntolerance/manifestation-code"/>
+        <code value="5"/>
+        <display value="Anemia/Blood Disorders"/>
+      </coding>
+    </manifestation>
+  </reaction>
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/AllergyIntolerance/manifestation-code"/>
+        <code value="7"/>
+        <display value="Photosensitivity"/>
+      </coding>
+    </manifestation>
+  </reaction>
+  <reaction>
+    <manifestation>
+      <text value="temp"/>
+    </manifestation>
+  </reaction>
+</AllergyIntolerance>

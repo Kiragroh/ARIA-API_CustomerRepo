@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="RadiotherapyConditionSHS-1"/>
+  <meta>
+    <versionId value="191220556339428"/>
+    <lastUpdated value="2021-11-24T20:43:43.053+01:00"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/CancerCondition"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Condition"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="RadiotherapyConditionSHS-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;RadiotherapyConditionSHS-1&quot; Version &quot;191220556339428&quot; Updated &quot;2021-11-24 20:43:43+0100&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-CancerCondition.html">Condition-Diagnosis (CancerCondition)</a>, <code>http://varian.com/fhir/v1/StructureDefinition/Condition</code></p><p style="margin-bottom: 0px">Security Labels: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActReason http://terminology.hl7.org/CodeSystem/v3-ActReason}">http://terminology.hl7.org/CodeSystem/v3-ActReason</span></p></div><p><b>identifier</b>: id: 2, id: 100145, id: ARIA_29cca0b5-b559-4078-a770-2e34afde5b7d</p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Provisional <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#provisional)</span></p><p><b>category</b>: Encounter Diagnosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Malignant neoplasm of breast (female), unspecified site <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-ICD-9CM-procedurecodes.html">ICD-9-CM (procedure codes)</a>#174.9 &quot;Malignant neoplasm of breast (female) unspecified site&quot;)</span></p><p><b>bodySite</b>: Breast, NOS <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html">International Classification of Diseases for Oncology, version 3.</a>#509)</span>, Breast <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (body-site#Breast)</span></p><p><b>subject</b>: <a href="Patient-RadiotherapyPatientSHS-216.html">Patient/RadiotherapyPatientSHS-216: Sister, Jane</a> &quot; SISTER&quot;</p><p><b>onset</b>: 2021-11-24</p><p><b>recordedDate</b>: 2021-11-24 20:43:43+0100</p><p><b>recorder</b>: <a href="Practitioner-RadiotherapyPractitionerSHS-1005.html">Practitioner/RadiotherapyPractitionerSHS-1005: Varian Installer</a> &quot; WILSON&quot;</p><h3>Evidences</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>Unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (method#Unknown)</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/Condition/MedOnc-Id"/>
+    <value value="2"/>
+  </identifier>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/RadOnc-Id"/>
+    <value value="100145"/>
+  </identifier>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/Condition/unique-id"/>
+    <value value="ARIA_29cca0b5-b559-4078-a770-2e34afde5b7d"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="provisional"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-9-cm"/>
+      <code value="174.9"/>
+      <display value="Malignant neoplasm of breast (female) unspecified site"/>
+    </coding>
+    <text value="Malignant neoplasm of breast (female), unspecified site"/>
+  </code>
+  <bodySite>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+      <code value="509"/>
+      <display value="Breast, NOS"/>
+    </coding>
+  </bodySite>
+  <bodySite>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/Condition/diagnosis/body-site"/>
+      <code value="Breast"/>
+      <display value="Breast"/>
+    </coding>
+  </bodySite>
+  <subject>
+    <reference value="Patient/RadiotherapyPatientSHS-216"/>
+    <display value="Sister, Jane"/>
+  </subject>
+  <onsetDateTime value="2021-11-24"/>
+  <recordedDate value="2021-11-24T20:43:43+01:00"/>
+  <recorder>
+    <reference value="Practitioner/RadiotherapyPractitionerSHS-1005"/>
+    <display value="Varian Installer"/>
+  </recorder>
+  <evidence>
+    <code>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/Condition/diagnosis/method"/>
+        <code value="Unknown"/>
+        <display value="Unknown"/>
+      </coding>
+    </code>
+  </evidence>
+</Condition>

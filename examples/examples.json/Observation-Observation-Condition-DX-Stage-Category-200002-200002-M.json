@@ -1,0 +1,59 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Observation-Condition-DX-Stage-Category-200002-200002-M",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Stage Category(Condition-Diagnosis contained resource) Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Stage Category example for the *Varian ARIA API Stage Category Profile.*"
+    }],
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+    "http://varian.com/fhir/v1/StructureDefinition/Observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Observation-Condition-DX-Stage-Category-200002-200002-M\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Observation-Condition-DX-Stage-Category-200002-200002-M&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-StageCategory.html\">Observation-StageCategory</a>, <code>http://varian.com/fhir/v1/StructureDefinition/Observation</code></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: G <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-group#G)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-152\">Patient/Patient-152: Wilson, Johnathan</a></p><p><b>effective</b>: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530</p><p><b>issued</b>: Oct 11, 2023, 3:47:08\u202fAM</p><p><b>performer</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: Well differentiated <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-type#G1)</span></p><p><b>method</b>: AJCC 5th Ed. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (diagnosis-stage-scheme#AJCC 5th Ed.)</span></p></div>"
+  },
+  "status" : "preliminary",
+  "code" : {
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group",
+      "code" : "G",
+      "display" : "G"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-152",
+    "display" : "Wilson, Johnathan"
+  },
+  "effectiveTiming" : {
+    "event" : ["2023-10-11T03:47:05+05:30"],
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing",
+        "code" : "Pre-chemotherapy"
+      }]
+    }
+  },
+  "issued" : "2023-10-11T03:47:08.720+05:30",
+  "performer" : [{
+    "reference" : "Practitioner/Practitioner-1002",
+    "display" : "JohnWilsonFhir"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type",
+      "code" : "G1",
+      "display" : "Well differentiated"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme",
+      "code" : "AJCC 5th Ed."
+    }]
+  }
+}

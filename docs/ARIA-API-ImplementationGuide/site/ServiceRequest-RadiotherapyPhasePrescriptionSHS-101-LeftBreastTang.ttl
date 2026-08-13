@@ -1,0 +1,180 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/ServiceRequest/RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "2271210" ] ;
+     fhir:lastUpdated [ fhir:v "2021-12-20T20:29:05.097+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPhasePrescription"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPhasePrescription>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HTEST" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang&quot; Version &quot;2271210&quot; Updated &quot;2021-12-20 20:29:05+0100&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RadiotherapyPhasePrescription.html\">Radiotherapy Phase Prescription</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActReason http://terminology.hl7.org/CodeSystem/v3-ActReason}\">http://terminology.hl7.org/CodeSystem/v3-ActReason</span></p></div><p><b>Number of Prescribed Fractions</b>: 25</p><p><b>Procedure Intent Extension</b>: Curative <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#373808002 &quot;Curative - procedure intent&quot;)</span></p><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html\">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using photons (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1156506007)</span></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html\">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Three dimensional external beam radiation therapy (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1162782007)</span></p></blockquote><blockquote><p><b>Dose Prescribed to Volume</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <span>: Left Breast</span></p><blockquote><p><b>url</b></p><code>fractionDose</code></blockquote><p><b>value</b>: 200 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 5000 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p></blockquote><p><b>Respiratory Motion Management</b>: Radiotherapy without respiratory motion management (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/CodeSystem-snomed-requested-cs.html\">Requested SNOMED Codes Code System</a>#721031000124102)</span></p><p><b>identifier</b>: id: Left Breast Tangents (use: USUAL), id: 22 (use: OFFICIAL)</p><p><b>basedOn</b>: <a href=\"ServiceRequest-RadiotherapyCoursePrescriptionSHS-101-LeftBreast.html\">ServiceRequest/RadiotherapyCoursePrescriptionSHS-101-LeftBreast: C1</a></p><p><b>status</b>: active</p><p><b>intent</b>: original-order</p><p><b>category</b>: Radiation oncology AND/OR radiotherapy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108290001)</span></p><p><b>code</b>: Radiotherapy treatment phase (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1222565005)</span></p><p><b>subject</b>: <a href=\"Patient-RadiotherapyPatientSHS-216.html\">Patient/RadiotherapyPatientSHS-216</a> &quot; SISTER&quot;</p><p><b>reasonCode</b>: Primary malignant neoplasm of female left breast (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#353431000119107)</span></p><p><b>reasonReference</b>: <a href=\"Condition-RadiotherapyConditionSHS-1.html\">Condition/RadiotherapyConditionSHS-1: 353431000119107:Primary malignant neoplasm of female left breast (disorder)</a></p><p><b>bodySite</b>: Breast structure (body structure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76752008)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-fractions-prescribed"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "25"^^xsd:positiveInteger ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:373808002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "373808002" ] ;
+         fhir:display [ fhir:v "Curative - procedure intent" ]
+       ] ) ;
+       fhir:text [ fhir:v "Curative" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1156506007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1156506007" ] ;
+           fhir:display [ fhir:v "External beam radiation therapy using photons (procedure)" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:1162782007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1162782007" ] ;
+           fhir:display [ fhir:v "Three dimensional external beam radiation therapy (procedure)" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "volume"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:identifier [
+           fhir:use [ fhir:v "official" ] ;
+           fhir:system [ fhir:v "http://varian.com/fhir/identifier/radiotherapyDoseReferenceId"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "RadiotherapyPhasePrescription-47-Prostate" ]
+         ] ;
+         fhir:display [ fhir:v "Left Breast" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "fractionDose"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "200"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cGy" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "totalDose"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "5000"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cGy" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-dose-prescribed-to-volume"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-respiratory-motion-management"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/snomed-requested-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "721031000124102" ] ;
+         fhir:display [ fhir:v "Radiotherapy without respiratory motion management (regime/therapy)" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/radiotherapyPrescriptionId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Left Breast Tangents" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/RadiotherapyPhase/RadOnc-Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "22" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://varian.com/fhir/v1/ServiceRequest/RadiotherapyCoursePrescriptionSHS-101-LeftBreast> ;
+     fhir:reference [ fhir:v "ServiceRequest/RadiotherapyCoursePrescriptionSHS-101-LeftBreast" ] ;
+     fhir:display [ fhir:v "C1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "original-order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:108290001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "108290001" ] ;
+       fhir:display [ fhir:v "Radiation oncology AND/OR radiotherapy" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1222565005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1222565005" ] ;
+       fhir:display [ fhir:v "Radiotherapy treatment phase (regime/therapy)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://varian.com/fhir/v1/Patient/RadiotherapyPatientSHS-216> ;
+     fhir:reference [ fhir:v "Patient/RadiotherapyPatientSHS-216" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:353431000119107 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "353431000119107" ] ;
+       fhir:display [ fhir:v "Primary malignant neoplasm of female left breast (disorder)" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://varian.com/fhir/v1/Condition/RadiotherapyConditionSHS-1> ;
+     fhir:reference [ fhir:v "Condition/RadiotherapyConditionSHS-1" ] ;
+     fhir:display [ fhir:v "353431000119107:Primary malignant neoplasm of female left breast (disorder)" ]
+  ] ) ; # 
+  fhir:bodySite ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:7771000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "7771000" ] ;
+           fhir:display [ fhir:v "Left (qualifier value)" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:76752008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76752008" ] ;
+       fhir:display [ fhir:v "Breast structure (body structure)" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

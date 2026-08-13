@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="Location-1009"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Location Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Location example for the *Varian ARIA API Location Profile.*"/>
+    </extension>
+    <versionId value="391563"/>
+    <lastUpdated value="2023-10-10T15:13:33.637+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Location"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="Location-1009"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;Location-1009&quot; Version &quot;391563&quot; Updated &quot;2023-10-10 15:13:33+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Location.html">Location</a></p></div><p><b>serviceOrganization</b>: <a href="Organization-Organization-Dept-10002.html">Organization/Organization-Dept-10002: OCS1</a> &quot;OCS1&quot;</p><p><b>serviceOrganization</b>: <a href="Organization/Organization-Dept-10003">Organization/Organization-Dept-10003: OCS2</a></p><p><b>serviceOrganization</b>: <a href="Organization/Organization-Dept-10008">Organization/Organization-Dept-10008: Oncology Department</a></p><p><b>serviceOrganization</b>: <a href="Organization/Organization-Dept-10010">Organization/Organization-Dept-10010: OutPatient Department</a></p><p><b>serviceOrganization</b>: <a href="Organization/Organization-Dept-10011">Organization/Organization-Dept-10011: Pharmacy Department</a></p><p><b>serviceOrganization</b>: <a href="Organization/Organization-Dept-1">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>serviceOrganization</b>: <a href="Organization/Organization-Dept-10009">Organization/Organization-Dept-10009: Radiology Department</a></p><p><b>schedulable</b>: true</p><p><b>identifier</b>: id: ID123</p><p><b>status</b>: active</p><p><b>name</b>: API_machine</p><p><b>type</b>: Venue <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (location-type#Venue)</span>, Dressing Room <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (location-sub-type#Dressing Room)</span></p></div>
+  </text>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-10002"/>
+      <display value="OCS1"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-10003"/>
+      <display value="OCS2"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-10008"/>
+      <display value="Oncology Department"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-10010"/>
+      <display value="OutPatient Department"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-10011"/>
+      <display value="Pharmacy Department"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-1"/>
+      <display value="Radiation Therapy"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-10009"/>
+      <display value="Radiology Department"/>
+    </valueReference>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/schedulable">
+    <valueBoolean value="true"/>
+  </extension>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/Location/Id"/>
+    <value value="ID123"/>
+  </identifier>
+  <status value="active"/>
+  <name value="API_machine"/>
+  <type>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/Location/location-type"/>
+      <code value="Venue"/>
+      <display value="Venue"/>
+    </coding>
+    <text value="Venue"/>
+  </type>
+  <type>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/Location/location-sub-type"/>
+      <code value="Dressing Room"/>
+      <display value="Dressing Room"/>
+    </coding>
+    <text value="Dressing Room"/>
+  </type>
+</Location>

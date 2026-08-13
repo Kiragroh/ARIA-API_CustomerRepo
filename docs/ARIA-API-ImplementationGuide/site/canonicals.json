@@ -1,0 +1,1016 @@
+[
+  {
+    "id" : "shs-radiotherapy-bolus-extension",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.siemens-healthineers.com/fhir/R4/StructureDefinition/shs-radiotherapy-bolus-extension",
+    "version" : "1.0.0",
+    "name" : "SHSRadiotherapyBolusExtension"
+  },
+  {
+    "id" : "radiotherapy-prescription-energy-example",
+    "type" : "CodeSystem",
+    "url" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-energy-example",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPrescriptionEnergyExample"
+  },
+  {
+    "id" : "radiotherapy-prescription-modality-example",
+    "type" : "CodeSystem",
+    "url" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPrescriptionModalityExample"
+  },
+  {
+    "id" : "radiotherapy-prescription-site-example",
+    "type" : "CodeSystem",
+    "url" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site-example",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPrescriptionSiteExample"
+  },
+  {
+    "id" : "radiotherapy-prescription-technique-example",
+    "type" : "CodeSystem",
+    "url" : "http://varian.com/fhir/CodeSystem/radiotherapy-prescription-technique-example",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPrescriptionTechniqueExample"
+  },
+  {
+    "id" : "aria-allergy-category",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/allergy-intolerance-category",
+    "version" : "1.0.0",
+    "name" : "AllergyIntoleranceCategory"
+  },
+  {
+    "id" : "aria-careplan-template",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/careplan-template",
+    "version" : "1.0.0",
+    "name" : "CarePlanTemplate"
+  },
+  {
+    "id" : "aria-diagnosiscode",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/condition-code",
+    "version" : "1.0.0",
+    "name" : "DiagnosisCode"
+  },
+  {
+    "id" : "aria-country",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/country",
+    "version" : "1.0.0",
+    "name" : "Country"
+  },
+  {
+    "id" : "aria-device-type",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/device-type",
+    "version" : "1.0.0",
+    "name" : "DeviceType"
+  },
+  {
+    "id" : "aria-documenttype",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/documentreference-type",
+    "version" : "1.0.0",
+    "name" : "DocumentReferenceType"
+  },
+  {
+    "id" : "aria-ethinicity",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/ethnicity",
+    "version" : "1.0.0",
+    "name" : "PatientEthinicity"
+  },
+  {
+    "id" : "aria-patient-language",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/languages",
+    "version" : "1.0.0",
+    "name" : "PatientLanguage"
+  },
+  {
+    "id" : "aria-patient-maritalstatus",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/marital-status",
+    "version" : "1.0.0",
+    "name" : "PatientMaritalStatus"
+  },
+  {
+    "id" : "aria-patient-deathreason",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/patient-deathreason",
+    "version" : "1.0.0",
+    "name" : "PatientDeathReason"
+  },
+  {
+    "id" : "aria-patient-genderidentity",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/patient-genderIdentity",
+    "version" : "1.0.0",
+    "name" : "ARIAPatientGenderIdentity"
+  },
+  {
+    "id" : "aria-patient-ids",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/patient-ids",
+    "version" : "1.0.0",
+    "name" : "PatientIds"
+  },
+  {
+    "id" : "aria-mobilephoneprovider",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/patient-mobilephoneprovider",
+    "version" : "1.0.0",
+    "name" : "PatientMobilePhoneProvider"
+  },
+  {
+    "id" : "aria-patient-sexorientation",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/patient-sexorientation",
+    "version" : "1.0.0",
+    "name" : "PatientSexOrientation"
+  },
+  {
+    "id" : "aria-patient-status",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/patient-status",
+    "version" : "1.0.0",
+    "name" : "PatientStatus"
+  },
+  {
+    "id" : "aria-patient-userdefinedlabel",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/patient-userdefinedlabel",
+    "version" : "1.0.0",
+    "name" : "PatientUserDefinedLabel"
+  },
+  {
+    "id" : "aria-patient-gender",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/person-gender",
+    "version" : "1.0.0",
+    "name" : "PersonGender"
+  },
+  {
+    "id" : "aria-practitioner-ids",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/practitioner-ids",
+    "version" : "1.0.0",
+    "name" : "PractitionerIds"
+  },
+  {
+    "id" : "aria-practitioner-role",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/practitioner-role",
+    "version" : "1.0.0",
+    "name" : "PractitionerRole"
+  },
+  {
+    "id" : "aria-patient-race",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/race",
+    "version" : "1.0.0",
+    "name" : "PatientRace"
+  },
+  {
+    "id" : "radiotherapy-prescription-energy-example",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-energy-example",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPrescriptionEnergyExample"
+  },
+  {
+    "id" : "radiotherapy-prescription-modality-example",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-modality-example",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPrescriptionModalityExample"
+  },
+  {
+    "id" : "RadiotherapyPrescriptionSiteExample",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-site-example",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPrescriptionSiteExample"
+  },
+  {
+    "id" : "radiotherapy-prescription-technique-example",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/radiotherapy-prescription-technique-example",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPrescriptionTechniqueExample"
+  },
+  {
+    "id" : "aria-patient-religion",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/ValueSet/religion",
+    "version" : "1.0.0",
+    "name" : "PatientReligion"
+  },
+  {
+    "id" : "ActivityDefinition-844",
+    "type" : "ActivityDefinition",
+    "url" : "http://varian.com/fhir/v1/ActivityDefinition/ActivityDefinition-844",
+    "version" : "1.0.0",
+    "name" : "new Actiity"
+  },
+  {
+    "id" : "varian.public.profile",
+    "type" : "ImplementationGuide",
+    "url" : "http://varian.com/fhir/v1/ImplementationGuide/varian.public.profile",
+    "version" : "1.0.0",
+    "name" : "varianpublicprofile"
+  },
+  {
+    "id" : "ActivityDefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/ActivityDefinition",
+    "version" : "1.0.0",
+    "name" : "ActivityDefinition"
+  },
+  {
+    "id" : "AllergyIntolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/AllergyIntolerance",
+    "version" : "1.0.0",
+    "name" : "AllergyIntolerance"
+  },
+  {
+    "id" : "Appointment",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Appointment",
+    "version" : "1.0.0",
+    "name" : "Appointment"
+  },
+  {
+    "id" : "AuditEvent",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/AuditEvent",
+    "version" : "1.0.0",
+    "name" : "AuditEvent"
+  },
+  {
+    "id" : "BodyStructure",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/BodyStructure",
+    "version" : "1.0.0",
+    "name" : "BodyStructure"
+  },
+  {
+    "id" : "CancerCondition",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/CancerCondition",
+    "version" : "1.0.0",
+    "name" : "Condition_Diagnosis"
+  },
+  {
+    "id" : "CarePlan",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/CarePlan",
+    "version" : "1.0.0",
+    "name" : "CarePlan"
+  },
+  {
+    "id" : "CareTeam",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/CareTeam",
+    "version" : "1.0.0",
+    "name" : "CareTeam"
+  },
+  {
+    "id" : "ChargeItem",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/ChargeItem",
+    "version" : "1.0.0",
+    "name" : "ChargeItem"
+  },
+  {
+    "id" : "Condition-Stage-isWorkingStage",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Condition-Stage-isWorkingStage",
+    "version" : "1.0.0",
+    "name" : "ConditionStageisWorkingStage"
+  },
+  {
+    "id" : "Device",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Device",
+    "version" : "1.0.0",
+    "name" : "Device"
+  },
+  {
+    "id" : "DocumentReference",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/DocumentReference",
+    "version" : "1.0.0",
+    "name" : "DocumentReference"
+  },
+  {
+    "id" : "Group",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Group",
+    "version" : "1.0.0",
+    "name" : "Group"
+  },
+  {
+    "id" : "HealthcareService",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/HealthcareService",
+    "version" : "1.0.0",
+    "name" : "HealthcareService"
+  },
+  {
+    "id" : "Location",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Location",
+    "version" : "1.0.0",
+    "name" : "Location"
+  },
+  {
+    "id" : "Organization",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Organization",
+    "version" : "1.0.0",
+    "name" : "Organization"
+  },
+  {
+    "id" : "Patient",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Patient",
+    "version" : "1.0.0",
+    "name" : "Patient"
+  },
+  {
+    "id" : "Practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Practitioner",
+    "version" : "1.0.0",
+    "name" : "Practitioner"
+  },
+  {
+    "id" : "RadiotherapyCoursePrescription",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCoursePrescription",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyCoursePrescription"
+  },
+  {
+    "id" : "RadiotherapyCourseSummary",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCourseSummary",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyCourseSummary"
+  },
+  {
+    "id" : "RadiotherapyPhasePrescription",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPhasePrescription",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPhasePrescription"
+  },
+  {
+    "id" : "RadiotherapyPlannedCourse",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPlannedCourse",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPlannedCourse"
+  },
+  {
+    "id" : "RadiotherapyPlannedPhase",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPlannedPhase",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyPlannedPhase"
+  },
+  {
+    "id" : "RadiotherapyTreatedPhase",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPhase",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyTreatedPhase"
+  },
+  {
+    "id" : "RadiotherapyTreatedPlan",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPlan",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyTreatedPlan"
+  },
+  {
+    "id" : "RadiotherapyTreatmentPlan",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatmentPlan",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyTreatmentPlan"
+  },
+  {
+    "id" : "RadiotherapyVolume",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/RadiotherapyVolume",
+    "version" : "1.0.0",
+    "name" : "RadiotherapyVolume"
+  },
+  {
+    "id" : "StageCategory",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/StageCategory",
+    "version" : "1.0.0",
+    "name" : "Observation_StageCategory"
+  },
+  {
+    "id" : "StageGroup",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/StageGroup",
+    "version" : "1.0.0",
+    "name" : "Observation_StageGroup"
+  },
+  {
+    "id" : "Task",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/Task",
+    "version" : "1.0.0",
+    "name" : "Task"
+  },
+  {
+    "id" : "ValueSet",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/ValueSet",
+    "version" : "1.0.0",
+    "name" : "ValueSet"
+  },
+  {
+    "id" : "VitalSigns",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/VitalSigns",
+    "version" : "1.0.0",
+    "name" : "VitalSigns"
+  },
+  {
+    "id" : "VitalSignsComponent",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/VitalSignsComponent",
+    "version" : "1.0.0",
+    "name" : "VitalSignsComponent"
+  },
+  {
+    "id" : "activityDefinition-category",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/activityDefinition-category",
+    "version" : "1.0.0",
+    "name" : "ActivityDefinitionCategory"
+  },
+  {
+    "id" : "address-telephone1",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/address-telephone1",
+    "version" : "1.0.0",
+    "name" : "AddressTelephone1"
+  },
+  {
+    "id" : "allergyIntolerance-allergyCategoryInAria",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/allergyIntolerance-allergyCategoryInAria",
+    "version" : "1.0.0",
+    "name" : "AllergyIntoleranceAllergyCategoryInAria"
+  },
+  {
+    "id" : "allergyIntolerance-reaction-lifeThreatening",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/allergyIntolerance-reaction-lifeThreatening",
+    "version" : "1.0.0",
+    "name" : "AllergyIntoleranceReactionLifeThreatening"
+  },
+  {
+    "id" : "appointment-actualTime",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/appointment-actualTime",
+    "version" : "1.0.0",
+    "name" : "AppointmentActualTime"
+  },
+  {
+    "id" : "appointment-ariaStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/appointment-ariaStatus",
+    "version" : "1.0.0",
+    "name" : "AppointmentAriaStatus"
+  },
+  {
+    "id" : "appointment-newPatientIndicator",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/appointment-newPatientIndicator",
+    "version" : "1.0.0",
+    "name" : "AppointmentnewPatientIndicator"
+  },
+  {
+    "id" : "appointment-visitInstructions",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/appointment-visitInstructions",
+    "version" : "1.0.0",
+    "name" : "AppointmentVisitInstructions"
+  },
+  {
+    "id" : "approvalDate",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/approvalDate",
+    "version" : "1.0.0",
+    "name" : "ApprovalDate"
+  },
+  {
+    "id" : "assertedOn",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/assertedOn",
+    "version" : "1.0.0",
+    "name" : "AssertedOn"
+  },
+  {
+    "id" : "careplan-activity-definition",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/careplan-activity-definition",
+    "version" : "1.0.0",
+    "name" : "CarePlanActivityDefinition"
+  },
+  {
+    "id" : "careplan-activityAdditionalPerformer",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/careplan-activityAdditionalPerformer",
+    "version" : "1.0.0",
+    "name" : "CarePlanActivityAdditionalPerformer"
+  },
+  {
+    "id" : "careplan-activityAutoAssignOncologist",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/careplan-activityAutoAssignOncologist",
+    "version" : "1.0.0",
+    "name" : "CarePlanActivityAutoAssignOncologist"
+  },
+  {
+    "id" : "careplan-activityBasedOn",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/careplan-activityBasedOn",
+    "version" : "1.0.0",
+    "name" : "CarePlanActivityBasedOn"
+  },
+  {
+    "id" : "careplan-lagfrompredecessor",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/careplan-lagfrompredecessor",
+    "version" : "1.0.0",
+    "name" : "CarePlanLagFromPredecessor"
+  },
+  {
+    "id" : "careplan-lastUpdatedOn",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/careplan-lastUpdatedOn",
+    "version" : "1.0.0",
+    "name" : "CarePlanLastUpdatedOn"
+  },
+  {
+    "id" : "chargeItem-associateCharge",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/chargeItem-associateCharge",
+    "version" : "1.0.0",
+    "name" : "ChargeItemAssociateCharge"
+  },
+  {
+    "id" : "chargeItem-codeModifier",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/chargeItem-codeModifier",
+    "version" : "1.0.0",
+    "name" : "ChargeItemCodeModifier"
+  },
+  {
+    "id" : "chargeitem-category",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/chargeitem-category",
+    "version" : "1.0.0",
+    "name" : "ChargeitemCategory"
+  },
+  {
+    "id" : "chargeitem-completedOn",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/chargeitem-completedOn",
+    "version" : "1.0.0",
+    "name" : "ChargeitemCompletedOn"
+  },
+  {
+    "id" : "componentNote",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/componentNote",
+    "version" : "1.0.0",
+    "name" : "ComponentNote"
+  },
+  {
+    "id" : "componentOrder",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/componentOrder",
+    "version" : "1.0.0",
+    "name" : "ComponentOrder"
+  },
+  {
+    "id" : "condition-assertedDate",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-assertedDate",
+    "version" : "1.0.0",
+    "name" : "ConditionAssertedDate"
+  },
+  {
+    "id" : "condition-cancerBehavior",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-cancerBehavior",
+    "version" : "1.0.0",
+    "name" : "ConditionCancerBehavior"
+  },
+  {
+    "id" : "condition-clinicalStatusDate",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-clinicalStatusDate",
+    "version" : "1.0.0",
+    "name" : "ConditionClinicalStatusDate"
+  },
+  {
+    "id" : "condition-clinicalStatusInARIA",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-clinicalStatusInARIA",
+    "version" : "1.0.0",
+    "name" : "ConditionClinicalStatusInARIA"
+  },
+  {
+    "id" : "condition-isExternal",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-isExternal",
+    "version" : "1.0.0",
+    "name" : "ConditionIsExternal"
+  },
+  {
+    "id" : "condition-laterality",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-laterality",
+    "version" : "1.0.0",
+    "name" : "ConditionLaterality"
+  },
+  {
+    "id" : "condition-rank",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/condition-rank",
+    "version" : "1.0.0",
+    "name" : "ConditionRank"
+  },
+  {
+    "id" : "customAttributes",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/customAttributes",
+    "version" : "1.0.0",
+    "name" : "CustomAttributes"
+  },
+  {
+    "id" : "daily-dose-limit",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/daily-dose-limit",
+    "version" : "1.0.0",
+    "name" : "DailyDoseLimit"
+  },
+  {
+    "id" : "default",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/default",
+    "version" : "1.0.0",
+    "name" : "Default"
+  },
+  {
+    "id" : "defaultServiceOrganization",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/defaultServiceOrganization",
+    "version" : "1.0.0",
+    "name" : "DefaultServiceOrganization"
+  },
+  {
+    "id" : "directive-userConfirmationRequired",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/directive-userConfirmationRequired",
+    "version" : "1.0.0",
+    "name" : "DirectiveUserConfirmationRequired"
+  },
+  {
+    "id" : "documentreference-authenticated",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-authenticated",
+    "version" : "1.0.0",
+    "name" : "DocumentreferenceAuthenticated"
+  },
+  {
+    "id" : "documentreference-completed",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-completed",
+    "version" : "1.0.0",
+    "name" : "DocumentreferenceCompleted"
+  },
+  {
+    "id" : "documentreference-documentLocation",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-documentLocation",
+    "version" : "1.0.0",
+    "name" : "DocumentreferenceDocumentLocation"
+  },
+  {
+    "id" : "documentreference-signature",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-signature",
+    "version" : "1.0.0",
+    "name" : "DocumentreferenceSignature"
+  },
+  {
+    "id" : "documentreference-supervisor",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-supervisor",
+    "version" : "1.0.0",
+    "name" : "DocumentreferenceSupervisor"
+  },
+  {
+    "id" : "documentreference-templateName",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/documentreference-templateName",
+    "version" : "1.0.0",
+    "name" : "DocumentreferenceTemplateName"
+  },
+  {
+    "id" : "isChargeCaptureApplicable",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/isChargeCaptureApplicable",
+    "version" : "1.0.0",
+    "name" : "IsChargeCaptureApplicable"
+  },
+  {
+    "id" : "isPrimary",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/isPrimary",
+    "version" : "1.0.0",
+    "name" : "IsPrimary"
+  },
+  {
+    "id" : "isPublishable",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/isPublishable",
+    "version" : "1.0.0",
+    "name" : "IsPublishable"
+  },
+  {
+    "id" : "isWorkingStage",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/isWorkingStage",
+    "version" : "1.0.0",
+    "name" : "IsWorkingStage"
+  },
+  {
+    "id" : "lastModificationTaskName",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/lastModificationTaskName",
+    "version" : "1.0.0",
+    "name" : "LastModificationTaskName"
+  },
+  {
+    "id" : "lastModificationUser",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/lastModificationUser",
+    "version" : "1.0.0",
+    "name" : "LastModificationUser"
+  },
+  {
+    "id" : "login-institution",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/login-institution",
+    "version" : "1.0.0",
+    "name" : "LoginInstitution"
+  },
+  {
+    "id" : "modifier-application-code",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/modifier-application-code",
+    "version" : "1.0.0",
+    "name" : "ModifierApplicationCode"
+  },
+  {
+    "id" : "observation-stageClassification",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/observation-stageClassification",
+    "version" : "1.0.0",
+    "name" : "ObservationStageClassification"
+  },
+  {
+    "id" : "patient-class",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-class",
+    "version" : "1.0.0",
+    "name" : "PatientClass"
+  },
+  {
+    "id" : "patient-contact-isPrimary",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-contact-isPrimary",
+    "version" : "1.0.0",
+    "name" : "PatientContactIsPrimary"
+  },
+  {
+    "id" : "patient-contact-subrelation",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-contact-subrelation",
+    "version" : "1.0.0",
+    "name" : "PatientContactSubrelation"
+  },
+  {
+    "id" : "patient-deathReason",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-deathReason",
+    "version" : "1.0.0",
+    "name" : "PatientDeathReason"
+  },
+  {
+    "id" : "patient-isTestPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-isTestPatient",
+    "version" : "1.0.0",
+    "name" : "TestPatient"
+  },
+  {
+    "id" : "patient-locationDetails",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-locationDetails",
+    "version" : "1.0.0",
+    "name" : "PatientLocationDetails"
+  },
+  {
+    "id" : "patient-mobilePhoneProvider",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-mobilePhoneProvider",
+    "version" : "1.0.0",
+    "name" : "PatientMobilePhoneProvider"
+  },
+  {
+    "id" : "patient-modeOfArrival",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-modeOfArrival",
+    "version" : "1.0.0",
+    "name" : "PatientModeOfArrival"
+  },
+  {
+    "id" : "patient-occupation",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-occupation",
+    "version" : "1.0.0",
+    "name" : "PatientOccupation"
+  },
+  {
+    "id" : "patient-photo-type",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-photo-type",
+    "version" : "1.0.0",
+    "name" : "PatientPhotoType"
+  },
+  {
+    "id" : "patient-retirementDetails",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-retirementDetails",
+    "version" : "1.0.0",
+    "name" : "PatientRetirementDetails"
+  },
+  {
+    "id" : "patient-status",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-status",
+    "version" : "1.0.0",
+    "name" : "PatientStatus"
+  },
+  {
+    "id" : "performedAge",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/performedAge",
+    "version" : "1.0.0",
+    "name" : "PerformedAge"
+  },
+  {
+    "id" : "person-gender",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/person-gender",
+    "version" : "1.0.0",
+    "name" : "PersonGender"
+  },
+  {
+    "id" : "practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/practitioner-role",
+    "version" : "1.0.0",
+    "name" : "PractitionerRole"
+  },
+  {
+    "id" : "readOnly",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/readOnly",
+    "version" : "1.0.0",
+    "name" : "ReadOnly"
+  },
+  {
+    "id" : "reminderTime",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/reminderTime",
+    "version" : "1.0.0",
+    "name" : "ReminderTime"
+  },
+  {
+    "id" : "schedulable",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/schedulable",
+    "version" : "1.0.0",
+    "name" : "Schedulable"
+  },
+  {
+    "id" : "serviceOrganization",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/serviceOrganization",
+    "version" : "1.0.0",
+    "name" : "ServiceOrganization"
+  },
+  {
+    "id" : "session-dose-limit",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/session-dose-limit",
+    "version" : "1.0.0",
+    "name" : "SessionDoseLimit"
+  },
+  {
+    "id" : "sexOrientation",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/sexOrientation",
+    "version" : "1.0.0",
+    "name" : "SexOrientation"
+  },
+  {
+    "id" : "subComponent",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/subComponent",
+    "version" : "1.0.0",
+    "name" : "SubComponent"
+  },
+  {
+    "id" : "subcomponentcode",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/subcomponentcode",
+    "version" : "1.0.0",
+    "name" : "SubComponentCode"
+  },
+  {
+    "id" : "subcomponentvalue",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/subcomponentvalue",
+    "version" : "1.0.0",
+    "name" : "SubComponentValue"
+  },
+  {
+    "id" : "supporting-information",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/supporting-information",
+    "version" : "1.0.0",
+    "name" : "SupportingInformation"
+  },
+  {
+    "id" : "task-minutesDuration",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/task-minutesDuration",
+    "version" : "1.0.0",
+    "name" : "TaskMinutesDuration"
+  },
+  {
+    "id" : "total-dose-limit",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/total-dose-limit",
+    "version" : "1.0.0",
+    "name" : "TotalDoseLimit"
+  },
+  {
+    "id" : "valueset-Required",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/valueset-Required",
+    "version" : "1.0.0",
+    "name" : "ValuesetRequired"
+  },
+  {
+    "id" : "valueset-payor-plan-type",
+    "type" : "StructureDefinition",
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/valueset-payor-plan-type",
+    "version" : "1.0.0",
+    "name" : "ValuesetPayorPlanType"
+  },
+  {
+    "id" : "aria-procedurecode",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/v1/ValueSet/aria-procedurecode",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "patient-citizenship-vs",
+    "type" : "ValueSet",
+    "url" : "http://varian.com/fhir/v1/ValueSet/patient-citizenship-vs",
+    "version" : "1.0.0",
+    "name" : "PatientCitizenshipVS"
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "resourceType" : "Appointment",
+  "id" : "Appointment-162",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Appointment Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Appointment example for the *Varian ARIA API Appointment Profile.*"
+    }],
+    "versionId" : "390183",
+    "lastUpdated" : "2023-10-09T03:37:01.580+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/Appointment"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"Appointment-162\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;Appointment-162&quot; Version &quot;390183&quot; Updated &quot;2023-10-09 03:37:01+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Appointment.html\">Appointment</a></p></div><p><b>remindTime</b>: 30 Minutes</p><p><b>appointment-actualTime</b>: 1970-01-01 05:30:00+0530 --&gt; 1970-01-01 05:30:00+0530</p><p><b>appointment-ariaStatus</b>: Open <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (appointment-status#Open)</span></p><blockquote><p><b>modifierExtension[http://varian.com/fhir/v1/StructureDefinition/readOnly]</b></p></blockquote><p><b>identifier</b>: id:\u00a0FHIR_e626a554-3645-4a87-8d52-2c8c2a34a45a</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: Qin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activityDefinition-category#Qin)</span></p><p><b>serviceType</b>: Place Planning Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-service-type#Place Planning Order)</span></p><p><b>priority</b>: 1</p><p><b>start</b>: Oct 9, 2023, 8:26:00\u202fAM</p><p><b>end</b>: Oct 9, 2023, 8:40:00\u202fAM</p><p><b>minutesDuration</b>: 14</p><p><b>created</b>: 2023-10-09 03:37:01+0530</p><p><b>comment</b>: Created By ARIA_API</p><p><b>basedOn</b>: <a href=\"ServiceRequest/ActivityInstance-4071\">ServiceRequest/ActivityInstance-4071</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: HealthcareService <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href=\"HealthcareService-HealthcareService-1.html\">HealthcareService/HealthcareService-1: Radiation Therapy</a> &quot;Radiation Therapy&quot;</p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: Patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href=\"Patient/Patient-48\">Patient/Patient-48: Wilson</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><blockquote><p><b>id</b></p>929</blockquote><p><b>type</b>: Device <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PART)</span></p><p><b>actor</b>: <a href=\"Device/Device-1035\">Device/Device-1035: SupportDevId2</a></p><p><b>status</b>: accepted</p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/reminderTime",
+    "valueQuantity" : {
+      "value" : 30,
+      "unit" : "Minutes"
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/appointment-actualTime",
+    "valuePeriod" : {
+      "start" : "1970-01-01T05:30:00+05:30",
+      "end" : "1970-01-01T05:30:00+05:30"
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/appointment-ariaStatus",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Appointment/appointment-status",
+        "code" : "Open",
+        "display" : "Open"
+      }]
+    }
+  }],
+  "modifierExtension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/readOnly",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "system" : "http://varian.com/fhir/identifier/UID",
+    "value" : "FHIR_e626a554-3645-4a87-8d52-2c8c2a34a45a"
+  }],
+  "status" : "booked",
+  "serviceCategory" : [{
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/activityDefinition-category",
+      "code" : "Qin",
+      "display" : "Qin"
+    }]
+  }],
+  "serviceType" : [{
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/activity-service-type",
+      "code" : "Place Planning Order",
+      "display" : "Place Planning Order"
+    }]
+  }],
+  "priority" : 1,
+  "start" : "2023-10-09T08:26:00.507+05:30",
+  "end" : "2023-10-09T08:40:00.507+05:30",
+  "minutesDuration" : 14,
+  "created" : "2023-10-09T03:37:01+05:30",
+  "comment" : "Created By ARIA_API",
+  "basedOn" : [{
+    "reference" : "ServiceRequest/ActivityInstance-4071"
+  }],
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "PART",
+        "display" : "HealthcareService"
+      }]
+    }],
+    "actor" : {
+      "reference" : "HealthcareService/HealthcareService-1",
+      "display" : "Radiation Therapy"
+    },
+    "status" : "accepted"
+  },
+  {
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "PART",
+        "display" : "Patient"
+      }]
+    }],
+    "actor" : {
+      "reference" : "Patient/Patient-48",
+      "display" : "Wilson"
+    },
+    "status" : "accepted"
+  },
+  {
+    "id" : "929",
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "PART",
+        "display" : "Device"
+      }]
+    }],
+    "actor" : {
+      "reference" : "Device/Device-1035",
+      "display" : "SupportDevId2"
+    },
+    "status" : "accepted"
+  }]
+}

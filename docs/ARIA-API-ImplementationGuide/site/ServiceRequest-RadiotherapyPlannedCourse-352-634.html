@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>VARIAN.PUBLIC.PROFILE\RadiotherapyPlannedCourse-352-634 - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/fhir.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+      <!-- <style type="text/css">h2{--heading-prefix:"10.175"}
+    h3,h4,h5,h6{--heading-prefix:"10.175"}</style> -->
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a no-external="true" id="left-logo" href="index.html"><img src="assets/images/varian.png" alt="Visit the Varian website" height="50"/> </a>
+  </div>
+  <div id="family-nav">
+    <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>RadiotherapyPlannedCourse-352-634</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ServiceRequest-RadiotherapyPlannedCourse-352-634.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ServiceRequest-RadiotherapyPlannedCourse-352-634.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example ServiceRequest: RadiotherapyPlannedCourse-352-634</h2>
+
+
+
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <div><p><b>Generated Narrative: ServiceRequest</b><a name="RadiotherapyPlannedCourse-352-634"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest "RadiotherapyPlannedCourse-352-634" Version "4056916" Updated "2023-08-21 18:04:47+0200" </p><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-planned-course.html">Radiotherapy Planned Course</a>, <a href="StructureDefinition-RadiotherapyPlannedCourse.html">Radiotherapy Planned Course</a></p></div><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using photons (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1156506007)</span></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Three dimensional external beam radiation therapy (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1162782007)</span></p></blockquote><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using electrons (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#45643008)</span></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Three dimensional external beam radiation therapy (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1162782007)</span></p></blockquote><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using photons (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1156506007)</span></p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Two dimensional external beam radiation therapy (procedure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1156526006)</span></p></blockquote><blockquote><p><b>Dose Planned to Volume</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><a name="l447">​</a><b>value</b>: <a href="BodyStructure/BodyStructure-PV-679">BodyStructure/BodyStructure-PV-679: RightBreast</a></p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 900.0 cGy<span style="background: LightGoldenRodYellow"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>fractions</code></blockquote><p><b>value</b>: 3</p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html">Primary Plan Dose</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><blockquote><p><b>Dose Planned to Volume</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href="BodyStructure-BodyStructure-PV-681.html">BodyStructure/BodyStructure-PV-681: LeftBreast</a></p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 900.0 cGy<span style="background: LightGoldenRodYellow"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>fractions</code></blockquote><p><b>value</b>: 3</p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html">Primary Plan Dose</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><blockquote><p><b>Dose Planned to Volume</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><a name="l563">​</a><b>value</b>: <a href="BodyStructure/BodyStructure-PV-680">BodyStructure/BodyStructure-PV-680: LeftBreastBoost</a></p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 1700.0 cGy<span style="background: LightGoldenRodYellow"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>fractions</code></blockquote><p><b>value</b>: 7</p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html">Primary Plan Dose</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><blockquote><p><b>Dose Planned to Volume</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><a name="l621">​</a><b>value</b>: <a href="BodyStructure/BodyStructure-PV-774">BodyStructure/BodyStructure-PV-774: PTVp</a></p><blockquote><p><b>url</b></p><code>totalDose</code></blockquote><p><b>value</b>: 5000.0 cGy<span style="background: LightGoldenRodYellow"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><code>fractions</code></blockquote><p><b>value</b>: 25</p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html">Primary Plan Dose</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><p><b>Procedure Intent Extension</b>: Radical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (radiotherapy-therapeutic-intent#Radical)</span></p><p><b>identifier</b>: id:&nbsp;C1_Both_Breast&nbsp;(use:&nbsp;USUAL), id:&nbsp;634&nbsp;(use:&nbsp;OFFICIAL)</p><p><b>basedOn</b>: <a href="ServiceRequest-RadiotherapyCoursePrescription-352-634.html">ServiceRequest/RadiotherapyCoursePrescription-352-634: C1_Both_Breast</a></p><p><b>status</b>: active</p><p><b>intent</b>: filler-order</p><p><b>category</b>: Radiation oncology AND/OR radiotherapy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#108290001)</span></p><p><b>code</b>: Radiotherapy course of treatment (regime/therapy) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1217123003)</span></p><p><b>subject</b>: <a href="Patient-Patient-352.html">Patient/Patient-352: Sister-22B, Jane</a> " SISTER-22B"</p><p><b>occurrence</b>: 2022-12-02 00:00:00+0100 --&gt; (ongoing)</p><p><b>reasonCode</b>: Malignant neoplasm: breast, unspecified <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html">ICD-10</a>#C50.9)</span></p><p><a name="l731">​</a><b>reasonReference</b>: <a href="Condition/Condition-DX-65100000000000000156-2">Condition/Condition-DX-65100000000000000156-2: C50.9:Malignant neoplasm: breast, unspecified</a></p><p><b>bodySite</b>: Breast, Left <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (radiotherapy-prescription-site#Breast, Left; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#76752008 "Breast structure (body structure)")</span>, Breast, Right <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (radiotherapy-prescription-site#Breast, Right; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#76752008 "Breast structure (body structure)")</span>, Oesophagus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (radiotherapy-prescription-site#Oesophagus)</span></p></div>
+
+  
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                  <!-- | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

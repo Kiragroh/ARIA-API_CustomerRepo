@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Organization-Prov-3"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Organization Hospital Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Organization Hospital example for the *Varian ARIA API Organization Hospital Profile.*"/>
+    </extension>
+    <versionId value="354314"/>
+    <lastUpdated value="2022-05-03T16:12:16.270+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="Organization-Prov-3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;Organization-Prov-3&quot; Version &quot;354314&quot; Updated &quot;2022-05-03 16:12:16+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Organization.html">Organization</a></p></div><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-organization-type.html">Organization type</a>#prov)</span></p><p><b>name</b>: Sahyadri Hospital</p><p><b>address</b>: street1 Palo Alto California 12345 (WORK)</p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>
+  </type>
+  <name value="Sahyadri Hospital"/>
+  <address id="520">
+    <use value="work"/>
+    <type value="both"/>
+    <line value="street1"/>
+    <city value="Palo Alto"/>
+    <state value="California"/>
+    <postalCode value="12345"/>
+  </address>
+</Organization>

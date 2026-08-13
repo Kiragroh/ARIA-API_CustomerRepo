@@ -1,0 +1,151 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "RadiotherapyTreatedPlan-352-1326",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "RadiotherapyTreatedPlan-352-1326"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Example Radiotherapy Treated Plan."
+    }],
+    "versionId" : "1675160100000",
+    "lastUpdated" : "2023-01-31T11:15:00.000+01:00",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/RadiotherapyTreatedPlan",
+    "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-treated-plan",
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"RadiotherapyTreatedPlan-352-1326\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;RadiotherapyTreatedPlan-352-1326&quot; Version &quot;1675160100000&quot; Updated &quot;2023-01-31 11:15:00+0100&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-RadiotherapyTreatedPlan.html\">Radiotherapy Treated Plan</a>, <a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-treated-plan.html\">Radiotherapy Treated Plan</a>, <a href=\"http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-procedure.html\">US Core Procedure Profile</a></p></div><blockquote><p><b>Radiotherapy Modality And Technique Extension</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html\">Radiotherapy Modality Extension</a></blockquote><p><b>value</b>: External beam radiation therapy using photons (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1156506007)</span></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html\">Radiotherapy Technique Extension</a></blockquote><p><b>value</b>: Three dimensional external beam radiation therapy (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1162782007)</span></p></blockquote><blockquote><p><b>Radiotherapy Dose Delivered To Volume Extension</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href=\"BodyStructure/BodyStructure-PV-680\">BodyStructure/BodyStructure-PV-680: LeftBreastBoost</a></p><blockquote><p><b>url</b></p><code>totalDoseDelivered</code></blockquote><p><b>value</b>: 900.0 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html\">Primary Plan Dose</a></blockquote><p><b>value</b>: false</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html\">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><blockquote><p><b>Radiotherapy Dose Delivered To Volume Extension</b></p><blockquote><p><b>url</b></p><code>volume</code></blockquote><p><b>value</b>: <a href=\"BodyStructure-BodyStructure-PV-681.html\">BodyStructure/BodyStructure-PV-681: LeftBreast</a></p><blockquote><p><b>url</b></p><code>totalDoseDelivered</code></blockquote><p><b>value</b>: 900.0 cGy<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code cGy = 'cGy')</span></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html\">Primary Plan Dose</a></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html\">Point Dose</a></blockquote><p><b>value</b>: false</p></blockquote><p><b>Number of Delivered Fractions</b>: 3</p><p><b>identifier</b>: id:\u00a0Breast_L\u00a0(use:\u00a0USUAL), id:\u00a01326\u00a0(use:\u00a0OFFICIAL)</p><p><b>basedOn</b>: </p><ul><li><a href=\"ServiceRequest/RadiotherapyPhasePrescription-352-48\">ServiceRequest/RadiotherapyPhasePrescription-352-48: Primary - Left Breast Tangents</a></li><li><a href=\"ServiceRequest/RadiotherapyTreatmentPlan-352-1326\">ServiceRequest/RadiotherapyTreatmentPlan-352-1326: Breast_L</a></li></ul><p><b>partOf</b>: </p><ul><li><a href=\"Procedure/RadiotherapyTreatedPhase-352-48\">Procedure/RadiotherapyTreatedPhase-352-48: Primary - Left Breast Tangents</a></li><li><a href=\"Procedure-RadiotherapyCourseSummary-352-634.html\">Procedure/RadiotherapyCourseSummary-352-634: C1_Both_Breast</a></li></ul><p><b>status</b>: in-progress</p><p><b>category</b>: Radiation oncology AND/OR radiotherapy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108290001)</span></p><p><b>code</b>: Radiotherapy treatment plan (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1255724003)</span></p><p><b>subject</b>: <a href=\"Patient-Patient-352.html\">Patient/Patient-352: Sister-22B, Jane</a> &quot; SISTER-22B&quot;</p><p><b>performed</b>: 2023-01-29 11:14:00+0100 --&gt; 2023-01-31 11:15:00+0100</p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1156506007",
+          "display" : "External beam radiation therapy using photons (procedure)"
+        }]
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "1162782007",
+          "display" : "Three dimensional external beam radiation therapy (procedure)"
+        }]
+      }
+    }],
+    "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique"
+  },
+  {
+    "extension" : [{
+      "url" : "volume",
+      "valueReference" : {
+        "reference" : "BodyStructure/BodyStructure-PV-680",
+        "display" : "LeftBreastBoost"
+      }
+    },
+    {
+      "url" : "totalDoseDelivered",
+      "valueQuantity" : {
+        "value" : 900.0,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cGy"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose",
+      "valueBoolean" : false
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose",
+      "valueBoolean" : false
+    }],
+    "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume"
+  },
+  {
+    "extension" : [{
+      "url" : "volume",
+      "valueReference" : {
+        "reference" : "BodyStructure/BodyStructure-PV-681",
+        "display" : "LeftBreast"
+      }
+    },
+    {
+      "url" : "totalDoseDelivered",
+      "valueQuantity" : {
+        "value" : 900.0,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "cGy"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose",
+      "valueBoolean" : false
+    }],
+    "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-dose-delivered-to-volume"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-fractions-delivered",
+    "valueUnsignedInt" : 3
+  }],
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "http://varian.com/fhir/identifier/radiotherapyPlanId",
+    "value" : "Breast_L"
+  },
+  {
+    "use" : "official",
+    "system" : "http://varian.com/fhir/identifier/RadiotherapyPlan/RadOnc-Id",
+    "value" : "1326"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/RadiotherapyPhasePrescription-352-48",
+    "display" : "Primary - Left Breast Tangents"
+  },
+  {
+    "reference" : "ServiceRequest/RadiotherapyTreatmentPlan-352-1326",
+    "display" : "Breast_L"
+  }],
+  "partOf" : [{
+    "reference" : "Procedure/RadiotherapyTreatedPhase-352-48",
+    "display" : "Primary - Left Breast Tangents"
+  },
+  {
+    "reference" : "Procedure/RadiotherapyCourseSummary-352-634",
+    "display" : "C1_Both_Breast"
+  }],
+  "status" : "in-progress",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108290001",
+      "display" : "Radiation oncology AND/OR radiotherapy"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1255724003",
+      "display" : "Radiotherapy treatment plan (regime/therapy)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Patient-352",
+    "display" : "Sister-22B, Jane"
+  },
+  "performedPeriod" : {
+    "start" : "2023-01-29T11:14:00+01:00",
+    "end" : "2023-01-31T11:15:00+01:00"
+  }
+}

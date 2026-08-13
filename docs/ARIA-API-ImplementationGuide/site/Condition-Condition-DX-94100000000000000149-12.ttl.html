@@ -1,0 +1,1011 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\Cancer Condition Example - TTL Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"10.148"}
+    h3,h4,h5,h6{--heading-prefix:"10.148"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Cancer Condition Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Condition-Condition-DX-94100000000000000149-12.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Condition-Condition-DX-94100000000000000149-12.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Condition-Condition-DX-94100000000000000149-12.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Cancer Condition Example - TTL Representation</h2>
+
+
+<p><a href="Condition-Condition-DX-94100000000000000149-12.ttl" no-download="true">Raw ttl</a> | <a href="Condition-Condition-DX-94100000000000000149-12.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Condition ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Condition-DX-94100000000000000149-12&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/instance-name&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Cancer Condition Example&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/instance-description&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Cancer Condition example for the *Varian ARIA API Cancer Condition Profile.*&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">fhir:versionId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;194166885606073&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.350+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/CancerCondition&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/CancerCondition&gt;     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Condition&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Condition&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Condition&lt;/b&gt;&lt;a name=\&quot;Condition-DX-94100000000000000149-12\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Condition &amp;quot;Condition-DX-94100000000000000149-12&amp;quot; Version &amp;quot;194166885606073&amp;quot; Updated &amp;quot;2023-10-11 03:47:08+0530&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profiles: &lt;a href=\&quot;StructureDefinition-CancerCondition.html\&quot;&gt;Condition-Diagnosis (CancerCondition)&lt;/a&gt;, &lt;code&gt;http://varian.com/fhir/v1/StructureDefinition/Condition&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;modifier-application-code&lt;/b&gt;: radiation-oncology&lt;/p&gt;&lt;p&gt;&lt;b&gt;condition-clinicalStatusDate&lt;/b&gt;: 2023-10-11&lt;/p&gt;&lt;p&gt;&lt;b&gt;condition-clinicalStatusInARIA&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (clinical-status#Active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;condition-rank&lt;/b&gt;: Third &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-rank#3; &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v2-0359.html\&quot;&gt;diagnosisPriority&lt;/a&gt;#3 &amp;quot;For tertiary diagnosis&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;condition-isExternal&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 15504d83-2ed0-4acd-9cc7-955069da4c1a&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-condition-clinical.html\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-condition-ver-status.html\&quot;&gt;ConditionVerificationStatus&lt;/a&gt;#confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Encounter Diagnosis &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html\&quot;&gt;Condition Category Codes&lt;/a&gt;#encounter-diagnosis)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diagnosis Display text FHIR Verification &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/6.0.2/CodeSystem-ICD-9CM-procedurecodes.html\&quot;&gt;ICD-9-CM (procedure codes)&lt;/a&gt;#170.8 &amp;quot;Malignant neoplasm of short bones of lower limb&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: Bone &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (body-site#Bone)&lt;/span&gt;, Ear &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (primary-site#Ear)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: 2023-09-11&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2023-10-11 03:47:08+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;recorder&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;summary&lt;/b&gt;: Stage IVB &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#Stage IVB)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;assessment&lt;/b&gt;: &lt;a name=\&quot;Observation-DX-Stg-94100000000000000149-12-11\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p/&gt;&lt;p&gt;&lt;a name=\&quot;Observation-DX-Stg-94100000000000000149-12-11\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Condition-Stage-isWorkingStage&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 11&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diagnosis Stage Group &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#diagnosis-stage-group)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Stage IVB &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#Stage IVB)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;hasMember&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-11-G\&quot;&gt;#Observation-Stg-Category-12-11-G: G1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-11-M\&quot;&gt;#Observation-Stg-Category-12-11-M: M1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-11-N\&quot;&gt;#Observation-Stg-Category-12-11-N: N1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-11-T\&quot;&gt;#Observation-Stg-Category-12-11-T: T1&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;summary&lt;/b&gt;: Stage III &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#Stage III)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;assessment&lt;/b&gt;: &lt;a name=\&quot;Observation-DX-Stg-94100000000000000149-12-10\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p/&gt;&lt;p&gt;&lt;a name=\&quot;Observation-DX-Stg-94100000000000000149-12-10\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Condition-Stage-isWorkingStage&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 10&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diagnosis Stage Group &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#diagnosis-stage-group)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Stage III &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#Stage III)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: MSTS &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#MSTS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;hasMember&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-10-G\&quot;&gt;#Observation-Stg-Category-12-10-G: GL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-10-M\&quot;&gt;#Observation-Stg-Category-12-10-M: M1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-10-T\&quot;&gt;#Observation-Stg-Category-12-10-T: TX&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;stage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;summary&lt;/b&gt;: Stage IVB &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#Stage IVB)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;assessment&lt;/b&gt;: &lt;a name=\&quot;Observation-DX-Stg-94100000000000000149-12-12\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p/&gt;&lt;p&gt;&lt;a name=\&quot;Observation-DX-Stg-94100000000000000149-12-12\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Condition-Stage-isWorkingStage&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 12&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diagnosis Stage Group &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#diagnosis-stage-group)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Stage IVB &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#Stage IVB)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;hasMember&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-12-G\&quot;&gt;#Observation-Stg-Category-12-12-G: G1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-12-M\&quot;&gt;#Observation-Stg-Category-12-12-M: M1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-12-N\&quot;&gt;#Observation-Stg-Category-12-12-N: N0&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-12-T\&quot;&gt;#Observation-Stg-Category-12-12-T: T0&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;Evidences&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Diagnosis Method Text by FHIR Verification &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-method#X-ray &amp;quot;X-ray&amp;quot;)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Diagnosis created by FHIR Verification Test !!!&lt;/p&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-11-G&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-11-G\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: G &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#G)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Well differentiated &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#G1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-11-M&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-11-M\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: M &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#M)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Distant metastasis &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#M1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-11-N&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-11-N\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: N &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#N)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Regional lymph node metastasis &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#N1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-11-T&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-11-T\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: T &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#T)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Tumor confined within the cortex &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#T1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-DX-Stg-94100000000000000149-12-11&lt;/b&gt;&lt;a name=\&quot;Observation-DX-Stg-94100000000000000149-12-11\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Condition-Stage-isWorkingStage&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 11&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diagnosis Stage Group &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#diagnosis-stage-group)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:05+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Stage IVB &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#Stage IVB)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;hasMember&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-11-G\&quot;&gt;#Observation-Stg-Category-12-11-G: G1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-11-M\&quot;&gt;#Observation-Stg-Category-12-11-M: M1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-11-N\&quot;&gt;#Observation-Stg-Category-12-11-N: N1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-11-T\&quot;&gt;#Observation-Stg-Category-12-11-T: T1&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-10-G&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-10-G\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: G &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#G)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Low Grade &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#GL)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: MSTS &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#MSTS)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-10-M&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-10-M\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: M &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#M)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Distant metastasis &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#M1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: MSTS &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#MSTS)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-10-T&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-10-T\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: T &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#T)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Tumor can not be assessed/determined &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#TX)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: MSTS &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#MSTS)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-DX-Stg-94100000000000000149-12-10&lt;/b&gt;&lt;a name=\&quot;Observation-DX-Stg-94100000000000000149-12-10\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Condition-Stage-isWorkingStage&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 10&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diagnosis Stage Group &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#diagnosis-stage-group)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:04+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Stage III &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#Stage III)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: MSTS &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#MSTS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;hasMember&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-10-G\&quot;&gt;#Observation-Stg-Category-12-10-G: GL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-10-M\&quot;&gt;#Observation-Stg-Category-12-10-M: M1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-10-T\&quot;&gt;#Observation-Stg-Category-12-10-T: TX&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-12-G&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-12-G\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: G &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#G)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Well differentiated &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#G1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-12-M&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-12-M\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: M &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#M)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Distant metastasis &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#M1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-12-N&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-12-N\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: N &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#N)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: No regional lymph node metastasis &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#N0)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-Stg-Category-12-12-T&lt;/b&gt;&lt;a name=\&quot;Observation-Stg-Category-12-12-T\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: T &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#T)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: No evidence of primary tumor &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#T0)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation #Observation-DX-Stg-94100000000000000149-12-12&lt;/b&gt;&lt;a name=\&quot;Observation-DX-Stg-94100000000000000149-12-12\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Condition-Stage-isWorkingStage&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 12&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: preliminary&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diagnosis Stage Group &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-group#diagnosis-stage-group)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/Patient-152\&quot;&gt;Patient/Patient-152: Wilson, Johnathan&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Code: Pre-chemotherapy, Events: 2023-10-11 03:47:07+0530&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Oct 11, 2023, 3:47:08 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner/Practitioner-1002\&quot;&gt;Practitioner/Practitioner-1002: JohnWilsonFhir&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Stage IVB &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-type#Stage IVB)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: AJCC 5th Ed. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (diagnosis-stage-scheme#AJCC 5th Ed.)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;hasMember&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-12-G\&quot;&gt;#Observation-Stg-Category-12-12-G: G1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-12-M\&quot;&gt;#Observation-Stg-Category-12-12-M: M1&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-12-N\&quot;&gt;#Observation-Stg-Category-12-12-N: N0&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation-Stg-Category-12-12-T\&quot;&gt;#Observation-Stg-Category-12-12-T: T0&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:contained</a> ( [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-11-G&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;G&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;G&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:05+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.720+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;G1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Well differentiated&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-11-M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;M&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:05+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.720+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;M1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Distant metastasis&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-11-N&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;N&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;N&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:05+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.720+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;N1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Regional lymph node metastasis&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-11-T&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;T&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;T&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:05+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.720+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;T1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Tumor confined within the cortex&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-DX-Stg-94100000000000000149-12-11&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageGroup&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageGroup&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Condition-Stage-isWorkingStage&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/identifier/Condition/cancer-stage-id&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;11&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;diagnosis-stage-group&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diagnosis Stage Group&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:05+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.720+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Stage IVB&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Stage IVB&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">fhir:hasMember</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-11-G&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;G1&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-11-M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;M1&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-11-N&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;N1&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-11-T&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;T1&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-10-G&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;G&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;G&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:04+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.657+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;GL&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Low Grade&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MSTS&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-10-M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;M&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:04+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.657+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;M1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Distant metastasis&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MSTS&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-10-T&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;T&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;T&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:04+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.657+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;TX&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Tumor can not be assessed/determined&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MSTS&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-DX-Stg-94100000000000000149-12-10&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageGroup&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageGroup&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Condition-Stage-isWorkingStage&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/identifier/Condition/cancer-stage-id&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;10&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;diagnosis-stage-group&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diagnosis Stage Group&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:04+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.657+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Stage III&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Stage III&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MSTS&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">fhir:hasMember</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-10-G&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;GL&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-10-M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;M1&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-10-T&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TX&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-12-G&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;G&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;G&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:07+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.750+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;G1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Well differentiated&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-12-M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;M&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:07+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.750+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;M1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Distant metastasis&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-12-N&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;N&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;N&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:07+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.750+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;N0&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;No regional lymph node metastasis&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-Stg-Category-12-12-T&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageCategory&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageCategory&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;T&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;T&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:07+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.750+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;T0&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;No evidence of primary tumor&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Observation-DX-Stg-94100000000000000149-12-12&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/StageGroup&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/StageGroup&gt;       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://varian.com/fhir/v1/StructureDefinition/Observation&gt;       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/Condition-Stage-isWorkingStage&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]     ] ) ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/identifier/Condition/cancer-stage-id&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;12&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preliminary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-group&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;diagnosis-stage-group&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diagnosis Stage Group&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing">a</a> fhir:Timing ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.event">fhir:event</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:07+05:30&quot;^^xsd:dateTime ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Timing#Timing.code">fhir:code</a> [
+        ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/stage-timing&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Pre-chemotherapy&quot; ]         ] )       ]     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-10-11T03:47:08.750+05:30&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Stage IVB&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Stage IVB&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/observation.html#Observation.method">fhir:method</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-scheme&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AJCC 5th Ed.&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation.hasMember">fhir:hasMember</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-12-G&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;G1&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-12-M&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;M1&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-12-N&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;N0&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-Stg-Category-12-12-T&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;T0&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/modifier-application-code&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;radiation-oncology&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/condition-clinicalStatusDate&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11&quot;^^xsd:date ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/condition-clinicalStatusInARIA&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/clinical-status&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Active&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Active&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/condition-rank&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-rank&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;3&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Third&quot; ]       ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v2-0359&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;3&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;For tertiary diagnosis&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/v1/StructureDefinition/condition-isExternal&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/identifier/Condition/unique-id&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;15504d83-2ed0-4acd-9cc7-955069da4c1a&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">fhir:clinicalStatus</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Active&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.verificationStatus">fhir:verificationStatus</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;confirmed&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Confirmed&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.category">fhir:category</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;encounter-diagnosis&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter Diagnosis&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.code">fhir:code</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/sid/icd-9-cm&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;170.8&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Malignant neoplasm of short bones of lower limb&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diagnosis Display text FHIR Verification&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.bodySite">fhir:bodySite</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/body-site&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Bone&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Bone&quot; ]     ] )
+  ] [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis/primary-site&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Ear&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ear&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/Patient-152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wilson, Johnathan&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.onset[x]">fhir:onset</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-09-11&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.recordedDate">fhir:recordedDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-11T03:47:08+05:30&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.recorder">fhir:recorder</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/Practitioner-1002&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;JohnWilsonFhir&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.stage">fhir:stage</a> ( [
+<a href="http://hl7.org/fhir/R4/condition.html#Condition.stage.summary">fhir:summary</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Stage IVB&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Stage IVB&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition.stage.assessment">fhir:assessment</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-DX-Stg-94100000000000000149-12-11&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;G1, M1, N1, T1&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/condition.html#Condition.stage.summary">fhir:summary</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Stage III&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Stage III&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition.stage.assessment">fhir:assessment</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-DX-Stg-94100000000000000149-12-10&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;GL, M1, TX&quot; ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/condition.html#Condition.stage.summary">fhir:summary</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-stage-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Stage IVB&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Stage IVB&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition.stage.assessment">fhir:assessment</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;#Observation-DX-Stg-94100000000000000149-12-12&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;G1, M1, N0, T0&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.evidence">fhir:evidence</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition.evidence.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://varian.com/fhir/CodeSystem/Condition/diagnosis-method&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;X-ray&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;X-ray&quot; ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diagnosis Method Text by FHIR Verification&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.note">fhir:note</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Diagnosis created by FHIR Verification Test !!!&quot; ]
+  ] ) . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

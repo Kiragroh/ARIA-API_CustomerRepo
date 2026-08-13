@@ -1,0 +1,840 @@
+<!-- get modelType -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\Patient - Error Codes - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"10.20"}
+    h3,h4,h5,h6{--heading-prefix:"10.20"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Patient</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 6" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-Patient.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-Patient-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+
+
+
+
+
+  
+    
+      <li>
+        <a href="StructureDefinition-Patient-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
+
+
+
+ 
+
+  <li>
+    <a href="StructureDefinition-Patient-operations.html">Operations</a>
+  </li>
+
+ 
+
+
+
+
+ 
+
+  <li>
+    <a href="StructureDefinition-Patient-sp.html">Search Params</a>
+  </li>
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-Patient.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-Patient.profile.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+
+
+
+
+
+
+  <li class="active">
+    <a href="#">Error Codes</a>
+  </li>
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+  <h2 id="root">Resource Profile: Patient - Error Codes</h2>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  
+  
+
+
+  
+ 
+  
+
+  <p>Following are the Search Parameters for the Patient Profile:</p>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th scope="row">#</th>
+        <th scope="row">Name</th>
+        <th scope="row">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td scope="col">1</td>
+        <td>PATIENT_PORTAL_FLAG_NOT_PRESENT</td>
+        <td>PatientPortalFlag cannot be null.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">2</td>
+        <td>IDENTIFIER_MAX_LENGTH</td>
+        <td>Identifier length can not be greater than 25 characters long.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">3</td>
+        <td>IDENTIFIER_SYSTEM_ABSENT</td>
+        <td>Identifier should have value with the system.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">4</td>
+        <td>IDENTIFIER_INVALID</td>
+        <td>Identifier is not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">5</td>
+        <td>PATIENT_SSN_MAX_LENGTH</td>
+        <td>Patient SSN length can not be greater than 64 characters long.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">6</td>
+        <td>PATIENT_UID_MAX_LENGTH</td>
+        <td>Patient UID length can not be greater than 32 characters long.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">7</td>
+        <td>DEPARTMENT_NOT_PRESENT</td>
+        <td>Department not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">8</td>
+        <td>DIFFERENT_DEPARTMENT</td>
+        <td>CarePlan and Patient department is not same.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">9</td>
+        <td>DIFFERENT_DEPARTMENT</td>
+        <td>CarePlan and Group department is not same.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">10</td>
+        <td>DATE_TIME_REQUIRED</td>
+        <td>Date Time required</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">11</td>
+        <td>HOSPITAL_NOT_PRESENT</td>
+        <td>Hospital not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">12</td>
+        <td>HOSPITAL_INVALID</td>
+        <td>Hospital not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">13</td>
+        <td>UNIQUE_ID_NOT_UNIQUE</td>
+        <td>Unique Id is not unique.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">14</td>
+        <td>RESOURCE_VERSION_NOT_PRESENT</td>
+        <td>Resource version not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">15</td>
+        <td>FUTURE_DATE_TIME</td>
+        <td>Date can not be in future.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">16</td>
+        <td>LAST_NAME_NOT_PRESENT</td>
+        <td>Last name not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">17</td>
+        <td>ID1_NOT_PRESENT</td>
+        <td>Patient Id1 not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">18</td>
+        <td>REQUIRED_ID_NOT_PRESENT</td>
+        <td>Required Ids for patient not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">19</td>
+        <td>READ_ONLY_ID</td>
+        <td>Read only Ids can not update.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">20</td>
+        <td>INACTIVE_ID_PRESENT</td>
+        <td>Inactive Ids for patient present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">21</td>
+        <td>SYSTEM_GENERATED_ID_PRESENT</td>
+        <td>Id will be generated by system for patient present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">22</td>
+        <td>SYSTEM_GENERATED_ID_ISSUE</td>
+        <td>Error while generating system generated Id for patient present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">23</td>
+        <td>CARE_PLAN_INVALID</td>
+        <td>Care Plan not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">24</td>
+        <td>CUSTOM_ATTRIBUTE_INVALID</td>
+        <td>Custom Attribute not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">25</td>
+        <td>ADDRESS_USE_NOT_DEFINED</td>
+        <td>Address use not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">26</td>
+        <td>INVALID_PATIENT_ADDRESS</td>
+        <td>Invalid address is provided for patient</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">27</td>
+        <td>MULTIPLE_PRIMARY_CONTACTS</td>
+        <td>Multiple Primary contact(s) not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">28</td>
+        <td>MOBILE_PHONE_PROVIDER_INVALID</td>
+        <td>Mobile Phone Provider is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">29</td>
+        <td>ROOM_NUMBER_NOT_PRESENT</td>
+        <td>Room number not present for InPatient.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">30</td>
+        <td>ADMISSION_DATE_INVALID</td>
+        <td>Admission Date can not be in future.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">31</td>
+        <td>MARITAL_STATUS_INVALID</td>
+        <td>Marital Status is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">32</td>
+        <td>RACE_INVALID</td>
+        <td>Race is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">33</td>
+        <td>ETHNICITY_INVALID</td>
+        <td>Ethnicity is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">34</td>
+        <td>PATIENT_LANGUAGE_INVALID</td>
+        <td>Patient language is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">35</td>
+        <td>PATIENT_STATUS_INVALID</td>
+        <td>Patient status is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">36</td>
+        <td>PATIENT_GENDER_INVALID</td>
+        <td>Patient Gender is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">37</td>
+        <td>PATIENT_RELIGION_INVALID</td>
+        <td>Patient Religion is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">38</td>
+        <td>PATIENT_SEX_ORIENTATION_INVALID</td>
+        <td>Patient Sex Orientation is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">39</td>
+        <td>PATIENT_GENDER_IDENTITY_INVALID</td>
+        <td>Patient Gender Identity is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">40</td>
+        <td>PATIENT_CITIZENSHIP_INVALID</td>
+        <td>Patient Citizenship is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">41</td>
+        <td>PATIENT_BIRTH_COUNTRY</td>
+        <td>Patient Birth Country is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">42</td>
+        <td>PATIENT_CLASS_INVALID</td>
+        <td>Patient class is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">43</td>
+        <td>PATIENT_NOT_ACTIVE</td>
+        <td>Patient not active.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">44</td>
+        <td>CONTACT_GIVEN_NAME_NOT_PRESENT</td>
+        <td>Given name not present for contact.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">45</td>
+        <td>CONTACT_RELATIONSHIP_TYPE_NOT_SUPPORTED</td>
+        <td>Contact relationship type not supported.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">46</td>
+        <td>PATIENT_ASSOCIATED_WITH_CONFIGURED_DEFAULT_DEPARTMENT</td>
+        <td>Patient has been associated with configured default department</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">47</td>
+        <td>PATIENT_CANNOT_BE_ASSOCIATED_WITH_CONFIGURED_DEFAULT_DEPARTMENT</td>
+        <td>Patient cannot be associated with configured default department</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">48</td>
+        <td>PATIENT_NAME_EXCEEDS_DICOM_LIMIT</td>
+        <td>Patient name combination exceeds DICOM length limit.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">49</td>
+        <td>MULTIPLE_OFFICIAL_NAMES_NOT_SUPPORTED</td>
+        <td>Multiple official names not supported.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">50</td>
+        <td>MULTIPLE_USUAL_NAMES_NOT_SUPPORTED</td>
+        <td>Multiple usual names not supported.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">51</td>
+        <td>MULTIPLE_OLD_NAMES_NOT_SUPPORTED</td>
+        <td>Multiple old names not supported.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">52</td>
+        <td>MULTIPLE_PATIENT_NAMES_LIMIT_EXCEEDS</td>
+        <td>Exceeded Multiple Patient names limit.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">53</td>
+        <td>PATIENT_NAME_NOT_PRESENT</td>
+        <td>Patient name not present.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">54</td>
+        <td>INVALID_NAME_REPRESENTATION_CODE</td>
+        <td>Invalid Name Representation Code.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">55</td>
+        <td>DELETED_PATIENT_SEARCH_NOT_SUPPORTED</td>
+        <td>Deleted patient search is not supported.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">56</td>
+        <td>CARE_TEAM_MANDATORY</td>
+        <td>Careteam is mandatory.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">57</td>
+        <td>HOSPITAL_CANNOT_UPDATE</td>
+        <td>Hospital cannot be changed in patient update request.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">58</td>
+        <td>INVALID_DEVICE</td>
+        <td>Device is not present in DB</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">59</td>
+        <td>INVALID_LOCATION</td>
+        <td>Location is not present in DB</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">60</td>
+        <td>INVALID_PARTICIPANT</td>
+        <td>Participant is invalid</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">61</td>
+        <td>OPERATION_NOT_ALLOWED</td>
+        <td>Operation is not allowed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">62</td>
+        <td>FIELD_LENGTH_EXCEEDED</td>
+        <td>Field length has exceeded than expected</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">63</td>
+        <td>INVALID_BUNDLE_VALUE</td>
+        <td>Invalid bundle value.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">64</td>
+        <td>PARTIAL_SUCCESS</td>
+        <td>Partial request processed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">65</td>
+        <td>INVALID_DATE</td>
+        <td>Date is invalid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">66</td>
+        <td>PATIENT_IS_DEAD</td>
+        <td>Patient is dead.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">67</td>
+        <td>RESOURCE_ID_INVALID</td>
+        <td>Resource id not valid.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">68</td>
+        <td>INVALID_SEARCH_PARAM_VALUE</td>
+        <td>Invalid Search Parameter Value.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">69</td>
+        <td>INVALID_SEARCH_REFERENCE_PARAM_VALUE</td>
+        <td>Invalid Reference Resource Type in Search Parameter Value.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">70</td>
+        <td>CREATE_FAILED</td>
+        <td>Create request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">71</td>
+        <td>UPDATE_FAILED</td>
+        <td>Update request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">72</td>
+        <td>SEARCH_FAILED</td>
+        <td>Search request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">73</td>
+        <td>READ_FAILED</td>
+        <td>Read request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">74</td>
+        <td>Delete_FAILED</td>
+        <td>Delete request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">75</td>
+        <td>OPERATION_FAILED</td>
+        <td>Custom Operation request failed.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">76</td>
+        <td>UNKNOWN</td>
+        <td>Reason Unknown.</td>
+      </tr>
+      
+      <tr>
+        <td scope="col">77</td>
+        <td>RESOURCE_NOT_FOUND</td>
+        <td>Resource is not known.</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  
+
+
+  <!-- insert notes if present -->
+
+
+
+
+</div>
+
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

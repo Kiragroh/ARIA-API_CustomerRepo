@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "patient-citizenship-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://varian.com/fhir/v1/ValueSet/patient-citizenship-vs",
+  "version" : "1.0.0",
+  "name" : "PatientCitizenshipVS",
+  "title" : "Patient Citizenship Value Set",
+  "status" : "active",
+  "date" : "2024-07-26T13:25:01+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "description" : "Patient Citizenship Value Set",
+  "copyright" : "Varian Medical Systems, Inc.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/patient-citizenship",
+      "concept" : [{
+        "code" : "IND",
+        "display" : "India"
+      },
+      {
+        "code" : "USA",
+        "display" : "United States"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/DocumentReference/DocumentReference-20000000000000000002-3-2> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DocumentReference-20000000000000000002-3-2"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "DocumentReference Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "DocumentReference example for the *Varian ARIA API DocumentReference Profile.*" ]
+     ] ) ;
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-10-09T03:38:15.077+05:30"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://varian.com/fhir/v1/StructureDefinition/DocumentReference"^^xsd:anyURI ;
+       fhir:link <http://varian.com/fhir/v1/StructureDefinition/DocumentReference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DocumentReference</b><a name=\"DocumentReference-20000000000000000002-3-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DocumentReference &quot;DocumentReference-20000000000000000002-3-2&quot; Version &quot;1&quot; Updated &quot;2023-10-09 03:38:15+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReference.html\">A reference to a document</a></p></div><p><b>documentreference-supervisor</b>: <a href=\"Practitioner/Practitioner-1064\">Practitioner/Practitioner-1064: FhirTestDoc1</a></p><p><b>documentreference-templateName</b>: Test Template</p><blockquote><p><b>documentreference-signature</b></p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-documentreference-signature.html\">documentreference-signature</a></blockquote><p><b>value</b>: 2023-10-09 03:38:14+0530</p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-documentreference-signature.html\">documentreference-signature</a></blockquote><p><b>value</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-documentreference-signature.html\">documentreference-signature</a></blockquote><p><b>value</b>: true</p></blockquote><p><b>login-institution</b>: <a href=\"Organization/Organization-Dept-10008\">Organization/Organization-Dept-10008: Oncology Department</a></p><p><b>documentreference-documentLocation</b>: file-server</p><p><b>masterIdentifier</b>: id: 231009ITRKML</p><p><b>status</b>: current</p><p><b>docStatus</b>: preliminary</p><p><b>type</b>: Physician Note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (documentreference-type#572)</span></p><p><b>category</b>: Patient Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (documentreference-class#Patient Document)</span></p><p><b>subject</b>: <a href=\"Patient/Patient-11\">Patient/Patient-11: TreatSummary, Pat1</a></p><p><b>date</b>: Oct 9, 2023, 3:38:14 AM</p><p><b>author</b>: <a href=\"Practitioner/Practitioner-1065\">Practitioner/Practitioner-1065: FhirTestDoc2</a></p><p><b>custodian</b>: <a href=\"Organization/Organization-Prov-1\">Organization/Organization-Prov-1: ACHospital</a></p><p><b>description</b>: New Hi...This is a test document</p><blockquote><p><b>content</b></p><blockquote><p><b>attachment</b></p><blockquote><p><b>id</b></p>394.doc</blockquote><p><b>contentType</b>: application/msword</p><p><b>url</b>: <code>\\\\TESTCONSOLE1\\VA_DATA$\\FILEDATA\\DOCUMENTS\\2023Q4\\394.doc</code></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/documentreference-supervisor"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1064> ;
+       fhir:reference [ fhir:v "Practitioner/Practitioner-1064" ] ;
+       fhir:display [ fhir:v "FhirTestDoc1" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/documentreference-templateName"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Test Template" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/documentreference-signature#signed"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2023-10-09T03:38:14+05:30"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/documentreference-signature#signer"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1002> ;
+         fhir:reference [ fhir:v "Practitioner/Practitioner-1002" ] ;
+         fhir:display [ fhir:v "JohnWilsonFhir" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/documentreference-signature#isSigned"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/documentreference-signature"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/login-institution"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://varian.com/fhir/v1/Organization/Organization-Dept-10008> ;
+       fhir:reference [ fhir:v "Organization/Organization-Dept-10008" ] ;
+       fhir:display [ fhir:v "Oncology Department" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/documentreference-documentLocation"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "file-server" ]
+  ] ) ; # 
+  fhir:masterIdentifier [
+     fhir:system [ fhir:v "http://varian.com/fhir/identifier/DocumentReference/Id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "231009ITRKML" ]
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:docStatus [
+     fhir:v "preliminary" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://varian.com/fhir/v1/StructureDefinition/translation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/DocumentReference/status"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Pending" ] ;
+           fhir:display [ fhir:v "Pending" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-reference"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Reference ;
+           fhir:link <http://varian.com/fhir/v1//fhir/ValueSet?url=http://varian.com/fhir/ValueSet/documentreference-type&publisher=Organization-Prov-1> ;
+           fhir:reference [ fhir:v "/fhir/ValueSet?url=http://varian.com/fhir/ValueSet/documentreference-type&publisher=Organization-Prov-1" ]
+         ]
+       ] ) ;
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/DocumentReference/documentreference-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "572" ] ;
+       fhir:display [ fhir:v "Physician Note" ]
+     ] ) ;
+     fhir:text [ fhir:v "Physician Note" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://varian.com/fhir/CodeSystem/DocumentReference/documentreference-class"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient Document" ] ;
+       fhir:display [ fhir:v "Patient Document" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://varian.com/fhir/v1/Patient/Patient-11> ;
+     fhir:reference [ fhir:v "Patient/Patient-11" ] ;
+     fhir:display [ fhir:v "TreatSummary, Pat1" ]
+  ] ; # 
+  fhir:date [ fhir:v "2023-10-09T03:38:14.873+05:30"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://varian.com/fhir/v1/Practitioner/Practitioner-1065> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner-1065" ] ;
+     fhir:display [ fhir:v "FhirTestDoc2" ]
+  ] ) ; # 
+  fhir:custodian [
+     fhir:link <http://varian.com/fhir/v1/Organization/Organization-Prov-1> ;
+     fhir:reference [ fhir:v "Organization/Organization-Prov-1" ] ;
+     fhir:display [ fhir:v "ACHospital" ]
+  ] ; # 
+  fhir:description [ fhir:v "New Hi...This is a test document"] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:id [ fhir:v "394.doc" ] ;
+       fhir:contentType [ fhir:v "application/msword" ] ;
+       fhir:url [ fhir:v "\\\\TESTCONSOLE1\\VA_DATA$\\FILEDATA\\DOCUMENTS\\2023Q4\\394.doc"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

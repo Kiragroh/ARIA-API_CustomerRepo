@@ -1,0 +1,80 @@
+{
+  "version": "1.0",
+  "build": 7,
+  "lastUpdate": "2026-08-13",
+  "lastChange": "Oeffentliche Beispiele und Dokumentation institutionsneutral gefasst",
+  "changelog": [
+    {
+      "build": 7,
+      "date": "2026-08-13",
+      "title": "Oeffentliche Dokumentation institutionsneutral gefasst",
+      "changes": [
+        "Institutionelle Bezeichnungen, interne Namespaces und lokale Infrastrukturhinweise aus den gepflegten oeffentlichen Dateien entfernt.",
+        "Task-Beispiel auf synthetische Rollen, Gruppen, ActivityDefinitions und Identifier umgestellt.",
+        "Deployment-spezifische Beobachtungen von Herstellerzusagen und institutionellen Freigaben abgegrenzt.",
+        "Provider-Organisation muss im Upload-Beispiel explizit angegeben werden."
+      ]
+    },
+    {
+      "build": 6,
+      "date": "2026-08-12",
+      "title": "FHIR-Task-Workflows und Gateway-Sicherheitsgrenzen dokumentiert",
+      "changes": [
+        "Das deployment-spezifische Task-Muster trennt Group- und Practitioner-Recipients von einem eindeutigen Practitioner-Owner.",
+        "ActivityDefinition, Identifier-Suche, ServiceRequest-Read-back und der Ausschluss von Appointment sind als verbindliche Schreibpruefungen beschrieben.",
+        "Lokale Access Keys, Windows SSPI, TLS-Pruefung und semantische Gateway-Fehlerauswertung sind ohne Infrastruktur- oder Geheimniswerte dokumentiert.",
+        "FHIR und Gateway bleiben getrennte Integrationswege."
+      ]
+    },
+    {
+      "build": 5,
+      "date": "2026-08-04",
+      "title": "ARIA-FHIR-Scope-Matrix ergaenzt",
+      "changes": [
+        "Eine beispielhafte Scope-Matrix nach Schreib-, Sonder- und Leserechten gruppiert.",
+        "FHIR-Ressourcen in ihren praktischen ARIA-Kontext uebersetzt und zusaetzliche ARIA-Benutzerrechte aus dem lokalen Implementation Guide benannt.",
+        "Abgrenzung zwischen Server-/Tester-Funktionen, Client-Berechtigung und der minimalen Scope-Anforderung einer einzelnen Anwendung verdeutlicht."
+      ]
+    },
+    {
+      "build": 4,
+      "date": "2026-08-03",
+      "title": "Schaubilder entrauscht",
+      "changes": [
+        "Farbflächen beider ARIA-FHIR-Schaubilder mit der lokalen DenoiseAI-Pipeline geglättet.",
+        "Schrift, Icons und dünne Rahmen bleiben durch kantenbewahrende Verarbeitung erhalten."
+      ]
+    },
+    {
+      "build": 3,
+      "date": "2026-08-03",
+      "title": "ARIA-FHIR-Schaubilder ergaenzt",
+      "changes": [
+        "Allgemeines Architekturdiagramm zu FHIR, offenen Standards und getrennten Schnittstellen in die GitHub-README aufgenommen.",
+        "Einen bereinigten, generischen FHIR-Ablauf als eigenes Schaubild bereitgestellt.",
+        "Diagramme enthalten keine produktiven Endpunkte, Zugangsdaten oder Patientendaten."
+      ]
+    },
+    {
+      "build": 2,
+      "date": "2026-08-03",
+      "title": "FHIR-Architektur und C#-Praxis erweitert",
+      "changes": [
+        "FHIR, ESAPI, ARIA Webservice/Gateway, read-only SQL und DICOM klar nach Verantwortung abgegrenzt.",
+        "Offene Standards HL7 FHIR, mCODE und CodeX Radiation Therapy als Grundlage der zukunftsfaehigen Integrationsschicht eingeordnet.",
+        "Sichere C#-Muster fuer Identifier, Referenzen, Bundle-Paginierung, ValueSets und OperationOutcome dokumentiert.",
+        "Neue ARIA-API-Blogposts und das zugehoerige Snippet-Repository als kommentierte Ressourcen aufgenommen."
+      ]
+    },
+    {
+      "build": 1,
+      "date": "2026-08-01",
+      "title": "FHIR und Webservice getrennt dokumentiert",
+      "changes": [
+        "FHIR-Einstieg um praktische Beispiele fuer Dokument-Upload, Download und Termine erweitert.",
+        "ARIA Webservice/Gateway als eigener Legacy- und Fallback-Datenweg beschrieben.",
+        "Sichere Git-Grenzen fuer Secrets, Infrastrukturwerte und Patientendaten festgehalten."
+      ]
+    }
+  ]
+}

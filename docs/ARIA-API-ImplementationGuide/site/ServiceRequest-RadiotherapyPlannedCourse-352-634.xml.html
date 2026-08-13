@@ -1,0 +1,577 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\RadiotherapyPlannedCourse-352-634 - XML Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"10.175"}
+    h3,h4,h5,h6{--heading-prefix:"10.175"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>RadiotherapyPlannedCourse-352-634</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ServiceRequest-RadiotherapyPlannedCourse-352-634.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ServiceRequest-RadiotherapyPlannedCourse-352-634.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: RadiotherapyPlannedCourse-352-634 - XML Representation</h2>
+
+
+<p><a href="ServiceRequest-RadiotherapyPlannedCourse-352-634.xml" no-download="true">Raw xml</a> | <a href="ServiceRequest-RadiotherapyPlannedCourse-352-634.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code>
+
+&lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest">ServiceRequest</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RadiotherapyPlannedCourse-352-634&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/instance-name&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RadiotherapyPlannedCourse-352-634&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/instance-description&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMarkdown</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Example Planned Course, i.e. summary of all plans in the Course.&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;4056916&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2023-08-21T18:04:47.100+02:00&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-planned-course&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://varian.com/fhir/v1/StructureDefinition/RadiotherapyPlannedCourse&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ServiceRequest&lt;/b&gt;&lt;a name=&quot;RadiotherapyPlannedCourse-352-634&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource ServiceRequest &amp;quot;RadiotherapyPlannedCourse-352-634&amp;quot; Version &amp;quot;4056916&amp;quot; Updated &amp;quot;2023-08-21 18:04:47+0200&amp;quot; &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profiles: &lt;a href=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-planned-course.html&quot;&gt;Radiotherapy Planned Course&lt;/a&gt;, &lt;a href=&quot;StructureDefinition-RadiotherapyPlannedCourse.html&quot;&gt;Radiotherapy Planned Course&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Radiotherapy Modality And Technique Extension&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html&quot;&gt;Radiotherapy Modality Extension&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: External beam radiation therapy using photons (procedure) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#1156506007)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html&quot;&gt;Radiotherapy Technique Extension&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Three dimensional external beam radiation therapy (procedure) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#1162782007)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Radiotherapy Modality And Technique Extension&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html&quot;&gt;Radiotherapy Modality Extension&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: External beam radiation therapy using electrons (procedure) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#45643008)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html&quot;&gt;Radiotherapy Technique Extension&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Three dimensional external beam radiation therapy (procedure) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#1162782007)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Radiotherapy Modality And Technique Extension&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-modality.html&quot;&gt;Radiotherapy Modality Extension&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: External beam radiation therapy using photons (procedure) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#1156506007)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-technique.html&quot;&gt;Radiotherapy Technique Extension&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Two dimensional external beam radiation therapy (procedure) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#1156526006)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose Planned to Volume&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;volume&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=&quot;BodyStructure/BodyStructure-PV-679&quot;&gt;BodyStructure/BodyStructure-PV-679: RightBreast&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;totalDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 900.0 cGy&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code cGy = 'cGy')&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;fractions&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 3&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html&quot;&gt;Primary Plan Dose&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html&quot;&gt;Point Dose&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: false&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose Planned to Volume&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;volume&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=&quot;BodyStructure-BodyStructure-PV-681.html&quot;&gt;BodyStructure/BodyStructure-PV-681: LeftBreast&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;totalDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 900.0 cGy&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code cGy = 'cGy')&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;fractions&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 3&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html&quot;&gt;Primary Plan Dose&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html&quot;&gt;Point Dose&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: false&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose Planned to Volume&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;volume&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=&quot;BodyStructure/BodyStructure-PV-680&quot;&gt;BodyStructure/BodyStructure-PV-680: LeftBreastBoost&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;totalDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1700.0 cGy&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code cGy = 'cGy')&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;fractions&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 7&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html&quot;&gt;Primary Plan Dose&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html&quot;&gt;Point Dose&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: false&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Dose Planned to Volume&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;volume&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;a href=&quot;BodyStructure/BodyStructure-PV-774&quot;&gt;BodyStructure/BodyStructure-PV-774: PTVp&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;totalDose&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 5000.0 cGy&lt;span style=&quot;background: LightGoldenRodYellow&quot;&gt; (Details: UCUM code cGy = 'cGy')&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;code&gt;fractions&lt;/code&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 25&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-primary-plan-dose.html&quot;&gt;Primary Plan Dose&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: true&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;&lt;/p&gt;&lt;a href=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-point-dose.html&quot;&gt;Point Dose&lt;/a&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: false&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;Procedure Intent Extension&lt;/b&gt;: Radical &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (radiotherapy-therapeutic-intent#Radical)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: C1_Both_Breast (use: USUAL), id: 634 (use: OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=&quot;ServiceRequest-RadiotherapyCoursePrescription-352-634.html&quot;&gt;ServiceRequest/RadiotherapyCoursePrescription-352-634: C1_Both_Breast&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: filler-order&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Radiation oncology AND/OR radiotherapy &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#108290001)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Radiotherapy course of treatment (regime/therapy) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#1217123003)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-Patient-352.html&quot;&gt;Patient/Patient-352: Sister-22B, Jane&lt;/a&gt; &amp;quot; SISTER-22B&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2022-12-02 00:00:00+0100 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Malignant neoplasm: breast, unspecified &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html&quot;&gt;ICD-10&lt;/a&gt;#C50.9)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;a href=&quot;Condition/Condition-DX-65100000000000000156-2&quot;&gt;Condition/Condition-DX-65100000000000000156-2: C50.9:Malignant neoplasm: breast, unspecified&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: Breast, Left &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (radiotherapy-prescription-site#Breast, Left; &lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#76752008 &amp;quot;Breast structure (body structure)&amp;quot;)&lt;/span&gt;, Breast, Right &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (radiotherapy-prescription-site#Breast, Right; &lt;a href=&quot;https://browser.ihtsdotools.org/&quot;&gt;SNOMED CT&lt;/a&gt;#76752008 &amp;quot;Breast structure (body structure)&amp;quot;)&lt;/span&gt;, Oesophagus &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (radiotherapy-prescription-site#Oesophagus)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1156506007&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;External beam radiation therapy using photons (procedure)&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/valueCodeableConcept&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1162782007&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Three dimensional external beam radiation therapy (procedure)&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/valueCodeableConcept&gt;
+    &lt;/extension&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;45643008&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;External beam radiation therapy using electrons (procedure)&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/valueCodeableConcept&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1162782007&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Three dimensional external beam radiation therapy (procedure)&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/valueCodeableConcept&gt;
+    &lt;/extension&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality-and-technique&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-modality&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1156506007&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;External beam radiation therapy using photons (procedure)&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/valueCodeableConcept&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-technique&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1156526006&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Two dimensional external beam radiation therapy (procedure)&quot;/&gt;
+        &lt;/coding&gt;
+      &lt;/valueCodeableConcept&gt;
+    &lt;/extension&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-dose-planned-to-volume&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;volume&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BodyStructure/BodyStructure-PV-679&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RightBreast&quot;/&gt;
+      &lt;/valueReference&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;totalDose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueQuantity</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;900.0&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;cGy&quot;/&gt;
+      &lt;/valueQuantity&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;fractions&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePositiveInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;3&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+    &lt;/extension&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-dose-planned-to-volume&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;volume&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BodyStructure/BodyStructure-PV-681&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;LeftBreast&quot;/&gt;
+      &lt;/valueReference&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;totalDose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueQuantity</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;900.0&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;cGy&quot;/&gt;
+      &lt;/valueQuantity&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;fractions&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePositiveInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;3&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+    &lt;/extension&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-dose-planned-to-volume&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;volume&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BodyStructure/BodyStructure-PV-680&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;LeftBreastBoost&quot;/&gt;
+      &lt;/valueReference&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;totalDose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueQuantity</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1700.0&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;cGy&quot;/&gt;
+      &lt;/valueQuantity&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;fractions&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePositiveInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;7&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+    &lt;/extension&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-dose-planned-to-volume&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;volume&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BodyStructure/BodyStructure-PV-774&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;PTVp&quot;/&gt;
+      &lt;/valueReference&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;totalDose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueQuantity</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;5000.0&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unitsofmeasure.org&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;cGy&quot;/&gt;
+      &lt;/valueQuantity&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;fractions&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePositiveInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;25&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-primary-plan-dose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-point-dose&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+    &lt;/extension&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/CodeSystem/radiotherapy-therapeutic-intent&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Radical&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Radical&quot;/&gt;
+      &lt;/coding&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Radical&quot;/&gt;
+    &lt;/valueCodeableConcept&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/identifier/radiotherapyCourseId&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;C1_Both_Breast&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/identifier/RadiotherapyCourse/RadOnc-Id&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;634&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.basedOn">basedOn</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ServiceRequest/RadiotherapyCoursePrescription-352-634&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;C1_Both_Breast&quot;/&gt;
+  &lt;/basedOn&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.intent">intent</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;filler-order&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.category">category</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;108290001&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Radiation oncology AND/OR radiotherapy&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/category&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.code">code</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1217123003&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Radiotherapy course of treatment (regime/therapy)&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/code&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">subject</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/Patient-352&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Sister-22B, Jane&quot;/&gt;
+  &lt;/subject&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.occurrence[x]">occurrencePeriod</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-12-02T00:00:00+01:00&quot;/&gt;
+  &lt;/occurrencePeriod&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.reasonCode">reasonCode</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;C50.9&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Malignant neoplasm: breast, unspecified&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/reasonCode&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.reasonReference">reasonReference</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Condition/Condition-DX-65100000000000000156-2&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;C50.9:Malignant neoplasm: breast, unspecified&quot;/&gt;
+  &lt;/reasonReference&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.bodySite">bodySite</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Breast, Left&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Breast, Left&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;76752008&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Breast structure (body structure)&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Breast, Left&quot;/&gt;
+  &lt;/bodySite&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.bodySite">bodySite</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Breast, Right&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Breast, Right&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;76752008&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Breast structure (body structure)&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Breast, Right&quot;/&gt;
+  &lt;/bodySite&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.bodySite">bodySite</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://varian.com/fhir/CodeSystem/radiotherapy-prescription-site&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Oesophagus&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Oesophagus&quot;/&gt;
+    &lt;/coding&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Oesophagus&quot;/&gt;
+  &lt;/bodySite&gt;
+&lt;/ServiceRequest&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

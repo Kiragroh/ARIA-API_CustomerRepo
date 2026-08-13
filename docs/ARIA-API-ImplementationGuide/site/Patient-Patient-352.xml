@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Patient-352"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Radiotherapy Patient Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Example radiotherapy patient."/>
+    </extension>
+    <versionId value="4230348"/>
+    <lastUpdated value="2023-10-12T16:34:04.617+02:00"/>
+    <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient"/>
+    <profile value="http://fhir.siemens-healthineers.com/fhir/R4/StructureDefinition/shs-patient"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Jane Sister-22B (OFFICIAL)</b> female, DoB: 1980-03-04 ( id: urn:oid:1.2.246.352.76.12.570635949378.352.2233654744557 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td>2023-10-03 00:00:00+0200</td></tr><tr><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes: {http://hl7.org/fhir/ValueSet/marital-status U}, {http://varian.com/fhir/CodeSystem/patient-marital-status SINGLE}">unmarried</span></td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li>DICOM PatientID: XRTS04WORKSHOP2022BVA (use: USUAL)</li><li>id: 1.2.246.352.76.12.570635949378.352.2233654744557</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Alternate names (see the one above)">Alt. Name:</td><td colspan="3">hermaidenname (MAIDEN)</td></tr><tr><td style="background-color: #f3f5da" title="Person's Gender, if is not re-presentable with Administrative Gender Value set."><a href="StructureDefinition-person-gender.html">person-gender:</a></td><td colspan="3"><ul><li><span title="Codes: {http://varian.com/fhir/CodeSystem/person-gender Female}">Female</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.">US Core Ethnicity Extension:</td><td colspan="3"><ul><li>text: Hispanic or Latino</li><li>http://varian.com/fhir/v1/StructureDefinition/isPrimary: true</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient's retirement details contains information about patient's retirement date, retirement reason and retirement note.">patient-retirementDetails:</td><td colspan="3"><ul><li>http://varian.com/fhir/v1/StructureDefinition/patient-retirement#retirementReason: reiredreason</li><li>http://varian.com/fhir/v1/StructureDefinition/patient-retirement#retirementDate: 2023-10-03</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient's status with provider - New Patient | Previous Patient."><a href="StructureDefinition-patient-status.html">patient-status:</a></td><td colspan="3"><ul><li><span title="Codes: {http://varian.com/fhir/CodeSystem/patient-status New Patient (NP)}">New Patient (NP)</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Reason for Patient's Death."><a href="StructureDefinition-patient-deathReason.html">patient-deathReason:</a></td><td colspan="3"><ul><li><span title="Codes: {http://varian.com/fhir/CodeSystem/patient-deathReason Accident}">Accident</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient."><a href="http://hl7.org/fhir/R4/extension-patient-genderidentity.html">genderIdentity:</a></td><td colspan="3"><ul><li><span title="Codes: {http://varian.com/fhir/CodeSystem/person-genderidentity Female-to-Male (FTM)/Transgender Male/Trans Man}, {http://hl7.org/fhir/gender-identity transgender-male}">Female-to-Male (FTM)/Transgender Male/Trans Man</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="An individual's physical and/or emotional attraction to another individual of the same gender, opposite gender, or both genders."><a href="StructureDefinition-sexOrientation.html">sexOrientation:</a></td><td colspan="3"><ul><li><span title="Codes: {http://varian.com/fhir/CodeSystem/person-sexorientation Bisexual}, {http://loinc.org LA22877-7}">Bisexual</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Mother's maiden (unmarried) name, commonly collected to help verify patient identity."><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-mothersMaidenName.html">Patient Mother's Maiden Name:</a></td><td colspan="3"><ul><li>mothersmaidenname</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-birthPlace.html">Patient Birth Place:</a></td><td colspan="3"><ul><li>birth city ALB </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.">US Core Race Extension:</td><td colspan="3"><ul><li>text: Asian</li><li>http://varian.com/fhir/v1/StructureDefinition/isPrimary: true</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient's class - In Patient | Out Patient."><a href="StructureDefinition-patient-class.html">patient-class:</a></td><td colspan="3"><ul><li><span title="Codes: {http://varian.com/fhir/CodeSystem/patient-class Out Patient}">Out Patient</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The patient's legal status as citizen of a country.">Patient Citizenship:</td><td colspan="3"><ul><li>code: <span title="Codes: {http://varian.com/fhir/CodeSystem/patient-citizenship Algeria}">Algeria</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The patient's professed religious affiliations."><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-religion.html">Patient Religion:</a></td><td colspan="3"><ul><li><span title="Codes: {http://varian.com/fhir/CodeSystem/patient-religion Orthodox}">Orthodox</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient's occupation details."><a href="StructureDefinition-patient-occupation.html">patient-occupation:</a></td><td colspan="3"><ul><li>teacher</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName">
+    <valueString value="mothersmaidenname"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="text">
+      <valueString value="Asian"/>
+    </extension>
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/isPrimary">
+      <valueBoolean value="true"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+    <extension url="code">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/patient-citizenship"/>
+          <code value="Algeria"/>
+          <display value="Algeria"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <city value="birth city"/>
+      <country value="ALB"/>
+    </valueAddress>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/patient-religion"/>
+        <code value="Orthodox"/>
+        <display value="Orthodox"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+    <extension url="text">
+      <valueString value="Hispanic or Latino"/>
+    </extension>
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/isPrimary">
+      <valueBoolean value="true"/>
+    </extension>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/patient-status">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/patient-status"/>
+        <code value="New Patient (NP)"/>
+        <display value="New Patient (NP)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/patient-class">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/patient-class"/>
+        <code value="Out Patient"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/patient-deathReason">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/patient-deathReason"/>
+        <code value="Accident"/>
+        <display value="Accident"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/person-gender">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/person-gender"/>
+        <code value="Female"/>
+        <display value="Female"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-genderIdentity">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/person-genderidentity"/>
+        <code value="Female-to-Male (FTM)/Transgender Male/Trans Man"/>
+        <display value="Female-to-Male (FTM)/Transgender Male/Trans Man"/>
+      </coding>
+      <coding>
+        <system value="http://hl7.org/fhir/gender-identity"/>
+        <code value="transgender-male"/>
+        <display value="transgender male"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/sexOrientation">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://varian.com/fhir/CodeSystem/person-sexorientation"/>
+        <code value="Bisexual"/>
+        <display value="Bisexual"/>
+      </coding>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA22877-7"/>
+        <display value="Bisexual"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/patient-occupation">
+    <valueString value="teacher"/>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/patient-retirementDetails">
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/patient-retirement#retirementReason">
+      <valueString value="reiredreason"/>
+    </extension>
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/patient-retirement#retirementDate">
+      <valueDate value="2023-10-03"/>
+    </extension>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://fhir.siemens-healthineers.com/fhir/R4/CodeSystem/shs-code-system"/>
+        <code value="DCM00100020"/>
+        <display value="DICOM PatientID"/>
+      </coding>
+    </type>
+    <system value="http://varian.com/fhir/identifier/Patient/ARIAID1"/>
+    <value value="XRTS04WORKSHOP2022BVA"/>
+  </identifier>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/Patient/patient-uid"/>
+    <value value="1.2.246.352.76.12.570635949378.352.2233654744557"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:dicom:uid"/>
+    <value value="urn:oid:1.2.246.352.76.12.570635949378.352.2233654744557"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Sister-22B"/>
+    <given value="Jane"/>
+  </name>
+  <name>
+    <use value="maiden"/>
+    <family value="hermaidenname"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1980-03-04"/>
+  <deceasedDateTime value="2023-10-03T00:00:00+02:00"/>
+  <maritalStatus>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/marital-status"/>
+      <code value="U"/>
+      <display value="unmarried"/>
+    </coding>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/patient-marital-status"/>
+      <code value="SINGLE"/>
+      <display value="Single"/>
+    </coding>
+  </maritalStatus>
+</Patient>

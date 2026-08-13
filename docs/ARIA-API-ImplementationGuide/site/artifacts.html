@@ -1,0 +1,2063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>VARIAN.PUBLIC.PROFILE\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <!--<style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10.0"}</style> -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="left-nav">
+    <a id="left-logo" no-external="true" href="index.html"><img height="50" alt="Visit the Varian website" src="assets/images/varian.png"/> </a>
+  </div>
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+  
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ARIA API Profile Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - R4 Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">How to
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="vaistokengen.html">VAIS Token Generation</a>
+      </li>
+      <li>
+        <a href="vaisscopes.html">VAIS Operation Scopes</a>
+      </li>
+      <li>
+        <a href="clientcreation.html">VAIS Client Creation</a>
+      </li>
+      <li>
+        <a href="radiotherapy.html">Radiotherapy</a>
+      </li>
+      <li>
+        <a href="valuesetandcodesystemlist.html">Valueset &amp; Codesystem List</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ARIA API Profile Implementation Guide - Local Development build (v1.0.0). See the <a href="http://varian.com/fhir/v1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DocumentReference.html"
+                     title="StructureDefinition/DocumentReference">A reference to a document</a>
+               </td>
+               <td>
+<p>This resource identifies the healthcare documentation created for a Patient in ARIA</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ActivityDefinition.html"
+                     title="StructureDefinition/ActivityDefinition">ActivityDefinition</a>
+               </td>
+               <td>
+<p>This resource allows for the definition of some activity to be performed, it may be used to specify actions to be taken as part of a workflow, appointment or tasks.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-AllergyIntolerance.html"
+                     title="StructureDefinition/AllergyIntolerance">AllergyIntolerance</a>
+               </td>
+               <td>
+<p>AllergyIntolerance represents Patient’s Allergies in ARIA.</p>
+
+<p>All recorded allergies or NO KNOWN ALLERGY status will be reflected using this.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Appointment.html"
+                     title="StructureDefinition/Appointment">Appointment</a>
+               </td>
+               <td>
+<p>A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-AuditEvent.html"
+                     title="StructureDefinition/AuditEvent">Audit Event</a>
+               </td>
+               <td>
+<p>A record of an event made for purposes of maintaining a security log. Typical uses include detection of intrusion attempts and monitoring for inappropriate usage.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BodyStructure.html"
+                     title="StructureDefinition/BodyStructure">BodyStructure</a>
+               </td>
+               <td>
+<p>This resource record details about an anatomical structure. This resource may be used when a coded concept does not provide the necessary detail needed for the use case.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CarePlan.html"
+                     title="StructureDefinition/CarePlan">CarePlan</a>
+               </td>
+               <td>
+<p>Care Plan profile is derived from FHIR Domain Resource.
+It represents care plan in ARIA .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CareTeam.html"
+                     title="StructureDefinition/CareTeam">CareTeam</a>
+               </td>
+               <td>
+<p>This Resource includes all the people and organizations who plan to participate in the coordination and delivery of care for a patient.</p>
+
+<p>Careteam represents department and practitioner (doctor/staff) assigned to the Patient in ARIA.</p>
+
+<p>ARIA does not configure predefined teams, so single Careteam per Patient will represent associations with Department and practitioner.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ChargeItem.html"
+                     title="StructureDefinition/ChargeItem">ChargeItem</a>
+               </td>
+               <td>
+<p>This Resource represents charges captured for an activity.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CancerCondition.html"
+                     title="StructureDefinition/CancerCondition">Condition-Diagnosis (CancerCondition)</a>
+               </td>
+               <td>
+<p>This resource is used to record detailed information about a  diagnosis that has risen to a level of concern. The condition could be a point in time diagnosis in context of an encounter, it could be an item on the practitioner’s Problem List, or it could be a concern that doesn’t exist on the practitioner’s Problem List.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Device.html"
+                     title="StructureDefinition/Device">Device</a>
+               </td>
+               <td>
+<p>This resource identifies an instance or a type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.  Medical devices include durable (reusable) medical equipment, implantable devices, as well as disposable equipment used for diagnostic, treatment, and research for healthcare and public health.  Non-medical devices may include items such as a machine, cellphone, computer, application, etc.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Group.html" title="StructureDefinition/Group">Group</a>
+               </td>
+               <td>
+<p>Group represents logical grouping of Resources like Advance Practitioners, Nurses,Oncologists, System administrators etc…    <br />
+Group comprises Doctor/Staff (Practitioner), Machine (Device) and Venue (Location) with in a department in ARIA.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-HealthcareService.html"
+                     title="StructureDefinition/HealthcareService">HealthcareService</a>
+               </td>
+               <td>
+<p>HealthcareService represents departments in ARIA as in ARIA department and services are not two separate concepts.
+Although Department are already being represented by Organization resource, since many other FHIR clinical resources works on HealthcareService concept, we are mapping department in Healthcare service as well.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Location.html"
+                     title="StructureDefinition/Location">Location</a>
+               </td>
+               <td>
+<p>Location includes both incidental locations (a place which is used for healthcare ) and dedicated, formally appointed locations.
+It can be of Auxiliary type or Venue type. 
+Auxiliary locations include imaging machines and treatment machines.
+Venues are locations within a department like treatment room, waiting room, consultation room, etc.  Some locations can be schedulable.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-StageCategory.html"
+                     title="StructureDefinition/StageCategory">Observation-StageCategory</a>
+               </td>
+               <td>
+<p>Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic   characteristics. Most observations are simple name/value pair assertions with some metadata, but some observations group other observations together logically, or even are multi-component observations.</p>
+
+<p>This profile is used to represent the Stage Category in Condition Diagnosis resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-StageGroup.html"
+                     title="StructureDefinition/StageGroup">Observation-StageGroup</a>
+               </td>
+               <td>
+<p>Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines and patterns and even capture demographic   characteristics. Most observations are simple name/value pair assertions with some metadata, but some observations group other observations together logically, or even are multi-component observations.</p>
+
+<p>This profile is used to represent the Stage Group in Condition Diagnosis resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-VitalSigns.html"
+                     title="StructureDefinition/VitalSigns">Observation-Vital-Signs</a>
+               </td>
+               <td>
+<p>Vital Signs profile is derived from FHIR Observation.</p>
+
+<p>It represents Patient’s Vital Signs  Observations recorded in ARIA .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-VitalSignsComponent.html"
+                     title="StructureDefinition/VitalSignsComponent">Observation-Vital-Signs-Component</a>
+               </td>
+               <td>
+<p>Vital Signs component profile is derived from FHIR Observation.</p>
+
+<p>It represents Patient’s individual Vital Signs result Observations recorded in ARIA .</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Organization.html"
+                     title="StructureDefinition/Organization">Organization</a>
+               </td>
+               <td>
+<p>A formally or informally recognized grouping of organizations formed for the purpose of achieving some form of collective action. Includes institutions, departments etc</p>
+
+<p>Organization represents Hospital and Departments configured in ARIA. A Hospital can have multiple departments.</p>
+
+<p>Hospital is represented with category ‘prov (Provider)’ and Department is represented with category ‘dept (Department)’.</p>
+
+<p>Hospital and Department relationship is represented on Department.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Patient.html"
+                     title="StructureDefinition/Patient">Patient</a>
+               </td>
+               <td>
+<p>This profile represents Patient Demographics, Contacts and other administrative information.
+Profile Contains: Demographics, Contacts, Region specific details like Race, Ethnicity and Language (if applicable), User Defined Labels</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Practitioner.html"
+                     title="StructureDefinition/Practitioner">Practitioner</a>
+               </td>
+               <td>
+<p>Practitioner covers all individuals who are engaged in the healthcare process and healthcare-related services as part of their formal responsibilities and this Resource is used for attribution of activities and responsibilities to these individuals. Practitioners include (but are not limited to):</p>
+
+<p>physicians, dentists, pharmacists, 
+physician assistants, nurses, scribes, 
+midwives, dietitians, therapists, optometrists, paramedics, 
+medical technicians, laboratory scientists, prosthetic technicians, radiographers, 
+social workers, professional homecare providers, official volunteers, 
+receptionists handling patient registration</p>
+
+<p>Practitioner represents Doctor and Staff configured in ARIA.</p>
+
+<p>Doctor/Staff demographics, role and  association with department is being represented.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-RadiotherapyCoursePrescription.html"
+                     title="StructureDefinition/RadiotherapyCoursePrescription">Radiotherapy Course Prescription</a>
+               </td>
+               <td>
+<p>The elements of a treatment course that can be defined during prescription. This represents the treatment course in ARIA, not an actual prescription and is the parent for all presciptions in the course.
+It contains the data elements of a course that are not specific to planning or delivery, for example, treatment intent, relation to the diagnosis, or course status.
+Those elements are exposed as CodeX RT Radiotherapy Course Prescription although ARIA does not have an actual prescription for the complete course. See the Phase Prescription profile for actual prescriptions in ARIA.
+With the Radiotherapy Course Prescription, elements of the course can be found as soon as a course is defined in ARIA, even if no treatment plans or delivered treatments are available yet.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-RadiotherapyCourseSummary.html"
+                     title="StructureDefinition/RadiotherapyCourseSummary">Radiotherapy Course Summary</a>
+               </td>
+               <td>
+<p>A summary of the treatment progress in a radiotherapy course of treatment.
+When additional treatments are delivered in the same course, this resource is updated. No new resource is created.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-RadiotherapyPhasePrescription.html"
+                     title="StructureDefinition/RadiotherapyPhasePrescription">Radiotherapy Phase Prescription</a>
+               </td>
+               <td>
+<p>A prescription for a radiotherapy treatment phase.
+In ARIA, a prescription can cover a single plan or complete phase implemented with one or multiple plans. During prescription it may not even be defined whether
+multiple plans will be used. Therefore, all ARIA prescriptions are exposed as Phase Prescriptions.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-RadiotherapyPlannedCourse.html"
+                     title="StructureDefinition/RadiotherapyPlannedCourse">Radiotherapy Planned Course</a>
+               </td>
+               <td>
+<p>A summary of all plans in a radiotherapy course of treatment. Only approved plans with status other than Unapproved, Rejected, Reviewed are considered.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-RadiotherapyPlannedPhase.html"
+                     title="StructureDefinition/RadiotherapyPlannedPhase">Radiotherapy Planned Phase</a>
+               </td>
+               <td>
+<p>A summary of all plans in a radiotherapy treatment phase.
+In ARIA, all plans linked to the same prescription are considered as part of the same phase.
+One Radiotherapy Planned Phase is exposed for each ARIA prescription that has at least one linked plan in an approved status (other than Unapproved, Rejected, Reviewed).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-RadiotherapyTreatedPhase.html"
+                     title="StructureDefinition/RadiotherapyTreatedPhase">Radiotherapy Treated Phase</a>
+               </td>
+               <td>
+<p>A summary of the treatment progress in a radiotherapy treatment phase. In ARIA, all plans linked to the same prescription are considered as part of the same phase.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-RadiotherapyTreatedPlan.html"
+                     title="StructureDefinition/RadiotherapyTreatedPlan">Radiotherapy Treated Plan</a>
+               </td>
+               <td>
+<p>A summary of the treatment progress in one radiotherapy treatment plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-RadiotherapyTreatmentPlan.html"
+                     title="StructureDefinition/RadiotherapyTreatmentPlan">Radiotherapy Treatment Plan</a>
+               </td>
+               <td>
+<p>A radiotherapy treatment plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-RadiotherapyVolume.html"
+                     title="StructureDefinition/RadiotherapyVolume">Radiotherapy Volume</a>
+               </td>
+               <td>
+<p>A volume of the body used in radiotherapy planning or treatment delivery.
+In ARIA, dose is specified and tracked against Reference Points. These Reference Points can represent actual points or three-dimensional volumes.
+ARIA calls all of those ‘Reference Point’, even if not a point. Each Reference Point in ARIA is exposed as a Radiotherapy Volume.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Task.html" title="StructureDefinition/Task">Task</a>
+               </td>
+               <td>
+<p>Task resource represents tasks configured in ARIA.</p>
+
+<p>A task resource describes an activity that can be performed and tracks the state of completion of that activity. It is a representation that an activity should be or has been initiated, and eventually, represents the successful or unsuccessful completion of that activity.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ValueSet.html"
+                     title="StructureDefinition/ValueSet">ValueSet</a>
+               </td>
+               <td>
+<ul>
+  <li>
+    <p>ValueSet specifies a set of codes drawn from one or more code systems, intended for use in a particular context. Value sets link between CodeSystem definitions and their use in coded elements.</p>
+  </li>
+  <li>
+    <p>^publisher = “Varian ARIA API Profile Team”</p>
+  </li>
+  <li>
+    <p>Value sets have 2 aspects:</p>
+
+    <ul>
+      <li>.compose:  A definition of which codes are intended to be in the value set (“intension”) -/li-</li>
+      <li>.expansion: The list of codes that are actually in the value set under a given set of conditions (“extension”) -/li-</li>
+    </ul>
+  </li>
+  <li>
+    <p>Please refer the How to -&gt; Valueset &amp; Codesystem List Page for list of valueset and codesystems.</p>
+  </li>
+</ul>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Condition-Stage-isWorkingStage.html"
+                     title="StructureDefinition/Condition-Stage-isWorkingStage">Condition-Stage-isWorkingStage</a>
+               </td>
+               <td>
+<p>Signifies if the observation is in woking group.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-careplan-lastUpdatedOn.html"
+                     title="StructureDefinition/careplan-lastUpdatedOn">LastUpdatedOn</a>
+               </td>
+               <td>
+<p>Last update time of Element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-shs-radiotherapy-bolus-extension.html"
+                     title="StructureDefinition/shs-radiotherapy-bolus-extension">Radiotherapy Bolus</a>
+               </td>
+               <td>
+<p>Bolus used (or to be used) for radiotherapy.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-careplan-activityAdditionalPerformer.html"
+                     title="StructureDefinition/careplan-activityAdditionalPerformer">activityAdditionalPerformer</a>
+               </td>
+               <td>
+<p>Performer of the Activity of Care Plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-careplan-activityBasedOn.html"
+                     title="StructureDefinition/careplan-activityBasedOn">activityBasedOn</a>
+               </td>
+               <td>
+<p>The predecessor activity this care plan activity is based on.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-activityDefinition-category.html"
+                     title="StructureDefinition/activityDefinition-category">activityDefinition-category</a>
+               </td>
+               <td>
+<p>Classification of Activity.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-address-telephone1.html"
+                     title="StructureDefinition/address-telephone1">address-telephone1</a>
+               </td>
+               <td>
+<p>Address Telephone 1 Number.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-allergyIntolerance-allergyCategoryInAria.html"
+                     title="StructureDefinition/allergyIntolerance-allergyCategoryInAria">allergyIntolerance-allergyCategoryInAria</a>
+               </td>
+               <td>
+<p>ARIA Coded Allergy category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-allergyIntolerance-reaction-lifeThreatening.html"
+                     title="StructureDefinition/allergyIntolerance-reaction-lifeThreatening">allergyIntolerance-reaction-lifeThreatening</a>
+               </td>
+               <td>
+<p>ARIA allergy reaction.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-appointment-actualTime.html"
+                     title="StructureDefinition/appointment-actualTime">appointment-actualTime</a>
+               </td>
+               <td>
+<p>Actual Start date &amp; Actual End date for Appointment.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-appointment-ariaStatus.html"
+                     title="StructureDefinition/appointment-ariaStatus">appointment-ariaStatus</a>
+               </td>
+               <td>
+<p>ARIA Specific Status.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-appointment-newPatientIndicator.html"
+                     title="StructureDefinition/appointment-newPatientIndicator">appointment-visitInstructions</a>
+               </td>
+               <td>
+<p>Visit instructions of a MO appointment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-appointment-visitInstructions.html"
+                     title="StructureDefinition/appointment-visitInstructions">appointment-visitInstructions</a>
+               </td>
+               <td>
+<p>Visit instructions of a MO appointment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-approvalDate.html"
+                     title="StructureDefinition/approvalDate">approvalDate</a>
+               </td>
+               <td>
+<p>The date on which the Physical Exam record approved.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-assertedOn.html"
+                     title="StructureDefinition/assertedOn">assertedOn</a>
+               </td>
+               <td>
+<p>Date on which observation result value has been approved.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-careplan-activity-definition.html"
+                     title="StructureDefinition/careplan-activity-definition">careplan-activity-definition</a>
+               </td>
+               <td>
+<p>Base Activity Definition reference on which this Care Plan activity is planned.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-careplan-activityAutoAssignOncologist.html"
+                     title="StructureDefinition/careplan-activityAutoAssignOncologist">careplan-activityAutoAssignOncologist</a>
+               </td>
+               <td>
+<p>Careplan activities auto Assign oncologist flag.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-chargeItem-associateCharge.html"
+                     title="StructureDefinition/chargeItem-associateCharge">chargeItem-associateCharge</a>
+               </td>
+               <td>
+<p>Medical charges with procedure.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-chargeItem-codeModifier.html"
+                     title="StructureDefinition/chargeItem-codeModifier">chargeItem-codeModifier</a>
+               </td>
+               <td>
+<p>Code Modifier Override on base Procedure code.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-chargeitem-category.html"
+                     title="StructureDefinition/chargeitem-category">chargeitem-category</a>
+               </td>
+               <td>
+<p>Type of Charge</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-chargeitem-completedOn.html"
+                     title="StructureDefinition/chargeitem-completedOn">chargeitem-completedOn</a>
+               </td>
+               <td>
+<p>Resource completed On.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-subcomponentcode.html"
+                     title="StructureDefinition/subcomponentcode">code</a>
+               </td>
+               <td>
+<p>Sub-component  attribute name.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-componentOrder.html"
+                     title="StructureDefinition/componentOrder">componentOrder</a>
+               </td>
+               <td>
+<p>Lab Result Component Order.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-componentNote.html"
+                     title="StructureDefinition/componentNote">componentnote</a>
+               </td>
+               <td>
+<p>Comment on component of Observation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-condition-assertedDate.html"
+                     title="StructureDefinition/condition-assertedDate">condition-assertedDate</a>
+               </td>
+               <td>
+<p>The date on which the existence of the Condition was first asserted or acknowledged.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-condition-cancerBehavior.html"
+                     title="StructureDefinition/condition-cancerBehavior">condition-cancerBehavior</a>
+               </td>
+               <td>
+<p>ARIA Cancer Behaviour Code. It is used to uniquely identify an ICD-O behavior code.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-condition-clinicalStatusDate.html"
+                     title="StructureDefinition/condition-clinicalStatusDate">condition-clinicalStatusDate</a>
+               </td>
+               <td>
+<p>The date on which symptoms of the diagnosis/problem were first known to exist.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-condition-clinicalStatusInARIA.html"
+                     title="StructureDefinition/condition-clinicalStatusInARIA">condition-clinicalStatusInARIA</a>
+               </td>
+               <td>
+<p>ARIA Codes for Diagnosis Status.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-condition-isExternal.html"
+                     title="StructureDefinition/condition-isExternal">condition-isExternal</a>
+               </td>
+               <td>
+<p>Indicates that the diagnosis was brought in via interface (i.e. it was done external to our application).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-condition-laterality.html"
+                     title="StructureDefinition/condition-laterality">condition-laterality</a>
+               </td>
+               <td>
+<p>Designated codes for condition side of the body affected.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-condition-rank.html"
+                     title="StructureDefinition/condition-rank">condition-rank</a>
+               </td>
+               <td>
+<p>Concepts that identify the significance or priority of the diagnosis code. Note that the codes are numeric, and the number of the code represents the ordinal priority of the associated diagnosis.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-customAttributes.html"
+                     title="StructureDefinition/customAttributes">customAttributes</a>
+               </td>
+               <td>
+<p>Configurable Attributes on Patient. ARIA has Configurable User defined Attributes to accommodate Patient’s properties which are not present in ARIA out of box.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-daily-dose-limit.html"
+                     title="StructureDefinition/daily-dose-limit">daily-dose-limit</a>
+               </td>
+               <td>
+<p>Daily dose limit</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-default.html"
+                     title="StructureDefinition/default">default</a>
+               </td>
+               <td>
+<p>The resource is default choice among similar set</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-defaultServiceOrganization.html"
+                     title="StructureDefinition/defaultServiceOrganization">defaultServiceOrganization</a>
+               </td>
+               <td>
+<p>Default Department of Resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-directive-userConfirmationRequired.html"
+                     title="StructureDefinition/directive-userConfirmationRequired">directive-userConfirmationRequired</a>
+               </td>
+               <td>
+<p>Whether User confirmation dialog flag. Applicable: DIRECTIVE ValueSet only.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documentreference-authenticated.html"
+                     title="StructureDefinition/documentreference-authenticated">documentreference-authenticated</a>
+               </td>
+               <td>
+<p>Date at which document approved.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documentreference-completed.html"
+                     title="StructureDefinition/documentreference-completed">documentreference-completed</a>
+               </td>
+               <td>
+<p>Whether the document draft has be completed for review or approval.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documentreference-documentLocation.html"
+                     title="StructureDefinition/documentreference-documentLocation">documentreference-documentLocation</a>
+               </td>
+               <td>
+<p>Location of document stored.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documentreference-signature.html"
+                     title="StructureDefinition/documentreference-signature">documentreference-signature</a>
+               </td>
+               <td>
+<p>Document Signer details.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documentreference-supervisor.html"
+                     title="StructureDefinition/documentreference-supervisor">documentreference-supervisor</a>
+               </td>
+               <td>
+<p>Originator of Document, In ARIA its Supervisor of document.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documentreference-templateName.html"
+                     title="StructureDefinition/documentreference-templateName">documentreference-templateName</a>
+               </td>
+               <td>
+<p>Document Template Name in ARIA.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-isChargeCaptureApplicable.html"
+                     title="StructureDefinition/isChargeCaptureApplicable">isChargeCaptureApplicable</a>
+               </td>
+               <td>
+<p>Flag in ARIA to define charge capture after completion of a service in Facility.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-isPrimary.html"
+                     title="StructureDefinition/isPrimary">isPrimary</a>
+               </td>
+               <td>
+<p>Whether the ethnicity or race is primary? Applicable to Patient ethnicity and race.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-isPublishable.html"
+                     title="StructureDefinition/isPublishable">isPublishable</a>
+               </td>
+               <td>
+<p>Lab Result Component publishable status.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-isWorkingStage.html"
+                     title="StructureDefinition/isWorkingStage">isWorkingStage</a>
+               </td>
+               <td>
+<p>Is Current Stage is working stage.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-lastModificationTaskName.html"
+                     title="StructureDefinition/lastModificationTaskName">lastModificationTaskName</a>
+               </td>
+               <td>
+<p>Last modified by task name.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-lastModificationUser.html"
+                     title="StructureDefinition/lastModificationUser">lastModificationUser</a>
+               </td>
+               <td>
+<p>Last modified by user.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-login-institution.html"
+                     title="StructureDefinition/login-institution">login-institution</a>
+               </td>
+               <td>
+<p>Associated department in ARIA (Supported only on ARIA V18 or onwards)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-modifier-application-code.html"
+                     title="StructureDefinition/modifier-application-code">modifier-application-code</a>
+               </td>
+               <td>
+<p>Modifier application code.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-observation-stageClassification.html"
+                     title="StructureDefinition/observation-stageClassification">observation-stageClassification</a>
+               </td>
+               <td>
+<p>Stage Classification, clinical, pathological, posttherapy, recurrence, autopsy is called the Classification.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-careplan-lagfrompredecessor.html"
+                     title="StructureDefinition/careplan-lagfrompredecessor">offset</a>
+               </td>
+               <td>
+<p>Lag offset from previous activity.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-class.html"
+                     title="StructureDefinition/patient-class">patient-class</a>
+               </td>
+               <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Patient’s class - In Patient</td>
+      <td>Out Patient.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-contact-isPrimary.html"
+                     title="StructureDefinition/patient-contact-isPrimary">patient-contact-isPrimary</a>
+               </td>
+               <td>
+<p>Whether the contact is primary.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-contact-subrelation.html"
+                     title="StructureDefinition/patient-contact-subrelation">patient-contact-subrelation</a>
+               </td>
+               <td>
+<p>Patient’s relationship with the contact person.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-deathReason.html"
+                     title="StructureDefinition/patient-deathReason">patient-deathReason</a>
+               </td>
+               <td>
+<p>Reason for Patient’s Death.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-isTestPatient.html"
+                     title="StructureDefinition/patient-isTestPatient">patient-isTestPatient</a>
+               </td>
+               <td>
+<p>Whether Patient is test patient. (Supported only on ARIA V18 or onwards) FHIR will return test patient which are created by ARIA. Test Patient Create/update is not supported from FHIR.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-locationDetails.html"
+                     title="StructureDefinition/patient-locationDetails">patient-locationDetails</a>
+               </td>
+               <td>
+<p>In Patient Admission details - Admission Period, Room Number.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-mobilePhoneProvider.html"
+                     title="StructureDefinition/patient-mobilePhoneProvider">patient-mobilePhoneProvider</a>
+               </td>
+               <td>
+<p>Patient’s mobile phone provider details.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-modeOfArrival.html"
+                     title="StructureDefinition/patient-modeOfArrival">patient-modeOfArrival</a>
+               </td>
+               <td>
+<p>Patient Transportation Contact Comment.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-occupation.html"
+                     title="StructureDefinition/patient-occupation">patient-occupation</a>
+               </td>
+               <td>
+<p>Patient’s occupation details.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-photo-type.html"
+                     title="StructureDefinition/patient-photo-type">patient-photo-type</a>
+               </td>
+               <td>
+<p>Patient’s photo type.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-retirementDetails.html"
+                     title="StructureDefinition/patient-retirementDetails">patient-retirementDetails</a>
+               </td>
+               <td>
+<p>Patient’s retirement details contains information about patient’s retirement date, retirement reason and retirement note.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-status.html"
+                     title="StructureDefinition/patient-status">patient-status</a>
+               </td>
+               <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Patient’s status with provider - New Patient</td>
+      <td>Previous Patient.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-performedAge.html"
+                     title="StructureDefinition/performedAge">performedAge</a>
+               </td>
+               <td>
+<p>Age when procedure is performed.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-person-gender.html"
+                     title="StructureDefinition/person-gender">person-gender</a>
+               </td>
+               <td>
+<p>Person’s Gender, if is not re-presentable with Administrative Gender Value set.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-practitioner-role.html"
+                     title="StructureDefinition/practitioner-role">practitioner-role</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-readOnly.html"
+                     title="StructureDefinition/readOnly">readOnly</a>
+               </td>
+               <td>
+<p>ReadOnly flag is set to true if Resource information is read only and can not be modified.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reminderTime.html"
+                     title="StructureDefinition/reminderTime">remindTime</a>
+               </td>
+               <td>
+<p>Duration prior to scheduled time before which a reminder should be notified.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-schedulable.html"
+                     title="StructureDefinition/schedulable">schedulable</a>
+               </td>
+               <td>
+<p>Whether the resource can be scheduled or not.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-serviceOrganization.html"
+                     title="StructureDefinition/serviceOrganization">serviceOrganization</a>
+               </td>
+               <td>
+<p>Department(s) associated with resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-session-dose-limit.html"
+                     title="StructureDefinition/session-dose-limit">session-dose-limit</a>
+               </td>
+               <td>
+<p>Session dose limit</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sexOrientation.html"
+                     title="StructureDefinition/sexOrientation">sexOrientation</a>
+               </td>
+               <td>
+<p>An individual’s physical and/or emotional attraction to another individual of the same gender, opposite gender, or both genders.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-subComponent.html"
+                     title="StructureDefinition/subComponent">subComponent</a>
+               </td>
+               <td>
+<p>Subcomponent of component.  It contains only extensions, no value. It acts as a group placeholder for subcomponent attribute and its value in case of abnormal observation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-supporting-information.html"
+                     title="StructureDefinition/supporting-information">supporting-information</a>
+               </td>
+               <td>
+<p>Task supporting information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-task-minutesDuration.html"
+                     title="StructureDefinition/task-minutesDuration">task-minutesDuration</a>
+               </td>
+               <td>
+<p>Minutes Duration (Time Frame) estimate required to perform task.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-total-dose-limit.html"
+                     title="StructureDefinition/total-dose-limit">total-dose-limit</a>
+               </td>
+               <td>
+<p>Total dose limit</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-subcomponentvalue.html"
+                     title="StructureDefinition/subcomponentvalue">value</a>
+               </td>
+               <td>
+<p>Sub-component attribute value.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-valueset-Required.html"
+                     title="StructureDefinition/valueset-Required">valueset-Required</a>
+               </td>
+               <td>
+<p>Valueset Required or not flag.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-valueset-payor-plan-type.html"
+                     title="StructureDefinition/valueset-payor-plan-type">valueset-payor-plan-type</a>
+               </td>
+               <td>
+<p>Payor Plan Type. Applicable: PAYOR-INFO ValueSet.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-allergy-category.html"
+                     title="ValueSet/aria-allergy-category">AllergyIntolerance ARIA Category</a>
+               </td>
+               <td>
+<p>This value set defines different allergy types configured in Aria. 
+List of configured allergy categories are available under valueset ‘aria-allergy-category’. 
+All values can be accessed using $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/allergy-intolerance-category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-careplan-template.html"
+                     title="ValueSet/aria-careplan-template">CarePlan Template</a>
+               </td>
+               <td>
+<p>The configured careplan template in Aria. 
+List of configured templates are accessible using valueset ‘aria-careplan-template’. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/careplan-template</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-country.html" title="ValueSet/aria-country">Country</a>
+               </td>
+               <td>
+<p>This value set defines a base set of codes for countries configured in Aria. 
+The list of country accepted under citizenShip are available under ValueSet ‘aria-country’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/country</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-device-type.html" title="ValueSet/aria-device-type">Device Types</a>
+               </td>
+               <td>
+<p>List of configured device types are accessible using valueset ‘aria-device-type’. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/device-type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-diagnosiscode.html"
+                     title="ValueSet/aria-diagnosiscode">Diagnosis Code</a>
+               </td>
+               <td>
+<table>
+  <tbody>
+    <tr>
+      <td>List of available codes are accessible using valueset ‘aria-diagnosiscode’. All values can be accessed using ValueSet $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code. Codes can be filtered on schemas using context filter i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code&amp;context=http://hl7.org/fhir/sid/icd-9-cm</td>
+      <td>icd-9-cm</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-documenttype.html"
+                     title="ValueSet/aria-documenttype">DocumentReference Type</a>
+               </td>
+               <td>
+<p>This valueset defines the code specifying the precise type of document. 
+List of configured document type are accessible using valueset ‘aria-documenttype’. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/documentreference-type&amp;publisher=Organization-Prov-1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-mobilephoneprovider.html"
+                     title="ValueSet/aria-mobilephoneprovider">Mobile Phone Provider</a>
+               </td>
+               <td>
+<p>This value set includes various mobile phone providers configured in aria. 
+The list of configured mobile phone providers are available under ValueSet ‘aria-mobilephoneprovider’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-mobilephoneprovider</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-patient-citizenship-vs.html"
+                     title="ValueSet/patient-citizenship-vs">Patient Citizenship Value Set</a>
+               </td>
+               <td>
+<p>Patient Citizenship Value Set</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-deathreason.html"
+                     title="ValueSet/aria-patient-deathreason">Patient Death Reason</a>
+               </td>
+               <td>
+<p>List of configured death reasons values are available under valueset ‘aria-patient-deathreason’. 
+All database configured values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-deathreason</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-ethinicity.html" title="ValueSet/aria-ethinicity">Patient Ethinicity</a>
+               </td>
+               <td>
+<p>This value set includes patient ethnicity configured in aria. 
+The list of configured ethnicity are available under ValueSet ‘aria-patient-ethnicity’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/ethnicity</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-gender.html"
+                     title="ValueSet/aria-patient-gender">Patient Gender</a>
+               </td>
+               <td>
+<p>The gender of a person used for administrative purposes. 
+All database configured values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/person-gender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-genderidentity.html"
+                     title="ValueSet/aria-patient-genderidentity">Patient Gender Identity</a>
+               </td>
+               <td>
+<p>This value set includes supported gender identity configured in aria. 
+The list of configured gender identity are available under ValueSet ‘aria-patient-genderidentity’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-genderIdentity</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-ids.html" title="ValueSet/aria-patient-ids">Patient Ids</a>
+               </td>
+               <td>
+<p>This value set includes configured patient ids. 
+The list of country accepted under citizenShip are available under ValueSet ‘aria-country’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/country</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-language.html"
+                     title="ValueSet/aria-patient-language">Patient Language</a>
+               </td>
+               <td>
+<p>This value set defines the set of codes that can be used to indicate patient’s communication language. 
+The list of configured communication languages are available under ValueSet ‘aria-patient-language’. 
+All values can be accessed using $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/languages</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-maritalstatus.html"
+                     title="ValueSet/aria-patient-maritalstatus">Patient Marital Status</a>
+               </td>
+               <td>
+<p>This value set includes Marital Status values configured in aria. 
+The list of configured marital status are available under ValueSet ‘aria-patient-maritalstatus’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/marital-status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-race.html"
+                     title="ValueSet/aria-patient-race">Patient Race</a>
+               </td>
+               <td>
+<p>This value set includes race configured in aria. 
+The list of configured races are available under ValueSet ‘aria-patient-race’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/race</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-religion.html"
+                     title="ValueSet/aria-patient-religion">Patient Religion</a>
+               </td>
+               <td>
+<p>This value set includes religion configured in aria. 
+The list of configured religion values are available under ValueSet ‘aria-patient-religion’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/religion</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-sexorientation.html"
+                     title="ValueSet/aria-patient-sexorientation">Patient Sexual Orientation</a>
+               </td>
+               <td>
+<p>This value set includes supported sexual orientation configured in aria. 
+The list of configured sexual orientation are available under ValueSet ‘aria-patient-sexorientation’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-sexorientation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-userdefinedlabel.html"
+                     title="ValueSet/aria-patient-userdefinedlabel">Patient UserDefined Label</a>
+               </td>
+               <td>
+<p>This value set includes user defined labels defined for Patient resource. 
+The list of configured labels are available under ValueSet ‘aria-patient-userdefinedlabel’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-userdefinedlabel</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-patient-status.html"
+                     title="ValueSet/aria-patient-status">Patient's Status</a>
+               </td>
+               <td>
+<p>This value set includes Patient Status values configured in aria. 
+The list of configured patient status are available under ValueSet ‘aria-patient-status’. 
+All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-practitioner-ids.html"
+                     title="ValueSet/aria-practitioner-ids">Practitioner Ids</a>
+               </td>
+               <td>
+<p>List of practitioner ids configured are available under valueset ‘aria-practitioner-ids’. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/practitioner-ids</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-practitioner-role.html"
+                     title="ValueSet/aria-practitioner-role">Practitioner Role</a>
+               </td>
+               <td>
+<p>The different practitioner roles configured are available under valueset ‘aria-practitioner-role’. All values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/practitioner-role</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-radiotherapy-prescription-energy-example.html"
+                     title="ValueSet/radiotherapy-prescription-energy-example">Radiotherapy Prescription Energy Example</a>
+               </td>
+               <td>
+<p>Radiotherapy Prescription Energy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-radiotherapy-prescription-modality-example.html"
+                     title="ValueSet/radiotherapy-prescription-modality-example">Radiotherapy Prescription Modality Example</a>
+               </td>
+               <td>
+<p>Radiotherapy Prescription Modality</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-RadiotherapyPrescriptionSiteExample.html"
+                     title="ValueSet/RadiotherapyPrescriptionSiteExample">Radiotherapy Prescription SiteExample</a>
+               </td>
+               <td>
+<p>Radiotherapy Prescription Site</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-radiotherapy-prescription-technique-example.html"
+                     title="ValueSet/radiotherapy-prescription-technique-example">Radiotherapy Prescription Technique Example</a>
+               </td>
+               <td>
+<p>Radiotherapy Prescription Technique.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-radiotherapy-prescription-energy-example.html"
+                     title="CodeSystem/radiotherapy-prescription-energy-example">Radiotherapy Prescription Energy Example</a>
+               </td>
+               <td>
+<p>Radiotherapy Prescription Energy</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-radiotherapy-prescription-modality-example.html"
+                     title="CodeSystem/radiotherapy-prescription-modality-example">Radiotherapy Prescription Modality Example</a>
+               </td>
+               <td>
+<p>Radiotherapy Prescription Modality</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-radiotherapy-prescription-site-example.html"
+                     title="CodeSystem/radiotherapy-prescription-site-example">Radiotherapy Prescription Site Example</a>
+               </td>
+               <td>
+<p>Radiotherapy Prescription Site</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-radiotherapy-prescription-technique-example.html"
+                     title="CodeSystem/radiotherapy-prescription-technique-example">Radiotherapy Prescription Technique Example</a>
+               </td>
+               <td>
+<p>Radiotherapy Prescription Technique.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ActivityDefinition-ActivityDefinition-844.html"
+                     title="ActivityDefinition/ActivityDefinition-844">ActivityDefinition Example</a>
+               </td>
+               <td>
+<p>ActivityDefinition example for the <em>Varian ARIA API ActivityDefinition Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AllergyIntolerance-AllergyIntolerance-73200000000000000237-2.html"
+                     title="AllergyIntolerance/AllergyIntolerance-73200000000000000237-2">AllergyIntolerance Example</a>
+               </td>
+               <td>
+<p>AllergyIntolerance example for the <em>Varian AllergyIntolerance API Group Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Appointment-Appointment-162.html"
+                     title="Appointment/Appointment-162">Appointment Example</a>
+               </td>
+               <td>
+<p>Appointment example for the <em>Varian ARIA API Appointment Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AuditEvent-AuditEvent-1.html" title="AuditEvent/AuditEvent-1">AuditEvent Example</a>
+               </td>
+               <td>
+<p>AuditEvent example for the <em>Varian ARIA API AuditEvent Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-Condition-DX-94100000000000000149-12.html"
+                     title="Condition/Condition-DX-94100000000000000149-12">Cancer Condition Example</a>
+               </td>
+               <td>
+<p>Cancer Condition example for the <em>Varian ARIA API Cancer Condition Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-CarePlan-237.html" title="CarePlan/CarePlan-237">CarePlan Example</a>
+               </td>
+               <td>
+<p>CarePlan example for the <em>Varian ARIA API CarePlan Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CareTeam-CareTeam-8.html" title="CareTeam/CareTeam-8">CareTeam Example</a>
+               </td>
+               <td>
+<p>CareTeam example for the <em>Varian ARIA API CareTeam Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ChargeItem-ChargeItem-32-830.html"
+                     title="ChargeItem/ChargeItem-32-830">ChargeItem Example</a>
+               </td>
+               <td>
+<p>ChargeItem example for the <em>Varian ARIA API ChargeItem Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-Device-1034.html" title="Device/Device-1034">Device Example</a>
+               </td>
+               <td>
+<p>Device example for the <em>Varian ARIA API Device Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DocumentReference-DocumentReference-20000000000000000002-3-2.html"
+                     title="DocumentReference/DocumentReference-20000000000000000002-3-2">DocumentReference Example</a>
+               </td>
+               <td>
+<p>DocumentReference example for the <em>Varian ARIA API DocumentReference Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-RadiotherapyConditionSHS-1.html"
+                     title="Condition/RadiotherapyConditionSHS-1">Example Breast Cancer Condition</a>
+               </td>
+               <td>
+<p>Example breast cancer Condition.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-RadiotherapyPatientSHS-216.html"
+                     title="Patient/RadiotherapyPatientSHS-216">Example Female Patient 9</a>
+               </td>
+               <td>
+<p>An example female radiotherapy Patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-RadiotherapyPractitionerSHS-1005.html"
+                     title="Practitioner/RadiotherapyPractitionerSHS-1005">Example Radiotherapy Practitioner 1005</a>
+               </td>
+               <td>
+<p>An example radioterapy Practitioner.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Group-Group-10005.html" title="Group/Group-10005">Group Example</a>
+               </td>
+               <td>
+<p>Group example for the <em>Varian ARIA API Group Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="HealthcareService-HealthcareService-1.html"
+                     title="HealthcareService/HealthcareService-1">HealthcareService Example</a>
+               </td>
+               <td>
+<p>HealthcareService example for the <em>Varian ARIA API HealthcareService Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-Location-1009.html" title="Location/Location-1009">Location Example</a>
+               </td>
+               <td>
+<p>Location example for the <em>Varian ARIA API Location Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-Observation-DX-Stg-11200000000000000211-3-2.html"
+                     title="Observation/Observation-DX-Stg-11200000000000000211-3-2">Observation Condition Diagnosis Stage Example</a>
+               </td>
+               <td>
+<p>Observation Condition Diagnosis Stage example with all attributes specified.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-Observation-Stg-Category-3-2-T.html"
+                     title="Observation/Observation-Stg-Category-3-2-T">Observation Stage Category Example</a>
+               </td>
+               <td>
+<p>Observation Stage Category example with all attributes specified.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-Observation-vital-73200000000000000237-2-2.html"
+                     title="Observation/Observation-vital-73200000000000000237-2-2">Observation-vital Example</a>
+               </td>
+               <td>
+<p>Observation-vital example for the <em>Varian ARIA API Observation-vital Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-Organization-Dept-10002.html"
+                     title="Organization/Organization-Dept-10002">Organization Department Example</a>
+               </td>
+               <td>
+<p>Organization Department example for the <em>Varian ARIA API Organization Department Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-Organization-Prov-3.html"
+                     title="Organization/Organization-Prov-3">Organization Hospital Example</a>
+               </td>
+               <td>
+<p>Organization Hospital example for the <em>Varian ARIA API Organization Hospital Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-Bundle-260.html" title="Bundle/Bundle-260">Patient CareTeam Bundle Example</a>
+               </td>
+               <td>
+<p>Patient CareTeam Bundle create example with all attributes specified.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-Patient-256.html" title="Patient/Patient-256">Patient Example</a>
+               </td>
+               <td>
+<p>Patient example for the <em>Varian ARIA API Patient Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-Practitioner-1258.html"
+                     title="Practitioner/Practitioner-1258">Practitioner Example</a>
+               </td>
+               <td>
+<p>Practitioner example for the <em>Varian ARIA API Practitioner Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-Patient-352.html" title="Patient/Patient-352">Radiotherapy Patient Example</a>
+               </td>
+               <td>
+<p>Example radiotherapy patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="BodyStructure-BodyStructure-PV-681.html"
+                     title="BodyStructure/BodyStructure-PV-681">Radiotherapy Volume Example</a>
+               </td>
+               <td>
+<p>Example BodyStructure compliant to the RadiotherapyVolume profile.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-RadiotherapyCoursePrescriptionSHS-101-LeftBreast.html"
+                     title="ServiceRequest/RadiotherapyCoursePrescriptionSHS-101-LeftBreast">RadiotherapyCoursePrescription-101-RTTD-LeftBreastTang</a>
+               </td>
+               <td>
+<p>Radiotherapy Course Prescription example from Codex RTTD collection. Included because referenced by the Radiotherapy Phase Prescription.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-RadiotherapyCoursePrescription-352-634.html"
+                     title="ServiceRequest/RadiotherapyCoursePrescription-352-634">RadiotherapyCoursePrescription-352-634</a>
+               </td>
+               <td>
+<p>Example Radiotherapy Course Prescription, i.e. parent to all prescriptions in the Course.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-RadiotherapyCourseSummary-352-634.html"
+                     title="Procedure/RadiotherapyCourseSummary-352-634">RadiotherapyCourseSummary-352-634</a>
+               </td>
+               <td>
+<p>Example Radiotherapy Course Summary.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang.html"
+                     title="ServiceRequest/RadiotherapyPhasePrescriptionSHS-101-LeftBreastTang">RadiotherapyPhasePrescription-101-RTTD-LeftBreastTang</a>
+               </td>
+               <td>
+<p>Radiotherapy Phase Prescription example from Codex RTTD collection.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-RadiotherapyPhasePrescription-352-50.html"
+                     title="ServiceRequest/RadiotherapyPhasePrescription-352-50">RadiotherapyPhasePrescription-352-50</a>
+               </td>
+               <td>
+<p>Example Radiotherapy Phase Prescription.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-RadiotherapyPlannedCourse-352-634.html"
+                     title="ServiceRequest/RadiotherapyPlannedCourse-352-634">RadiotherapyPlannedCourse-352-634</a>
+               </td>
+               <td>
+<p>Example Planned Course, i.e. summary of all plans in the Course.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-RadiotherapyPlannedPhase-352-48.html"
+                     title="ServiceRequest/RadiotherapyPlannedPhase-352-48">RadiotherapyPlannedPhase-352-48</a>
+               </td>
+               <td>
+<p>Example Planned Phase, i.e. summary of all plans linked to the same prescription.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-RadiotherapyTreatedPhase-352-50.html"
+                     title="Procedure/RadiotherapyTreatedPhase-352-50">RadiotherapyTreatedPhase-352-50</a>
+               </td>
+               <td>
+<p>Example Radiotherapy Treated Phase, i.e. all treatments related to the same prescription.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-RadiotherapyTreatedPlan-352-1326.html"
+                     title="Procedure/RadiotherapyTreatedPlan-352-1326">RadiotherapyTreatedPlan-352-1326</a>
+               </td>
+               <td>
+<p>Example Radiotherapy Treated Plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-RadiotherapyTreatmentPlan-352-1479.html"
+                     title="ServiceRequest/RadiotherapyTreatmentPlan-352-1479">RadiotherapyTreatmentPlan-352-1479</a>
+               </td>
+               <td>
+<p>Example Radiotherapy Treatment Plan.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-Observation-Condition-DX-Stage-Category-200002-200002-M.html"
+                     title="Observation/Observation-Condition-DX-Stage-Category-200002-200002-M">Stage Category(Condition-Diagnosis contained resource) Example</a>
+               </td>
+               <td>
+<p>Stage Category example for the <em>Varian ARIA API Stage Category Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-Observation-DX-Stg-39500000002000000593-200002-200002.html"
+                     title="Observation/Observation-DX-Stg-39500000002000000593-200002-200002">Stage Group Example</a>
+               </td>
+               <td>
+<p>Stage Group example for the <em>Varian ARIA API Stage Group Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Task-Task-441.html" title="Task/Task-441">Task Example</a>
+               </td>
+               <td>
+<p>Task example for the <em>Varian ARIA API Task Profile.</em></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-aria-procedurecode.html"
+                     title="ValueSet/aria-procedurecode">aria-procedurecode</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-vital-component-73200000000000000237-2-2-2.html"
+                     title="Observation/vital-component-73200000000000000237-2-2-2">vital-component Example</a>
+               </td>
+               <td>
+<p>vital-component example for the <em>Varian ARIA API vital-component Profile.</em></p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.varian.com/">Varian Medical Systems, Inc.</a>.  Package varian.public.profile#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 13:25+0530">2024-07-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+                <!--| <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a> -->
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

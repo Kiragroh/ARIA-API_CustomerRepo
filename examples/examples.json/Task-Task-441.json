@@ -1,0 +1,157 @@
+{
+  "resourceType" : "Task",
+  "id" : "Task-441",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Task Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "Task example for the *Varian ARIA API Task Profile.*"
+    }],
+    "versionId" : "397780",
+    "lastUpdated" : "2023-10-09T03:40:27.160+05:30",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/Task"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"Task-441\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;Task-441&quot; Version &quot;397780&quot; Updated &quot;2023-10-09 03:40:27+0530&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Task.html\">Task</a></p></div><p><b>task-minutesDuration</b>: 12 Minutes<span style=\"background: LightGoldenRodYellow\"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code Minutes = 'Minutes')</span></p><p><b>remindTime</b>: 10 Minutes</p><p><b>readOnly</b>: false</p><p><b>identifier</b>: id:\u00a0FHIR_de6c679c-3ef2-4f84-994c-81bedb91e52c</p><p><b>basedOn</b>: <a href=\"ServiceRequest/ActivityInstance-4959\">ServiceRequest/ActivityInstance-4959</a></p><p><b>status</b>: ready</p><p><b>intent</b>: order</p><p><b>priority</b>: routine</p><p><b>code</b>: Special Review Activities <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activityDefinition-category#Special Review Activities)</span></p><p><b>focus</b>: <a href=\"ActivityDefinition/ActivityDefinition-340\">ActivityDefinition/ActivityDefinition-340: Patient Requesting Information Task</a></p><p><b>for</b>: <a href=\"Patient/Patient-235\">Patient/Patient-235: pt_gender, pt</a></p><p><b>authoredOn</b>: 2023-10-09 00:00:00+0530</p><p><b>lastModified</b>: 2023-10-09 03:40:27+0530</p><p><b>requester</b>: <a href=\"Practitioner/Practitioner-1002\">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>owner</b>: <a href=\"Practitioner/Practitioner-1096\">Practitioner/Practitioner-1096: DSPName_1554503007318 (Profile Not Attached)</a></p><p><b>note</b>: Task Created by FHIR with Patient 235</p><h3>Restrictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Period</b></td><td><b>Recipient</b></td></tr><tr><td style=\"display: none\">*</td><td>?? --&gt; 2023-10-09 04:35:27+0530</td><td><a href=\"Practitioner/Practitioner-1096\">Practitioner/Practitioner-1096: DSPName_1554503007318 (Profile Not Attached)</a>, <a href=\"Practitioner/Practitioner-1123\">Practitioner/Practitioner-1123: DSPName_1597106811831 (Profile Not Attached)</a>, <a href=\"Group/Group-1\">Group/Group-1: Clerical (Administration)</a>, <a href=\"Organization/Organization-Dept-1\">Organization/Organization-Dept-1: Radiation Therapy</a></td></tr></table><blockquote><p><b>input</b></p><blockquote><p><b>id</b></p>985</blockquote><p><b>type</b>: Participant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Participant)</span></p><p><b>value</b>: <a href=\"Location-Location-1009.html\">Location/Location-1009: Treatment Room 1</a> &quot;API_machine&quot;</p></blockquote><blockquote><p><b>input</b></p><blockquote><p><b>id</b></p>986</blockquote><p><b>type</b>: Participant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Participant)</span></p><p><b>value</b>: <a href=\"Device/Device-1026\">Device/Device-1026: ExternalBeamId1</a></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/task-minutesDuration",
+    "valueQuantity" : {
+      "value" : 12,
+      "unit" : "Minutes",
+      "system" : "http://varian.com/fhir/CodeSystem/quantity-units",
+      "code" : "Minutes"
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/reminderTime",
+    "valueQuantity" : {
+      "value" : 10,
+      "unit" : "Minutes"
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/readOnly",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "system" : "http://varian.com/fhir/identifier/task/UID",
+    "value" : "FHIR_de6c679c-3ef2-4f84-994c-81bedb91e52c"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/ActivityInstance-4959"
+  }],
+  "status" : "ready",
+  "_status" : {
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Task/task-status",
+          "code" : "Open",
+          "display" : "Open"
+        }]
+      }
+    }]
+  },
+  "intent" : "order",
+  "priority" : "routine",
+  "_priority" : {
+    "extension" : [{
+      "url" : "http://varian.com/fhir/v1/StructureDefinition/translation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://varian.com/fhir/CodeSystem/Task/task-priority",
+          "code" : "Low",
+          "display" : "Low"
+        }]
+      }
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/activityDefinition-category",
+      "code" : "Special Review Activities",
+      "display" : "Special Review Activities"
+    }]
+  },
+  "focus" : {
+    "reference" : "ActivityDefinition/ActivityDefinition-340",
+    "display" : "Patient Requesting Information Task"
+  },
+  "for" : {
+    "reference" : "Patient/Patient-235",
+    "display" : "pt_gender, pt"
+  },
+  "authoredOn" : "2023-10-09T00:00:00+05:30",
+  "lastModified" : "2023-10-09T03:40:27+05:30",
+  "requester" : {
+    "reference" : "Practitioner/Practitioner-1002",
+    "display" : "JohnWilsonFhir"
+  },
+  "owner" : {
+    "id" : "987",
+    "reference" : "Practitioner/Practitioner-1096",
+    "display" : "DSPName_1554503007318 (Profile Not Attached)"
+  },
+  "note" : [{
+    "text" : "Task Created by FHIR with Patient 235"
+  }],
+  "restriction" : {
+    "period" : {
+      "end" : "2023-10-09T04:35:27+05:30"
+    },
+    "recipient" : [{
+      "id" : "987",
+      "reference" : "Practitioner/Practitioner-1096",
+      "display" : "DSPName_1554503007318 (Profile Not Attached)"
+    },
+    {
+      "id" : "988",
+      "reference" : "Practitioner/Practitioner-1123",
+      "display" : "DSPName_1597106811831 (Profile Not Attached)"
+    },
+    {
+      "id" : "989",
+      "reference" : "Group/Group-1",
+      "display" : "Clerical (Administration)"
+    },
+    {
+      "id" : "Organization-Dept-1",
+      "reference" : "Organization/Organization-Dept-1",
+      "display" : "Radiation Therapy"
+    }]
+  },
+  "input" : [{
+    "id" : "985",
+    "type" : {
+      "coding" : [{
+        "code" : "Participant",
+        "display" : "Participant"
+      }]
+    },
+    "valueReference" : {
+      "id" : "985",
+      "reference" : "Location/Location-1009",
+      "display" : "Treatment Room 1"
+    }
+  },
+  {
+    "id" : "986",
+    "type" : {
+      "coding" : [{
+        "code" : "Participant",
+        "display" : "Participant"
+      }]
+    },
+    "valueReference" : {
+      "id" : "986",
+      "reference" : "Device/Device-1026",
+      "display" : "ExternalBeamId1"
+    }
+  }]
+}

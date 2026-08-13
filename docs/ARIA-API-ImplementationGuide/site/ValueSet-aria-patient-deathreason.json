@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aria-patient-deathreason",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://varian.com/fhir/ValueSet/patient-deathreason",
+  "version" : "1.0.0",
+  "name" : "PatientDeathReason",
+  "title" : "Patient Death Reason",
+  "status" : "active",
+  "date" : "2024-07-26T13:25:01+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "description" : "List of configured death reasons values are available under valueset 'aria-patient-deathreason'. \nAll database configured values can be accessed using  $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/patient-deathreason",
+  "copyright" : "Varian Medical Systems, Inc.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/patient-deathReason"
+    }]
+  }
+}

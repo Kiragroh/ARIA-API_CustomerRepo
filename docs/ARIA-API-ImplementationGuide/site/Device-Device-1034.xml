@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="Device-1034"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Device Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Device example for the *Varian ARIA API Device Profile.*"/>
+    </extension>
+    <versionId value="44033"/>
+    <lastUpdated value="2020-07-23T11:49:54.900+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Device"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Device</b><a name="Device-1034"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Device &quot;Device-1034&quot; Version &quot;44033&quot; Updated &quot;2020-07-23 11:49:54+0530&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Device.html">Device</a></p></div><p><b>schedulable</b>: true</p><p><b>serviceOrganization</b>: <a href="Organization/Organization-Dept-1">Organization/Organization-Dept-1: Radiation Therapy</a></p><p><b>identifier</b>: id: SupportDevId1</p><p><b>status</b>: active</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>SupportDevName1</td><td>user-friendly-name</td></tr></table><p><b>modelNumber</b>: ChairModel</p><p><b>type</b>: PatientSupportDevice <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (device-type#PatientSupportDevice)</span></p></div>
+  </text>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/schedulable">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/serviceOrganization">
+    <valueReference>
+      <reference value="Organization/Organization-Dept-1"/>
+      <display value="Radiation Therapy"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="http://varian.com/fhir/identifier/Device/Id"/>
+    <value value="SupportDevId1"/>
+  </identifier>
+  <status value="active">
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/Device/status"/>
+          <code value="Active"/>
+          <display value="Active"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </status>
+  <deviceName>
+    <name value="SupportDevName1"/>
+    <type value="user-friendly-name"/>
+  </deviceName>
+  <modelNumber value="ChairModel">
+    <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/Device/device-model"/>
+          <code value="ChairModel"/>
+          <display value="ChairModel"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </modelNumber>
+  <type>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/Device/device-type"/>
+      <code value="PatientSupportDevice"/>
+      <display value="PatientSupportDevice"/>
+    </coding>
+    <text value="PatientSupportDevice"/>
+  </type>
+</Device>

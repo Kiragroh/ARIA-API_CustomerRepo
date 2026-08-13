@@ -1,0 +1,83 @@
+{
+  "resourceType" : "Patient",
+  "id" : "RadiotherapyPatientSHS-216",
+  "meta" : {
+    "versionId" : "2179360",
+    "lastUpdated" : "2021-11-24T20:41:07.997+01:00",
+    "profile" : ["http://fhir.siemens-healthineers.com/fhir/R4/StructureDefinition/shs-patient",
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient",
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+    "http://varian.com/fhir/v1/StructureDefinition/Patient"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Sister (OFFICIAL)</b> female, DoB: 1980-03-04 ( DICOM PatientID: XRTS-04-VA\u00a0(use:\u00a0USUAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>id:\u00a071100000000000000117</li><li>id:\u00a0216</li><li>id:\u00a0urn:oid:1.2.246.352.76.12.570635949378.216.2132872709507\u00a0(use:\u00a0OFFICIAL)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 555-555-5555(HOME)</li><li>49 Meadow St Mounds OK 74047 US </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient's status with provider - New Patient | Previous Patient.\"><a href=\"StructureDefinition-patient-status.html\">patient-status:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://varian.com/fhir/CodeSystem/patient-status New Patient (NP)}\">New Patient (NP)</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient's class - In Patient | Out Patient.\"><a href=\"StructureDefinition-patient-class.html\">patient-class:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://varian.com/fhir/CodeSystem/patient-class Out Patient}\">Out Patient</span></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-status",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/patient-status",
+        "code" : "New Patient (NP)"
+      }]
+    }
+  },
+  {
+    "url" : "http://varian.com/fhir/v1/StructureDefinition/patient-class",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/patient-class",
+        "code" : "Out Patient"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://varian.com/fhir/identifier/Patient/MedOnc-Id",
+    "value" : "71100000000000000117"
+  },
+  {
+    "system" : "http://varian.com/fhir/identifier/Patient/RadOnc-Id",
+    "value" : "216"
+  },
+  {
+    "use" : "official",
+    "system" : "http://varian.com/fhir/identifier/Patient/patient-uid",
+    "value" : "urn:oid:1.2.246.352.76.12.570635949378.216.2132872709507"
+  },
+  {
+    "use" : "usual",
+    "type" : {
+      "coding" : [{
+        "system" : "http://fhir.siemens-healthineers.com/fhir/R4/CodeSystem/shs-code-system",
+        "code" : "DCM00100020",
+        "display" : "DICOM PatientID"
+      }]
+    },
+    "system" : "http://varian.com/fhir/identifier/Patient/ARIAID1",
+    "value" : "XRTS-04-VA"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "family" : "Sister",
+    "given" : ["Jane"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "555-555-5555",
+    "use" : "home"
+  }],
+  "gender" : "female",
+  "birthDate" : "1980-03-04",
+  "address" : [{
+    "line" : ["49 Meadow St"],
+    "city" : "Mounds",
+    "state" : "OK",
+    "postalCode" : "74047",
+    "country" : "US"
+  }]
+}

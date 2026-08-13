@@ -1,0 +1,60 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "RadiotherapyPractitionerSHS-1005",
+  "meta" : {
+    "versionId" : "154120",
+    "lastUpdated" : "2019-12-12T10:45:56.237+01:00",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/Practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"RadiotherapyPractitionerSHS-1005\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;RadiotherapyPractitionerSHS-1005&quot; Version &quot;154120&quot; Updated &quot;2019-12-12 10:45:56+0100&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Practitioner.html\">Practitioner</a></p></div><p><b>identifier</b>: id:\u00a08, id:\u00a01005, id:\u00a0c1eedc28-0d18-41e7-acb5-e29a3198cad8\u00a0(use:\u00a0OFFICIAL), id:\u00a0VarianInstaller\u00a0(use:\u00a0USUAL), id:\u00a0aria\\varianinstaller\u00a0(use:\u00a0USUAL)</p><p><b>name</b>: John Wilson , John Wilson (OFFICIAL)</p><p><b>address</b>: (WORK)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>VarianInstaller <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (qualification#VarianInstaller)</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://varian.com/fhir/identifier/Practitioner/Stakeholder-Id",
+    "value" : "8"
+  },
+  {
+    "system" : "http://varian.com/fhir/identifier/RadOnc-Id",
+    "value" : "1005"
+  },
+  {
+    "use" : "official",
+    "system" : "http://varian.com/fhir/identifier/Practitioner/user-cuid",
+    "value" : "c1eedc28-0d18-41e7-acb5-e29a3198cad8"
+  },
+  {
+    "use" : "usual",
+    "system" : "http://varian.com/fhir/identifier/Practitioner/Id",
+    "value" : "VarianInstaller"
+  },
+  {
+    "use" : "usual",
+    "system" : "http://varian.com/fhir/identifier/Practitioner/UserName",
+    "value" : "aria\\varianinstaller"
+  }],
+  "name" : [{
+    "use" : "usual",
+    "family" : "Wilson",
+    "given" : ["John"]
+  },
+  {
+    "use" : "official",
+    "family" : "Wilson",
+    "given" : ["John"]
+  }],
+  "address" : [{
+    "id" : "4",
+    "use" : "work",
+    "type" : "both"
+  }],
+  "qualification" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://varian.com/fhir/CodeSystem/Practitioner/qualification",
+        "code" : "VarianInstaller",
+        "display" : "VarianInstaller"
+      }]
+    }
+  }]
+}

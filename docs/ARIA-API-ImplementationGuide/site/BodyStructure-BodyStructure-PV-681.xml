@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BodyStructure xmlns="http://hl7.org/fhir">
+  <id value="BodyStructure-PV-681"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Radiotherapy Volume Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Example BodyStructure compliant to the RadiotherapyVolume profile."/>
+    </extension>
+    <versionId value="3249770"/>
+    <lastUpdated value="2022-12-02T15:44:37.683+01:00"/>
+    <profile value="http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-volume"/>
+    <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-radiotherapy-volume"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/RadiotherapyVolume"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/BodyStructure"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: BodyStructure</b><a name="BodyStructure-PV-681"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource BodyStructure &quot;BodyStructure-PV-681&quot; Version &quot;3249770&quot; Updated &quot;2022-12-02 15:44:37+0100&quot; </p><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/us/codex-radiation-therapy/STU1/StructureDefinition-codexrt-radiotherapy-volume.html">Radiotherapy Volume</a>, <a href="http://hl7.org/fhir/us/mcode/STU2.1/StructureDefinition-mcode-radiotherapy-volume.html">Radiotherapy Volume Profile</a>, <a href="StructureDefinition-RadiotherapyVolume.html">Radiotherapy Volume</a>, <a href="StructureDefinition-BodyStructure.html">BodyStructure</a></p></div><p><b>daily-dose-limit</b>: 10000.0 cGy<span style="background: LightGoldenRodYellow"> (Details: UCUM code cGy = 'cGy')</span></p><p><b>total-dose-limit</b>: 100000.0 cGy<span style="background: LightGoldenRodYellow"> (Details: UCUM code cGy = 'cGy')</span></p><p><b>session-dose-limit</b>: 10000.0 cGy<span style="background: LightGoldenRodYellow"> (Details: UCUM code cGy = 'cGy')</span></p><p><b>identifier</b>: id: LeftBreast (use: USUAL), id: urn:oid:1.3.6.1.4.1.50700.2.3345477646291366054.3345477646291366054 (use: OFFICIAL), id: 681 (use: SECONDARY)</p><p><b>morphology</b>: Planning target volume (observable entity) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#228793007; radiotherapy-volume-type#PTV &quot;Planning Target Volume&quot;)</span></p><p><b>patient</b>: <a href="Patient-Patient-352.html">Patient/Patient-352: Sister-22B, Jane</a> &quot; SISTER-22B&quot;</p></div>
+  </text>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/daily-dose-limit">
+    <valueQuantity>
+      <value value="10000.0"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="cGy"/>
+    </valueQuantity>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/total-dose-limit">
+    <valueQuantity>
+      <value value="100000.0"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="cGy"/>
+    </valueQuantity>
+  </extension>
+  <extension url="http://varian.com/fhir/v1/StructureDefinition/session-dose-limit">
+    <valueQuantity>
+      <value value="10000.0"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="cGy"/>
+    </valueQuantity>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://varian.com/fhir/identifier/radiotherapyDoseReferenceId"/>
+    <value value="LeftBreast"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:dicom:uid"/>
+    <value value="urn:oid:1.3.6.1.4.1.50700.2.3345477646291366054.3345477646291366054"/>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <system value="http://varian.com/fhir/identifier/RadiotherapyVolume/RadOnc-Id"/>
+    <value value="681"/>
+  </identifier>
+  <morphology>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="228793007"/>
+      <display value="Planning target volume (observable entity)"/>
+    </coding>
+    <coding>
+      <system value="http://varian.com/fhir/CodeSystem/radiotherapy-volume-type"/>
+      <code value="PTV"/>
+      <display value="Planning Target Volume"/>
+    </coding>
+  </morphology>
+  <patient>
+    <reference value="Patient/Patient-352"/>
+    <display value="Sister-22B, Jane"/>
+  </patient>
+</BodyStructure>

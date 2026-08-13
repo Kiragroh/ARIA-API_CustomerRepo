@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Observation-vital-73200000000000000237-2-2"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Observation-vital Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="Observation-vital example for the *Varian ARIA API Observation-vital Profile.*"/>
+    </extension>
+    <versionId value="1696929175533"/>
+    <lastUpdated value="2023-10-10T14:42:55.533+05:30"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+    <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Observation-vital-73200000000000000237-2-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Observation-vital-73200000000000000237-2-2&quot; Version &quot;1696929175533&quot; Updated &quot;2023-10-10 14:42:55+0530&quot; </p><p style="margin-bottom: 0px">Profiles: <code>http://varian.com/fhir/v1/StructureDefinition/VitalSign</code>, <code>http://varian.com/fhir/v1/StructureDefinition/Observation</code></p></div><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Vital signs, weight, height, head circumference, oxygen saturation and BMI panel <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#85353-1)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>hasMember</b>: </p><ul><li><a name="vital-component-73200000000000000237-2-2-13"> </a></li><li><a name="vital-component-73200000000000000237-2-2-14"> </a></li><li><a name="vital-component-73200000000000000237-2-2-15"> </a></li><li><a name="vital-component-73200000000000000237-2-2-16"> </a></li><li><a name="vital-component-73200000000000000237-2-2-17"> </a></li><li><a name="vital-component-73200000000000000237-2-2-18"> </a></li><li><a name="vital-component-73200000000000000237-2-2-19"> </a></li><li><a name="vital-component-73200000000000000237-2-2-20"> </a></li><li><a name="vital-component-73200000000000000237-2-2-21"> </a></li><li><a name="vital-component-73200000000000000237-2-2-22"> </a></li><li><a name="vital-component-73200000000000000237-2-2-23"> </a></li></ul><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-13"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 13, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Height <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Height)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 5.0000 cms<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code cms = 'cms')</span></p><p><b>interpretation</b>: Critical low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#LL; observation-interpretation#LL &quot;Below Lower panic limits&quot;)</span>, Greater Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&gt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>55.0000 cms<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code cms = 'cms')</span></td><td>59.0000 cms<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code cms = 'cms')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-14"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 14, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Weight)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 57.0000 kg<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg = 'kg')</span></p><p><b>interpretation</b>: Low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#L; observation-interpretation#L &quot;Below low normal&quot;)</span>, Critical less than equal to <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#C&lt;=)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>63.0000 kg<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg = 'kg')</span></td><td>65.0000 kg<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg = 'kg')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-15"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 15, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: BMI <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#BMI)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 22800.0000 kg/m2<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg/m2 = 'kg/m2')</span></p><p><b>interpretation</b>: Critical high <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#HH; observation-interpretation#HH &quot;Above upper panic limits&quot;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>18.5000 kg/m2<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg/m2 = 'kg/m2')</span></td><td>22.9000 kg/m2<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg/m2 = 'kg/m2')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-16"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 16, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Temperature <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Temperature)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 57.0000 Celsius<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code Celsius = 'Celsius')</span></p><p><b>interpretation</b>: Critical high <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#HH; observation-interpretation#HH &quot;Above upper panic limits&quot;)</span>, Critical less than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#C&lt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>36.6000 Celsius<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code Celsius = 'Celsius')</span></td><td>37.2000 Celsius<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code Celsius = 'Celsius')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-17"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 17, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Pulse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Pulse)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 55.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></p><p><b>interpretation</b>: Low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#L; observation-interpretation#L &quot;Below low normal&quot;)</span>, Critical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#C)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>60.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></td><td>100.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-18"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 18, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Respiration <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Respiration)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 75.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></p><p><b>interpretation</b>: Critical high <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#HH; observation-interpretation#HH &quot;Above upper panic limits&quot;)</span>, Greater Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&gt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>12.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></td><td>20.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-19"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 19, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Systolic <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Systolic)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 44.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></p><p><b>interpretation</b>: Critical low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#LL; observation-interpretation#LL &quot;Below Lower panic limits&quot;)</span>, Less Than Equal To <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&lt;=)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>90.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></td><td>140.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-20"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 20, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Diastolic <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Diastolic)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 75.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></p><p><b>interpretation</b>: Normal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#N; observation-interpretation#N)</span>, No Value <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#**)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>65.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></td><td>90.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-21"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 21, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: O2 Sat <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Pulse Oximetry (O2 Sat))</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 53.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></p><p><b>interpretation</b>: Low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#L; observation-interpretation#L &quot;Below low normal&quot;)</span>, Greater Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&gt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>96.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></td><td>100.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-22"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 22, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Pain <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Pain Assessment)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 6.0000 % Hemolysis<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % Hemolysis = '% Hemolysis')</span></p><p><b>interpretation</b>: Normal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#N; observation-interpretation#N)</span>, Less Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&lt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>0.0000 % Hemolysis<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % Hemolysis = '% Hemolysis')</span></td><td>10.0000 % Hemolysis<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % Hemolysis = '% Hemolysis')</span></td></tr></table></blockquote><blockquote><p/><p><a name="vital-component-73200000000000000237-2-2-23"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 23, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Fatigue <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Fatigue)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 68.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></p><p><b>interpretation</b>: High <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#H; observation-interpretation#H &quot;Above high normal&quot;)</span>, Less Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&lt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>0.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></td><td>10.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-13</b><a name="vital-component-73200000000000000237-2-2-13"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 13, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Height <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Height)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 5.0000 cms<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code cms = 'cms')</span></p><p><b>interpretation</b>: Critical low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#LL; observation-interpretation#LL &quot;Below Lower panic limits&quot;)</span>, Greater Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&gt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>55.0000 cms<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code cms = 'cms')</span></td><td>59.0000 cms<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code cms = 'cms')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-14</b><a name="vital-component-73200000000000000237-2-2-14"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 14, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Weight <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Weight)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 57.0000 kg<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg = 'kg')</span></p><p><b>interpretation</b>: Low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#L; observation-interpretation#L &quot;Below low normal&quot;)</span>, Critical less than equal to <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#C&lt;=)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>63.0000 kg<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg = 'kg')</span></td><td>65.0000 kg<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg = 'kg')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-15</b><a name="vital-component-73200000000000000237-2-2-15"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 15, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: BMI <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#BMI)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 22800.0000 kg/m2<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg/m2 = 'kg/m2')</span></p><p><b>interpretation</b>: Critical high <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#HH; observation-interpretation#HH &quot;Above upper panic limits&quot;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>18.5000 kg/m2<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg/m2 = 'kg/m2')</span></td><td>22.9000 kg/m2<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code kg/m2 = 'kg/m2')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-16</b><a name="vital-component-73200000000000000237-2-2-16"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 16, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Temperature <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Temperature)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 57.0000 Celsius<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code Celsius = 'Celsius')</span></p><p><b>interpretation</b>: Critical high <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#HH; observation-interpretation#HH &quot;Above upper panic limits&quot;)</span>, Critical less than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#C&lt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>36.6000 Celsius<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code Celsius = 'Celsius')</span></td><td>37.2000 Celsius<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code Celsius = 'Celsius')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-17</b><a name="vital-component-73200000000000000237-2-2-17"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 17, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Pulse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Pulse)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 55.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></p><p><b>interpretation</b>: Low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#L; observation-interpretation#L &quot;Below low normal&quot;)</span>, Critical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#C)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>60.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></td><td>100.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-18</b><a name="vital-component-73200000000000000237-2-2-18"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 18, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Respiration <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Respiration)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 75.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></p><p><b>interpretation</b>: Critical high <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#HH; observation-interpretation#HH &quot;Above upper panic limits&quot;)</span>, Greater Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&gt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>12.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></td><td>20.0000 /min<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code /min = '/min')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-19</b><a name="vital-component-73200000000000000237-2-2-19"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 19, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Systolic <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Systolic)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 44.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></p><p><b>interpretation</b>: Critical low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#LL; observation-interpretation#LL &quot;Below Lower panic limits&quot;)</span>, Less Than Equal To <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&lt;=)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>90.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></td><td>140.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-20</b><a name="vital-component-73200000000000000237-2-2-20"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 20, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Diastolic <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Diastolic)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 75.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></p><p><b>interpretation</b>: Normal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#N; observation-interpretation#N)</span>, No Value <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#**)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>65.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></td><td>90.0000 mm(hg)<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code mm(hg) = 'mm(hg)')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-21</b><a name="vital-component-73200000000000000237-2-2-21"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 21, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: O2 Sat <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Pulse Oximetry (O2 Sat))</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 53.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></p><p><b>interpretation</b>: Low <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#L; observation-interpretation#L &quot;Below low normal&quot;)</span>, Greater Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&gt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>96.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></td><td>100.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-22</b><a name="vital-component-73200000000000000237-2-2-22"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 22, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Pain <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Pain Assessment)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 6.0000 % Hemolysis<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % Hemolysis = '% Hemolysis')</span></p><p><b>interpretation</b>: Normal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#N; observation-interpretation#N)</span>, Less Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&lt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>0.0000 % Hemolysis<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % Hemolysis = '% Hemolysis')</span></td><td>10.0000 % Hemolysis<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % Hemolysis = '% Hemolysis')</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Observation #vital-component-73200000000000000237-2-2-23</b><a name="vital-component-73200000000000000237-2-2-23"> </a></p><p><b>modifier-application-code</b>: radiation-oncology</p><p><b>assertedOn</b>: 2023-10-10 14:42:55+0530</p><p><b>identifier</b>: id: 23, id: 3</p><p><b>basedOn</b>: <a href="ServiceRequest/LabOrder-73200000000000000237-2-2">ServiceRequest/LabOrder-73200000000000000237-2-2</a></p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Fatigue <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-vital-code#Fatigue)</span></p><p><b>subject</b>: <a href="Patient/Patient-244">Patient/Patient-244: Implementation, Guide</a></p><p><b>effective</b>: 2023-10-10 14:40:48+0530</p><p><b>performer</b>: <a href="Practitioner/Practitioner-1002">Practitioner/Practitioner-1002: JohnWilsonFhir</a></p><p><b>value</b>: 68.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></p><p><b>interpretation</b>: High <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>#H; observation-interpretation#H &quot;Above high normal&quot;)</span>, Less Than <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (observation-interpretationsymbol#&lt;)</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>0.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></td><td>10.0000 %<span style="background: LightGoldenRodYellow"> (Details: http://varian.com/fhir/CodeSystem/quantity-units code % = '%')</span></td></tr></table></blockquote></div>
+  </text>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-13"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="13"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Height"/>
+          <display value="Height"/>
+        </coding>
+        <text value="Height"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="5.0000"/>
+        <unit value="cms"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="cms"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="LL"/>
+          <display value="Critical low"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="LL"/>
+          <display value="Below Lower panic limits"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="&gt;"/>
+          <display value="Greater Than"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="55.0000"/>
+          <unit value="cms"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="cms"/>
+        </low>
+        <high>
+          <value value="59.0000"/>
+          <unit value="cms"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="cms"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-14"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="14"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Weight"/>
+          <display value="Weight"/>
+        </coding>
+        <text value="Weight"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="57.0000"/>
+        <unit value="kg"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="kg"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="L"/>
+          <display value="Low"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="L"/>
+          <display value="Below low normal"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="C&lt;="/>
+          <display value="Critical less than equal to"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="63.0000"/>
+          <unit value="kg"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="kg"/>
+        </low>
+        <high>
+          <value value="65.0000"/>
+          <unit value="kg"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="kg"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-15"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="15"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="BMI"/>
+          <display value="BMI"/>
+        </coding>
+        <text value="BMI"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="22800.0000"/>
+        <unit value="kg/m2"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="kg/m2"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="HH"/>
+          <display value="Critical high"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="HH"/>
+          <display value="Above upper panic limits"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="18.5000"/>
+          <unit value="kg/m2"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="kg/m2"/>
+        </low>
+        <high>
+          <value value="22.9000"/>
+          <unit value="kg/m2"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="kg/m2"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-16"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="16"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Temperature"/>
+          <display value="Temperature"/>
+        </coding>
+        <text value="Temperature"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="57.0000"/>
+        <unit value="Celsius"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="Celsius"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="HH"/>
+          <display value="Critical high"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="HH"/>
+          <display value="Above upper panic limits"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="C&lt;"/>
+          <display value="Critical less than"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="36.6000"/>
+          <unit value="Celsius"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="Celsius"/>
+        </low>
+        <high>
+          <value value="37.2000"/>
+          <unit value="Celsius"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="Celsius"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-17"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="17"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Pulse"/>
+          <display value="Pulse"/>
+        </coding>
+        <text value="Pulse"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="55.0000"/>
+        <unit value="/min"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="/min"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="L"/>
+          <display value="Low"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="L"/>
+          <display value="Below low normal"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="C"/>
+          <display value="Critical"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="60.0000"/>
+          <unit value="/min"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="/min"/>
+        </low>
+        <high>
+          <value value="100.0000"/>
+          <unit value="/min"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="/min"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-18"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="18"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Respiration"/>
+          <display value="Respiration"/>
+        </coding>
+        <text value="Respiration"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="75.0000"/>
+        <unit value="/min"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="/min"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="HH"/>
+          <display value="Critical high"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="HH"/>
+          <display value="Above upper panic limits"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="&gt;"/>
+          <display value="Greater Than"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="12.0000"/>
+          <unit value="/min"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="/min"/>
+        </low>
+        <high>
+          <value value="20.0000"/>
+          <unit value="/min"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="/min"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-19"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="19"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Systolic"/>
+          <display value="Systolic"/>
+        </coding>
+        <text value="Systolic"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="44.0000"/>
+        <unit value="mm(hg)"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="mm(hg)"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="LL"/>
+          <display value="Critical low"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="LL"/>
+          <display value="Below Lower panic limits"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="&lt;="/>
+          <display value="Less Than Equal To"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="90.0000"/>
+          <unit value="mm(hg)"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="mm(hg)"/>
+        </low>
+        <high>
+          <value value="140.0000"/>
+          <unit value="mm(hg)"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="mm(hg)"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-20"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="20"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Diastolic"/>
+          <display value="Diastolic"/>
+        </coding>
+        <text value="Diastolic"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="75.0000"/>
+        <unit value="mm(hg)"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="mm(hg)"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="N"/>
+          <display value="Normal"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="N"/>
+          <display value="Normal"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="**"/>
+          <display value="No Value"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="65.0000"/>
+          <unit value="mm(hg)"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="mm(hg)"/>
+        </low>
+        <high>
+          <value value="90.0000"/>
+          <unit value="mm(hg)"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="mm(hg)"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-21"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="21"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Pulse Oximetry (O2 Sat)"/>
+          <display value="O2 Sat"/>
+        </coding>
+        <text value="O2 Sat"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="53.0000"/>
+        <unit value="%"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="%"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="L"/>
+          <display value="Low"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="L"/>
+          <display value="Below low normal"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="&gt;"/>
+          <display value="Greater Than"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="96.0000"/>
+          <unit value="%"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="%"/>
+        </low>
+        <high>
+          <value value="100.0000"/>
+          <unit value="%"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="%"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-22"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="22"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Pain Assessment"/>
+          <display value="Pain"/>
+        </coding>
+        <text value="Pain"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="6.0000"/>
+        <unit value="% Hemolysis"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="% Hemolysis"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="N"/>
+          <display value="Normal"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="N"/>
+          <display value="Normal"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="&lt;"/>
+          <display value="Less Than"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="0.0000"/>
+          <unit value="% Hemolysis"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="% Hemolysis"/>
+        </low>
+        <high>
+          <value value="10.0000"/>
+          <unit value="% Hemolysis"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="% Hemolysis"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="vital-component-73200000000000000237-2-2-23"/>
+      <meta>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/VitalSign"/>
+        <profile value="http://varian.com/fhir/v1/StructureDefinition/Observation"/>
+      </meta>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/modifier-application-code">
+        <valueString value="radiation-oncology"/>
+      </extension>
+      <extension url="http://varian.com/fhir/v1/StructureDefinition/assertedOn">
+        <valueDateTime value="2023-10-10T14:42:55+05:30"/>
+      </extension>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/Observation/result-id"/>
+        <value value="23"/>
+      </identifier>
+      <identifier>
+        <system value="http://varian.com/fhir/identifier/LabTestId"/>
+        <value value="3"/>
+      </identifier>
+      <basedOn>
+        <reference value="ServiceRequest/LabOrder-73200000000000000237-2-2"/>
+      </basedOn>
+      <status value="final">
+        <extension url="http://varian.com/fhir/v1/StructureDefinition/translation">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://varian.com/fhir/CodeSystem/Observation/status"/>
+              <code value="Approved"/>
+              <display value="Approved"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </status>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="vital-signs"/>
+          <display value="Vital Signs"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-vital-code"/>
+          <code value="Fatigue"/>
+          <display value="Fatigue"/>
+        </coding>
+        <text value="Fatigue"/>
+      </code>
+      <subject>
+        <reference value="Patient/Patient-244"/>
+        <display value="Implementation, Guide"/>
+      </subject>
+      <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+      <performer>
+        <reference value="Practitioner/Practitioner-1002"/>
+        <display value="JohnWilsonFhir"/>
+      </performer>
+      <valueQuantity>
+        <value value="68.0000"/>
+        <unit value="%"/>
+        <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+        <code value="%"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="H"/>
+          <display value="High"/>
+        </coding>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretation"/>
+          <code value="H"/>
+          <display value="Above high normal"/>
+        </coding>
+      </interpretation>
+      <interpretation>
+        <coding>
+          <system value="http://varian.com/fhir/CodeSystem/observation-interpretationsymbol"/>
+          <code value="&lt;"/>
+          <display value="Less Than"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="0.0000"/>
+          <unit value="%"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="%"/>
+        </low>
+        <high>
+          <value value="10.0000"/>
+          <unit value="%"/>
+          <system value="http://varian.com/fhir/CodeSystem/quantity-units"/>
+          <code value="%"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="85353-1"/>
+      <display value="Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient-244"/>
+    <display value="Implementation, Guide"/>
+  </subject>
+  <effectiveDateTime value="2023-10-10T14:40:48+05:30"/>
+  <performer>
+    <reference value="Practitioner/Practitioner-1002"/>
+    <display value="JohnWilsonFhir"/>
+  </performer>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-13"/>
+    <display value="Height"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-14"/>
+    <display value="Weight"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-15"/>
+    <display value="BMI"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-16"/>
+    <display value="Temperature"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-17"/>
+    <display value="Pulse"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-18"/>
+    <display value="Respiration"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-19"/>
+    <display value="Systolic"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-20"/>
+    <display value="Diastolic"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-21"/>
+    <display value="Pulse Oximetry (O2 Sat)"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-22"/>
+    <display value="Pain Assessment"/>
+  </hasMember>
+  <hasMember>
+    <reference value="#vital-component-73200000000000000237-2-2-23"/>
+    <display value="Fatigue"/>
+  </hasMember>
+</Observation>

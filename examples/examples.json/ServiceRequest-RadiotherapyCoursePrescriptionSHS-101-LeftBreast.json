@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "RadiotherapyCoursePrescriptionSHS-101-LeftBreast",
+  "meta" : {
+    "versionId" : "2271210",
+    "lastUpdated" : "2021-12-20T20:29:05.097+01:00",
+    "profile" : ["http://varian.com/fhir/v1/StructureDefinition/RadiotherapyCoursePrescription"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST"
+    }]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"RadiotherapyCoursePrescriptionSHS-101-LeftBreast\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;RadiotherapyCoursePrescriptionSHS-101-LeftBreast&quot; Version &quot;2271210&quot; Updated &quot;2021-12-20 20:29:05+0100&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RadiotherapyCoursePrescription.html\">Radiotherapy Course Prescription</a></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActReason http://terminology.hl7.org/CodeSystem/v3-ActReason}\">http://terminology.hl7.org/CodeSystem/v3-ActReason</span></p></div><p><b>Procedure Intent Extension</b>: Curative <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#373808002 &quot;Curative - procedure intent&quot;)</span></p><p><b>identifier</b>: id:\u00a0C1\u00a0(use:\u00a0USUAL), id:\u00a012\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: active</p><p><b>intent</b>: original-order</p><p><b>category</b>: Radiation oncology AND/OR radiotherapy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108290001)</span></p><p><b>code</b>: Radiotherapy course of treatment (regime/therapy) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1217123003)</span></p><p><b>subject</b>: <a href=\"Patient-RadiotherapyPatientSHS-216.html\">Patient/RadiotherapyPatientSHS-216</a> &quot; SISTER&quot;</p><p><b>reasonCode</b>: Primary malignant neoplasm of female left breast (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#353431000119107)</span></p><p><b>reasonReference</b>: <a href=\"Condition-RadiotherapyConditionSHS-1.html\">Condition/RadiotherapyConditionSHS-1: 353431000119107:Primary malignant neoplasm of female left breast (disorder)</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "373808002",
+        "display" : "Curative - procedure intent"
+      }],
+      "text" : "Curative"
+    }
+  }],
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "http://varian.com/fhir/identifier/radiotherapyCourseId",
+    "value" : "C1"
+  },
+  {
+    "use" : "official",
+    "system" : "http://varian.com/fhir/identifier/RadiotherapyCourse/RadOnc-Id",
+    "value" : "12"
+  }],
+  "status" : "active",
+  "intent" : "original-order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108290001",
+      "display" : "Radiation oncology AND/OR radiotherapy"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1217123003",
+      "display" : "Radiotherapy course of treatment (regime/therapy)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/RadiotherapyPatientSHS-216"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "353431000119107",
+      "display" : "Primary malignant neoplasm of female left breast (disorder)"
+    }]
+  }],
+  "reasonReference" : [{
+    "reference" : "Condition/RadiotherapyConditionSHS-1",
+    "display" : "353431000119107:Primary malignant neoplasm of female left breast (disorder)"
+  }]
+}

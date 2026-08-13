@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://varian.com/fhir/v1/ValueSet/aria-diagnosiscode> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "aria-diagnosiscode"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://varian.com/fhir/ValueSet/condition-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "DiagnosisCode"] ; # 
+  fhir:title [ fhir:v "Diagnosis Code"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-07-26T13:25:01+05:30"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Varian Medical Systems, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.varian.com/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "List of available codes are accessible using valueset 'aria-diagnosiscode'. All values can be accessed using ValueSet $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code. Codes can be filtered on schemas using context filter i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/condition-code&context=http://hl7.org/fhir/sid/icd-9-cm|icd-9-cm"] ; # 
+  fhir:copyright [ fhir:v "Varian Medical Systems, Inc."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-9-cm"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://www.e-imo.com"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/ICD-O-3"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

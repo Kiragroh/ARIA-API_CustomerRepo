@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aria-allergy-category",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "http://varian.com/fhir/ValueSet/allergy-intolerance-category",
+  "version" : "1.0.0",
+  "name" : "AllergyIntoleranceCategory",
+  "title" : "AllergyIntolerance ARIA Category",
+  "status" : "active",
+  "date" : "2024-07-26T13:25:01+05:30",
+  "publisher" : "Varian Medical Systems, Inc.",
+  "contact" : [{
+    "name" : "Varian Medical Systems, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.varian.com/"
+    }]
+  }],
+  "description" : "This value set defines different allergy types configured in Aria. \nList of configured allergy categories are available under valueset 'aria-allergy-category'. \nAll values can be accessed using $expand operation i.e. /fhir/ValueSet/$expand?url=http://varian.com/fhir/ValueSet/allergy-intolerance-category.",
+  "copyright" : "Varian Medical Systems, Inc.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://varian.com/fhir/CodeSystem/AllergyIntolerance/allergy-category"
+    }]
+  }
+}

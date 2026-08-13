@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="radiotherapy-prescription-modality-example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://varian.com/fhir/CodeSystem/radiotherapy-prescription-modality-example"/>
+  <version value="1.0.0"/>
+  <name value="RadiotherapyPrescriptionModalityExample"/>
+  <title value="Radiotherapy Prescription Modality Example"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-07-26T13:25:01+05:30"/>
+  <publisher value="Varian Medical Systems, Inc."/>
+  <contact>
+    <name value="Varian Medical Systems, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.varian.com/"/>
+    </telecom>
+  </contact>
+  <description value="Radiotherapy Prescription Modality"/>
+  <copyright value="Varian Medical Systems, Inc."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="BRACHYTHERAPY"/>
+    <display value="Brachytherapy"/>
+    <definition value="Brachytherapy."/>
+  </concept>
+  <concept>
+    <code value="ELECTRON"/>
+    <display value="Electron"/>
+    <definition value="Electrons."/>
+  </concept>
+  <concept>
+    <code value="PHOTON"/>
+    <display value="Photon"/>
+    <definition value="Photons."/>
+  </concept>
+  <concept>
+    <code value="PROTON"/>
+    <display value="Proton"/>
+    <definition value="Protons."/>
+  </concept>
+</CodeSystem>

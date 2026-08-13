@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="aria-procedurecode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://varian.com/fhir/v1/ValueSet/aria-procedurecode"/>
+  <version value="1.0.0"/>
+  <status value="draft"/>
+  <date value="2024-07-26T13:25:01+05:30"/>
+  <publisher value="Varian Medical Systems, Inc."/>
+  <contact>
+    <name value="Varian Medical Systems, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.varian.com/"/>
+    </telecom>
+  </contact>
+  <copyright value="Varian Medical Systems, Inc."/>
+</ValueSet>
