@@ -1,5 +1,11 @@
 # Changelog
 
+## Build 8 - 2026-08-18
+
+- Trigger-unabhaengiges Python-Beispiel fuer idempotente ARIA-FHIR-Tasks mit sicherem Dry-Run ergaenzt.
+- Gruppe und aktive Onkologen werden als Recipients gesetzt; genau ein Primary Oncologist wird Owner.
+- OAuth2, Varian-Platform-Endpunkte, Scope-Pruefung, Read-back und Reconciliation sind ohne Infrastruktur- oder Geheimniswerte nachvollziehbar.
+
 ## Build 7 - 2026-08-13
 
 - Oeffentliche Dokumentation von institutionellen Bezeichnungen, internen

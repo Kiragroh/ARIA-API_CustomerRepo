@@ -27,6 +27,7 @@ Das PDF beschreibt die Grundidee, lokale Konfiguration, Token-Service, FHIR-Basi
 | `docs/ARIA-API-ImplementationGuide/` | vollstaendiger statischer ARIA API Implementation Guide als weiterfuehrende Referenz |
 | `examples/examples.json/` | JSON-Beispiele und Profile aus dem Implementation Guide |
 | `examples/fhir-document-upload/` | nachvollziehbares DocumentReference-Upload-Beispiel mit Dry-Run |
+| `examples/fhir-task-create/` | trigger-unabhaengiges ARIA-FHIR-Task-Beispiel mit Gruppen-/Onkologen-Routing und Dry-Run |
 | `docs/guides/ARIA_FHIR_API.md` | praktischer FHIR-Einstieg fuer Dokumente, Termine, Tasks und sichere Workflows |
 | `docs/guides/ARIA_WEBSERVICE_GATEWAY.md` | Legacy-/Fallbackweg mit sicherer lokaler Access-Key-Handhabung |
 | `docs/ARCHITECTURE_AND_CSHARP_PATTERNS.md` | Entscheidung FHIR/ESAPI/Gateway/SQL/DICOM und sichere C#-Muster |
@@ -96,6 +97,7 @@ Nutze `.env.example` als Vorlage. Eine lokale `.env` bleibt durch `.gitignore` a
 ```powershell
 python .\aria_fhir_cli.py --help
 python .\examples\fhir-document-upload\fhir_document_upload_example.py --help
+python .\examples\fhir-task-create\fhir_task_create_example.py --help
 ```
 
 Live-Schreiboperationen nur bewusst mit `--execute` ausfuehren.
