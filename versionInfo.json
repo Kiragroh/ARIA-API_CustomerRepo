@@ -1,9 +1,19 @@
 {
   "version": "1.0",
-  "build": 7,
-  "lastUpdate": "2026-08-13",
-  "lastChange": "Oeffentliche Beispiele und Dokumentation institutionsneutral gefasst",
+  "build": 8,
+  "lastUpdate": "2026-08-18",
+  "lastChange": "Trigger-unabhaengiges ARIA-FHIR-Task-Beispiel mit Gruppen- und Onkologen-Routing ergaenzt",
   "changelog": [
+    {
+      "build": 8,
+      "date": "2026-08-18",
+      "title": "Ausfuehrbares ARIA-FHIR-Task-Beispiel ergaenzt",
+      "changes": [
+        "Das neue Python-Beispiel erstellt trigger-unabhaengige, idempotente ARIA-FHIR-Tasks mit Dry-Run und bewusstem Execute-Schalter.",
+        "Aktive Gruppe und Onkologen werden als Recipients gesetzt; genau ein Primary Oncologist wird Owner.",
+        "OAuth2, Varian-Platform-Endpunkte, Scope-Pruefung, Read-back und sichere Reconciliation sind ohne produktive Infrastrukturwerte dokumentiert."
+      ]
+    },
     {
       "build": 7,
       "date": "2026-08-13",
