@@ -914,7 +914,7 @@ class CliTests(unittest.TestCase):
         env = {
             "VARIAN_PLATFORM": "Varian-Platform",
             "ARIA_FHIR_CLIENT_ID": "client",
-            "ARIA_FHIR_CLIENT_SECRET": "secret",
+            "ARIA_FHIR_CLIENT_SECRET": "<client-secret>",
         }
         settings = example.settings_from_environment(env)
         self.assertEqual(settings.token_url, "https://Varian-Platform:44333/tokenservice/connect/token")
@@ -925,7 +925,7 @@ class CliTests(unittest.TestCase):
         env = {
             "VARIAN_PLATFORM": "Varian-Platform",
             "ARIA_FHIR_CLIENT_ID": "client",
-            "ARIA_FHIR_CLIENT_SECRET": "secret",
+            "ARIA_FHIR_CLIENT_SECRET": "<client-secret>",
         }
         settings = example.settings_from_environment(
             env,
