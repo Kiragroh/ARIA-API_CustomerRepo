@@ -2,8 +2,11 @@ from __future__ import annotations
 
 import sys
 import unittest
+from contextlib import redirect_stderr
 from datetime import datetime, timezone
+from io import StringIO
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import fhir_task_create_example as example
@@ -130,6 +133,19 @@ class ClientTests(unittest.TestCase):
         token_url, base_url = example.derive_urls("Varian-Platform")
         self.assertEqual(token_url, "https://Varian-Platform:44333/tokenservice/connect/token")
         self.assertEqual(base_url, "https://Varian-Platform:55370/fhir/r4")
+
+    def test_client_rejects_disabled_tls_verification(self):
+        settings = example.Settings(
+            token_url="https://Varian-Platform:44333/tokenservice/connect/token",
+            base_url="https://Varian-Platform:55370/fhir/r4",
+            client_id="client",
+            client_secret="<client-secret>",
+            scopes=(),
+            verify=False,
+        )
+
+        with self.assertRaisesRegex(example.FhirExampleError, "TLS"):
+            example.FhirClient(settings, session=FakeSession([]))
 
     def test_authentication_checks_granted_scopes(self):
         settings = example.Settings(
@@ -382,6 +398,35 @@ class CliTests(unittest.TestCase):
                 token_url_override="http://auth.example/token",
                 base_url_override="https://fhir.example/fhir/r4",
             )
+
+    def test_main_does_not_print_request_exception_details(self):
+        class FailingClient:
+            def __init__(self, _settings):
+                pass
+
+            def authenticate(self):
+                raise example.requests.ConnectionError("Patient P-1 in request URL")
+
+        env = {
+            "VARIAN_PLATFORM": "Varian-Platform",
+            "ARIA_FHIR_CLIENT_ID": "client",
+            "ARIA_FHIR_CLIENT_SECRET": "<client-secret>",
+        }
+        stderr = StringIO()
+        with (
+            mock.patch.object(example, "FhirClient", FailingClient),
+            mock.patch.object(example, "load_env", lambda: None),
+            mock.patch.dict(example.os.environ, env, clear=True),
+            redirect_stderr(stderr),
+        ):
+            status = example.main([
+                "--patient-identifier", "P-1",
+                "--activity-name", "Review",
+                "--trigger-id", "event-1",
+            ])
+
+        self.assertEqual(status, 2)
+        self.assertNotIn("P-1", stderr.getvalue())
 
 
 if __name__ == "__main__":

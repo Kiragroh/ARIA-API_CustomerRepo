@@ -7,6 +7,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import sys
 from urllib.parse import urljoin, urlparse
 
 import requests
@@ -91,6 +92,8 @@ def operation_outcome_message(response) -> str:
 
 class FhirClient:
     def __init__(self, settings: Settings, session=None):
+        if settings.verify is False:
+            raise FhirExampleError("TLS certificate verification cannot be disabled")
         self.settings = settings
         self.session = session or requests.Session()
         self.session.verify = settings.verify
@@ -463,23 +466,30 @@ def main(argv=None) -> int:
     args = build_parser().parse_args(argv)
     if args.duration_minutes <= 0:
         raise SystemExit("--duration-minutes must be positive")
-    settings = settings_from_environment(
-        token_url_override=args.token_url,
-        base_url_override=args.base_url,
-        ca_bundle_override=args.ca_bundle,
-    )
-    client = FhirClient(settings)
-    client.authenticate()
-    result = run_workflow(client, WorkflowRequest(
-        patient_identifier=args.patient_identifier,
-        activity_name=args.activity_name,
-        trigger_id=args.trigger_id,
-        group_name=args.group_name,
-        identifier_system=args.identifier_system,
-        note=args.note,
-        duration_minutes=args.duration_minutes,
-        execute=args.execute,
-    ))
+    try:
+        settings = settings_from_environment(
+            token_url_override=args.token_url,
+            base_url_override=args.base_url,
+            ca_bundle_override=args.ca_bundle,
+        )
+        client = FhirClient(settings)
+        client.authenticate()
+        result = run_workflow(client, WorkflowRequest(
+            patient_identifier=args.patient_identifier,
+            activity_name=args.activity_name,
+            trigger_id=args.trigger_id,
+            group_name=args.group_name,
+            identifier_system=args.identifier_system,
+            note=args.note,
+            duration_minutes=args.duration_minutes,
+            execute=args.execute,
+        ))
+    except requests.RequestException:
+        print("FHIR request failed; response details were suppressed.", file=sys.stderr)
+        return 2
+    except FhirExampleError as error:
+        print(f"Error: {error}", file=sys.stderr)
+        return 2
     print(json.dumps(result, ensure_ascii=False, indent=2))
     if result["status"] == "dry_run":
         print("\nDry-run: no Task POST was performed. Add --execute for a live write.")
