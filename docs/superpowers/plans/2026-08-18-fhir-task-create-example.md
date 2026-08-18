@@ -305,7 +305,7 @@ def _settings():
         token_url="https://Varian-Platform:44333/tokenservice/connect/token",
         base_url="https://Varian-Platform:55370/fhir/r4",
         client_id="client",
-        client_secret="secret",
+        client_secret="<client-secret>",
         scopes=(),
         verify=True,
     )
@@ -322,7 +322,7 @@ class ClientTests(unittest.TestCase):
             token_url="https://Varian-Platform:44333/tokenservice/connect/token",
             base_url="https://Varian-Platform:55370/fhir/r4",
             client_id="client",
-            client_secret="secret",
+            client_secret="<client-secret>",
             scopes=("system/Patient.rs", "system/Task.cruds"),
             verify=True,
         )
@@ -338,7 +338,7 @@ class ClientTests(unittest.TestCase):
         form = session.calls[0][2]["data"]
         self.assertEqual(form["grant_type"], "client_credentials")
         self.assertEqual(form["client_id"], "client")
-        self.assertEqual(form["client_secret"], "secret")
+        self.assertEqual(form["client_secret"], "<client-secret>")
 
     def test_search_follows_same_origin_next_link(self):
         session = FakeSession([
