@@ -3,12 +3,40 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 import hashlib
+import json
+from urllib.parse import urljoin, urlparse
+
+import requests
 
 TASK_PROFILE = "http://varian.com/fhir/v1/StructureDefinition/Task"
 TASK_CATEGORY_SYSTEM = "http://varian.com/fhir/CodeSystem/activityDefinition-category"
 TASK_DURATION_URL = "http://varian.com/fhir/v1/StructureDefinition/task-minutesDuration"
 TASK_DURATION_SYSTEM = "http://unitsofmeasure.org"
 ONCOLOGY_ROLES = {"oncologist", "primary-oncologist"}
+DEFAULT_SCOPES = (
+    "system/Patient.rs",
+    "system/Practitioner.rs",
+    "system/ActivityDefinition.rs",
+    "system/CareTeam.rs",
+    "system/DocumentReference.rs",
+    "system/Group.rs",
+    "system/Task.rs",
+    "system/Task.cruds",
+)
+
+
+class FhirExampleError(RuntimeError):
+    pass
+
+
+@dataclass(frozen=True)
+class Settings:
+    token_url: str
+    base_url: str
+    client_id: str
+    client_secret: str
+    scopes: tuple[str, ...] = DEFAULT_SCOPES
+    verify: bool | str = True
 
 
 @dataclass(frozen=True)
@@ -16,6 +44,105 @@ class OncologyRouting:
     recipients: tuple[str, ...]
     owner: str | None
     warnings: tuple[str, ...]
+
+
+def derive_urls(platform: str) -> tuple[str, str]:
+    host = platform.strip()
+    if not host:
+        raise FhirExampleError("VARIAN_PLATFORM or explicit URLs are required")
+    return (
+        f"https://{host}:44333/tokenservice/connect/token",
+        f"https://{host}:55370/fhir/r4",
+    )
+
+
+def operation_outcome_message(response) -> str:
+    try:
+        body = response.json()
+    except (ValueError, json.JSONDecodeError):
+        return f"HTTP {response.status_code}"
+    if not isinstance(body, dict) or body.get("resourceType") != "OperationOutcome":
+        return f"HTTP {response.status_code}"
+    parts = []
+    for issue in body.get("issue", [])[:5]:
+        if not isinstance(issue, dict):
+            continue
+        code = str(issue.get("code") or "unknown")
+        severity = str(issue.get("severity") or "unknown")
+        parts.append(f"{severity}:{code}")
+    suffix = ", ".join(parts) if parts else "unknown:unknown"
+    return f"HTTP {response.status_code} OperationOutcome {suffix}"
+
+
+class FhirClient:
+    def __init__(self, settings: Settings, session=None):
+        self.settings = settings
+        self.session = session or requests.Session()
+        self.session.verify = settings.verify
+        self.session.headers.update({"Accept": "application/fhir+json"})
+
+    def _raise(self, response) -> None:
+        if not response.ok:
+            raise FhirExampleError(operation_outcome_message(response))
+
+    def authenticate(self) -> None:
+        response = self.session.post(
+            self.settings.token_url,
+            data={
+                "grant_type": "client_credentials",
+                "client_id": self.settings.client_id,
+                "client_secret": self.settings.client_secret,
+                "scope": " ".join(self.settings.scopes),
+            },
+            headers={"Content-Type": "application/x-www-form-urlencoded"},
+            timeout=60,
+        )
+        self._raise(response)
+        body = response.json()
+        token = str(body.get("access_token") or "")
+        granted_scopes = set(str(body.get("scope") or "").split())
+        missing = sorted(set(self.settings.scopes) - granted_scopes)
+        if not token or missing:
+            raise FhirExampleError("Token or required scopes missing: " + ",".join(missing))
+        self.session.headers["Authorization"] = f"Bearer {token}"
+
+    def _url(self, resource: str) -> str:
+        return f"{self.settings.base_url.rstrip('/')}/{resource.lstrip('/')}"
+
+    def _same_origin(self, url: str) -> str:
+        absolute = urljoin(self.settings.base_url.rstrip("/") + "/", url)
+        base = urlparse(self.settings.base_url)
+        target = urlparse(absolute)
+        if (target.scheme, target.netloc) != (base.scheme, base.netloc):
+            raise FhirExampleError("Cross-origin pagination link rejected")
+        return absolute
+
+    def search(self, resource: str, params: dict[str, str]) -> list[dict]:
+        response = self.session.get(self._url(resource), params=params, timeout=60)
+        self._raise(response)
+        body = response.json()
+        resources: list[dict] = []
+        while True:
+            resources.extend(
+                entry["resource"]
+                for entry in body.get("entry", [])
+                if isinstance(entry, dict) and isinstance(entry.get("resource"), dict)
+            )
+            next_url = next((
+                link.get("url")
+                for link in body.get("link", [])
+                if isinstance(link, dict) and link.get("relation") == "next"
+            ), None)
+            if not next_url:
+                return resources
+            response = self.session.get(self._same_origin(str(next_url)), timeout=60)
+            self._raise(response)
+            body = response.json()
+
+    def read(self, reference: str) -> dict:
+        response = self.session.get(self._url(reference), timeout=60)
+        self._raise(response)
+        return response.json()
 
 
 def workflow_value(trigger_id: str) -> str:
