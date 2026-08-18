@@ -144,6 +144,51 @@ class FhirClient:
         self._raise(response)
         return response.json()
 
+    def resolve_patient(self, patient_identifier: str) -> dict:
+        matches = self.search("Patient", {"identifier": patient_identifier, "_count": "2"})
+        if len(matches) != 1:
+            raise FhirExampleError("Patient lookup must return exactly one match")
+        return matches[0]
+
+    def resolve_activity_and_group(self, activity_name: str, group_name: str) -> tuple[dict, dict]:
+        matches = [
+            item for item in self.search("ActivityDefinition", {
+                "name": activity_name,
+                "status": "active",
+                "kind": "Task",
+                "_count": "3",
+            })
+            if item.get("name") == activity_name
+            and item.get("status") == "active"
+            and item.get("kind") == "Task"
+        ]
+        if len(matches) != 1:
+            raise FhirExampleError("ActivityDefinition lookup must return exactly one active Task")
+        reference = str(matches[0].get("subjectReference", {}).get("reference") or "")
+        if not reference.startswith("Group/"):
+            raise FhirExampleError("ActivityDefinition.subjectReference must reference Group")
+        group = self.read(reference)
+        if group.get("active") is not True or group.get("name") != group_name:
+            raise FhirExampleError("ActivityDefinition does not reference the expected active Group")
+        return matches[0], group
+
+    def resolve_routing(self, patient_reference: str) -> OncologyRouting:
+        teams = self.search("CareTeam", {"patient": patient_reference, "_count": "100"})
+        references = {
+            str(participant.get("member", {}).get("reference") or "")
+            for team in teams
+            if team.get("status") == "active"
+            for participant in team.get("participant", [])
+            if str(participant.get("member", {}).get("reference") or "").startswith("Practitioner/")
+        }
+        practitioners: dict[str, dict] = {}
+        for reference in sorted(references):
+            try:
+                practitioners[reference] = self.read(reference)
+            except FhirExampleError:
+                practitioners[reference] = {"active": False}
+        return resolve_oncology_routing(teams, practitioners)
+
 
 def workflow_value(trigger_id: str) -> str:
     normalized = trigger_id.strip()

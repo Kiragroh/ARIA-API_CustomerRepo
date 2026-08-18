@@ -190,5 +190,53 @@ class ClientTests(unittest.TestCase):
         self.assertNotIn("P-123", message)
 
 
+class StubResolveClient:
+    resolve_patient = example.FhirClient.resolve_patient
+    resolve_activity_and_group = example.FhirClient.resolve_activity_and_group
+    resolve_routing = example.FhirClient.resolve_routing
+
+    def __init__(self, searches, reads):
+        self.searches = searches
+        self.reads = reads
+
+    def search(self, resource, params):
+        return self.searches[(resource, tuple(sorted(params.items())))]
+
+    def read(self, reference):
+        return self.reads[reference]
+
+
+class ResolutionTests(unittest.TestCase):
+    def test_activity_group_and_primary_oncologist_are_resolved(self):
+        searches = {
+            ("Patient", (("_count", "2"), ("identifier", "P-1"))): [{"id": "patient-1"}],
+            ("ActivityDefinition", (("_count", "3"), ("kind", "Task"), ("name", "Review"), ("status", "active"))): [{
+                "id": "activity-1", "name": "Review", "kind": "Task", "status": "active",
+                "subjectReference": {"reference": "Group/group-1"},
+            }],
+            ("CareTeam", (("_count", "100"), ("patient", "Patient/patient-1"))): [{
+                "status": "active",
+                "participant": [{
+                    "role": [{"coding": [{"code": "primary-oncologist"}]}],
+                    "member": {"reference": "Practitioner/practitioner-1"},
+                }],
+            }],
+        }
+        reads = {
+            "Group/group-1": {"id": "group-1", "name": "Arzt", "active": True},
+            "Practitioner/practitioner-1": {"id": "practitioner-1", "active": True},
+        }
+        client = StubResolveClient(searches, reads)
+
+        patient = client.resolve_patient("P-1")
+        activity, group = client.resolve_activity_and_group("Review", "Arzt")
+        routing = client.resolve_routing("Patient/patient-1")
+
+        self.assertEqual(patient["id"], "patient-1")
+        self.assertEqual(activity["id"], "activity-1")
+        self.assertEqual(group["id"], "group-1")
+        self.assertEqual(routing.owner, "Practitioner/practitioner-1")
+
+
 if __name__ == "__main__":
     unittest.main()
