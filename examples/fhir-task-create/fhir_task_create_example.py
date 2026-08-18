@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+import argparse
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 import hashlib
 import json
+import os
+from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 import requests
@@ -13,6 +16,7 @@ TASK_CATEGORY_SYSTEM = "http://varian.com/fhir/CodeSystem/activityDefinition-cat
 TASK_DURATION_URL = "http://varian.com/fhir/v1/StructureDefinition/task-minutesDuration"
 TASK_DURATION_SYSTEM = "http://unitsofmeasure.org"
 ONCOLOGY_ROLES = {"oncologist", "primary-oncologist"}
+DEFAULT_IDENTIFIER_SYSTEM = "urn:example:aria-fhir-task-trigger:v1"
 DEFAULT_SCOPES = (
     "system/Patient.rs",
     "system/Practitioner.rs",
@@ -391,3 +395,92 @@ def run_workflow(client: FhirClient, request: WorkflowRequest, now_fn=datetime.n
         created = reconciled[0]
     verify_task_readback(created, payload)
     return {"status": "created", "request": redacted_payload(payload)}
+
+
+def load_env() -> None:
+    root = Path(__file__).resolve().parents[2]
+    for env_file in (root / ".env", Path.cwd() / ".env"):
+        if not env_file.is_file():
+            continue
+        for raw_line in env_file.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description="Create an idempotent ARIA FHIR Task from any external trigger."
+    )
+    parser.add_argument("--patient-identifier", required=True)
+    parser.add_argument("--activity-name", required=True)
+    parser.add_argument("--trigger-id", required=True)
+    parser.add_argument("--group-name", default="Arzt")
+    parser.add_argument("--identifier-system", default=DEFAULT_IDENTIFIER_SYSTEM)
+    parser.add_argument("--note", default="Automatically created by an external workflow.")
+    parser.add_argument("--duration-minutes", type=int, default=10)
+    parser.add_argument("--token-url", default="")
+    parser.add_argument("--base-url", default="")
+    parser.add_argument("--ca-bundle", default="")
+    parser.add_argument("--execute", action="store_true")
+    return parser
+
+
+def settings_from_environment(
+    env=os.environ,
+    *,
+    token_url_override: str = "",
+    base_url_override: str = "",
+    ca_bundle_override: str = "",
+) -> Settings:
+    platform = str(env.get("VARIAN_PLATFORM") or "").strip()
+    derived_token, derived_base = derive_urls(platform) if platform else ("", "")
+    token_url = str(token_url_override or env.get("ARIA_FHIR_TOKEN_URL") or derived_token).strip()
+    base_url = str(base_url_override or env.get("ARIA_FHIR_BASE_URL") or derived_base).strip()
+    client_id = str(env.get("ARIA_FHIR_CLIENT_ID") or "").strip()
+    client_secret = str(env.get("ARIA_FHIR_CLIENT_SECRET") or "").strip()
+    ca_bundle = str(ca_bundle_override or env.get("ARIA_FHIR_CA_BUNDLE") or "").strip()
+    if not token_url or not base_url or not client_id or not client_secret:
+        raise FhirExampleError("FHIR URLs, client ID, and client secret are required")
+    return Settings(
+        token_url=token_url,
+        base_url=base_url,
+        client_id=client_id,
+        client_secret=client_secret,
+        scopes=DEFAULT_SCOPES,
+        verify=ca_bundle or True,
+    )
+
+
+def main(argv=None) -> int:
+    load_env()
+    args = build_parser().parse_args(argv)
+    if args.duration_minutes <= 0:
+        raise SystemExit("--duration-minutes must be positive")
+    settings = settings_from_environment(
+        token_url_override=args.token_url,
+        base_url_override=args.base_url,
+        ca_bundle_override=args.ca_bundle,
+    )
+    client = FhirClient(settings)
+    client.authenticate()
+    result = run_workflow(client, WorkflowRequest(
+        patient_identifier=args.patient_identifier,
+        activity_name=args.activity_name,
+        trigger_id=args.trigger_id,
+        group_name=args.group_name,
+        identifier_system=args.identifier_system,
+        note=args.note,
+        duration_minutes=args.duration_minutes,
+        execute=args.execute,
+    ))
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    if result["status"] == "dry_run":
+        print("\nDry-run: no Task POST was performed. Add --execute for a live write.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

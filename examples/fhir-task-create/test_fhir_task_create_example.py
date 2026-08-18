@@ -325,5 +325,42 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(len(client.posted), 1)
 
 
+class CliTests(unittest.TestCase):
+    def test_parser_defaults_to_dry_run(self):
+        args = example.build_parser().parse_args([
+            "--patient-identifier", "P-1",
+            "--activity-name", "Review",
+            "--trigger-id", "event-1",
+        ])
+        self.assertFalse(args.execute)
+        self.assertEqual(args.group_name, "Arzt")
+        self.assertEqual(args.duration_minutes, 10)
+
+    def test_settings_use_one_varian_platform_for_both_services(self):
+        env = {
+            "VARIAN_PLATFORM": "Varian-Platform",
+            "ARIA_FHIR_CLIENT_ID": "client",
+            "ARIA_FHIR_CLIENT_SECRET": "secret",
+        }
+        settings = example.settings_from_environment(env)
+        self.assertEqual(settings.token_url, "https://Varian-Platform:44333/tokenservice/connect/token")
+        self.assertEqual(settings.base_url, "https://Varian-Platform:55370/fhir/r4")
+        self.assertTrue(settings.verify)
+
+    def test_explicit_urls_override_platform_derived_urls(self):
+        env = {
+            "VARIAN_PLATFORM": "Varian-Platform",
+            "ARIA_FHIR_CLIENT_ID": "client",
+            "ARIA_FHIR_CLIENT_SECRET": "secret",
+        }
+        settings = example.settings_from_environment(
+            env,
+            token_url_override="https://auth.example/token",
+            base_url_override="https://fhir.example/fhir/r4",
+        )
+        self.assertEqual(settings.token_url, "https://auth.example/token")
+        self.assertEqual(settings.base_url, "https://fhir.example/fhir/r4")
+
+
 if __name__ == "__main__":
     unittest.main()
