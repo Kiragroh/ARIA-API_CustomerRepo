@@ -123,6 +123,9 @@ class DomainTests(unittest.TestCase):
 
 
 class ClientTests(unittest.TestCase):
+    def test_default_scopes_are_limited_to_task_dependencies(self):
+        self.assertNotIn("system/DocumentReference.rs", example.DEFAULT_SCOPES)
+
     def test_platform_builds_both_service_urls(self):
         token_url, base_url = example.derive_urls("Varian-Platform")
         self.assertEqual(token_url, "https://Varian-Platform:44333/tokenservice/connect/token")

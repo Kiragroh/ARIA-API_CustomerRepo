@@ -22,7 +22,6 @@ DEFAULT_SCOPES = (
     "system/Practitioner.rs",
     "system/ActivityDefinition.rs",
     "system/CareTeam.rs",
-    "system/DocumentReference.rs",
     "system/Group.rs",
     "system/Task.rs",
     "system/Task.cruds",
