@@ -1191,10 +1191,11 @@ Expected: all tests PASS, compilation succeeds, help exits 0, JSON parses, and d
 
 - [ ] **Step 2: Run a public-safety scan**
 
-Scan only intended public files for local hostnames, patient IDs, UNC paths, access tokens, and assigned secrets:
+Run the repository-wide public-safety check and scan the intended files for assigned token or secret literals:
 
 ```powershell
-rg -n -i "s050[0-9]+|medizin\.uni-leipzig|05183131|access_token\s*[:=]\s*['\"][^<]|client_secret\s*[:=]\s*['\"][^<]|\\\\medizin" `
+python tests/public_safety_check.py
+rg -n -i "access_token\s*[:=]\s*['\"][^<]|client_secret\s*[:=]\s*['\"][^<]" `
   examples/fhir-task-create README.md CHANGELOG.md versionInfo.json docs/superpowers
 ```
 
