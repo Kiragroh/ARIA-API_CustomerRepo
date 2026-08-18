@@ -305,12 +305,18 @@ class WorkflowTests(unittest.TestCase):
 
     def test_dry_run_builds_redacted_plan_without_post(self):
         client = FakeWorkflowClient()
-        result = example.run_workflow(client, self._request(), now_fn=lambda: datetime(2026, 8, 18, tzinfo=timezone.utc))
+        request = self._request()
+        request = example.WorkflowRequest(**{
+            **request.__dict__,
+            "note": "Review clinical detail for Patient P-1",
+        })
+        result = example.run_workflow(client, request, now_fn=lambda: datetime(2026, 8, 18, tzinfo=timezone.utc))
         self.assertEqual(result["status"], "dry_run")
         self.assertEqual(client.posted, [])
         serialized = str(result)
         self.assertNotIn("Patient/patient-1", serialized)
         self.assertNotIn("Practitioner/2", serialized)
+        self.assertNotIn("clinical detail", serialized)
 
     def test_existing_task_prevents_post(self):
         client = FakeWorkflowClient(existing=[self._existing_task()])
@@ -360,6 +366,19 @@ class CliTests(unittest.TestCase):
         )
         self.assertEqual(settings.token_url, "https://auth.example/token")
         self.assertEqual(settings.base_url, "https://fhir.example/fhir/r4")
+
+    def test_settings_reject_non_https_service_urls(self):
+        env = {
+            "ARIA_FHIR_CLIENT_ID": "client",
+            "ARIA_FHIR_CLIENT_SECRET": "<client-secret>",
+        }
+
+        with self.assertRaisesRegex(example.FhirExampleError, "HTTPS"):
+            example.settings_from_environment(
+                env,
+                token_url_override="http://auth.example/token",
+                base_url_override="https://fhir.example/fhir/r4",
+            )
 
 
 if __name__ == "__main__":

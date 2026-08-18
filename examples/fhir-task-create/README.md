@@ -23,7 +23,7 @@ python .\examples\fhir-task-create\fhir_task_create_example.py `
   --trigger-id "<stable-trigger-id>"
 ```
 
-The output is redacted. Append `--execute` only after reviewing this dry-run result. Reusing the same stable trigger ID does not create a second Task.
+Patient, Practitioner, workflow-identifier, and note values are redacted in the output. Append `--execute` only after reviewing the remaining dry-run structure. Reusing the same stable trigger ID does not create a second Task.
 
 ## Routing
 

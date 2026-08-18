@@ -324,6 +324,9 @@ def redacted_payload(payload: dict) -> dict:
     for recipient in copy.get("restriction", {}).get("recipient", []):
         kind = str(recipient.get("reference") or "Reference").split("/", 1)[0]
         recipient["reference"] = f"{kind}/<redacted>"
+    for note in copy.get("note", []):
+        if isinstance(note, dict) and "text" in note:
+            note["text"] = "<redacted>"
     copy["identifier"][0]["value"] = "<sha256>"
     return copy
 
@@ -444,6 +447,8 @@ def settings_from_environment(
     ca_bundle = str(ca_bundle_override or env.get("ARIA_FHIR_CA_BUNDLE") or "").strip()
     if not token_url or not base_url or not client_id or not client_secret:
         raise FhirExampleError("FHIR URLs, client ID, and client secret are required")
+    if any(urlparse(url).scheme.lower() != "https" or not urlparse(url).netloc for url in (token_url, base_url)):
+        raise FhirExampleError("FHIR token and base URLs must use HTTPS")
     return Settings(
         token_url=token_url,
         base_url=base_url,
