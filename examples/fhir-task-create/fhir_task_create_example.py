@@ -46,6 +46,18 @@ class OncologyRouting:
     warnings: tuple[str, ...]
 
 
+@dataclass(frozen=True)
+class WorkflowRequest:
+    patient_identifier: str
+    activity_name: str
+    trigger_id: str
+    group_name: str
+    identifier_system: str
+    note: str
+    duration_minutes: int
+    execute: bool
+
+
 def derive_urls(platform: str) -> tuple[str, str]:
     host = platform.strip()
     if not host:
@@ -143,6 +155,22 @@ class FhirClient:
         response = self.session.get(self._url(reference), timeout=60)
         self._raise(response)
         return response.json()
+
+    def find_tasks(self, identifier_system: str, identifier_value: str) -> list[dict]:
+        return self.search("Task", {
+            "identifier": f"{identifier_system}|{identifier_value}",
+            "_count": "3",
+        })
+
+    def create_task(self, payload: dict) -> dict:
+        response = self.session.post(
+            self._url("Task"),
+            json=payload,
+            headers={"Content-Type": "application/fhir+json"},
+            timeout=60,
+        )
+        self._raise(response)
+        return response.json() if response.content else {}
 
     def resolve_patient(self, patient_identifier: str) -> dict:
         matches = self.search("Patient", {"identifier": patient_identifier, "_count": "2"})
@@ -282,3 +310,84 @@ def build_task_payload(
     if routing.owner:
         payload["owner"] = {"reference": routing.owner}
     return payload
+
+
+def redacted_payload(payload: dict) -> dict:
+    copy = json.loads(json.dumps(payload))
+    copy["for"]["reference"] = "Patient/<redacted>"
+    if "owner" in copy:
+        copy["owner"]["reference"] = "Practitioner/<redacted>"
+    for recipient in copy.get("restriction", {}).get("recipient", []):
+        kind = str(recipient.get("reference") or "Reference").split("/", 1)[0]
+        recipient["reference"] = f"{kind}/<redacted>"
+    copy["identifier"][0]["value"] = "<sha256>"
+    return copy
+
+
+def verify_task_readback(actual: dict, expected: dict) -> None:
+    if actual.get("status") not in {"ready", "in-progress"}:
+        raise FhirExampleError("Task read-back has unexpected status")
+    for field in ("focus", "for", "owner"):
+        if actual.get(field, {}).get("reference") != expected.get(field, {}).get("reference"):
+            raise FhirExampleError(f"Task read-back differs at {field}")
+    expected_recipients = {
+        item.get("reference") for item in expected.get("restriction", {}).get("recipient", [])
+    }
+    actual_recipients = {
+        item.get("reference") for item in actual.get("restriction", {}).get("recipient", [])
+    }
+    if not expected_recipients.issubset(actual_recipients):
+        raise FhirExampleError("Task read-back is missing recipients")
+    expected_identifiers = {
+        (item.get("system"), item.get("value")) for item in expected.get("identifier", [])
+    }
+    actual_identifiers = {
+        (item.get("system"), item.get("value")) for item in actual.get("identifier", [])
+    }
+    if not expected_identifiers.issubset(actual_identifiers):
+        raise FhirExampleError("Task read-back is missing the workflow identifier")
+
+
+def run_workflow(client: FhirClient, request: WorkflowRequest, now_fn=datetime.now) -> dict:
+    patient = client.resolve_patient(request.patient_identifier)
+    patient_reference = f"Patient/{patient['id']}"
+    activity, group = client.resolve_activity_and_group(request.activity_name, request.group_name)
+    routing = client.resolve_routing(patient_reference)
+    identifier_value = workflow_value(request.trigger_id)
+    authored_on = now_fn().astimezone()
+    payload = build_task_payload(
+        patient_reference=patient_reference,
+        activity_reference=f"ActivityDefinition/{activity['id']}",
+        group_reference=f"Group/{group['id']}",
+        group_name=request.group_name,
+        routing=routing,
+        identifier_system=request.identifier_system,
+        identifier_value=identifier_value,
+        authored_on=authored_on,
+        duration_minutes=request.duration_minutes,
+        note=request.note,
+    )
+    existing = client.find_tasks(request.identifier_system, identifier_value)
+    if len(existing) > 1:
+        raise FhirExampleError("Multiple Tasks use the same workflow identifier")
+    if len(existing) == 1:
+        verify_task_readback(existing[0], payload)
+        return {"status": "already_exists", "request": redacted_payload(payload)}
+    if not request.execute:
+        return {"status": "dry_run", "request": redacted_payload(payload)}
+    try:
+        created = client.create_task(payload)
+    except requests.RequestException:
+        reconciled = client.find_tasks(request.identifier_system, identifier_value)
+        if len(reconciled) != 1:
+            raise FhirExampleError("Task POST outcome is uncertain; no retry was attempted")
+        created = reconciled[0]
+    if created.get("id"):
+        created = client.read(f"Task/{created['id']}")
+    else:
+        reconciled = client.find_tasks(request.identifier_system, identifier_value)
+        if len(reconciled) != 1:
+            raise FhirExampleError("Task POST returned no readable Task; no retry was attempted")
+        created = reconciled[0]
+    verify_task_readback(created, payload)
+    return {"status": "created", "request": redacted_payload(payload)}

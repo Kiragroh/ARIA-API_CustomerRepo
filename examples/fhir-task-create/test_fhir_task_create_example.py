@@ -238,5 +238,92 @@ class ResolutionTests(unittest.TestCase):
         self.assertEqual(routing.owner, "Practitioner/practitioner-1")
 
 
+class FakeWorkflowClient:
+    def __init__(self, existing=None):
+        self.existing = existing or []
+        self.posted = []
+        self.created = None
+
+    def resolve_patient(self, _identifier):
+        return {"id": "patient-1"}
+
+    def resolve_activity_and_group(self, _activity, _group):
+        return ({"id": "activity-1"}, {"id": "group-1", "name": "Arzt"})
+
+    def resolve_routing(self, _patient_reference):
+        return example.OncologyRouting(("Practitioner/2",), "Practitioner/2", ())
+
+    def find_tasks(self, _system, _value):
+        return list(self.existing)
+
+    def create_task(self, payload):
+        self.posted.append(payload)
+        self.created = {
+            **payload,
+            "id": "task-1",
+            "basedOn": [{"reference": "ServiceRequest/1"}],
+        }
+        return {"id": "task-1"}
+
+    def read(self, reference):
+        if reference != "Task/task-1" or self.created is None:
+            raise AssertionError(f"Unexpected Task read: {reference}")
+        return self.created
+
+
+class WorkflowTests(unittest.TestCase):
+    def _request(self, execute=False):
+        return example.WorkflowRequest(
+            patient_identifier="P-1",
+            activity_name="Review",
+            trigger_id="event-1",
+            group_name="Arzt",
+            identifier_system="urn:example:aria-fhir-task-trigger:v1",
+            note="Review document",
+            duration_minutes=10,
+            execute=execute,
+        )
+
+    def _existing_task(self):
+        return {
+            "resourceType": "Task",
+            "identifier": [{
+                "system": "urn:example:aria-fhir-task-trigger:v1",
+                "value": example.workflow_value("event-1"),
+            }],
+            "status": "ready",
+            "focus": {"reference": "ActivityDefinition/activity-1"},
+            "for": {"reference": "Patient/patient-1"},
+            "owner": {"reference": "Practitioner/2"},
+            "restriction": {
+                "recipient": [
+                    {"reference": "Group/group-1"},
+                    {"reference": "Practitioner/2"},
+                ]
+            },
+        }
+
+    def test_dry_run_builds_redacted_plan_without_post(self):
+        client = FakeWorkflowClient()
+        result = example.run_workflow(client, self._request(), now_fn=lambda: datetime(2026, 8, 18, tzinfo=timezone.utc))
+        self.assertEqual(result["status"], "dry_run")
+        self.assertEqual(client.posted, [])
+        serialized = str(result)
+        self.assertNotIn("Patient/patient-1", serialized)
+        self.assertNotIn("Practitioner/2", serialized)
+
+    def test_existing_task_prevents_post(self):
+        client = FakeWorkflowClient(existing=[self._existing_task()])
+        result = example.run_workflow(client, self._request(execute=True))
+        self.assertEqual(result["status"], "already_exists")
+        self.assertEqual(client.posted, [])
+
+    def test_execute_posts_once_and_verifies_readback(self):
+        client = FakeWorkflowClient()
+        result = example.run_workflow(client, self._request(execute=True))
+        self.assertEqual(result["status"], "created")
+        self.assertEqual(len(client.posted), 1)
+
+
 if __name__ == "__main__":
     unittest.main()
