@@ -9,6 +9,7 @@ __pycache__/
 venv/
 env/
 .vscode/
+.worktrees/
 node_modules/
 dist/
 build/
